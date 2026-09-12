@@ -88,6 +88,21 @@ describe('LCB calculation', () => {
       cpi: fixture.cpi,
     });
     expect(result).toMatchObject({ included: false, exclusionReason: 'after-snapshot' });
+    expect(result.usesEstimatedCpi).toBe(false);
+  });
+
+  it('labels estimated CPI from the observations actually used', () => {
+    const result = calculateAttributedGift({
+      event: { amount: 10, effectiveDate: '2020-01-01' },
+      credit: 1,
+      snapshotDate: fixture.snapshotDate,
+      market: fixture.market,
+      cpi: fixture.cpi.map((row) => ({
+        ...row,
+        status: row.date === '2020-01-01' ? 'estimated-missing-source' : 'observed',
+      })),
+    });
+    expect(result.usesEstimatedCpi).toBe(true);
   });
 
   it('rejects duplicate funding-chain transfers and overallocated shared wealth', () => {
@@ -134,6 +149,13 @@ describe('LCB calculation', () => {
     });
     expect(result.rows.find((row) => row.donorId === 'covered')).toMatchObject({ rank: 1, partialGivingHistory: true });
     expect(result.rows.find((row) => row.donorId === 'missing').charityAdjustedWealth).toBeNull();
-    expect(result.rows.find((row) => row.donorId === 'no-gifts').rank).toBeNull();
+    expect(result.rows.find((row) => row.donorId === 'no-gifts')).toMatchObject({
+      rank: null,
+      wealthAtSnapshot: 100,
+      nominalGiving: null,
+      marketAdjustedGiving: null,
+      inflationAdjustedGiving: null,
+      charityAdjustedWealth: null,
+    });
   });
 });

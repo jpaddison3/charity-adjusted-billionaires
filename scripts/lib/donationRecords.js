@@ -123,7 +123,7 @@ function eventFingerprint(event) {
 
 // Returns economic events before donor-row expansion. Consumers can therefore
 // apply attribution once while retaining the complete credit map and provenance.
-export function loadDonations(donationsDir) {
+export function loadDonations(donationsDir, sourceRoot = path.resolve(donationsDir, '../..')) {
   const files = glob.sync(path.join(donationsDir, '*.md')).sort();
   const events = [];
   const seenExact = new Map();
@@ -186,7 +186,7 @@ export function loadDonations(donationsDir) {
         credit: { ...donation.credit },
         source: donation.source,
         notes: donation.notes,
-        sourcePath: path.relative(process.cwd(), file),
+        sourcePath: path.relative(sourceRoot, file),
         rowLocator: `donations[${index}]`,
       };
       events.push({ ...event, fingerprint: eventFingerprint(event) });

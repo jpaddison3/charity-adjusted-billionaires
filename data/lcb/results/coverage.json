@@ -4,9 +4,9 @@
   "seedEvents": 1178,
   "excludedDonorFiles": 1,
   "excludedDonationFiles": 1,
-  "includedTransfers": 1166,
-  "excludedTransfers": 12,
-  "futureTransfers": 11,
+  "includedTransfers": 1117,
+  "excludedTransfers": 61,
+  "futureTransfers": 10,
   "wealth": {
     "matched": 62,
     "unmatched": 8,
@@ -58,6 +58,1363 @@
         "gates-pivotal-four-filed-transfers"
       ],
       "reason": "Unfunded remainder of the public $12.5B commitment; pledges are excluded until transferred."
+    },
+    {
+      "id": "unresolved-58bf015aa9f6",
+      "donorIds": [
+        "aliko-dangote"
+      ],
+      "amountUSD": 416666667,
+      "period": "Unresolved; see source notes",
+      "sourceFingerprint": "58bf015aa9f6f688bbb30d01d6558aa19fb00d55430626db45ef8796863ad680",
+      "sourceIds": [
+        "https://www.wsj.com/business/energy-oil/africas-richest-man-aliko-dangote-oil-refinery-e1972006"
+      ],
+      "overlapLinks": [
+        "60a8ebedb8df94fbde5fef6921aff89d03fd64ac8d0251f76363745293afb99c",
+        "e2652a702bb990cd01edd7cc938d97b88eaf5dd318a1092c509bd1ec575b5812"
+      ],
+      "reason": "No supported allocation of this aggregate to transfer dates and transfer-time values. Excluded from compounding; the seed amount is retained only as an unresolved reference, not an additional balance. First of three equal thirds of Dangote's ~$1.25B endowment of the Aliko Dangote Foundation, placed at the 1994 incorporation to represent the start of the endowment build-up (annual inflows are not publicly itemized)."
+    },
+    {
+      "id": "unresolved-60a8ebedb8df",
+      "donorIds": [
+        "aliko-dangote"
+      ],
+      "amountUSD": 416666667,
+      "period": "Unresolved; see source notes",
+      "sourceFingerprint": "60a8ebedb8df94fbde5fef6921aff89d03fd64ac8d0251f76363745293afb99c",
+      "sourceIds": [
+        "https://www.wsj.com/business/energy-oil/africas-richest-man-aliko-dangote-oil-refinery-e1972006"
+      ],
+      "overlapLinks": [
+        "58bf015aa9f6f688bbb30d01d6558aa19fb00d55430626db45ef8796863ad680",
+        "e2652a702bb990cd01edd7cc938d97b88eaf5dd318a1092c509bd1ec575b5812"
+      ],
+      "reason": "No supported allocation of this aggregate to transfer dates and transfer-time values. Excluded from compounding; the seed amount is retained only as an unresolved reference, not an additional balance. Second of three equal thirds of Dangote's ~$1.25B endowment of the Aliko Dangote Foundation, placed at the midpoint of the 1994-2014 endowment-building span (annual inflows are not publicly itemized)."
+    },
+    {
+      "id": "unresolved-e2652a702bb9",
+      "donorIds": [
+        "aliko-dangote"
+      ],
+      "amountUSD": 416666666,
+      "period": "Unresolved; see source notes",
+      "sourceFingerprint": "e2652a702bb990cd01edd7cc938d97b88eaf5dd318a1092c509bd1ec575b5812",
+      "sourceIds": [
+        "https://www.wsj.com/business/energy-oil/africas-richest-man-aliko-dangote-oil-refinery-e1972006"
+      ],
+      "overlapLinks": [
+        "58bf015aa9f6f688bbb30d01d6558aa19fb00d55430626db45ef8796863ad680",
+        "60a8ebedb8df94fbde5fef6921aff89d03fd64ac8d0251f76363745293afb99c"
+      ],
+      "reason": "No supported allocation of this aggregate to transfer dates and transfer-time values. Excluded from compounding; the seed amount is retained only as an unresolved reference, not an additional balance. Third of three equal thirds of Dangote's ~$1.25B endowment of the Aliko Dangote Foundation, placed at 2014, when the WSJ/ADF reporting describes the endowment having reached ~$1.25B as the largest by a single African donor (annual inflows are not publicly itemized)."
+    },
+    {
+      "id": "unresolved-9b048c05cd78",
+      "donorIds": [
+        "amancio-ortega"
+      ],
+      "amountUSD": 287768680,
+      "period": "Unresolved; see source notes",
+      "sourceFingerprint": "9b048c05cd7886559af63028686be76ab6de8c980d9945a44b5c9507d3e46bcc",
+      "sourceIds": [
+        "https://www.faortega.org/es/institucion/cifras/"
+      ],
+      "overlapLinks": [
+        "2550314135ffd2140e390aff9405f7d047adf6fc24ee907588afcf99f9641501",
+        "35021f4898b29c58a8e838ccae0a24efb83cd80bd2daf581f2f90c96cafdd5e7",
+        "12a8ca51c6a3eae43680415a3cd8cc81e5001ea0d064ff67e6b510ee09e708c1"
+      ],
+      "reason": "No supported allocation of this aggregate to transfer dates and transfer-time values. Excluded from compounding; the seed amount is retained only as an unresolved reference, not an additional balance. Aggregate 2020-2022 foundation-inflow floor. Fundación Amancio Ortega reports €586.3 million of founder contribution income for 2020-2024 and €236.5 million recognized in 2024; subtracting the separately sourced €80 million 2023 Pontegadea contribution leaves €269.8 million for 2020-2022. Annual transfer dates are not disclosed, so the row is dated to period end. Converted at EUR/USD 1.0666 using the 2022-12-30 Frankfurter/ECB reference rate."
+    },
+    {
+      "id": "unresolved-cd9cfec4956a",
+      "donorIds": [
+        "andrew-forrest"
+      ],
+      "amountUSD": 340035636,
+      "period": "Unresolved; see source notes",
+      "sourceFingerprint": "cd9cfec4956ab57ecb626ad8c25292ac6617427f53035c12fbcc39e0df6a9511",
+      "sourceIds": [
+        "https://probonoaustralia.com.au/news/2019/05/forrests-set-australian-donation-record-again/"
+      ],
+      "overlapLinks": [
+        "06d8f4804fae8557da86324248ed4da74f2310d6db42ed7aa8f738f96f97e262",
+        "ad5a51282bb820358b6020dedbfbd35cf063f57f042b383cb004480157a23093",
+        "66084f0e2b1aaeccc1d4b5ba123aecac3a71991af66937c0c5905438ef37e274",
+        "b2861259f7d25a133904b30bf2a8c96ff52df2fc5b605dc3f7e027ab377154f2",
+        "8cad36aba6cd3f6f952ab9829db4aa92e670adf7f003e9bd581db6f10f9fd41e",
+        "d25ca132701a032b3ed8f7dd4b6accdd3f949a3a2b6cc082a40fd20a62e2a0bb"
+      ],
+      "reason": "No supported allocation of this aggregate to transfer dates and transfer-time values. Excluded from compounding; the seed amount is retained only as an unresolved reference, not an additional balance. Approximate-dated derived aggregate. Pro Bono Australia reported that the 2019 A$655 million gift took Andrew and Nicola Forrest's total contribution to Minderoo Foundation to A$1.5 billion. I subtract the FY2018 and FY2019 ACNC donations and bequests rows for Minderoo Foundation_ACNC GROUP (A$402,433,205 and A$655,059,819) and record the A$442,506,976 pre-FY2018 remainder here, converted at 2017-06-30 AUD/USD 0.76843. This includes earlier Australian Children's Trust/Minderoo funding such as the reported A$90 million by 2007 and the Forrest Research Foundation scholarship commitment; those are not itemized separately."
+    },
+    {
+      "id": "unresolved-eb9b114e0d9a",
+      "donorIds": [
+        "bill-gates"
+      ],
+      "amountUSD": 6000000,
+      "period": "Unresolved; see source notes",
+      "sourceFingerprint": "eb9b114e0d9af34541ec9d4588e64946a0e46fe0425e7f4903667158a39a570c",
+      "sourceIds": [
+        "https://www.cs.stanford.edu/about/gates-computer-science-building"
+      ],
+      "overlapLinks": [
+        "deb0baa7bd59cb521d5cc6a6129672ade7c184493d7d33f5cfa2dcafff1b0f96",
+        "987d75064e4c9f50a5755a48d2f6fa04d89d641ec7028013b93a47de944a06f0",
+        "bb685146d2840904509328d26cb56171914c0ac1bc05cd4a629a479d4555dfde",
+        "651afb6d62b044635476300f44824a25f8b35fc226bca1f466a7beb47fe09f5c",
+        "8687bdb0ad1ea2d75b227ee8b48b2af1cd650821ecba4fe561e67e0f9bff0ea5",
+        "fa8b3423fa3df40d4627625a81e347287552c1e3c56e6714d4706daf72a1ccbe",
+        "be58c856635f69ef33e882dfc643d4d022930b4144b4375bc3ce4f6819e4b5ff",
+        "efd858c5d5f2c72b69b06030feac936b0d4740beb54f30743143ac3692a706a3",
+        "157e480391acdee55cd96e0063da22cfa1c6894110468cf02920bc0ddf861aa2",
+        "ad7f6411162178950a24bbc410f590df38a81fa0ac901444946c71b38408d8a3",
+        "39bfc0cad119aa0fb20053c1e4f9b99e7673d122bf018ce2016fb9c53abd780b",
+        "395df2d4813c0a538712d1d4fe393d6e8d5060c18b016f1ace309b5fc6d8194c"
+      ],
+      "reason": "No supported allocation of this aggregate to transfer dates and transfer-time values. Excluded from compounding; the seed amount is retained only as an unresolved reference, not an additional balance. Stanford reports that Gates donated the building funds over an 18-month period; the exact transfer dates are unavailable."
+    },
+    {
+      "id": "unresolved-392aec0dcc15",
+      "donorIds": [
+        "blake-borgeson"
+      ],
+      "amountUSD": 50460,
+      "period": "Unresolved; see source notes",
+      "sourceFingerprint": "392aec0dcc159a96a8ec3467c6176cfe4b72dbbb6f7d8d75d0a554890346ff68",
+      "sourceIds": [
+        "https://donations.vipulnaik.com/donor.php?donor=Blake+Borgeson"
+      ],
+      "overlapLinks": [
+        "655d5ca01479579b9102065ce35b45673b4d206fd9e423d850ac08c96107dc73",
+        "50e98cc2493025410ceff99153037dc90c4d145ea77e0b8a59b68469f6b6718e",
+        "771fb8f42e53e16266f3452f8b2cd6ecb3c7ad704cc1608a090cade9becb38af",
+        "ecd7747a9ca47f6dcf5256eeabdc3130f76a081d0cd95b0ffc14da3265277168",
+        "98771b44a6774c2765f63970b00a20ee3372328515c6837babdbe9d01097badf",
+        "eccf28a566e789436562d5d49c42c40439114443d39b4db85d6db847df75e398",
+        "c7cc0fc096d74d7102c2356b66147240eb2fc0ce0b7d1c52b6c4fbc97f2ea5ff",
+        "c7217ad4000487f469bd2c6ab4203288db16e39b4eafd5531b1fc4fc4a94f5a9",
+        "2e9bce83625b3d30ef08a968438cdd0673bf2af108dc53c2e9e32d8eceeda21b",
+        "41d7c78a42824b6b4c0f1813fd721f68c065c334a8ea6131711c53669408a490",
+        "03962a4c4c4227737c9b3bac4131d9134d316729d2565b8e0932815f7800ad10",
+        "6b593dbb79fe33683ea0de282b308e35e0c6f5a82b86036a416790b988ae4b79",
+        "631289c4f2818a8d39a48b4d152fd4a64bacf3b7bf66c6a0d10bda036aff5193",
+        "644b931a3e75c532acabe940b6afcd05bf2b8dd1db21828ad183cc51d85d8342",
+        "392f6e739348ad589172aa7aface528c0ead251c87596422e97874d347345730",
+        "db9f723495d6cb99121cb207fb2173f387b8d65115017d992e6ae9995bf749ee"
+      ],
+      "reason": "No supported allocation of this aggregate to transfer dates and transfer-time values. Excluded from compounding; the seed amount is retained only as an unresolved reference, not an additional balance. Reconstructed by the donation tracker from MIRI's cumulative contributor total after subtracting the separately documented 2016 gift. The exact transfer date is unavailable; the year-end date is approximate."
+    },
+    {
+      "id": "unresolved-771fb8f42e53",
+      "donorIds": [
+        "blake-borgeson"
+      ],
+      "amountUSD": 75000,
+      "period": "Unresolved; see source notes",
+      "sourceFingerprint": "771fb8f42e53e16266f3452f8b2cd6ecb3c7ad704cc1608a090cade9becb38af",
+      "sourceIds": [
+        "https://projects.propublica.org/nonprofits/organizations/741934031/202113199349318561/full"
+      ],
+      "overlapLinks": [
+        "392aec0dcc159a96a8ec3467c6176cfe4b72dbbb6f7d8d75d0a554890346ff68",
+        "655d5ca01479579b9102065ce35b45673b4d206fd9e423d850ac08c96107dc73",
+        "50e98cc2493025410ceff99153037dc90c4d145ea77e0b8a59b68469f6b6718e",
+        "ecd7747a9ca47f6dcf5256eeabdc3130f76a081d0cd95b0ffc14da3265277168",
+        "98771b44a6774c2765f63970b00a20ee3372328515c6837babdbe9d01097badf",
+        "eccf28a566e789436562d5d49c42c40439114443d39b4db85d6db847df75e398",
+        "c7cc0fc096d74d7102c2356b66147240eb2fc0ce0b7d1c52b6c4fbc97f2ea5ff",
+        "c7217ad4000487f469bd2c6ab4203288db16e39b4eafd5531b1fc4fc4a94f5a9",
+        "2e9bce83625b3d30ef08a968438cdd0673bf2af108dc53c2e9e32d8eceeda21b",
+        "41d7c78a42824b6b4c0f1813fd721f68c065c334a8ea6131711c53669408a490",
+        "03962a4c4c4227737c9b3bac4131d9134d316729d2565b8e0932815f7800ad10",
+        "6b593dbb79fe33683ea0de282b308e35e0c6f5a82b86036a416790b988ae4b79",
+        "631289c4f2818a8d39a48b4d152fd4a64bacf3b7bf66c6a0d10bda036aff5193",
+        "644b931a3e75c532acabe940b6afcd05bf2b8dd1db21828ad183cc51d85d8342",
+        "392f6e739348ad589172aa7aface528c0ead251c87596422e97874d347345730",
+        "db9f723495d6cb99121cb207fb2173f387b8d65115017d992e6ae9995bf749ee"
+      ],
+      "reason": "No supported allocation of this aggregate to transfer dates and transfer-time values. Excluded from compounding; the seed amount is retained only as an unresolved reference, not an additional balance. Conservative floor for an earlier, unobservable contribution to a donor-advised fund. Austin Community Foundation's FY2020 Schedule I identifies a $75,000 CFAR grant as a \"Blake Borgeson donation.\" The original DAF contribution date is unavailable, so this uses an approximate fiscal-year-end date; the downstream CFAR grant is not counted again."
+    },
+    {
+      "id": "unresolved-2e9bce83625b",
+      "donorIds": [
+        "blake-borgeson"
+      ],
+      "amountUSD": 200000,
+      "period": "Unresolved; see source notes",
+      "sourceFingerprint": "2e9bce83625b3d30ef08a968438cdd0673bf2af108dc53c2e9e32d8eceeda21b",
+      "sourceIds": [
+        "https://www.svcf.org/assets/img/media/SVCF-2023-990-PDC.pdf"
+      ],
+      "overlapLinks": [
+        "392aec0dcc159a96a8ec3467c6176cfe4b72dbbb6f7d8d75d0a554890346ff68",
+        "655d5ca01479579b9102065ce35b45673b4d206fd9e423d850ac08c96107dc73",
+        "50e98cc2493025410ceff99153037dc90c4d145ea77e0b8a59b68469f6b6718e",
+        "771fb8f42e53e16266f3452f8b2cd6ecb3c7ad704cc1608a090cade9becb38af",
+        "ecd7747a9ca47f6dcf5256eeabdc3130f76a081d0cd95b0ffc14da3265277168",
+        "98771b44a6774c2765f63970b00a20ee3372328515c6837babdbe9d01097badf",
+        "eccf28a566e789436562d5d49c42c40439114443d39b4db85d6db847df75e398",
+        "c7cc0fc096d74d7102c2356b66147240eb2fc0ce0b7d1c52b6c4fbc97f2ea5ff",
+        "c7217ad4000487f469bd2c6ab4203288db16e39b4eafd5531b1fc4fc4a94f5a9",
+        "41d7c78a42824b6b4c0f1813fd721f68c065c334a8ea6131711c53669408a490",
+        "03962a4c4c4227737c9b3bac4131d9134d316729d2565b8e0932815f7800ad10",
+        "6b593dbb79fe33683ea0de282b308e35e0c6f5a82b86036a416790b988ae4b79",
+        "631289c4f2818a8d39a48b4d152fd4a64bacf3b7bf66c6a0d10bda036aff5193",
+        "644b931a3e75c532acabe940b6afcd05bf2b8dd1db21828ad183cc51d85d8342",
+        "392f6e739348ad589172aa7aface528c0ead251c87596422e97874d347345730",
+        "db9f723495d6cb99121cb207fb2173f387b8d65115017d992e6ae9995bf749ee"
+      ],
+      "reason": "No supported allocation of this aggregate to transfer dates and transfer-time values. Excluded from compounding; the seed amount is retained only as an unresolved reference, not an additional balance. Conservative floor for Borgeson's earlier, unobservable contribution to an SVCF donor-advised fund. SVCF reported a $200,000 grant to Good Forever in calendar 2023, and Good Forever's Schedule B attributed the combined DAF funding to Borgeson. The original inflow date is unavailable, so this uses the midpoint of 2023. The recipient represents Borgeson's DAF portfolio and uses Good Forever's category split; the downstream transfer to Good Forever is not counted again."
+    },
+    {
+      "id": "unresolved-03962a4c4c42",
+      "donorIds": [
+        "blake-borgeson"
+      ],
+      "amountUSD": 4038107,
+      "period": "Unresolved; see source notes",
+      "sourceFingerprint": "03962a4c4c4227737c9b3bac4131d9134d316729d2565b8e0932815f7800ad10",
+      "sourceIds": [
+        "https://projects.propublica.org/nonprofits/organizations/110303001/202521349349310887/full"
+      ],
+      "overlapLinks": [
+        "392aec0dcc159a96a8ec3467c6176cfe4b72dbbb6f7d8d75d0a554890346ff68",
+        "655d5ca01479579b9102065ce35b45673b4d206fd9e423d850ac08c96107dc73",
+        "50e98cc2493025410ceff99153037dc90c4d145ea77e0b8a59b68469f6b6718e",
+        "771fb8f42e53e16266f3452f8b2cd6ecb3c7ad704cc1608a090cade9becb38af",
+        "ecd7747a9ca47f6dcf5256eeabdc3130f76a081d0cd95b0ffc14da3265277168",
+        "98771b44a6774c2765f63970b00a20ee3372328515c6837babdbe9d01097badf",
+        "eccf28a566e789436562d5d49c42c40439114443d39b4db85d6db847df75e398",
+        "c7cc0fc096d74d7102c2356b66147240eb2fc0ce0b7d1c52b6c4fbc97f2ea5ff",
+        "c7217ad4000487f469bd2c6ab4203288db16e39b4eafd5531b1fc4fc4a94f5a9",
+        "2e9bce83625b3d30ef08a968438cdd0673bf2af108dc53c2e9e32d8eceeda21b",
+        "41d7c78a42824b6b4c0f1813fd721f68c065c334a8ea6131711c53669408a490",
+        "6b593dbb79fe33683ea0de282b308e35e0c6f5a82b86036a416790b988ae4b79",
+        "631289c4f2818a8d39a48b4d152fd4a64bacf3b7bf66c6a0d10bda036aff5193",
+        "644b931a3e75c532acabe940b6afcd05bf2b8dd1db21828ad183cc51d85d8342",
+        "392f6e739348ad589172aa7aface528c0ead251c87596422e97874d347345730",
+        "db9f723495d6cb99121cb207fb2173f387b8d65115017d992e6ae9995bf749ee"
+      ],
+      "reason": "No supported allocation of this aggregate to transfer dates and transfer-time values. Excluded from compounding; the seed amount is retained only as an unresolved reference, not an additional balance. Conservative floor for Borgeson's earlier, unobservable contribution to a Fidelity Charitable DAF. Fidelity's FY2024 filing reports a $4,038,107 grant to Good Forever; Good Forever recognized it in 2023 and attributed the combined DAF funding to Borgeson. The original inflow date is unavailable, so this uses the midpoint of the known July–December 2023 grant window. The recipient represents Borgeson's DAF portfolio and uses Good Forever's category split; the downstream transfer is not counted again."
+    },
+    {
+      "id": "unresolved-de74e3f1deb2",
+      "donorIds": [
+        "chris-hohn"
+      ],
+      "amountUSD": 4500000000,
+      "period": "Unresolved; see source notes",
+      "sourceFingerprint": "de74e3f1deb2cb3ad2da847d72b55a2b05f65eb669c24ba4d1280d3fd5df9ec8",
+      "sourceIds": [
+        "https://en.wikipedia.org/wiki/Chris_Hohn#Donations"
+      ],
+      "overlapLinks": [
+        "871a8c73190def44874adfbf4027db7d77caa49eadbed1ea2b85c56786ece323",
+        "c3e9cbccfde38853807b0d13ef0a628964d70645d6a59090c4f5c46380eb737a",
+        "2313de96048b5d8ba52a2dccceba5717ee4f2cc706fb7db35c9f371bc52ff4ba",
+        "58b7b165313e559471d7465fb4d1584988d40ac76b00810ed3db32ae2618842d",
+        "10ee60dc85a0ebbbd8297599a3c15755e247fd32c029c21990c76e3ff227b211",
+        "e39492314fbfabf2085e7d47d37515d7da306318ac3598b054dc21a7ab042447",
+        "19e7fc3947eb003921cbff3d5cc4c19af27654d2d85060c08931a1ebd24d840b",
+        "c7b2808a7102dad5f224ab015175fbe697241a141628a93feb6a1f2a333291dc",
+        "6425a7256f561af36e2fdd639f4d858092a0015695e9d478b63f76f185e0a2f8"
+      ],
+      "reason": "No supported allocation of this aggregate to transfer dates and transfer-time values. Excluded from compounding; the seed amount is retained only as an unresolved reference, not an additional balance. Forbes listed Hohn's lifetime giving at $4.5 billion as of 2019. This is a coarse aggregate for historical money donated into CIFF and related charitable vehicles before the newer itemized TCI filings below; downstream CIFF grants are intentionally not itemized."
+    },
+    {
+      "id": "unresolved-77c3294ce7ef",
+      "donorIds": [
+        "david-sainsbury"
+      ],
+      "amountUSD": 1837499000,
+      "period": "Unresolved; see source notes",
+      "sourceFingerprint": "77c3294ce7ef1caf3827a3d15ced1651a162a2d86b681b78302905ada6dfbf55",
+      "sourceIds": [
+        "https://www.gatsby.org.uk/"
+      ],
+      "overlapLinks": [
+        "d4bf744ba0c2c86d941ab88060dbcb93db0d81ba9026641603764def7de92981",
+        "a3b0a13152cc9a54e96af09a64029b582069d8dd08b3f3ddc16f9e628b8d119a",
+        "f3ea8b82ae8ca5614c2bac9a4987e85b5664ef6da03598bb0ce8815652c01858",
+        "227e11730dbf24bf9ec26917f342d4b649b4c1edcc85b2d593ca21fab98f6560",
+        "f96da0e30adbe77531386e0b3347eb1bf823137d9c21d194af42b9a3cb0842c4",
+        "52e4bd772e2e1e8564a41ca5d60d37802a7e5a25e2e8c13a766f8206e26f61e9"
+      ],
+      "reason": "No supported allocation of this aggregate to transfer dates and transfer-time values. Excluded from compounding; the seed amount is retained only as an unresolved reference, not an additional balance. Aggregate floor for Gatsby funding before FY2020. Gatsby says it has committed over GBP 1.7bn since 1967, and Gatsby's David Sainsbury page says all Gatsby funds came from David Sainsbury (https://www.gatsby.org.uk/david-sainsbury/). To avoid overlap, this uses exactly GBP 1.7bn as the floor and subtracts the separately recorded FY2020-FY2025 settlor gifts totaling GBP 475.001m, leaving GBP 1.225bn for 1967-2019. Dated at the period midpoint; converted at an approximate 1993 average rate of $1.50/GBP."
+    },
+    {
+      "id": "unresolved-5af2b96057d6",
+      "donorIds": [
+        "dietmar-hopp"
+      ],
+      "amountUSD": 1781500000,
+      "period": "Unresolved; see source notes",
+      "sourceFingerprint": "5af2b96057d69b720895b7bdece87bad4593fa52eee4965910dcd2c796b48b00",
+      "sourceIds": [
+        "https://dietmar-hopp-stiftung.de/2025/09/12/30-jahre-fuer-die-menschen-in-der-metropolregion-dietmar-hopp-stiftung-feiert-jubilaeum/"
+      ],
+      "overlapLinks": [
+        "d8127f89c754d8efea5b4d27466504e4a03e60340f5e718b047e3ca439f54447"
+      ],
+      "reason": "No supported allocation of this aggregate to transfer dates and transfer-time values. Excluded from compounding; the seed amount is retained only as an unresolved reference, not an additional balance. Conservative floor for contributions into Dietmar Hopp Stiftung: the foundation reported in September 2025 that it had donated EUR 1.4B over the 30 years since its 1995 founding. German gGmbH inflows are not publicly observable like US 990-PF contributions, so this uses cumulative grantmaking as a floor for Hopp's funding of the vehicle rather than recording downstream grants. Span approximated as 1995-2025 and dated at the period midpoint, 2010-09-11. Converted at ECB EUR/USD 1.2725 from 2010-09-10, the nearest business day before the midpoint."
+    },
+    {
+      "id": "unresolved-8c506714d102",
+      "donorIds": [
+        "donald-bren"
+      ],
+      "amountUSD": 2005000000,
+      "period": "Unresolved; see source notes",
+      "sourceFingerprint": "8c506714d10259cf78eecf42c7a2d0d35fee71c24f6e684df5f35baa0d23397a",
+      "sourceIds": [
+        "https://www.donaldbren.com/"
+      ],
+      "overlapLinks": [
+        "6d813fccdc7d270336a9313f426b21a1755d4d275671bb6b8932526c40f7a1bc",
+        "2d21c1f38508487227075563b21eb825e781a9d2a7bc9203c5e76f2dae4ac293"
+      ],
+      "reason": "No supported allocation of this aggregate to transfer dates and transfer-time values. Excluded from compounding; the seed amount is retained only as an unresolved reference, not an additional balance. Rounded residual aggregate floor for Bren's non-itemized lifetime philanthropy outside the exact Donald L. Bren Foundation contribution-received rows below. The official biography says total philanthropic giving exceeds $2.1B; this row subtracts the two observable Donald L. Bren Foundation inflows below (~$94.684M) to avoid double-counting. Covers roughly 1988-2025 and is dated near the period midpoint. It includes direct gifts, Donald Bren Charitable Trust grants, and privately held Irvine Company-related charitable transfers credited to Bren, especially open-space and school philanthropy; excludes political giving, pledges not shown as paid, and downstream foundation grants as standalone donor rows."
+    },
+    {
+      "id": "unresolved-3ed4fe28b78a",
+      "donorIds": [
+        "edythe-broad"
+      ],
+      "amountUSD": 403600000,
+      "period": "Unresolved; see source notes",
+      "sourceFingerprint": "3ed4fe28b78a1c21eb7193b85dcd4a6d300e9bb86b56eff3cf88fbbcf712a9a9",
+      "sourceIds": [
+        "https://en.wikipedia.org/wiki/Edythe_Broad"
+      ],
+      "overlapLinks": [
+        "aa399f0e3b4c04300a55081a920f0de7c5b694350c01c6d75ffb3bd3c302e44d",
+        "03bae906b920858a531b23870f2b2d76a83905d9804da37e6cd1617b718ff769",
+        "9435b88ef9a6f92bd7b3e51417a431668653e26315b1a0f534577c9bae1cd11b",
+        "42bc09349c59694f561addba0debb72d94e42f5070f6d8fe7c11b99f45ff9e79",
+        "e8c4a78d874d50b254c7428d4bedbe05b03a3b43cf152e2988ed14317f694a2b",
+        "4d55bb60e015ce144271ff08a2780c703669cf12034eae8691399899e9c47cec",
+        "c0d59f389904e5ce1a422fc8ad4d8293a95eecdb10667e518584b33058fc35fb",
+        "90a88f661618b164fa353766d53620e8b7a6eb1f154841880f7637fe2aaa3828",
+        "ab7f6407dda9c7ac434417ed58889dbd7e64b303529f0abcb59a2d01a998fa50",
+        "bd4f0bfbef204aaa2f148c360e831773e3754595db26320484871737b5859f80",
+        "a28554c43dc2f28c9a7c27d91eeedc4172c998f264aeae8f1879990eec8c5217",
+        "f249f5da695fff9cca8baf29d90fd1914c2e65318ddafda58b815714a0a6e4cb",
+        "8a03402aeaf93bd907d8d2ba469b00c5daa1d6071bc6eed74de3cef52838278c",
+        "689f7ab1e993da654639faabec00786d3f66dda88f9905ed9b0179c29393bd78",
+        "8a49c091f8f42c0ad24fb68ce4bb53e9f6659039207846a73b9a76e673ae2549",
+        "c5284e4870cdade3aad1f8cd3826bf15b60d4e4ab9b8a9890a55ab3896eba641",
+        "c45dc2b10a28fa81a557699e731f945c4943a3d4b87c888850cc589390984d04",
+        "6ea7c43a2a01d500b8a527ab962523429803e55e0f62e736a306e0f1fe7a3e0a",
+        "7b1982ab1bad87d5e75a986294349ee619eecbfabf30598ac481635c4f2bbb07",
+        "1bb6e51b8b7364e36f852d2002edb719982e69d8eb0693542c926414adcb0f1a",
+        "0a4af16a19afe97dc471139b2d517ec6cde8de5c4728a56bf8c44461fb017c10",
+        "d04364fe0acaa4dfa534151fe22060a6c27fbdb9cf660f221bed59e1710e1a77",
+        "a266a28035941ce4bb64b7b9ce59513ec10e2efa9d9c25287f9c7deec2c4dbe5",
+        "931546cf97cf0817b221cb82ae92ae776d6bfd95eeff3ff11d80a2bf0df3057d",
+        "2de721b61af7f60b0aff37539e0abc22bab6504d64ecb84c29644d300142d22b",
+        "b598e72246eea5de8241be46d080cc5264f794ee5c4f3cc4938f7c8e6432a67c",
+        "f33e148acaaf934eb3d0adaf067fa650d84148c51a9a13b364c4d53bb34ad41b",
+        "57955c04e8de192ce89e4c1e4724a43f0fae8de72e94e8bcd591a1501c44b558",
+        "b3caa5765e41defc17afca3eb56a2b6078cdf1fcd89b3443963e05a5075af474",
+        "fdd974242d86e7295e415df93c6d80a99ba9391f4ee79b687a3ca771cf818ed1"
+      ],
+      "reason": "No supported allocation of this aggregate to transfer dates and transfer-time values. Excluded from compounding; the seed amount is retained only as an unresolved reference, not an additional balance. Approximate pre-2011 aggregate floor for source-backed Broad/Broad Foundation charitable commitments whose corresponding upstream foundation-inflow filings were not script-accessible in this environment. Full public face amount is $807.2M; this row records Edythe Broad's rounded 50% share because Eli Broad is deceased and has no donor file. The full amount is composed of the pre-2011 Broad Institute gifts ($100M founding gift, $100M follow-on gift, $400M endowment gift), LACMA/Broad Contemporary Art Museum $60M, MOCA $30M, USC stem-cell center $30M, UCLA stem-cell center $20M, Santa Monica College Broad Stage $10M, LA Opera Ring-cycle support $6M, Michigan State Broad Art Museum $28M, and UCLA Broad Art Center $23.2M. The date is the midpoint of the 2000-2010 span. These downstream grants are not itemized separately elsewhere in this file."
+    },
+    {
+      "id": "unresolved-7a7ba161736d",
+      "donorIds": [
+        "hasso-plattner"
+      ],
+      "amountUSD": 10900000000,
+      "period": "Unresolved; see source notes",
+      "sourceFingerprint": "7a7ba161736d7c05e3ae73874ca9a811e8d3b724dc563f374b9c7b00d43180f3",
+      "sourceIds": [
+        "https://www.plattnerfoundation.org/en/endowment"
+      ],
+      "overlapLinks": [
+        "c532df3e2723b824824b6363bb6598fbbba3d63fd845bd6bf60ae7002056166e",
+        "7f82fa7a70aacfeb2b5d6595c9d0539be072a4e49832209ef0708b5f73fcb14f",
+        "81f32d6187faaa8b45c423acc35fe205b0f41c62dade65ad8bb6bf0698ec0087",
+        "05b14b9b5452dbb802dc3a763cd7d6b13f1fe576483f99d21b6c189e931e9752"
+      ],
+      "reason": "No supported allocation of this aggregate to transfer dates and transfer-time values. Excluded from compounding; the seed amount is retained only as an unresolved reference, not an additional balance. Conservative floor for the Hasso Plattner Foundation endowment: HPF states that Prof. Hasso Plattner gifted a \"double-digit billion Euro Endowment\" and that SAP remains the endowment's largest asset. Exact transfer dates and amount are undisclosed; dated to the foundation establishment year-end and recorded at EUR 10B converted at approximately USD 1.09/EUR. Corroboration: Plattner's SEC Schedule 13G/A on SAP SE (Amendment No. 19, event date 2022-12-31, https://www.sec.gov/Archives/edgar/data/1000184/000090445423000152/s13ga_123122-sapse.htm) reports that \"In June 2022, Hasso Plattner further advanced his estate planning by donating his stake in the general partner of HPE to the Hasso Plattner Foundation, thus fulfilling his giving pledge\", with HP Endowment GmbH & Co. KG — a subsidiary of the foundation — holding 37,961,031 SAP ordinary shares (~3.1% of SAP) as of that date, worth roughly EUR 9B at 2024-2026 SAP prices before counting the endowment's non-SAP assets. The transfers therefore completed over 2015-2022 rather than all in 2015. Downstream HPF grants and projects are intentionally excluded as donation rows."
+    },
+    {
+      "id": "unresolved-7031c4a744b9",
+      "donorIds": [
+        "jack-dorsey"
+      ],
+      "amountUSD": 723242238,
+      "period": "Unresolved; see source notes",
+      "sourceFingerprint": "7031c4a744b90095e06f8adbf649acf394e276e46291938f071c9a32b27d326a",
+      "sourceIds": [
+        "https://docs.google.com/spreadsheets/d/1-eGxq2mMoEGwgSpNVL5j2sa6ToojZUZ-Zun8h2oBAR4/edit#gid=17278742"
+      ],
+      "overlapLinks": [],
+      "reason": "No supported allocation of this aggregate to transfer dates and transfer-time values. Excluded from compounding; the seed amount is retained only as an unresolved reference, not an additional balance. Aggregate record-money-once row for #startsmall: the public Details tab reports 7,752,826 Square/Block shares transferred to donor-advised funds and $723,242,238 cash value created in those DAFs. Downstream grants in the Donations tab, including $634,681,561 total disbursed through the latest 2023-12-19 ledger row, are not itemized to avoid DAF double-counting. Remaining unsold DAF shares are not valued here because the sheet returns #N/A for current value."
+    },
+    {
+      "id": "unresolved-d449b2cb4cad",
+      "donorIds": [
+        "jensen-huang"
+      ],
+      "amountUSD": 2000000000,
+      "period": "Unresolved; see source notes",
+      "sourceFingerprint": "d449b2cb4cad8ed30bad7b2075de43db1e8dfcc340b5248278c4ed825aa6b413",
+      "sourceIds": [
+        "https://en.wikipedia.org/wiki/Jensen_Huang#Philanthropy"
+      ],
+      "overlapLinks": [
+        "943c1ecd5a0429d2f02e7fb65761fe570ad4ec2a7fabd026bf06df9f6ac41ef7",
+        "5202688fb9f54771706fb5bdd6c6fdc1b0541d92f222b6c870a0acc336284c05",
+        "980eecfe372b967936d00f59cff6699a4a5aa2eab76ea3fb85cf469a06d71245",
+        "f5a94c2040aa7bbfe2e5298d8553ae5f02bb21b5de4f25cf791547b5d3bfbf55",
+        "989b45dacbccd22a771697ce128b6f22c3ae5d1f3ab6a84586ad6a81454fc6ad",
+        "0b3b92b7797cad80e38c3b6c27e8b167ddd45d7039c73461cc4ae27fb2035333",
+        "0e5bf924fdc0fa3e57e19a2aa010336c1e42738b45a49675cbbac8ba2b08de9f",
+        "ff9f71f934b45feb67deff5997c14864a600d230493701f369f54595a909f868",
+        "23935f7a821e98e71a4a8b94f37f62f2fbbc3caaba8a65bcb69bbdc26066b47d",
+        "a84b44ee05e4e20b61e6591968b7bd7ff1bc2a1eb2ff652bfe74a3bf8e4452fb",
+        "e0fe04d162cebb0095d58b4ddc988296ee4d535c62f1572fc025b4b96f42d5e3",
+        "c96dab5889470aa376a724a64c4d68455c3df132201de4a835c2591ab0bb1938",
+        "54331cfeb080922a433d1556e5e3909ed5a12bd749f6f11821e718ecdc91943c",
+        "57e8a5351bb2ee86a5b451c4ed28f4000b0a4d2874f635a625f1bf89a0bcc14d"
+      ],
+      "reason": "No supported allocation of this aggregate to transfer dates and transfer-time values. Excluded from compounding; the seed amount is retained only as an unresolved reference, not an additional balance. Jensen donated 12.6 million shares in 2007 (https://www.benzinga.com/news/education/25/06/45983347/jensen-huang-gave-12-6-million-to-charity-then-nvidias-stock-made-it-billions) which then massively appreciated. To be consistent with other donors we should not give him credit for the appreciated value, but wikipedia says his total share donations are at least two billion."
+    },
+    {
+      "id": "unresolved-3268adf4ffa4",
+      "donorIds": [
+        "jk-rowling"
+      ],
+      "amountUSD": 30000000,
+      "period": "Unresolved; see source notes",
+      "sourceFingerprint": "3268adf4ffa4a4d10984837014623418bce3a29849803125861346446fea2612",
+      "sourceIds": [
+        "https://en.wikipedia.org/wiki/Quidditch_Through_the_Ages"
+      ],
+      "overlapLinks": [
+        "0236c1581fad6aaf50960f1c423532dd1d5ae59e6748ff7a441e002097af68c8",
+        "b1d62222282206a06395a871df9b169b553aeedacabb66a3a64491a65cd8eda5",
+        "0d05f54393f99a0985f600c508482e91cbebacb94c53e90870fa0a8d1a7b435d",
+        "3b15f77e11d73831d6f2a5d09d739d82baca07fb2684d29148412381a1e62622"
+      ],
+      "reason": "No supported allocation of this aggregate to transfer dates and transfer-time values. Excluded from compounding; the seed amount is retained only as an unresolved reference, not an additional balance. Approximate aggregate proceeds from Rowling's two 2001 Harry Potter companion books, Fantastic Beasts and Where to Find Them and Quidditch Through the Ages, for Comic Relief. Public reporting summarized on the Quidditch Through the Ages page says the books had earned over US$30M for Comic Relief by July 2008; Rowling's official biography confirms these companion volumes were written/sold in aid of Comic Relief and Lumos. Dated to the July 2008 cumulative estimate; actual sales occurred from 2001 onward. This is treated as donated author/IP proceeds rather than a cash check."
+    },
+    {
+      "id": "unresolved-0d05f54393f9",
+      "donorIds": [
+        "jk-rowling"
+      ],
+      "amountUSD": 81900000,
+      "period": "Unresolved; see source notes",
+      "sourceFingerprint": "0d05f54393f99a0985f600c508482e91cbebacb94c53e90870fa0a8d1a7b435d",
+      "sourceIds": [
+        "https://www.thetimes.co.uk/article/jk-rowling-interview-2025-philanthropy-wk6hhcfc0"
+      ],
+      "overlapLinks": [
+        "3268adf4ffa4a4d10984837014623418bce3a29849803125861346446fea2612",
+        "0236c1581fad6aaf50960f1c423532dd1d5ae59e6748ff7a441e002097af68c8",
+        "b1d62222282206a06395a871df9b169b553aeedacabb66a3a64491a65cd8eda5",
+        "3b15f77e11d73831d6f2a5d09d739d82baca07fb2684d29148412381a1e62622"
+      ],
+      "reason": "No supported allocation of this aggregate to transfer dates and transfer-time values. Excluded from compounding; the seed amount is retained only as an unresolved reference, not an additional balance. Aggregate Lumos giving through the 2025 Sunday Times philanthropy interview: the article reports Rowling has donated GBP63M to Lumos, directly or via the Harry Potter franchise, over 21 years. Converted at an approximate 2025 exchange rate of 1.30 USD/GBP. This row subsumes The Tales of Beedle the Bard auction/publication proceeds and other Lumos-directed book proceeds; those are not separately itemized."
+    },
+    {
+      "id": "unresolved-b8014f9cd10d",
+      "donorIds": [
+        "ken-griffin"
+      ],
+      "amountUSD": 50000000,
+      "period": "Unresolved; see source notes",
+      "sourceFingerprint": "b8014f9cd10dafbb355f6d714b37907bb56df78c8c58a3fe0c00c7b702b0ed14",
+      "sourceIds": [
+        "https://news.harvard.edu/gazette/story/2023/04/kenneth-c-griffin-makes-gift-of-300-million-to-fas/"
+      ],
+      "overlapLinks": [
+        "94d36bbbf163de4559919b9b91b8bbabcaf1aefb18178ecee9a7bc6a6b8569f3",
+        "87cb01e0015b9eac9691b9f69cd95d5a497085801f1d69a414f0a788e20f69f6",
+        "9773263d00550ba9bd8131119f2487e6ee9378a034ae82777ee264064ad267c6",
+        "06f9d9d1a9dde3930df016d73472ce224b95478d5537199650bcc66d1e5879e4",
+        "8378f93030137599e2d39b1c3d3100b193079fc6e8515bb477387016523b9ddf",
+        "39ffed875a28fff58b6b9e9c90fa05cdb73837aea5cd69973bd4af6a8b2526f9",
+        "6c977f96dcebee2e18d007b0eadc710808360b42f221e4ee5a6fa651c829671d",
+        "b35d404b44220fe1869c54316cefd00346765ea0296d5b45ad8fe8eb4366f660"
+      ],
+      "reason": "No supported allocation of this aggregate to transfer dates and transfer-time values. Excluded from compounding; the seed amount is retained only as an unresolved reference, not an additional balance. Aggregate remainder, not a single gift: Harvard stated in April 2023 that Griffin's lifetime giving \"spans four decades and totals more than $500 million.\" After the direct $150M (2014) and $300M (2023) Harvard gifts below, roughly $50M of smaller Harvard gifts since 1989 remain unitemized in public sources. Kept outside the DAF aggregate because Harvard describes Griffin himself as the donor and does not identify the Kenneth C. Griffin Charitable Fund or Griffin Catalyst as grantor. Date and amount are rough estimates."
+    },
+    {
+      "id": "unresolved-39ffed875a28",
+      "donorIds": [
+        "ken-griffin"
+      ],
+      "amountUSD": 26000000,
+      "period": "Unresolved; see source notes",
+      "sourceFingerprint": "39ffed875a28fff58b6b9e9c90fa05cdb73837aea5cd69973bd4af6a8b2526f9",
+      "sourceIds": [
+        "https://news.uchicago.edu/story/anne-and-kenneth-griffin-provide-10-million-multi-year-study-school-improvement"
+      ],
+      "overlapLinks": [
+        "94d36bbbf163de4559919b9b91b8bbabcaf1aefb18178ecee9a7bc6a6b8569f3",
+        "b8014f9cd10dafbb355f6d714b37907bb56df78c8c58a3fe0c00c7b702b0ed14",
+        "87cb01e0015b9eac9691b9f69cd95d5a497085801f1d69a414f0a788e20f69f6",
+        "9773263d00550ba9bd8131119f2487e6ee9378a034ae82777ee264064ad267c6",
+        "06f9d9d1a9dde3930df016d73472ce224b95478d5537199650bcc66d1e5879e4",
+        "8378f93030137599e2d39b1c3d3100b193079fc6e8515bb477387016523b9ddf",
+        "6c977f96dcebee2e18d007b0eadc710808360b42f221e4ee5a6fa651c829671d",
+        "b35d404b44220fe1869c54316cefd00346765ea0296d5b45ad8fe8eb4366f660"
+      ],
+      "reason": "No supported allocation of this aggregate to transfer dates and transfer-time values. Excluded from compounding; the seed amount is retained only as an unresolved reference, not an additional balance. Aggregate floor for documented 2009-2010 grants out of the Kenneth and Anne Griffin Foundation whose corresponding inflows are not publicly observable. Replaces two downstream donor rows to avoid foundation double-counting: $10M for the University of Chicago/Harvard early-childhood education study, and $16M to Children's Memorial Hospital/Lurie Children's Hospital for the Kenneth and Anne Griffin Emergency Care Center (source: https://philanthropynewsdigest.org/news/children-s-memorial-hospital-receives-16-million-gift). Date set to period end."
+    },
+    {
+      "id": "unresolved-b35d404b4422",
+      "donorIds": [
+        "ken-griffin"
+      ],
+      "amountUSD": 1002250000,
+      "period": "Unresolved; see source notes",
+      "sourceFingerprint": "b35d404b44220fe1869c54316cefd00346765ea0296d5b45ad8fe8eb4366f660",
+      "sourceIds": [
+        "https://www.businessinsider.com/ken-griffin-catalyst-citadel-philantrophy-politics-2025-8"
+      ],
+      "overlapLinks": [
+        "94d36bbbf163de4559919b9b91b8bbabcaf1aefb18178ecee9a7bc6a6b8569f3",
+        "b8014f9cd10dafbb355f6d714b37907bb56df78c8c58a3fe0c00c7b702b0ed14",
+        "87cb01e0015b9eac9691b9f69cd95d5a497085801f1d69a414f0a788e20f69f6",
+        "9773263d00550ba9bd8131119f2487e6ee9378a034ae82777ee264064ad267c6",
+        "06f9d9d1a9dde3930df016d73472ce224b95478d5537199650bcc66d1e5879e4",
+        "8378f93030137599e2d39b1c3d3100b193079fc6e8515bb477387016523b9ddf",
+        "39ffed875a28fff58b6b9e9c90fa05cdb73837aea5cd69973bd4af6a8b2526f9",
+        "6c977f96dcebee2e18d007b0eadc710808360b42f221e4ee5a6fa651c829671d"
+      ],
+      "reason": "No supported allocation of this aggregate to transfer dates and transfer-time values. Excluded from compounding; the seed amount is retained only as an unresolved reference, not an additional balance. Aggregate record-money-once row for opaque Kenneth C. Griffin Charitable Fund / Griffin Catalyst grantmaking through the latest documented converted grant. Inflows into the DAF or equivalent vehicle are unobservable, so the amount is a conservative floor constructed by summing 55 source-backed public downstream grants that were previously itemized here. Those downstream grants are no longer donor rows. This aggregate excludes the direct Harvard, Art Institute, Fourth Presbyterian, and MSK rows above; excludes the separate Kenneth and Anne Griffin Foundation vehicle rows; and drops the prior speculative $50M Northwestern Lake Forest estimate because the amount is undisclosed. The converted portfolio included major public grants such as UChicago Economics $125M, Museum of Science and Industry $125M, the June 2022 Chicago departure slate $130M, Baptist Health $50M, Sylvester Comprehensive Cancer Center $50M, and Success Academy Florida $50M; see the recipient file for the category split."
+    },
+    {
+      "id": "unresolved-9423b7b881e6",
+      "donorIds": [
+        "laurene-powell-jobs"
+      ],
+      "amountUSD": 1207000000,
+      "period": "Unresolved; see source notes",
+      "sourceFingerprint": "9423b7b881e62908f66a87ddb95cfa0f32dbd3e1aae305addeb7c165986935f2",
+      "sourceIds": [
+        "https://projects.propublica.org/nonprofits/organizations/813242506"
+      ],
+      "overlapLinks": [],
+      "reason": "No supported allocation of this aggregate to transfer dates and transfer-time values. Excluded from compounding; the seed amount is retained only as an unresolved reference, not an additional balance. Aggregate floor row for opaque Emerson Collective / Waverley Street Foundation giving. Direct inflows into Emerson Collective LLC are not observable, so individual downstream grants are not itemized. Amount is a rounded floor from documented grantmaking: Waverley Street Foundation / Emerson Collective Foundation put $185M into a donor-advised fund during 2017-2019 plus a $50K direct environmental grant per AP (https://apnews.com/article/climate-change-business-environment-and-nature-philanthropy-apple-inc-70233d6b5dd94ad989e885f0db426860), Waverley 2020-2024 charitable disbursements totaled $921,484,792 per Form 990-PF summaries, and the Emerson-funded XQ Super School awards added $100M per Time (https://time.com/4495705/xq-super-school-grant-american-high-school/). Excludes the pledged/committed but not-yet-disbursed balance of the $3B-$3.5B Waverley climate program."
+    },
+    {
+      "id": "unresolved-14cc80ee969f",
+      "donorIds": [
+        "li-ka-shing"
+      ],
+      "amountUSD": 835000000,
+      "period": "Unresolved; see source notes",
+      "sourceFingerprint": "14cc80ee969f20b09a6265861c3b5d9155afb95ab06b4680fdfda283c1563ba2",
+      "sourceIds": [
+        "https://www.lksf.org/20050206_01/"
+      ],
+      "overlapLinks": [
+        "36b72645f03a35127d3d8c453de83f1bbd4fad76b5c365fbc577a8101dec8e71",
+        "ca713b978b7bad2261bd46b1107e218c8892bd15ac36eb09096664cc08600cea"
+      ],
+      "reason": "No supported allocation of this aggregate to transfer dates and transfer-time values. Excluded from compounding; the seed amount is retained only as an unresolved reference, not an additional balance. Conservative floor for Li's cumulative contributions into the foundation from its 1980 founding through early 2005, set equal to the over HK$6.5 billion (~US$835M at 7.78 HKD/USD) the foundation had distributed by then per a February 2005 Yazhou Zhoukan profile republished by LKSF. Li is the foundation's sole funder and stated he replenishes it with amounts equal to or exceeding distributions, so money granted out by early 2005 had to have been contributed by him beforehand (the January 2005 CIBC proceeds, recorded separately, had not yet been deployed). Dated at the end of the period covered; actual transfers occurred throughout 1980-2005."
+    },
+    {
+      "id": "unresolved-ca713b978b7b",
+      "donorIds": [
+        "li-ka-shing"
+      ],
+      "amountUSD": 2010000000,
+      "period": "Unresolved; see source notes",
+      "sourceFingerprint": "ca713b978b7bad2261bd46b1107e218c8892bd15ac36eb09096664cc08600cea",
+      "sourceIds": [
+        "https://www.lksf.org/timeline/"
+      ],
+      "overlapLinks": [
+        "36b72645f03a35127d3d8c453de83f1bbd4fad76b5c365fbc577a8101dec8e71",
+        "14cc80ee969f20b09a6265861c3b5d9155afb95ab06b4680fdfda283c1563ba2"
+      ],
+      "reason": "No supported allocation of this aggregate to transfer dates and transfer-time values. Excluded from compounding; the seed amount is retained only as an unresolved reference, not an additional balance. Balance of the foundation's documented cumulative grantmaking beyond the two rows above, used as a conservative floor for Li's mid-2005 through 2025 contributions: LKSF states he has put over HK$30 billion into projects across 27 countries since 1980 (figure on its site through 2025 and cited in May 2026 press as \"more than HK$30 billion over 46 years\"). HK$30B minus HK$6.5B (pre-2005 floor row) minus HK$7.8B (CIBC row) = HK$15.7B, ~US$2.01B at 7.8 HKD/USD. Dated at the end of the period covered; actual top-ups occurred continuously over two decades. Likely a substantial undercount: he pledged at least one third of his assets to the foundation in 2006 (~US$15B at his 2026 net worth) and the foundation separately retains billions in assets, but no public filing itemizes those transfers."
+    },
+    {
+      "id": "unresolved-8e1b11263b8a",
+      "donorIds": [
+        "lisbet-rausing"
+      ],
+      "amountUSD": 1333778094,
+      "period": "Unresolved; see source notes",
+      "sourceFingerprint": "8e1b11263b8a77afcb6f2f327c4e7cc0ae9319c60862be98129c979df8481cc5",
+      "sourceIds": [
+        "https://arcadiafund.org.uk/grants-awarded"
+      ],
+      "overlapLinks": [
+        "817bc22569c8007074ddf060cab2ac2bd27b9ad280dc9c74757840f2d1002f3d"
+      ],
+      "reason": "No supported allocation of this aggregate to transfer dates and transfer-time values. Excluded from compounding; the seed amount is retained only as an unresolved reference, not an additional balance. Aggregate floor for opaque inflows into Arcadia, a family philanthropy founded by Lisbet Rausing and Peter Baldwin and funded by family trusts. Arcadia publishes a May 2026 360Giving grant file totaling US$1,333,778,093.82 awarded since 2002; downstream Arcadia grants are intentionally not itemized. The giving spans 2002-2026, so the row is dated at the period midpoint per the dataset's aggregate-dating convention (the impact model is date-sensitive)."
+    },
+    {
+      "id": "unresolved-817bc22569c8",
+      "donorIds": [
+        "lisbet-rausing"
+      ],
+      "amountUSD": 136000000,
+      "period": "Unresolved; see source notes",
+      "sourceFingerprint": "817bc22569c8007074ddf060cab2ac2bd27b9ad280dc9c74757840f2d1002f3d",
+      "sourceIds": [
+        "https://lundtrust.org.uk/about"
+      ],
+      "overlapLinks": [
+        "8e1b11263b8a77afcb6f2f327c4e7cc0ae9319c60862be98129c979df8481cc5"
+      ],
+      "reason": "No supported allocation of this aggregate to transfer dates and transfer-time values. Excluded from compounding; the seed amount is retained only as an unresolved reference, not an additional balance. Aggregate floor for opaque inflows into Lund Trust, founded by Lisbet Rausing and funded by family trusts. Lund says it has given more than GBP107 million since 2002; amount converted at an approximate 1.27 USD/GBP rate and rounded. Downstream Lund grants are intentionally not itemized. Peter Baldwin is not split out per maintainer instruction to collapse household/vehicle giving under Lisbet. Giving spans 2002-2026; dated at the period midpoint per the aggregate-dating convention."
+    },
+    {
+      "id": "unresolved-8c4785aa816d",
+      "donorIds": [
+        "lynn-schusterman"
+      ],
+      "amountUSD": 2300000000,
+      "period": "Unresolved; see source notes",
+      "sourceFingerprint": "8c4785aa816da97a64c1fd5209e234d97b9b608d2e181783bec419d9177515ce",
+      "sourceIds": [
+        "https://www.forbes.com/profile/lynn-schusterman/"
+      ],
+      "overlapLinks": [
+        "f756c6f04dddb8cd6fd91a719808e3b712e5a948cd3581d2b5bad4862eb11379",
+        "317b98c7745b76cb1387dbf71b3693d7aad71a04f372d974a14cf65e8e3b1686",
+        "b43f12b0c9fb18b4a2d82d5e42e3a83e962457bdffa88645c6af188dc06951c3",
+        "a4941b1eee489c5a692842db2a3c90126b6269fc8c3def82096b1179efcee568",
+        "6f9c3c0ec01bcb20ac1963ba6fec4d5dbd0195dbcc56e737a298096572137c85",
+        "f836f9aad1c313e2c413daa390d5529822d7f59ddea5f444258729fd14ae49d7",
+        "913f3b6dac0aa47f745d4e5a5044f5993e68e119ec51922696cc6af8d63815fa",
+        "da83ab7477bf062e0124baa24bd01ba4a10f8b85795bd3d634e12500de58ad40",
+        "ecf10c340ca69519c0d19a44b878557e319f8fc9c7f547bdaaa09ddd3aee4e97",
+        "c58615c80aa68e783ea8401149c48f489064c87666ed52a522c6ae71998eae1b",
+        "9313f4b7062c06629e9dfae1ad9c7ee065082d64fb88dfc20a1b83e59cc9fc7c",
+        "0df9a2f0d137d468c3bf9bca2c6a5408c39891c0875bd55faaba02e89e282f64",
+        "08dad6136d62bbf732c6330eb9aa6875bd9acb888542d9ca18f7ac1337969d8e"
+      ],
+      "reason": "No supported allocation of this aggregate to transfer dates and transfer-time values. Excluded from compounding; the seed amount is retained only as an unresolved reference, not an additional balance. Approximate aggregate for the Samson Resources sale proceeds that funded the foundation: Forbes says $2.3B of the Samson proceeds went to Charles and Lynn Schusterman Family Philanthropies. The 2011 Form 990-PF shows a $2.297B capital gain inside the foundation, so the underlying donated asset likely entered the foundation before or by the 2011 sale. Date approximated to calendar-year end; the separate 2011 line-1 contributions received amount is not recorded to avoid stacking the same sale-related foundation funding."
+    },
+    {
+      "id": "unresolved-460794df3b8c",
+      "donorIds": [
+        "marilyn-simons"
+      ],
+      "amountUSD": 1950000000,
+      "period": "Unresolved; see source notes",
+      "sourceFingerprint": "460794df3b8c99657d44e645d31d87cb313fca2d1eda6f05def405914db9a3fc",
+      "sourceIds": [
+        "https://www.icij.org/investigations/paradise-papers/secret-world-offshore-mega-trusts/"
+      ],
+      "overlapLinks": [
+        "ae049f783cd2b89bd48d483f9b6984b7adf2fd42f2b6aef15f00d407027e1929",
+        "cfedd8910070a197fcf2594b7e8c9c35022b162e539108c21fa3ebc4f8fd5b05",
+        "954c8d9e03c2d06bb782ff7ce87ded34ddd66584dbf95a7da31db475e5c73728",
+        "3d94ea59f65650c5834e5c105834e12f7285b4649e18e346423678317e38753b",
+        "1a842eb63c4d3c5ee677a90db63a88e310b4bda84c566c355e25639de26913cd",
+        "0d791e8a380b8b4eae2d8f6210446eb09b67f57ef3afd2b04770f977abcc1859",
+        "4f9ea80deef92f48cc8b448c8abdc1cd1b6bdcd19b4db92a557dca397b72d038",
+        "2006d123507b5eda26e5869f22b21235483606649f30f4090c7d359f1c6089cf",
+        "7000163f62cb1ae4e57e0cd726bbdd507b2be491b015fefe576aac3783d5f505",
+        "b9afb0338eba079c66894903df7778ce07778dd7ce8deef25fc70243c49c4580",
+        "9e61ff6b77bf3aa7ee0810ed38ce01fc092135fce9d257c8772a540edee0f6dd",
+        "e3e13eecb364a576a1469f60eb171a435a142dfd522c8df2cfd707053bd486d3",
+        "fc63a6814dd29f203c3c6d6b28b56244b3ce3e2c2ab063414f34131f9c29723f",
+        "1f53051475206f74d4e036fb6a327f70aa5ecbaaffe01a85788505385e1f1428",
+        "3da53546fc4fa2077b680143d42115eedf70d0d27193b7ba56bacf2b167221b9",
+        "f78447817e85908e450963bba97e8c750a5c559adaeacbe5ea7809e25edb73dc",
+        "dd78ae0d169b4662b001faa44f393dd648adb3daa1c36469fe700fa95fc3b1d8",
+        "0cae76bb09f1f7082207047aeb55f15e62bfc71c40be00697bfaf2607c3c9cc9",
+        "512580df68f10760fc168fba288bd7d9690571408680ecd005d8791565a2e8e7",
+        "78ac07a438b681e60e26f678ec5f0d6d745a1e2450221d2eccdad4120c6b7f1d",
+        "4adef2a47a0f4e57055ad293f92d2670beaf65ed607d07f76b604ca85f117a27",
+        "f790d0b917308c8453c4165b9df9fa731f609bb5213f2835cb09a19f3286a1d4",
+        "2fcd80cececa12f42627e7688a536922f13732690659ab978766d950f92b34e7",
+        "3c1be247dbc9e7d82834391913b24a04753aca20f37aac6256527770a1163306",
+        "3fc2cb0ccb446525358565c510ee2d7105e2d41b0196e17f949b335574baf8e6",
+        "e7df4561bdac4aa2ff5c70b3fed256bd9321962c24e35175d32edd4bdb1bcfa4",
+        "ea4de7c577d8ec328637b85263e8d7f76e3f6ca9386a3b96b5957a7d0463fa27",
+        "a97e48944fbf10edce502beaaeab6f8008b5cd20e6dba29e282d3ae17ebb9e3a",
+        "23b2b315ed63f42fb8f883a6e423e2eacf05543e954dda587cbecac9789966c0",
+        "1ae292307be1c8abb8e9d6ec39d89bae15a54a018954df394a70fdb46b845dae",
+        "93ecf343d23d2baf8a50b2de1918729e87a218404599f8cdea4fd92f7304b7d4",
+        "5ef1e257decc6ea832cea1a6b985f81bbb6aa9d6ea02a2fc8cfd06585128e993",
+        "ac8ac3048abab596fdddd4c31526ab7d9f495dd8e7f43bc000a8c34ddc644282",
+        "2fcdf000c9779a3d45561cd3a06a032980d7e6acdaab052b28f27923d87ab0cc",
+        "bc714455b1bd4215d83aa8338ba1afa913b63d45cdfd9a1382c63fd7b8fa3f1b",
+        "eaf79ebb5d75e17ba3e43de20d8356fc63297252b9601649a6c161d71bcfc775",
+        "3d73345e5df9a6543d826619449f0e43849b6dc15425f21bf26451013643ffa2",
+        "986d11bb6dea42436d3cdee913fcd0e859c55b874ed7caa9a87492966d867380",
+        "245f2e3d3aa5b9578f472f0fb001cc89469d19bbf6bf878cfba756869252ece4",
+        "545a5a7a941af7af59edabbaf0115c6599f130a6efb34562384384f1abb1cbb1",
+        "63ecd6ff20ad1464681f7e07c6d48e0bfde90ca47c3b2c89ec193619769c2729",
+        "8e506ca9281a0390585f667d036eb2d629eec78247c27fdb4bdc33e9c2009721",
+        "4e570ff45c06e4897f282a8c1335473490450893bbe16639691ce77307c82601",
+        "2638f019ed95bc0aeec62c22662bd76337dfddcc4d29a4f579db9ddd55ae2184",
+        "be73517fa699041f6fbad01a69af6c88fe0b6a410531d2019d854814273ab398",
+        "0879480112b18752de3f823876c6d75b770e57be6b61eb6a8af2375293e3830d",
+        "22c60926d92833fbca527ee6171debf56cf3c3fc3ccb6f7b628ede4de2f9d889",
+        "4379138e4c3a3b78fb038d4fe44ac1101b6e26598e6f01596f9e5001fa3a76c3",
+        "07a1ccd53dfe7837ce34f90bbc64eca0107c720ee333742ce6d07a3a72d67d92",
+        "0cfe13238cb14578af2fb43624df650c732796fd38c1416e7ec917f38940d00d",
+        "590cd9f3872d4ca8dad7e7e002e2b79ac3484119970fcca84a70956db6b0adb8",
+        "afe6f7468058e4546260cce65b36354f0fd24d9a122cba6d5d53856186bb2899",
+        "bca617264c9b135a719397de465a2c317d127cc613978b723511ccd3371ddbfd",
+        "cf1d78793707e056081318166d17262acc074de9580fa3228306771e2d81806d",
+        "ac99b3e3389bd6ec42ba53f9d61e11805aa27f206ef833ceefff6f32ac3fce8f"
+      ],
+      "reason": "No supported allocation of this aggregate to transfer dates and transfer-time values. Excluded from compounding; the seed amount is retained only as an unresolved reference, not an additional balance. Half of an ESTIMATED ~$3.9B face value. Per ICIJ/NYT Paradise Papers reporting, Simons Foundation International (a Bermuda charity created 2011, no public filings) received \"more than half of the Lord Jim Trust's assets\" between its creation and the November 2017 reporting; the trust held $7.25B at its December 2010 division, in which Jim Simons retained a 54% share (~$3.9B) while the children's sub-trusts (excluded - their money) took the rest. The estimate uses the 2010 valuation of Jim's share; SFI's ~$8B of assets by 2017 reflect additional Medallion-fund investment returns inside SFI, which are NOT donations and are excluded. Date approximated to the ICIJ publication that observed the completed transfers; the transfers actually occurred over 2011-2017. Joint-era giving recorded at Marilyn's half per the deceased-partner policy. Treat the amount as an order-of-magnitude-confident, precision-poor estimate; no later inflows are recorded (post-death estate transfers would be Jim's, not Marilyn's)."
+    },
+    {
+      "id": "unresolved-d4f056118f07",
+      "donorIds": [
+        "michael-bloomberg"
+      ],
+      "amountUSD": 21000000000,
+      "period": "Unresolved; see source notes",
+      "sourceFingerprint": "d4f056118f07bbf63a0cf45a57142ef70b459609d6163481caac868436a927a6",
+      "sourceIds": [
+        "https://gist.github.com/elliotolds/5eb6c5c59c7d0e3dd5b37ef62e4003cd#file-michael_bloomberg_donations-md"
+      ],
+      "overlapLinks": [
+        "8c34896abce980ea3748efcdf3ed1a573c611027f32d9e41e35471ecba9819c2",
+        "734bcf190cbabd88217abd6a5ae2c228110ebc050bddd685123f44e044f7aec5",
+        "ff0028e3702fa5d4a142b8c3e5ff0c9e2d8e144a3350a132332b284144544e25",
+        "3f205f5073e4c8aa42099b1de594132da55179657118c61afb0a5f7eff241514"
+      ],
+      "reason": "No supported allocation of this aggregate to transfer dates and transfer-time values. Excluded from compounding; the seed amount is retained only as an unresolved reference, not an additional balance. "
+    },
+    {
+      "id": "unresolved-d1a5fa8aa85c",
+      "donorIds": [
+        "misha-gurevich"
+      ],
+      "amountUSD": 2000,
+      "period": "Unresolved; see source notes",
+      "sourceFingerprint": "d1a5fa8aa85c1997ba3f497a7a2fd1cc1e508905417c5d0c5b565c227c4bb528",
+      "sourceIds": [
+        "https://intelligence.org/topcontributors/"
+      ],
+      "overlapLinks": [
+        "315781d4978da8133d82ad720fb4624ba9514af376f72dc5df91b8df7981f3d9",
+        "5d223217dd2983ca73c42a28f18af03f0515f4c1f82425152cea19ae7ff4dfc6",
+        "07ea7cce719afacc0584cb39138dff58f4d9bc09c44183898c2227ae9236eab3",
+        "ea3c58014143897fdd875109b616c6479ba103edc8c629fa60026898a8274f8c",
+        "a8b309e4412f4219a97dbeaf8a9a4ba7a7731290a33140c2adbae2d149dc227a",
+        "1ef83931af581adca8340f33c3f18f8cbd871c44b6b987dc815d6d0ab2cbb7c8",
+        "6d6bb37491fa266637021498fe9dca832c78c4e42a6845d92d7c7f060086bd76",
+        "2f968cc65e04988d62582386f78a2cf369efab72fbb57ebef2189e654a6625ec",
+        "cd64e3af80f9892c11cad0fb34a446f86ba3dd4885eee12251a095ac65c4ef52"
+      ],
+      "reason": "No supported allocation of this aggregate to transfer dates and transfer-time values. Excluded from compounding; the seed amount is retained only as an unresolved reference, not an additional balance. Estimated reconciliation balance between MIRI's published $52,370 lifetime total (updated April 30, 2026) and the $50,370 reconstructed through 2018 by the archived-page tracker. The exact timing and number of gifts are not public. MIRI lists Gurevich as a past contributor, meaning less than $500 arrived in the five years before the page update; for modeling, this row treats most of the balance as spread from January 2019 through April 2021 and uses the approximate midpoint, March 1, 2020."
+    },
+    {
+      "id": "unresolved-2f968cc65e04",
+      "donorIds": [
+        "misha-gurevich"
+      ],
+      "amountUSD": 158000,
+      "period": "Unresolved; see source notes",
+      "sourceFingerprint": "2f968cc65e04988d62582386f78a2cf369efab72fbb57ebef2189e654a6625ec",
+      "sourceIds": [
+        "https://www.lesswrong.com/leaderboard"
+      ],
+      "overlapLinks": [
+        "315781d4978da8133d82ad720fb4624ba9514af376f72dc5df91b8df7981f3d9",
+        "5d223217dd2983ca73c42a28f18af03f0515f4c1f82425152cea19ae7ff4dfc6",
+        "07ea7cce719afacc0584cb39138dff58f4d9bc09c44183898c2227ae9236eab3",
+        "ea3c58014143897fdd875109b616c6479ba103edc8c629fa60026898a8274f8c",
+        "a8b309e4412f4219a97dbeaf8a9a4ba7a7731290a33140c2adbae2d149dc227a",
+        "1ef83931af581adca8340f33c3f18f8cbd871c44b6b987dc815d6d0ab2cbb7c8",
+        "6d6bb37491fa266637021498fe9dca832c78c4e42a6845d92d7c7f060086bd76",
+        "d1a5fa8aa85c1997ba3f497a7a2fd1cc1e508905417c5d0c5b565c227c4bb528",
+        "cd64e3af80f9892c11cad0fb34a446f86ba3dd4885eee12251a095ac65c4ef52"
+      ],
+      "reason": "No supported allocation of this aggregate to transfer dates and transfer-time values. Excluded from compounding; the seed amount is retained only as an unresolved reference, not an additional balance. Estimated reconciliation balance between LessWrong's published $308,000 cumulative Lightcone total and the separately documented $150,000 fundraiser gift below. The source does not publish the component gifts or their dates, so this balance may combine multiple gifts. For modeling, this row treats the balance as spread over an assumed January 2021 through January 2026 period and uses the approximate midpoint, July 1, 2023."
+    },
+    {
+      "id": "unresolved-0dfad9fad584",
+      "donorIds": [
+        "oprah-winfrey"
+      ],
+      "amountUSD": 400000000,
+      "period": "Unresolved; see source notes",
+      "sourceFingerprint": "0dfad9fad5840652950b6329e0c63f10dc7470d694868b7d0f4d9183bf7c3b92",
+      "sourceIds": [
+        "https://en.wikipedia.org/wiki/Oprah_Winfrey#Philanthropy"
+      ],
+      "overlapLinks": [
+        "b50fc2670583dae59861a793b0c5dad1131fbba9c3aa4129780692a82db0f1cd",
+        "6628b57c9aac99d548e8caaec0e104775b5753558b2279103c2db3f93a090bb2",
+        "5cb5f2b3856bd5ddd6c3226f04ca3e4ab09888bc42a0bc72989cf762b8cda1dc",
+        "36d025531000829821acaa4ccd362e08f013e390ac5ca421333bd43c76dd83d5",
+        "0e2d693ed4be7c112199385233f611ee9a1cfd038fecbd6337cd47d7d0cbec95",
+        "ef87d42d37537f0bba8d7d2280e33c6c14a2e905e23f1114aef3bab15a576974",
+        "4abc422efd1bd4f35a238a61a8c7789df639978275fc327739d802a60b553077",
+        "a8213417e1f963fa229c7e0d033f7a2f7326623e74370581fe95993698f20d5f",
+        "cb4785927cc422f9ccf4f2429399fdcfc8b0afdd14a949171bd8ccfb6997ff79"
+      ],
+      "reason": "No supported allocation of this aggregate to transfer dates and transfer-time values. Excluded from compounding; the seed amount is retained only as an unresolved reference, not an additional balance. Aggregate floor for education giving through early 2012. The cited philanthropy summary, referencing Forbes/Philanthropy 50 reporting, says Winfrey had given about $400M to educational causes by 2012. This row subsumes pre-2013 education gifts and vehicle-funded education grants, including the Oprah Winfrey Leadership Academy for Girls, Morehouse scholarships then known, and predecessor foundation/Angel Network education work."
+    },
+    {
+      "id": "unresolved-5d2e2562f9d5",
+      "donorIds": [
+        "peter-thiel"
+      ],
+      "amountUSD": 1627000,
+      "period": "Unresolved; see source notes",
+      "sourceFingerprint": "5d2e2562f9d50b3ee582e96b80faacc5458c29654fac611136eacb530955546e",
+      "sourceIds": [
+        "https://en.wikipedia.org/wiki/Thiel_Foundation"
+      ],
+      "overlapLinks": [
+        "465294c7c5c033235d9b85bf764ed4a1fa86d8c2be7b9b412f52e5a87ac0167c",
+        "da8b1dd955a4a6e991b07ba7e656a41a06f79883de42f60504ba3943677f997f",
+        "45c7e14d8758ced5c49ea1372efb37be506d3e6b4b734f5b136b9b60e5a9e3be",
+        "d7f6d65d0a615b648c798da8f61ecf08a91bfb0954ba63b7291e4e42bee99901",
+        "48fb2981dc6c9f57e06735f1ff956886e35a6f361459f761bba92ffe5c26ffc7",
+        "16bbcc4e2ca2cc351c80c1c149bbef2d4b19760789c769429a8305643194734d",
+        "693c0a446a09778f0b1d82915f911e8e9237cbba9f55d1c5f875dc5bc3b28302",
+        "5a4ee72629de4ec62f8f5f32e70858ac3bc9430df2a863bf07ec73050c338f05",
+        "8392b60bf6f43a30211e7c1c397fde78cc8cfc837ff6f9c13c0b9b092c521a9e",
+        "8aa24c392330ad9a179cd748515ff7f04c027dde019d083c21eba0b4526df816",
+        "06a821b35e19110f5f662b68ad2163380c1bfcbe3d9a38f1de4a077927e285e7",
+        "28606ce0c70a533d259243abe1cffa011ad6e6cbda0d3f0c9a91c5054fbe9b97",
+        "74682896af03b7eabaee2cb3ae398b92b2704dab796f1b5305e5e8ad63cc8c3a",
+        "daebb4de0d1d0e3a0c3703b2df44f4b76609ee4eb18acbcdca6b3cdedf935615",
+        "f6c473b8289923775d77afce42d3c57e94cf801bf11956f0eb2f1f873d9b8a70",
+        "d276665c596acdb7d590a31fd9ba401a44b766c7f6be09b1cd03a418d7487981",
+        "effe464b8446a6c536145539f70ca8aa46b770887d588a81989813f1db99f043",
+        "82e9c6c542d5763a709236a41ac66715ea4bdcf812dcadc5b4a13e764562a14e"
+      ],
+      "reason": "No supported allocation of this aggregate to transfer dates and transfer-time values. Excluded from compounding; the seed amount is retained only as an unresolved reference, not an additional balance. CUMULATIVE through 2021. First donation Feb 2006 ($100K matching for Singularity Challenge), May 2007 ($200K matching), plus ongoing foundation grants. MIRI lists Thiel Foundation as major donor ($500K+)."
+    },
+    {
+      "id": "unresolved-465294c7c5c0",
+      "donorIds": [
+        "peter-thiel"
+      ],
+      "amountUSD": 6000000,
+      "period": "Unresolved; see source notes",
+      "sourceFingerprint": "465294c7c5c033235d9b85bf764ed4a1fa86d8c2be7b9b412f52e5a87ac0167c",
+      "sourceIds": [
+        "https://www.fightaging.org/archives/2015/03/a-look-at-peter-thiels-biotechnology-investments/"
+      ],
+      "overlapLinks": [
+        "5d2e2562f9d50b3ee582e96b80faacc5458c29654fac611136eacb530955546e",
+        "da8b1dd955a4a6e991b07ba7e656a41a06f79883de42f60504ba3943677f997f",
+        "45c7e14d8758ced5c49ea1372efb37be506d3e6b4b734f5b136b9b60e5a9e3be",
+        "d7f6d65d0a615b648c798da8f61ecf08a91bfb0954ba63b7291e4e42bee99901",
+        "48fb2981dc6c9f57e06735f1ff956886e35a6f361459f761bba92ffe5c26ffc7",
+        "16bbcc4e2ca2cc351c80c1c149bbef2d4b19760789c769429a8305643194734d",
+        "693c0a446a09778f0b1d82915f911e8e9237cbba9f55d1c5f875dc5bc3b28302",
+        "5a4ee72629de4ec62f8f5f32e70858ac3bc9430df2a863bf07ec73050c338f05",
+        "8392b60bf6f43a30211e7c1c397fde78cc8cfc837ff6f9c13c0b9b092c521a9e",
+        "8aa24c392330ad9a179cd748515ff7f04c027dde019d083c21eba0b4526df816",
+        "06a821b35e19110f5f662b68ad2163380c1bfcbe3d9a38f1de4a077927e285e7",
+        "28606ce0c70a533d259243abe1cffa011ad6e6cbda0d3f0c9a91c5054fbe9b97",
+        "74682896af03b7eabaee2cb3ae398b92b2704dab796f1b5305e5e8ad63cc8c3a",
+        "daebb4de0d1d0e3a0c3703b2df44f4b76609ee4eb18acbcdca6b3cdedf935615",
+        "f6c473b8289923775d77afce42d3c57e94cf801bf11956f0eb2f1f873d9b8a70",
+        "d276665c596acdb7d590a31fd9ba401a44b766c7f6be09b1cd03a418d7487981",
+        "effe464b8446a6c536145539f70ca8aa46b770887d588a81989813f1db99f043",
+        "82e9c6c542d5763a709236a41ac66715ea4bdcf812dcadc5b4a13e764562a14e"
+      ],
+      "reason": "No supported allocation of this aggregate to transfer dates and transfer-time values. Excluded from compounding; the seed amount is retained only as an unresolved reference, not an additional balance. CUMULATIVE through 2014. Announced Sept 2006 with $3.5M pledge ($500K direct plus $3M matching). By 2014 sources indicate over $6M total to anti-aging research. Thiel Foundation also funds SENS Foundation and researcher Cynthia Kenyon."
+    },
+    {
+      "id": "unresolved-da8b1dd955a4",
+      "donorIds": [
+        "peter-thiel"
+      ],
+      "amountUSD": 1250000,
+      "period": "Unresolved; see source notes",
+      "sourceFingerprint": "da8b1dd955a4a6e991b07ba7e656a41a06f79883de42f60504ba3943677f997f",
+      "sourceIds": [
+        "https://en.wikipedia.org/wiki/Thiel_Foundation"
+      ],
+      "overlapLinks": [
+        "5d2e2562f9d50b3ee582e96b80faacc5458c29654fac611136eacb530955546e",
+        "465294c7c5c033235d9b85bf764ed4a1fa86d8c2be7b9b412f52e5a87ac0167c",
+        "45c7e14d8758ced5c49ea1372efb37be506d3e6b4b734f5b136b9b60e5a9e3be",
+        "d7f6d65d0a615b648c798da8f61ecf08a91bfb0954ba63b7291e4e42bee99901",
+        "48fb2981dc6c9f57e06735f1ff956886e35a6f361459f761bba92ffe5c26ffc7",
+        "16bbcc4e2ca2cc351c80c1c149bbef2d4b19760789c769429a8305643194734d",
+        "693c0a446a09778f0b1d82915f911e8e9237cbba9f55d1c5f875dc5bc3b28302",
+        "5a4ee72629de4ec62f8f5f32e70858ac3bc9430df2a863bf07ec73050c338f05",
+        "8392b60bf6f43a30211e7c1c397fde78cc8cfc837ff6f9c13c0b9b092c521a9e",
+        "8aa24c392330ad9a179cd748515ff7f04c027dde019d083c21eba0b4526df816",
+        "06a821b35e19110f5f662b68ad2163380c1bfcbe3d9a38f1de4a077927e285e7",
+        "28606ce0c70a533d259243abe1cffa011ad6e6cbda0d3f0c9a91c5054fbe9b97",
+        "74682896af03b7eabaee2cb3ae398b92b2704dab796f1b5305e5e8ad63cc8c3a",
+        "daebb4de0d1d0e3a0c3703b2df44f4b76609ee4eb18acbcdca6b3cdedf935615",
+        "f6c473b8289923775d77afce42d3c57e94cf801bf11956f0eb2f1f873d9b8a70",
+        "d276665c596acdb7d590a31fd9ba401a44b766c7f6be09b1cd03a418d7487981",
+        "effe464b8446a6c536145539f70ca8aa46b770887d588a81989813f1db99f043",
+        "82e9c6c542d5763a709236a41ac66715ea4bdcf812dcadc5b4a13e764562a14e"
+      ],
+      "reason": "No supported allocation of this aggregate to transfer dates and transfer-time values. Excluded from compounding; the seed amount is retained only as an unresolved reference, not an additional balance. CUMULATIVE through Aug 2011. Initial $500K personal pledge (Apr 2008), $250K grant (Feb 2010), $100K matching funds. Mission to create autonomous ocean communities."
+    },
+    {
+      "id": "unresolved-45c7e14d8758",
+      "donorIds": [
+        "peter-thiel"
+      ],
+      "amountUSD": 1075000,
+      "period": "Unresolved; see source notes",
+      "sourceFingerprint": "45c7e14d8758ced5c49ea1372efb37be506d3e6b4b734f5b136b9b60e5a9e3be",
+      "sourceIds": [
+        "https://cpj.org/2016/05/cpj-reacts-to-reports-that-peter-thiel-has-funded/"
+      ],
+      "overlapLinks": [
+        "5d2e2562f9d50b3ee582e96b80faacc5458c29654fac611136eacb530955546e",
+        "465294c7c5c033235d9b85bf764ed4a1fa86d8c2be7b9b412f52e5a87ac0167c",
+        "da8b1dd955a4a6e991b07ba7e656a41a06f79883de42f60504ba3943677f997f",
+        "d7f6d65d0a615b648c798da8f61ecf08a91bfb0954ba63b7291e4e42bee99901",
+        "48fb2981dc6c9f57e06735f1ff956886e35a6f361459f761bba92ffe5c26ffc7",
+        "16bbcc4e2ca2cc351c80c1c149bbef2d4b19760789c769429a8305643194734d",
+        "693c0a446a09778f0b1d82915f911e8e9237cbba9f55d1c5f875dc5bc3b28302",
+        "5a4ee72629de4ec62f8f5f32e70858ac3bc9430df2a863bf07ec73050c338f05",
+        "8392b60bf6f43a30211e7c1c397fde78cc8cfc837ff6f9c13c0b9b092c521a9e",
+        "8aa24c392330ad9a179cd748515ff7f04c027dde019d083c21eba0b4526df816",
+        "06a821b35e19110f5f662b68ad2163380c1bfcbe3d9a38f1de4a077927e285e7",
+        "28606ce0c70a533d259243abe1cffa011ad6e6cbda0d3f0c9a91c5054fbe9b97",
+        "74682896af03b7eabaee2cb3ae398b92b2704dab796f1b5305e5e8ad63cc8c3a",
+        "daebb4de0d1d0e3a0c3703b2df44f4b76609ee4eb18acbcdca6b3cdedf935615",
+        "f6c473b8289923775d77afce42d3c57e94cf801bf11956f0eb2f1f873d9b8a70",
+        "d276665c596acdb7d590a31fd9ba401a44b766c7f6be09b1cd03a418d7487981",
+        "effe464b8446a6c536145539f70ca8aa46b770887d588a81989813f1db99f043",
+        "82e9c6c542d5763a709236a41ac66715ea4bdcf812dcadc5b4a13e764562a14e"
+      ],
+      "reason": "No supported allocation of this aggregate to transfer dates and transfer-time values. Excluded from compounding; the seed amount is retained only as an unresolved reference, not an additional balance. CUMULATIVE July 2008 - January 2013. CPJ confirmed \"significant financial support\" from Thiel and Thiel Foundation during this period. Wikipedia says over $1M. CPJ promotes journalist rights and press freedom."
+    },
+    {
+      "id": "unresolved-16bbcc4e2ca2",
+      "donorIds": [
+        "peter-thiel"
+      ],
+      "amountUSD": 32000000,
+      "period": "Unresolved; see source notes",
+      "sourceFingerprint": "16bbcc4e2ca2cc351c80c1c149bbef2d4b19760789c769429a8305643194734d",
+      "sourceIds": [
+        "https://www.businesswire.com/news/home/20250522267532/en/Thiel-Foundation-Announces-2025-Class-of-Thiel-Fellows"
+      ],
+      "overlapLinks": [
+        "5d2e2562f9d50b3ee582e96b80faacc5458c29654fac611136eacb530955546e",
+        "465294c7c5c033235d9b85bf764ed4a1fa86d8c2be7b9b412f52e5a87ac0167c",
+        "da8b1dd955a4a6e991b07ba7e656a41a06f79883de42f60504ba3943677f997f",
+        "45c7e14d8758ced5c49ea1372efb37be506d3e6b4b734f5b136b9b60e5a9e3be",
+        "d7f6d65d0a615b648c798da8f61ecf08a91bfb0954ba63b7291e4e42bee99901",
+        "48fb2981dc6c9f57e06735f1ff956886e35a6f361459f761bba92ffe5c26ffc7",
+        "693c0a446a09778f0b1d82915f911e8e9237cbba9f55d1c5f875dc5bc3b28302",
+        "5a4ee72629de4ec62f8f5f32e70858ac3bc9430df2a863bf07ec73050c338f05",
+        "8392b60bf6f43a30211e7c1c397fde78cc8cfc837ff6f9c13c0b9b092c521a9e",
+        "8aa24c392330ad9a179cd748515ff7f04c027dde019d083c21eba0b4526df816",
+        "06a821b35e19110f5f662b68ad2163380c1bfcbe3d9a38f1de4a077927e285e7",
+        "28606ce0c70a533d259243abe1cffa011ad6e6cbda0d3f0c9a91c5054fbe9b97",
+        "74682896af03b7eabaee2cb3ae398b92b2704dab796f1b5305e5e8ad63cc8c3a",
+        "daebb4de0d1d0e3a0c3703b2df44f4b76609ee4eb18acbcdca6b3cdedf935615",
+        "f6c473b8289923775d77afce42d3c57e94cf801bf11956f0eb2f1f873d9b8a70",
+        "d276665c596acdb7d590a31fd9ba401a44b766c7f6be09b1cd03a418d7487981",
+        "effe464b8446a6c536145539f70ca8aa46b770887d588a81989813f1db99f043",
+        "82e9c6c542d5763a709236a41ac66715ea4bdcf812dcadc5b4a13e764562a14e"
+      ],
+      "reason": "No supported allocation of this aggregate to transfer dates and transfer-time values. Excluded from compounding; the seed amount is retained only as an unresolved reference, not an additional balance. CUMULATIVE 2011-2024. First class announced May 2011. ~290 fellows at $100K each (2011-2024), increased to $200K for 2025. Internal Thiel Foundation program paying young people to skip college. Fellows have founded companies worth $750B+ including Ethereum, Figma, Anthropic."
+    },
+    {
+      "id": "unresolved-693c0a446a09",
+      "donorIds": [
+        "peter-thiel"
+      ],
+      "amountUSD": 500000,
+      "period": "Unresolved; see source notes",
+      "sourceFingerprint": "693c0a446a09778f0b1d82915f911e8e9237cbba9f55d1c5f875dc5bc3b28302",
+      "sourceIds": [
+        "https://en.wikipedia.org/wiki/Peter_Thiel"
+      ],
+      "overlapLinks": [
+        "5d2e2562f9d50b3ee582e96b80faacc5458c29654fac611136eacb530955546e",
+        "465294c7c5c033235d9b85bf764ed4a1fa86d8c2be7b9b412f52e5a87ac0167c",
+        "da8b1dd955a4a6e991b07ba7e656a41a06f79883de42f60504ba3943677f997f",
+        "45c7e14d8758ced5c49ea1372efb37be506d3e6b4b734f5b136b9b60e5a9e3be",
+        "d7f6d65d0a615b648c798da8f61ecf08a91bfb0954ba63b7291e4e42bee99901",
+        "48fb2981dc6c9f57e06735f1ff956886e35a6f361459f761bba92ffe5c26ffc7",
+        "16bbcc4e2ca2cc351c80c1c149bbef2d4b19760789c769429a8305643194734d",
+        "5a4ee72629de4ec62f8f5f32e70858ac3bc9430df2a863bf07ec73050c338f05",
+        "8392b60bf6f43a30211e7c1c397fde78cc8cfc837ff6f9c13c0b9b092c521a9e",
+        "8aa24c392330ad9a179cd748515ff7f04c027dde019d083c21eba0b4526df816",
+        "06a821b35e19110f5f662b68ad2163380c1bfcbe3d9a38f1de4a077927e285e7",
+        "28606ce0c70a533d259243abe1cffa011ad6e6cbda0d3f0c9a91c5054fbe9b97",
+        "74682896af03b7eabaee2cb3ae398b92b2704dab796f1b5305e5e8ad63cc8c3a",
+        "daebb4de0d1d0e3a0c3703b2df44f4b76609ee4eb18acbcdca6b3cdedf935615",
+        "f6c473b8289923775d77afce42d3c57e94cf801bf11956f0eb2f1f873d9b8a70",
+        "d276665c596acdb7d590a31fd9ba401a44b766c7f6be09b1cd03a418d7487981",
+        "effe464b8446a6c536145539f70ca8aa46b770887d588a81989813f1db99f043",
+        "82e9c6c542d5763a709236a41ac66715ea4bdcf812dcadc5b4a13e764562a14e"
+      ],
+      "reason": "No supported allocation of this aggregate to transfer dates and transfer-time values. Excluded from compounding; the seed amount is retained only as an unresolved reference, not an additional balance. CUMULATIVE through 2023. Thiel was featured speaker at 2011 Oslo Freedom Forum. Thiel Foundation listed as ongoing supporter and event sponsor. HRF organizes Oslo Freedom Forum. Amount estimated based on multi-year sponsorship."
+    },
+    {
+      "id": "unresolved-5a4ee72629de",
+      "donorIds": [
+        "peter-thiel"
+      ],
+      "amountUSD": 15000000,
+      "period": "Unresolved; see source notes",
+      "sourceFingerprint": "5a4ee72629de4ec62f8f5f32e70858ac3bc9430df2a863bf07ec73050c338f05",
+      "sourceIds": [
+        "https://www.fightaging.org/archives/2015/03/a-look-at-peter-thiels-biotechnology-investments/"
+      ],
+      "overlapLinks": [
+        "5d2e2562f9d50b3ee582e96b80faacc5458c29654fac611136eacb530955546e",
+        "465294c7c5c033235d9b85bf764ed4a1fa86d8c2be7b9b412f52e5a87ac0167c",
+        "da8b1dd955a4a6e991b07ba7e656a41a06f79883de42f60504ba3943677f997f",
+        "45c7e14d8758ced5c49ea1372efb37be506d3e6b4b734f5b136b9b60e5a9e3be",
+        "d7f6d65d0a615b648c798da8f61ecf08a91bfb0954ba63b7291e4e42bee99901",
+        "48fb2981dc6c9f57e06735f1ff956886e35a6f361459f761bba92ffe5c26ffc7",
+        "16bbcc4e2ca2cc351c80c1c149bbef2d4b19760789c769429a8305643194734d",
+        "693c0a446a09778f0b1d82915f911e8e9237cbba9f55d1c5f875dc5bc3b28302",
+        "8392b60bf6f43a30211e7c1c397fde78cc8cfc837ff6f9c13c0b9b092c521a9e",
+        "8aa24c392330ad9a179cd748515ff7f04c027dde019d083c21eba0b4526df816",
+        "06a821b35e19110f5f662b68ad2163380c1bfcbe3d9a38f1de4a077927e285e7",
+        "28606ce0c70a533d259243abe1cffa011ad6e6cbda0d3f0c9a91c5054fbe9b97",
+        "74682896af03b7eabaee2cb3ae398b92b2704dab796f1b5305e5e8ad63cc8c3a",
+        "daebb4de0d1d0e3a0c3703b2df44f4b76609ee4eb18acbcdca6b3cdedf935615",
+        "f6c473b8289923775d77afce42d3c57e94cf801bf11956f0eb2f1f873d9b8a70",
+        "d276665c596acdb7d590a31fd9ba401a44b766c7f6be09b1cd03a418d7487981",
+        "effe464b8446a6c536145539f70ca8aa46b770887d588a81989813f1db99f043",
+        "82e9c6c542d5763a709236a41ac66715ea4bdcf812dcadc5b4a13e764562a14e"
+      ],
+      "reason": "No supported allocation of this aggregate to transfer dates and transfer-time values. Excluded from compounding; the seed amount is retained only as an unresolved reference, not an additional balance. CUMULATIVE 2012-2024. First batch announced April 2012. By 2015 had given $7M to ~24 companies. Portfolio companies raised $1B+ in follow-on funding. Typical grants $350K per company. Internal Thiel Foundation program for early-stage scientific research."
+    },
+    {
+      "id": "unresolved-8aa24c392330",
+      "donorIds": [
+        "peter-thiel"
+      ],
+      "amountUSD": 2000000,
+      "period": "Unresolved; see source notes",
+      "sourceFingerprint": "8aa24c392330ad9a179cd748515ff7f04c027dde019d083c21eba0b4526df816",
+      "sourceIds": [
+        "https://www.insidephilanthropy.com/find-a-grant/grants-t/thiel-foundation"
+      ],
+      "overlapLinks": [
+        "5d2e2562f9d50b3ee582e96b80faacc5458c29654fac611136eacb530955546e",
+        "465294c7c5c033235d9b85bf764ed4a1fa86d8c2be7b9b412f52e5a87ac0167c",
+        "da8b1dd955a4a6e991b07ba7e656a41a06f79883de42f60504ba3943677f997f",
+        "45c7e14d8758ced5c49ea1372efb37be506d3e6b4b734f5b136b9b60e5a9e3be",
+        "d7f6d65d0a615b648c798da8f61ecf08a91bfb0954ba63b7291e4e42bee99901",
+        "48fb2981dc6c9f57e06735f1ff956886e35a6f361459f761bba92ffe5c26ffc7",
+        "16bbcc4e2ca2cc351c80c1c149bbef2d4b19760789c769429a8305643194734d",
+        "693c0a446a09778f0b1d82915f911e8e9237cbba9f55d1c5f875dc5bc3b28302",
+        "5a4ee72629de4ec62f8f5f32e70858ac3bc9430df2a863bf07ec73050c338f05",
+        "8392b60bf6f43a30211e7c1c397fde78cc8cfc837ff6f9c13c0b9b092c521a9e",
+        "06a821b35e19110f5f662b68ad2163380c1bfcbe3d9a38f1de4a077927e285e7",
+        "28606ce0c70a533d259243abe1cffa011ad6e6cbda0d3f0c9a91c5054fbe9b97",
+        "74682896af03b7eabaee2cb3ae398b92b2704dab796f1b5305e5e8ad63cc8c3a",
+        "daebb4de0d1d0e3a0c3703b2df44f4b76609ee4eb18acbcdca6b3cdedf935615",
+        "f6c473b8289923775d77afce42d3c57e94cf801bf11956f0eb2f1f873d9b8a70",
+        "d276665c596acdb7d590a31fd9ba401a44b766c7f6be09b1cd03a418d7487981",
+        "effe464b8446a6c536145539f70ca8aa46b770887d588a81989813f1db99f043",
+        "82e9c6c542d5763a709236a41ac66715ea4bdcf812dcadc5b4a13e764562a14e"
+      ],
+      "reason": "No supported allocation of this aggregate to transfer dates and transfer-time values. Excluded from compounding; the seed amount is retained only as an unresolved reference, not an additional balance. CUMULATIVE through 2023. Internal Thiel Foundation project supporting René Girard mimetic theory research. Includes grants to Colloquium on Violence and Religion, Cornerstone Forum, and Lumen Christi Foundation. Girard was Thiel mentor at Stanford."
+    },
+    {
+      "id": "unresolved-06a821b35e19",
+      "donorIds": [
+        "peter-thiel"
+      ],
+      "amountUSD": 400000,
+      "period": "Unresolved; see source notes",
+      "sourceFingerprint": "06a821b35e19110f5f662b68ad2163380c1bfcbe3d9a38f1de4a077927e285e7",
+      "sourceIds": [
+        "https://www.insidephilanthropy.com/find-a-grant/grants-t/thiel-foundation"
+      ],
+      "overlapLinks": [
+        "5d2e2562f9d50b3ee582e96b80faacc5458c29654fac611136eacb530955546e",
+        "465294c7c5c033235d9b85bf764ed4a1fa86d8c2be7b9b412f52e5a87ac0167c",
+        "da8b1dd955a4a6e991b07ba7e656a41a06f79883de42f60504ba3943677f997f",
+        "45c7e14d8758ced5c49ea1372efb37be506d3e6b4b734f5b136b9b60e5a9e3be",
+        "d7f6d65d0a615b648c798da8f61ecf08a91bfb0954ba63b7291e4e42bee99901",
+        "48fb2981dc6c9f57e06735f1ff956886e35a6f361459f761bba92ffe5c26ffc7",
+        "16bbcc4e2ca2cc351c80c1c149bbef2d4b19760789c769429a8305643194734d",
+        "693c0a446a09778f0b1d82915f911e8e9237cbba9f55d1c5f875dc5bc3b28302",
+        "5a4ee72629de4ec62f8f5f32e70858ac3bc9430df2a863bf07ec73050c338f05",
+        "8392b60bf6f43a30211e7c1c397fde78cc8cfc837ff6f9c13c0b9b092c521a9e",
+        "8aa24c392330ad9a179cd748515ff7f04c027dde019d083c21eba0b4526df816",
+        "28606ce0c70a533d259243abe1cffa011ad6e6cbda0d3f0c9a91c5054fbe9b97",
+        "74682896af03b7eabaee2cb3ae398b92b2704dab796f1b5305e5e8ad63cc8c3a",
+        "daebb4de0d1d0e3a0c3703b2df44f4b76609ee4eb18acbcdca6b3cdedf935615",
+        "f6c473b8289923775d77afce42d3c57e94cf801bf11956f0eb2f1f873d9b8a70",
+        "d276665c596acdb7d590a31fd9ba401a44b766c7f6be09b1cd03a418d7487981",
+        "effe464b8446a6c536145539f70ca8aa46b770887d588a81989813f1db99f043",
+        "82e9c6c542d5763a709236a41ac66715ea4bdcf812dcadc5b4a13e764562a14e"
+      ],
+      "reason": "No supported allocation of this aggregate to transfer dates and transfer-time values. Excluded from compounding; the seed amount is retained only as an unresolved reference, not an additional balance. CUMULATIVE through 2023. Foundation has given \"at least $400,000\" to Center for the Advancement of Objectivism per Inside Philanthropy. Think tank promoting Ayn Rand philosophy."
+    },
+    {
+      "id": "unresolved-28606ce0c70a",
+      "donorIds": [
+        "peter-thiel"
+      ],
+      "amountUSD": 250000,
+      "period": "Unresolved; see source notes",
+      "sourceFingerprint": "28606ce0c70a533d259243abe1cffa011ad6e6cbda0d3f0c9a91c5054fbe9b97",
+      "sourceIds": [
+        "https://www.insidephilanthropy.com/find-a-grant/grants-t/thiel-foundation"
+      ],
+      "overlapLinks": [
+        "5d2e2562f9d50b3ee582e96b80faacc5458c29654fac611136eacb530955546e",
+        "465294c7c5c033235d9b85bf764ed4a1fa86d8c2be7b9b412f52e5a87ac0167c",
+        "da8b1dd955a4a6e991b07ba7e656a41a06f79883de42f60504ba3943677f997f",
+        "45c7e14d8758ced5c49ea1372efb37be506d3e6b4b734f5b136b9b60e5a9e3be",
+        "d7f6d65d0a615b648c798da8f61ecf08a91bfb0954ba63b7291e4e42bee99901",
+        "48fb2981dc6c9f57e06735f1ff956886e35a6f361459f761bba92ffe5c26ffc7",
+        "16bbcc4e2ca2cc351c80c1c149bbef2d4b19760789c769429a8305643194734d",
+        "693c0a446a09778f0b1d82915f911e8e9237cbba9f55d1c5f875dc5bc3b28302",
+        "5a4ee72629de4ec62f8f5f32e70858ac3bc9430df2a863bf07ec73050c338f05",
+        "8392b60bf6f43a30211e7c1c397fde78cc8cfc837ff6f9c13c0b9b092c521a9e",
+        "8aa24c392330ad9a179cd748515ff7f04c027dde019d083c21eba0b4526df816",
+        "06a821b35e19110f5f662b68ad2163380c1bfcbe3d9a38f1de4a077927e285e7",
+        "74682896af03b7eabaee2cb3ae398b92b2704dab796f1b5305e5e8ad63cc8c3a",
+        "daebb4de0d1d0e3a0c3703b2df44f4b76609ee4eb18acbcdca6b3cdedf935615",
+        "f6c473b8289923775d77afce42d3c57e94cf801bf11956f0eb2f1f873d9b8a70",
+        "d276665c596acdb7d590a31fd9ba401a44b766c7f6be09b1cd03a418d7487981",
+        "effe464b8446a6c536145539f70ca8aa46b770887d588a81989813f1db99f043",
+        "82e9c6c542d5763a709236a41ac66715ea4bdcf812dcadc5b4a13e764562a14e"
+      ],
+      "reason": "No supported allocation of this aggregate to transfer dates and transfer-time values. Excluded from compounding; the seed amount is retained only as an unresolved reference, not an additional balance. CUMULATIVE. Hoover Institution on War, Revolution and Peace at Stanford. Amount estimated based on Inside Philanthropy mention of foundation grants."
+    },
+    {
+      "id": "unresolved-daebb4de0d1d",
+      "donorIds": [
+        "peter-thiel"
+      ],
+      "amountUSD": 2000000,
+      "period": "Unresolved; see source notes",
+      "sourceFingerprint": "daebb4de0d1d0e3a0c3703b2df44f4b76609ee4eb18acbcdca6b3cdedf935615",
+      "sourceIds": [
+        "https://www.insidephilanthropy.com/find-a-grant/grants-t/thiel-foundation"
+      ],
+      "overlapLinks": [
+        "5d2e2562f9d50b3ee582e96b80faacc5458c29654fac611136eacb530955546e",
+        "465294c7c5c033235d9b85bf764ed4a1fa86d8c2be7b9b412f52e5a87ac0167c",
+        "da8b1dd955a4a6e991b07ba7e656a41a06f79883de42f60504ba3943677f997f",
+        "45c7e14d8758ced5c49ea1372efb37be506d3e6b4b734f5b136b9b60e5a9e3be",
+        "d7f6d65d0a615b648c798da8f61ecf08a91bfb0954ba63b7291e4e42bee99901",
+        "48fb2981dc6c9f57e06735f1ff956886e35a6f361459f761bba92ffe5c26ffc7",
+        "16bbcc4e2ca2cc351c80c1c149bbef2d4b19760789c769429a8305643194734d",
+        "693c0a446a09778f0b1d82915f911e8e9237cbba9f55d1c5f875dc5bc3b28302",
+        "5a4ee72629de4ec62f8f5f32e70858ac3bc9430df2a863bf07ec73050c338f05",
+        "8392b60bf6f43a30211e7c1c397fde78cc8cfc837ff6f9c13c0b9b092c521a9e",
+        "8aa24c392330ad9a179cd748515ff7f04c027dde019d083c21eba0b4526df816",
+        "06a821b35e19110f5f662b68ad2163380c1bfcbe3d9a38f1de4a077927e285e7",
+        "28606ce0c70a533d259243abe1cffa011ad6e6cbda0d3f0c9a91c5054fbe9b97",
+        "74682896af03b7eabaee2cb3ae398b92b2704dab796f1b5305e5e8ad63cc8c3a",
+        "f6c473b8289923775d77afce42d3c57e94cf801bf11956f0eb2f1f873d9b8a70",
+        "d276665c596acdb7d590a31fd9ba401a44b766c7f6be09b1cd03a418d7487981",
+        "effe464b8446a6c536145539f70ca8aa46b770887d588a81989813f1db99f043",
+        "82e9c6c542d5763a709236a41ac66715ea4bdcf812dcadc5b4a13e764562a14e"
+      ],
+      "reason": "No supported allocation of this aggregate to transfer dates and transfer-time values. Excluded from compounding; the seed amount is retained only as an unresolved reference, not an additional balance. CUMULATIVE through 2024. $1M seed grant for Emergent Ventures announced July 2018, $250K in 2021, ongoing annual grants. Foundation has consistently funded Mercatus since 2019. Mercatus is libertarian think tank at George Mason University."
+    },
+    {
+      "id": "unresolved-0bf1666a1e17",
+      "donorIds": [
+        "ray-dalio"
+      ],
+      "amountUSD": 443300153,
+      "period": "Unresolved; see source notes",
+      "sourceFingerprint": "0bf1666a1e171be8beaa266e3674039effc35be43caccfc491a0b7fcb326aecd",
+      "sourceIds": [
+        "https://www.bloomberg.com/billionaires/profiles/raymond-t-dalio/"
+      ],
+      "overlapLinks": [
+        "eb2fbe4c9da17f1032b85802ec3f99b9e91928a2809b6d77727e805bb15ca20e",
+        "a523b179e168f09dcd26bc14ec3ed4eeea2a834df69898235aaada3945b62017",
+        "3e6b49c7a53899f7fe0db826c06d34d8d9fe025e1c7990d385680d2cbd03898c",
+        "989ed1c71cb4282c20a885a95ac9c074ac296cbe6c626fe51343904c48f76ea5",
+        "4dcd7b7f563b2e05e25d57f8287e9bb8e59987eb840a50e451c1962794e002f8",
+        "d80962a86efc2c986100e4bfb6931c265a6e593024c65264c9f73a2347c8aa8b",
+        "71a6c260cc730ad7ec9de128801ed29e2573d4dd46fe748380d269163e740157",
+        "218c4ebd6b05b972ecd6341c87bb41c1a1271599dcb4c4de95746cbe4d309b7c",
+        "f4e1e31c51404bf51a73abeea36cf143a14a269e2341b87afcbfe4587fde2196",
+        "8061d3c7938103e9b8f30558d19012f6fb2d64af93e449afd771296078c37334",
+        "cd3ec260eeda086c606e4499dea9ac59ab995b2acf4ad6d2f86690523987c6bb",
+        "da986007ab6d7c7a7cff47d7f070e639179f60b0434239c3a50fff7a3d50d908"
+      ],
+      "reason": "No supported allocation of this aggregate to transfer dates and transfer-time values. Excluded from compounding; the seed amount is retained only as an unresolved reference, not an additional balance. Estimated aggregate floor for Dalio Foundation contributions in ProPublica filing years without extracted line-item data, primarily 2003-2010 and 2016-2018. Bloomberg states that publicly filed foundation tax returns show Dalio has given the foundation more than $2.1B; subtracting the itemized rows in this file implies at least $443.3M not otherwise captured. Date assigned to the end of the latest unparsed filing year. Credited as Ray/Barbara Dalio household and family-vehicle giving; Barbara Dalio is named here rather than given a separate donor file."
+    },
+    {
+      "id": "unresolved-6b286502a225",
+      "donorIds": [
+        "reid-hoffman"
+      ],
+      "amountUSD": 27600000,
+      "period": "Unresolved; see source notes",
+      "sourceFingerprint": "6b286502a225229bae987bdf559b90a42e8966d327ce0da2e9ea945e1b0fa4f9",
+      "sourceIds": [
+        "https://hai.stanford.edu/news/stanford-research-teams-receive-new-hoffman-yee-grant-funding-for-2025"
+      ],
+      "overlapLinks": [
+        "45cdeaa24576f33a95c3b6ca1fdd1d1615046ad1a858cb0b52c0bc38fa6623a8",
+        "3a64b97378661f2186c12d820622116b740382217afc7c230c10c073d5328400",
+        "c621a2b655321e7bdd208ef803cf48b79c39c47e7eaf72bd2a37ffed4ecd39ee",
+        "82214ea660a06921509a7c607ca8fff334de2c56d381bb57e87ae14758cf053f",
+        "28909eb7d2e97da774a5a3a6b7f700d4522fdf1c30f7319d432dbf97a3ab862c",
+        "91c32556943b0a5dc284bea3ffb67e6353c76a72c222e7eea61e1305ad55ed8c",
+        "5ad08664b739505286ae3d6aee9319bf5b4590ea0ddb73695d2ab429e7da07ba",
+        "942e72fc2cf45a2fdf6b19582bdac5633143db560174c50a63ed713e3b628098",
+        "cf896b4b8e1460f962d205144dac5b5a060733d86f31c291f47545a23fa09c8b",
+        "90228d0d4d9d9a8b383423edfa9f8fde56fe17f2591447f4f20ae5b02b16d2d1",
+        "127f6f7a6ea94e984eae771bd0ef5297d7a3fa56ac587e42d70cc1824b908856",
+        "2c2e115e9d9374577192ba1b6b183b6ca322f7a6db2a4ae38bc215da9a34ab7f",
+        "1b944aa7f0054684b4364c0a2e43554a49516304c8af629f071d7782a856ab60",
+        "0131455772c8dc5b586b191000b7a2880aa6a92a8281e67fd38bcea0504bf22b"
+      ],
+      "reason": "No supported allocation of this aggregate to transfer dates and transfer-time values. Excluded from compounding; the seed amount is retained only as an unresolved reference, not an additional balance. Total distributed through 2025. Ongoing multi-year program launched in 2020 funding AI research at Stanford. Teams receive up to $500K in year one with opportunity for up to $2M more over two additional years."
+    },
+    {
+      "id": "unresolved-e3c91257502b",
+      "donorIds": [
+        "shiv-nadar"
+      ],
+      "amountUSD": 1850000000,
+      "period": "Unresolved; see source notes",
+      "sourceFingerprint": "e3c91257502bcdfb285c29b185ad24983f22edb4202b5d2ce5427b541e9bfe1b",
+      "sourceIds": [
+        "https://www.shivnadarfoundation.org/"
+      ],
+      "overlapLinks": [
+        "7e8e1092eb3e60146fdaa75e6894f6139fed9ac26d482c2e44df7ada77fd66b3",
+        "b9e1d542fdb778d249aa910df5d4b0d45efbb653e82ce251ed932dab154ec3fa"
+      ],
+      "reason": "No supported allocation of this aggregate to transfer dates and transfer-time values. Excluded from compounding; the seed amount is retained only as an unresolved reference, not an additional balance. Conservative aggregate floor for Nadar's contributions INTO the Shiv Nadar Foundation / SSN Trust ecosystem, using the foundation's own statement that it has invested over USD 1.85 billion in seven education and art institutions as the floor for what Nadar put in (the documented-grantmaking floor method — individual annual inflows for this Indian trust ecosystem are not publicly available). Kept as one aggregate to avoid double-counting downstream institution outlays or annual philanthropy-ranking estimates. The giving spans roughly 1994 (foundation established) through FY2025, so the row is dated near the period midpoint per the dataset's aggregate-dating convention."
+    },
+    {
+      "id": "unresolved-e0220d2589b9",
+      "donorIds": [
+        "stephen-schwarzman"
+      ],
+      "amountUSD": 100000000,
+      "period": "Unresolved; see source notes",
+      "sourceFingerprint": "e0220d2589b93bd5c79dc979ff68d130921c9dbedf8b7c250bbc42b6f1bd8ed4",
+      "sourceIds": [
+        "https://www.newyorker.com/news/evan-osnos/rhodes-east-why-is-the-schwarzman-scholarship-in-china"
+      ],
+      "overlapLinks": [
+        "8f8b54674293c80cda0e26d1372ef10c2cbb73ff2ba151be5e545341b1e46f08",
+        "f9da61e396eee4263ff300c3f71db586b8b5a9e3b1c37b4478ff6b7b38653288",
+        "e01d937f487caf18f0e443ede85d2ec698ef8a6e645a26253384b9e7409118e8",
+        "23789acd535530d699c72908a1af5c33d3c877be6550b570610c61f7521e9912",
+        "037572d98e089a747cd0d02fef3025d44481a1bf54cb7d926c909644826a7531",
+        "e88071263051c532cba0cee49c6c5565befb4ae615d50b3f1d5b420bb8152c73",
+        "fe2d87bdb33416155b287ee67962cfa150ba6ab36a4f6ce6fe6420d989ad03b3",
+        "32f49602c38e4fc3864efd3cea5ecf264e4811c6d82e6d309fbfe1c19114a399",
+        "1db9a7bbbf595655cac79d3fe27d6051fd9344e0f72211024000a3a35d1fe389",
+        "d18a984a7f2264f222737efc49b87f900e93a507a1c686b8a8c724993df971b7",
+        "cfbebe493ed15bd9a32ed5c4102f0fb4b9cddb4af9e53c4e082f587491be6de3"
+      ],
+      "reason": "No supported allocation of this aggregate to transfer dates and transfer-time values. Excluded from compounding; the seed amount is retained only as an unresolved reference, not an additional balance. Conservative aggregate for Schwarzman's announced personal gift to create Schwarzman Scholars at Tsinghua University. Exact installment timing is not public; ProPublica filings for the Stephen A. Schwarzman Education Foundation show more than $100M of contributions by FY2016. Later Education Foundation contribution totals are not recorded because Schedule B for later filings includes major non-Schwarzman sources such as Tsinghua University Education Foundation."
+    },
+    {
+      "id": "unresolved-59811a34cf5d",
+      "donorIds": [
+        "steve-ballmer",
+        "connie-ballmer"
+      ],
+      "amountUSD": 7000000000,
+      "period": "Unresolved; see source notes",
+      "sourceFingerprint": "59811a34cf5d5af1aab6303e1c25ca6f9177c659a584199e1566fd9648d5633c",
+      "sourceIds": [
+        "https://lifestylesmagazine.com/latest-news/110-million-new-gift-from-steve-and-connie-ballmer-strengthens-youth-mental-health-workforce-raising-their-philanthropic-giving-above-7-billion/"
+      ],
+      "overlapLinks": [
+        "94cefaefaae5f68021e145b292202905c9bf2545aecf082afeac544caf9178d6",
+        "f66a2f9d6826f51ae2c4ebb4b698cdeec074338cae3a5f70cbbce7ef43bc74d3",
+        "05090fc0e7567ad9dcf4bdff69542ab2f4ddd7a45ee6e740b4b6bea690b8b555",
+        "d2e40c08288ed877d584bcc40878ef092aac57d8f721281aef4ebb40b16d844b"
+      ],
+      "reason": "No supported allocation of this aggregate to transfer dates and transfer-time values. Excluded from compounding; the seed amount is retained only as an unresolved reference, not an additional balance. Cumulative grants from 2015 through early 2026 via the Ballmers' giving vehicles — Ballmer Group (an LLC granting through their Goldman Sachs Philanthropy Fund donor-advised fund) and, since 2024, Rainier Climate Group. Recorded once, dated at the 2015-2026 period midpoint per the dataset's aggregate-dating convention (the attestation is from April 2026), as a conservative floor (\"more than $7 billion\", per April 2026 reporting and the Chronicle of Philanthropy's ten-year retrospective at https://www.philanthropy.com/news/power-couple-giving-the-10-year-journey-of-steve-and-connie-ballmer/) because the Ballmers disclose no year-by-year totals. Subsumes all their individually announced vehicle grants, including the $425M Ballmer Institute for Children's Behavioral Health gift to the University of Oregon (2022), just over $1B of climate giving (2022–2024), a $350M Blue Meridian Partners commitment (2024–2029), $65M of LA wildfire relief including the FireAid match (2025), and $110M for the Los Angeles youth mental-health workforce (2026)."
+    },
+    {
+      "id": "unresolved-fbb1a51f6db9",
+      "donorIds": [
+        "steven-spielberg"
+      ],
+      "amountUSD": 100000000,
+      "period": "Unresolved; see source notes",
+      "sourceFingerprint": "fbb1a51f6db9773593967b660a42db72339cc922429b73c2594b3e329fbe1b44",
+      "sourceIds": [
+        "https://de.wikipedia.org/wiki/Schindlers_Liste#Impulsgeber_f%C3%BCr_Holocaust-Zeitzeugnisse"
+      ],
+      "overlapLinks": [
+        "ba9311294959d461c0fc747cf10c64bd2fdc2d955f7bbe3d57aefd90b9e03bda",
+        "8a2e6657bd63bf3806f29034a6f6ea8f4321937a9bf7b76afd7373ada50fa11e",
+        "9e43e8cf0353195f29e27d8746f76dde925b9fe764eeeda6f71ef44a0a93a1f3",
+        "a29d9c6031c3bb7c6fe6d1f1278c614e7995f5b36d11884433d4064b61e1e9c4",
+        "0a9265a52ba05e20c978d391fd5a8ddf8f8428d7a6ccc973355f02a90f8bafea",
+        "62b50732a16857385c7807173d1e20b8b76dff7369546b9cddf4fa5469a4757a",
+        "feba6b3941dbe24cfe6f5f8298b206ca13c0065c7f892ba9aecba23482d5efd9",
+        "2f7bb7a2a451f2854269968ef3c59e65982cb0949ebad9dda5ed1e809241d9e2",
+        "e982ea92a9aef6c4f479b2b34b0589a8f9a0128dbaae1d3a19b8bd87883ea051",
+        "b13bf1ecaab999696bb5de28072f464b659ce8ef66cd15738406d7f0afb8d986",
+        "cf2688a84b14928a6f40648a340fd56c8c1aba236f6ada4e55e9bdbc268fcd61",
+        "84f0d8938872e83b18be1b771131ccf5cdbbf3bf6fd82f44ed6b93b8fba8e603"
+      ],
+      "reason": "No supported allocation of this aggregate to transfer dates and transfer-time values. Excluded from compounding; the seed amount is retained only as an unresolved reference, not an additional balance. Conservative cumulative floor for Righteous Persons Foundation funding through 2014. The cited source says Spielberg put his share of Schindler's List revenues into the foundation and that by 2014 the foundation had used more than $100M for Holocaust remembrance and Jewish arts/culture. This aggregate is not stacked with 2011-2014 Form 990-PF contribution rows to avoid overlap; older 2001-2010 PDFs were listed by ProPublica but blocked by its current download endpoint during this pass. Kate Capshaw is collapsed into this file."
+    },
+    {
+      "id": "melinda-vote-mama-foundation-2024-12-03",
+      "donorIds": [
+        "melinda-gates"
+      ],
+      "amountUSD": 500000,
+      "period": "2024-12-03",
+      "overlapLinks": [
+        "gates-pivotal-four-filed-transfers"
+      ],
+      "reason": "Up-to-$500K conditional match through December 13; actual paid match and donor-level payer not established. The recipient is a charity; this is not excluded as political giving. This reference is a commitment ceiling, not an additional amount known to have been donated.",
+      "sourceIds": [
+        "https://www.every.org/votemama/f/a-million-for-mamas-vote"
+      ]
+    },
+    {
+      "id": "melinda-rosalynn-carter-institute-for-caregivers-2024-12-03",
+      "donorIds": [
+        "melinda-gates"
+      ],
+      "amountUSD": 500000,
+      "period": "2024-12-03",
+      "overlapLinks": [
+        "gates-pivotal-four-filed-transfers"
+      ],
+      "reason": "Up-to-$500K conditional match; actual paid match and donor-level payer not established. This reference is a commitment ceiling, not an additional amount known to have been donated.",
+      "sourceIds": [
+        "https://apnews.com/article/5420658329b7094765f80e1a94b90829"
+      ]
+    },
+    {
+      "id": "melinda-wellcome-leap-2025-09-10",
+      "donorIds": [
+        "melinda-gates"
+      ],
+      "amountUSD": 50000000,
+      "period": "2025-09-10",
+      "overlapLinks": [
+        "gates-pivotal-four-filed-transfers"
+      ],
+      "reason": "The $100M partnership announcement and reported $50M Pivotal share do not establish the legal payer or a completed personal transfer date. Programs begin in 2026. No specific link to the October Bill Gates inflows is assumed. This reference is a commitment ceiling, not an additional amount known to have been donated.",
+      "sourceIds": [
+        "https://wellcomeleap.org/news/pivotal_partnership_news/",
+        "https://abcnews.go.com/GMA/Wellness/melinda-gates-announces-100m-investment-womens-health-research/story?id=125409962"
+      ]
     }
   ]
 }

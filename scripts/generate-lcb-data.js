@@ -8,7 +8,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import matter from 'gray-matter';
 import { glob } from 'glob';
-import { aggregateDonors, roundUsd } from './lib/lcbCalculation.js';
+import { aggregateDonors, midpointDate, parseUtcDate, roundUsd } from './lib/lcbCalculation.js';
 import { loadDonations } from './lib/donationRecords.js';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -49,8 +49,91 @@ function assertHash(source) {
   }
 }
 
+function resolveTransfer(event, disposition, sourceIds, snapshotDate) {
+  const context = `Transfer disposition ${event.fingerprint} (${event.sourcePath} ${event.rowLocator})`;
+  const fields = new Set([
+    'decision',
+    'exclusionReason',
+    'datePrecision',
+    'effectiveDate',
+    'transferIdentity',
+    'fundingChain',
+    'cumulativePeriodMembership',
+    'sourceIds',
+    'estimationRationale',
+    'periodStart',
+    'periodEnd',
+  ]);
+  if (!disposition || typeof disposition !== 'object' || Array.isArray(disposition)) {
+    throw new Error(`${context} must be an object.`);
+  }
+  for (const field of Object.keys(disposition)) {
+    if (!fields.has(field)) throw new Error(`${context} has unknown field ${field}.`);
+  }
+  if (!['include', 'exclude'].includes(disposition.decision)) {
+    throw new Error(`${context} has invalid decision.`);
+  }
+  if (
+    disposition.decision === 'include'
+      ? disposition.exclusionReason !== null
+      : typeof disposition.exclusionReason !== 'string' || !disposition.exclusionReason.trim()
+  ) {
+    throw new Error(`${context} has an invalid exclusionReason for its decision.`);
+  }
+  for (const field of ['transferIdentity', 'fundingChain', 'estimationRationale']) {
+    if (typeof disposition[field] !== 'string' || !disposition[field].trim()) {
+      throw new Error(`${context} needs ${field}.`);
+    }
+  }
+  for (const field of ['sourceIds', 'cumulativePeriodMembership']) {
+    if (!Array.isArray(disposition[field]) || disposition[field].some((id) => typeof id !== 'string' || !id)) {
+      throw new Error(`${context} needs a ${field} array of non-empty strings.`);
+    }
+  }
+  if (
+    !disposition.sourceIds.length ||
+    disposition.sourceIds.some((id) => !sourceIds.has(id) && !/^https?:\/\//.test(id))
+  ) {
+    throw new Error(`${context} references an unknown or missing source.`);
+  }
+  let expectedDate;
+  const year = event.date.slice(0, 4);
+  if (disposition.datePrecision !== 'period' && ('periodStart' in disposition || 'periodEnd' in disposition)) {
+    throw new Error(`${context} has period bounds without period precision.`);
+  }
+  if (disposition.datePrecision === 'unresolved-interval') {
+    if (disposition.decision !== 'exclude' || disposition.effectiveDate !== null) {
+      throw new Error(`${context} must exclude an unresolved interval with a null effectiveDate.`);
+    }
+  } else {
+    if (disposition.datePrecision === 'day') expectedDate = event.date;
+    else if (disposition.datePrecision === 'month') {
+      const start = `${event.date.slice(0, 7)}-01`;
+      const next = parseUtcDate(start);
+      next.setUTCMonth(next.getUTCMonth() + 1);
+      next.setUTCDate(0);
+      expectedDate = midpointDate(start, next.toISOString().slice(0, 10));
+    } else if (disposition.datePrecision === 'year') {
+      expectedDate = midpointDate(`${year}-01-01`, `${year}-12-31`);
+    } else if (disposition.datePrecision === 'period') {
+      expectedDate = midpointDate(disposition.periodStart, disposition.periodEnd);
+      if (event.date < disposition.periodStart || event.date > disposition.periodEnd) {
+        throw new Error(`${context} reporting period must contain its seed date.`);
+      }
+    } else throw new Error(`${context} has invalid datePrecision.`);
+    if (disposition.effectiveDate !== expectedDate) {
+      throw new Error(`${context} effectiveDate must be ${expectedDate} for its datePrecision.`);
+    }
+  }
+  const transfer = { ...event, ...disposition };
+  return transfer.effectiveDate && transfer.effectiveDate > snapshotDate
+    ? { ...transfer, decision: 'exclude', exclusionReason: 'after-snapshot' }
+    : transfer;
+}
+
 function buildOutputs() {
   const snapshot = readJson('snapshot.json');
+  parseUtcDate(snapshot.snapshotDate, 'snapshot date');
   const sources = readJson('sources.json');
   readJson('reconciliation.json');
   sources.sources.forEach(assertHash);
@@ -96,7 +179,9 @@ function buildOutputs() {
 
   const partialIds = new Set(ledger.partialDonorIds);
   const donors = donorProfiles.map((donor) => ({ ...donor, partialGivingHistory: partialIds.has(donor.id) }));
-  const transfers = seedEvents.map((event) => ({ ...event, ...dispositions[event.fingerprint] }));
+  const transfers = seedEvents.map((event) =>
+    resolveTransfer(event, dispositions[event.fingerprint], sourceIds, snapshot.snapshotDate)
+  );
   const { rows, transferResults } = aggregateDonors({
     donors,
     transfers,
@@ -123,6 +208,7 @@ function buildOutputs() {
     originalDate: transfer.date,
     datePrecision: transfer.datePrecision,
     effectiveDate: transfer.effectiveDate,
+    ...(transfer.periodStart ? { periodStart: transfer.periodStart, periodEnd: transfer.periodEnd } : {}),
     recipientId: transfer.recipientId,
     amountUSD: transfer.amount,
     credit: transfer.credit,
@@ -133,7 +219,9 @@ function buildOutputs() {
     cumulativePeriodMembership: transfer.cumulativePeriodMembership,
     sourceIds: transfer.sourceIds,
     estimationRationale: transfer.estimationRationale,
-    usesEstimatedCpi: transfer.effectiveDate.slice(0, 7) === '2025-10',
+    usesEstimatedCpi: Object.keys(transfer.credit).some(
+      (donorId) => resultByTransferDonor.get(`${transfer.fingerprint}:${donorId}`)?.usesEstimatedCpi
+    ),
     attributions: Object.keys(transfer.credit).map((donorId) => {
       const result = resultByTransferDonor.get(`${transfer.fingerprint}:${donorId}`);
       return result

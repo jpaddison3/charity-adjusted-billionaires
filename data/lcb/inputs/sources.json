@@ -45,7 +45,16 @@
       "units": "USD",
       "savedSource": "sources/forbes-2025-transcription.csv",
       "savedSourceSha256": "7471718bb5887a40857a945ed1f175af3c446f27fc08fb20ce335c1ae7e3a2af",
-      "notes": "The saved CSV is an independent transcription, not a Forbes export. It is paired with Forbes's official publication and methodology pages, and aliases are explicit in wealth.json. Forbes notes that a founder's figure can include wealth belonging to a spouse or children."
+      "notes": "The saved CSV is a third-party transcription by FilesUploader, not a Forbes export. Its immutable download is byte-identical to the saved source. The Forbes URL and April 1 publication date describe the underlying list; the transcription has separate provenance below. Forbes notes that a founder figure may include a spouse or children.",
+      "downloadUrl": "https://raw.githubusercontent.com/FilesUploader/Forbes-Billionaire-List/7245d285eeecc3999cf772aa47b276ffe2fb8e3d/Forbes%20Billionaire%20List%202025.csv",
+      "transcription": {
+        "publisher": "FilesUploader",
+        "repository": "https://github.com/FilesUploader/Forbes-Billionaire-List",
+        "commit": "7245d285eeecc3999cf772aa47b276ffe2fb8e3d",
+        "publishedDate": "2025-09-24",
+        "retrievalDate": "2026-09-12",
+        "method": "Downloaded CSV verbatim; its SHA-256 matches the committed source. Matched donor names and aliases are explicit in wealth.json."
+      }
     },
     {
       "id": "forbes-philanthropy-2025",

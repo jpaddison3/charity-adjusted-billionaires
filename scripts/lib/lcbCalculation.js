@@ -1,6 +1,7 @@
 /* eslint-env node */
 
 const DAY_MS = 24 * 60 * 60 * 1000;
+const compareIds = (a, b) => (a < b ? -1 : a > b ? 1 : 0);
 
 export function parseUtcDate(value, label = 'date') {
   if (typeof value !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(value)) {
@@ -84,6 +85,7 @@ export function calculateAttributedGift({ event, credit, snapshotDate, market, c
       inflationFactor: null,
       marketContribution: null,
       inflationContribution: null,
+      usesEstimatedCpi: false,
     };
   }
   const attributedAmount = event.amount * credit;
@@ -97,6 +99,9 @@ export function calculateAttributedGift({ event, credit, snapshotDate, market, c
     inflationFactor,
     marketContribution: attributedAmount * marketFactor,
     inflationContribution: attributedAmount * inflationFactor,
+    usesEstimatedCpi: [snapshotDate, event.effectiveDate].some((date) =>
+      cpi.find((observation) => observation.date === `${date.slice(0, 7)}-01`)?.status?.startsWith('estimated')
+    ),
   };
 }
 
@@ -172,19 +177,21 @@ export function aggregateDonors({ donors, transfers, wealthRecords, snapshotDate
     return {
       ...donor,
       wealthStatus: wealth?.status ?? 'unmatched',
-      wealthAtSnapshot: ranked ? wealth.estimateAtSnapshot : null,
+      wealthAtSnapshot: wealth?.status === 'matched' ? wealth.estimateAtSnapshot : null,
       charityAdjustedWealth: ranked ? wealth.estimateAtSnapshot + donor.marketAdjustedGiving : null,
+      nominalGiving: donor.giftCount > 0 ? donor.nominalGiving : null,
+      marketAdjustedGiving: donor.giftCount > 0 ? donor.marketAdjustedGiving : null,
       inflationAdjustedGiving: donor.giftCount > 0 ? donor.inflationAdjustedGiving : null,
       rank: null,
     };
   });
   const ranked = rows
     .filter((row) => row.charityAdjustedWealth !== null)
-    .sort((a, b) => b.charityAdjustedWealth - a.charityAdjustedWealth || a.donorId.localeCompare(b.donorId));
+    .sort((a, b) => b.charityAdjustedWealth - a.charityAdjustedWealth || compareIds(a.donorId, b.donorId));
   ranked.forEach((row, index) => {
     row.rank = index + 1;
   });
-  rows.sort((a, b) => (a.rank ?? Infinity) - (b.rank ?? Infinity) || a.donorId.localeCompare(b.donorId));
+  rows.sort((a, b) => (a.rank ?? Infinity) - (b.rank ?? Infinity) || compareIds(a.donorId, b.donorId));
   return { rows, transferResults };
 }
 
