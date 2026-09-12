@@ -47,7 +47,14 @@ function loadDonors() {
 
 function loadExcludedInventory(reasons, activeDonors) {
   const seenPaths = new Set();
-  const donorSources = new Map(activeDonors.map(({ id, sourcePath }) => [id, sourcePath]));
+  const donorSources = new Map();
+  const registerDonor = (id, sourcePath) => {
+    if (donorSources.has(id)) {
+      throw new Error(`Duplicate donor ID ${id} in ${donorSources.get(id)} and ${sourcePath}.`);
+    }
+    donorSources.set(id, sourcePath);
+  };
+  activeDonors.forEach(({ id, sourcePath }) => registerDonor(id, sourcePath));
   const readFiles = (directory, describe) =>
     glob
       .sync(path.join(contentDir, directory, '*.md.excluded'))
@@ -68,10 +75,7 @@ function loadExcludedInventory(reasons, activeDonors) {
       }
     }
     assertValidEntityId(id, 'donor ID', `in excluded donor file ${sourcePath}`);
-    if (donorSources.has(id)) {
-      throw new Error(`Duplicate donor ID ${id} in ${donorSources.get(id)} and ${sourcePath}.`);
-    }
-    donorSources.set(id, sourcePath);
+    registerDonor(id, sourcePath);
     return { donorId: id, name };
   });
   const knownDonorIds = new Set(donorSources.keys());

@@ -113,15 +113,20 @@ describe('generate LCB data', () => {
     );
   });
 
-  it.each(['active', 'excluded'])('rejects archived donor IDs duplicated in %s profiles', (collision) => {
+  it.each([
+    ['active/active', 'bill_gates.md', 'duplicate.md'],
+    ['active/excluded', 'bill_gates.md', 'duplicate.md.excluded'],
+    ['excluded/excluded', 'sam_bankman_fried.md.excluded', 'duplicate.md.excluded'],
+  ])('rejects duplicate donor IDs across %s profiles', (_, existingFile, duplicateFile) => {
     const workspace = setupWorkspace();
-    const existingPath =
-      collision === 'active' ? 'content/donors/bill_gates.md' : 'content/donors/sam_bankman_fried.md.excluded';
-    const sourcePath = 'content/donors/duplicate.md.excluded';
+    const existingPath = `content/donors/${existingFile}`;
+    const sourcePath = `content/donors/${duplicateFile}`;
     fs.copyFileSync(path.join(workspace, existingPath), path.join(workspace, sourcePath));
-    editInput(workspace, 'transfers.json', (ledger) => {
-      ledger.excludedFileReasons[sourcePath] = 'Duplicate-ID regression fixture.';
-    });
+    if (duplicateFile.endsWith('.excluded')) {
+      editInput(workspace, 'transfers.json', (ledger) => {
+        ledger.excludedFileReasons[sourcePath] = 'Duplicate-ID regression fixture.';
+      });
+    }
     const result = runGenerator(workspace);
     expect(result.status).not.toBe(0);
     expect(result.stderr).toContain('Duplicate donor ID');
