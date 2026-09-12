@@ -24,7 +24,7 @@ describe('LCB calculation', () => {
       market: fixture.market,
       cpi: fixture.cpi,
     });
-    expect(result.marketFactor).toBeCloseTo(132 / marketIndexAt('2020-01-01', fixture.market), 12);
+    expect(result.marketFactor).toBeCloseTo(132 / (100 * 1.1 ** (1 / 366)), 12);
     expect(result.inflationFactor).toBe(1.25);
     expect(result.marketContribution).not.toBe(result.inflationContribution);
   });
@@ -61,7 +61,8 @@ describe('LCB calculation', () => {
     expect(midpointDate('2020-01-01', '2020-12-31')).toBe('2020-07-01');
     const saturday = marketIndexAt('2020-02-29', fixture.market);
     const sunday = marketIndexAt('2020-03-01', fixture.market);
-    expect(sunday).toBeGreaterThan(saturday);
+    expect(saturday).toBeCloseTo(100 * 1.1 ** (60 / 366), 12);
+    expect(sunday).toBeCloseTo(100 * 1.1 ** (61 / 366), 12);
     expect(marketIndexAt('2020-12-31', fixture.market)).toBe(110);
   });
 
@@ -114,10 +115,69 @@ describe('LCB calculation', () => {
     ).toThrow('duplicate');
     expect(() =>
       validateWealthAllocations([
-        { donorId: 'a', status: 'matched', estimateAtSnapshot: 1, sharedPoolId: 'couple', allocationShare: 0.6 },
-        { donorId: 'b', status: 'matched', estimateAtSnapshot: 1, sharedPoolId: 'couple', allocationShare: 0.5 },
+        {
+          donorId: 'a',
+          status: 'matched',
+          estimateAtSnapshot: 60,
+          sharedPoolId: 'couple',
+          allocationShare: 0.6,
+          observation: { amountUSD: 100 },
+        },
+        {
+          donorId: 'b',
+          status: 'matched',
+          estimateAtSnapshot: 50,
+          sharedPoolId: 'couple',
+          allocationShare: 0.5,
+          observation: { amountUSD: 100 },
+        },
       ])
     ).toThrow('above 100%');
+  });
+
+  it('rejects downstream distributions with different recipient identities', () => {
+    expect(() =>
+      validateFundingChains([
+        {
+          decision: 'include',
+          fingerprint: 'in',
+          fundingChain: 'donor',
+          transferIdentity: 'vehicle',
+          transferStage: 'vehicle-inflow',
+          fundingVehicleId: 'fund',
+        },
+        {
+          decision: 'include',
+          fingerprint: 'out',
+          fundingChain: 'donor',
+          transferIdentity: 'recipient',
+          transferStage: 'vehicle-distribution',
+          fundingVehicleId: 'fund',
+        },
+      ])
+    ).toThrow('downstream');
+  });
+
+  it('conserves allocated dollars and accepts floating point share noise', () => {
+    const record = (donorId, share) => ({
+      donorId,
+      status: 'matched',
+      sharedPoolId: 'pool',
+      allocationShare: share,
+      estimateAtSnapshot: 100 * share,
+      observation: { amountUSD: 100, date: '2025-01-01', sourceId: 'source' },
+    });
+    expect(() => validateWealthAllocations([record('a', 0.5), record('b', 0.5000000000000002)])).not.toThrow();
+    expect(() =>
+      validateWealthAllocations([{ ...record('a', 0.5), estimateAtSnapshot: 100 }, record('b', 0.5)])
+    ).toThrow('allocated pool amount');
+    expect(() => validateWealthAllocations([record('a', 0.5), record('a', 0.5)])).toThrow('Duplicate wealth');
+    expect(() =>
+      validateWealthAllocations([
+        record('a', 0.5),
+        { ...record('b', 0.5), observation: { amountUSD: 100, date: '2025-02-01', sourceId: 'source' } },
+      ])
+    ).toThrow('inconsistent observations');
   });
 
   it('keeps missing wealth and no-giving donors unranked while retaining partial donors', () => {

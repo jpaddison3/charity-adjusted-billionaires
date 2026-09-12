@@ -1,0 +1,517 @@
+PDF PAGE 1
+ 
+ 
+BILL & MELINDA GATES FOUNDATION TRUST 
+Financial Statements 
+December 31, 2021 and 2020 
+(With Independent Auditors’ Report Thereon) 
+ 
+
+PDF PAGE 2
+KPMG LLP 
+Suite 2800 
+401 Union Street 
+Seattle, WA 98101
+KPMG LLP , a Delaware limited liability partnership and a member firm of  
+the KPMG global organization of independent member firms affiliated with  
+KPMG International Limited, a private English company limited by guarantee. 
+ 
+ 
+Independent Auditors’ Report 
+To the Trustees 
+Bill & Melinda Gates Foundation Trust: 
+Opinion 
+We have audited the financial statements of Bill & Melinda Gates Foundation Trust (the Trust), which comprise 
+the statements of financial position as of December 31, 2021 and 2020, and the related statements of activities 
+and cash flows for the years then ended, and the related notes to the financial statements.  
+In our opinion, the accompanying financial statements present fairly, in all material respects, the financial 
+position of the Trust as of December 31, 2021 and 2020, and the changes in its net assets and its cash flows 
+for the years then ended in accordance with U.S. generally accepted accounting principles. 
+Basis for Opinion 
+We conducted our audits in accordance with auditing standards generally accepted in the United States of 
+America (GAAS). Our responsibilities under those standards are further described in the Auditors’ 
+Responsibilities for the Audit of the Financial Statements section of our report. We are required to be 
+independent of the Trust and to meet our other ethical responsibilities, in accordance with the relevant ethical 
+requirements relating to our audits. We believe that the audit evidence we have obtained is sufficient and 
+appropriate to provide a basis for our audit opinion. 
+Responsibilities of Management for the Financial Statements 
+Management is responsible for the preparation and fair presentation of the financial  statements in accordance 
+with U.S. generally accepted accounting principles, and for the design, implementation, and maintenance of 
+internal control relevant to the preparation and fair presentation of financial statements that are free from 
+material misstatement, whether due to fraud or error. 
+In preparing the financial statements, management is required to evaluate whether there are conditions or 
+events, considered in the aggregate, that raise substantial doubt about the Trust’s ability to continue as a going 
+concern for one year after the date that the financial statements are available to be issued.  
+Auditors’ Responsibilities for the Audit of the Financial Statements 
+Our objectives are to obtain reasonable assurance about whether the financial statement s as a whole are free 
+from material misstatement, whether due to fraud or error, and to issue an auditors’ report that includes our 
+opinion. Reasonable assurance is a high level of assurance but is not absolute assurance and therefore is not 
+a guarantee that an audit conducted in accordance with GAAS will always detect a material misstatement when 
+it exists. The risk of not detecting a material misstatement resulting from fraud is higher than for one resulting 
+from error, as fraud may involve collusion, forgery, intentional omissions, misrepresentations, or the override of 
+internal control. Misstatements are considered material if there is a substantial likelihood that, individually or in 
+the aggregate, they would influence the judgment made by a reasonable user based on the financial 
+statements. 
+
+PDF PAGE 3
+ 
+ 2 
+In performing an audit in accordance with GAAS, we: 
+• Exercise professional judgment and maintain professional skepticism throughout the audit.  
+• Identify and assess the risks of material misstatement of the financial statements, whether due to fraud or 
+error, and design and perform audit procedures responsive to those risks. Such procedures include 
+examining, on a test basis, evidence regarding the amounts and disclosures in the financial statements.  
+• Obtain an understanding of internal control relevant to the audit in order to design audit procedures that are 
+appropriate in the circumstances, but not for the purpose of expressing an opinion on the effectiveness of 
+the Trust’s internal control. Accordingly, no such opinion is expressed. 
+• Evaluate the appropriateness of accounting policies used and the reasonableness of significant accounting 
+estimates made by management, as well as evaluate the overall presentation of the financial statements.  
+• Conclude whether, in our judgment, there are conditions or events, considered in the aggregate, that raise 
+substantial doubt about the Trust’s ability to continue as a going concern for a reasonable period of time.  
+We are required to communicate with those charged with governance regarding, among other matters, the 
+planned scope and timing of the audit, significant audit findings, and certain internal control related matters that 
+we identified during the audit. 
+ 
+Seattle, Washington 
+May 10, 2022 
+
+
+PDF PAGE 4
+BILL & MELINDA GATES FOUNDATION TRUST
+Statements of Financial Position
+December 31, 2021 and 2020
+(In thousands)
+Assets 2021 2020
+Cash $ 383,292  280,950  
+Receivable for investment sales and other 361,743  224,075  
+Receivable for interest and dividends 67,966  64,207  
+Federal current excise tax receivable (note 5) —  44,066  
+Investments (notes 3 and 4) 53,184,270  50,093,849  
+Total assets $ 53,997,271  50,707,147  
+Liabilities and Net Assets
+Liabilities:
+Accounts payable and other accrued liabilities $ 9,610  4,255  
+Payable for investment purchases and other (note 4) 500,689  537,071  
+Federal current and deferred excise tax payable (note 5) 228,908  221,948  
+Total liabilities 739,207  763,274  
+Net assets without donor restrictions 53,258,064  49,943,873  
+Total liabilities and net assets $ 53,997,271  50,707,147  
+See accompanying notes to financial statements.
+3
+
+PDF PAGE 5
+BILL & MELINDA GATES FOUNDATION TRUST
+Statements of Activities
+Years ended December 31, 2021 and 2020
+(In thousands)
+2021 2020
+Change in net assets:
+Revenues and net gains:
+Contributions (note 2) $ 5,970,124  2,884,469  
+Investment income, net (note 2c) 3,597,794  4,156,641  
+Total revenues and net gains 9,567,918  7,041,110  
+Expenses:
+Grants to Bill & Melinda Gates Foundation (note 1) 6,131,700  6,755,163  
+Federal excise and other taxes, net (note 5) 122,027  107,946  
+Total expenses 6,253,727  6,863,109  
+Change in net assets 3,314,191  178,001  
+Net assets without donor restrictions, beginning of year 49,943,873  49,765,872  
+Net assets without donor restrictions, end of year $ 53,258,064  49,943,873  
+See accompanying notes to financial statements.
+4
+
+PDF PAGE 6
+BILL & MELINDA GATES FOUNDATION TRUST
+Statements of Cash Flows
+Years ended December 31, 2021 and 2020
+(In thousands)
+2021 2020
+Cash flows from operating activities:
+Change in net assets $ 3,314,191  178,001  
+Adjustments to reconcile change in net assets to net cash
+used in operating activities:
+Stock and noncash contributions (5,312,418) (2,239,606) 
+Net realized and unrealized gains on investments (3,616,548) (4,035,036) 
+Net accretion and amortization (5,090) (13,582) 
+Changes in operating assets and liabilities:
+Interest and dividends receivable (3,759) 37,925  
+Federal current excise tax receivable 44,066  (34,533) 
+Accounts payable and other accrued liabilities 5,355  122  
+Federal current and deferred excise tax payable 6,960  60,484  
+Net cash used in operating activities (5,567,243) (6,046,225) 
+Cash flows from investing activities:
+Purchases of investments (85,568,060) (159,713,146) 
+Proceeds from sales and maturities of investments 91,237,645  165,521,079  
+Net cash provided by investing activities 5,669,585  5,807,933  
+Net change in cash 102,342  (238,292) 
+Cash, beginning of year 280,950  519,242  
+Cash, end of year $ 383,292  280,950  
+Supplemental disclosure of cash flow information:
+Cash paid during the year for excise taxes $ 71,000  82,000  
+See accompanying notes to financial statements.
+5
+
+PDF PAGE 7
+BILL & MELINDA GATES FOUNDATION TRUST 
+Notes to Financial Statements 
+December 31, 2021 and 2020 
+(Dollars in thousands) 
+6 (Continued) 
+(1) Organization
+Bill & Melinda Gates Foundation Trust (the Trust) is a tax-exempt private foundation that holds the donated
+investment assets from Bill Gates, Melinda French Gates, and Warren Buffett. The Trust operates its main
+office in Seattle, Washington. Bill Gates and Melinda French Gates are its Trustees. The primary role of the
+Trust is to manage the investment assets and transfer the proceeds to Bill & Melinda Gates Foundation
+(the Foundation) as necessary to achieve the Foundation’s charitable goals.
+The Foundation is a related party of the Trust. Neither entity controls the other; however, they share the
+same Trustees. The Foundation has the legal right to demand any amount, up to the full net assets of the
+Trust. In 2021 and 2020, the Trust made grants to the Foundation totaling $6,131,700 and $6,755,163,
+respectively. All assets of the Trust are considered available to meet cash needs for these general
+expenditures within one year of the statements of financial position. However, the Trust does not intend to
+liquidate investments other than as required for planned general expenditures during the year.
+(2) Summary of Significant Accounting Policies
+(a) Basis of Financial Presentation
+The accompanying financial statements have been prepared on the accrual basis of accounting.
+The Trust recognizes unconditional promises to give as revenue in the period received. Contributions
+with associated conditions are recorded as revenue when the conditions are met.  Contributions, net
+assets, and changes therein are classified and reported based on the existence or absence of
+donor-imposed restrictions. For the years ended December 31, 2021 and 2020, all activities and net
+assets of the Trust were classified as without donor restrictions.
+(b) Cash
+Cash consists of U.S. and foreign currencies.
+(c) Investments
+Investments are stated at fair value with unrealized gains and losses on investments resulting from fair
+value fluctuations recorded in the statements of activities in the period that such fluctuations occur ed.
+Highly liquid interest-earning investments and time deposits with an original maturity of less than three
+months are classified as cash equivalents within investments. Investment sales and purchases are
+recorded on a trade-date basis. Dividend income is recorded on the ex-dividend date and interest
+income is recorded on an accrual basis. Amortization and accretion of premiums and discounts are
+recorded using the effective-interest method. Investment income, net on the statements of activities is
+comprised of net realized and unrealized gains and losses on investments, interest and dividend
+income, and other net investment expenses.
+(d) Fair Value of Financial Instruments
+In determining the fair value of investments, the Trust utilizes valuation techniques that maximize the
+use of observable inputs and minimize the use of unobservable inputs to the extent possible. The Trust
+determines fair value based on assumptions that market participants would use in pricing an asset or
+liability in the principal or most advantageous market. When considering market participant
+
+PDF PAGE 8
+BILL & MELINDA GATES FOUNDATION TRUST 
+Notes to Financial Statements 
+December 31, 2021 and 2020 
+(Dollars in thousands) 
+ 7 (Continued) 
+assumptions in fair value measurements, the following fair value hierarchy distinguishes between 
+observable and unobservable inputs, which are characterized in one of the following levels: 
+Level 1 Inputs: Unadjusted quoted or published prices in active markets for identical assets or 
+liabilities accessible to the Trust at the measurement date 
+Level 2 Inputs: Valuations based on observable inputs (other than Level 1 prices) such as quoted or 
+published prices for similar assets at the measurement date; quoted prices in markets 
+that are not active; or other inputs that are observable, either directly or indirectly  
+Level 3 Inputs: Valuations based on inputs that are unobservable and significant to the overall fair 
+value measurement and involve management judgment 
+The Trust utilizes a practical expedient for the estimation of the fair value of investments in investment 
+companies for which the investment does not have a readily determinable fair value. The practical 
+expedient used by the Trust to value private investments is the Net Asset Value (NAV) per share, or its 
+equivalent. In some instances, the NAV may not equal the fair value that would be calculated under fair 
+value accounting standards. 
+(e) Contributed Services 
+Contributed services are recognized if the services received either create or enhance long -lived assets 
+or require specialized skills, are provided by individuals possessing those skills, and would typically 
+need to be purchased if not provided by donation. The value of contributed services recorded in the 
+accompanying statements of activities, consisting primarily of investment management services 
+donated by Bill Gates, totaled $633,289 and $579,738 in 2021 and 2020, respectively. Contributed 
+investment management services included third-party management fees of $77,850 and $64,359 in 
+2021 and 2020, respectively. Contributed investment management services are reflected as 
+contributions revenue and investment management services expense, which is netted against 
+investment income. 
+(f) Contributions Received 
+The Trust accepts, but does not solicit, contributions and bequests from related and unrelated parties. 
+Related-party contributions in 2021 and 2020 were received from Warren Buffett, Bill Gates and 
+Melinda French Gates. There were no donor-imposed restrictions on these contributions. Warren 
+Buffett contributed Berkshire Hathaway “B” shares valued at $3,194,103 and $2,213,374 in 2021 and 
+2020, respectively. The Trustees contributed cash and stock valued at $2,142,730 and $91,355 in 2021 
+and 2020, respectively. Bill Gates also contributed third-party investment management services as 
+described in note 2(e). The Trust only accepts unrestricted cash contributions and bequests from 
+unrelated parties. From time to time, the Trust is notified that it has been named as the beneficiary in 
+the estate of certain individuals under revocable agreements. Such amounts are recorded as 
+contributions upon the passing of the donor and the amounts become irrevocable. 
+
+PDF PAGE 9
+BILL & MELINDA GATES FOUNDATION TRUST 
+Notes to Financial Statements 
+December 31, 2021 and 2020 
+(Dollars in thousands) 
+ 8 (Continued) 
+(g) Tax-Exempt Status 
+The Trust is exempt from federal income taxes under Section 501(c)(3) and is classified as a private 
+foundation under Section 509(a) of the Internal Revenue Code. The Trust is subject to federal excise 
+taxes as well as federal and state unrelated business income tax. In addition, some investments in 
+foreign countries are subject to foreign income tax. 
+(h) Use of Estimates 
+The preparation of financial statements in conformity with U.S. generally accepted accounting 
+principles requires management to make estimates and assumptions that affect the reported amounts 
+of assets and liabilities and disclosure of contingent assets and liabilities at the date of the financial 
+statements and the reported amounts of revenues and expenses during the reporting period. Actual 
+results could differ from those estimates. 
+(i) Reclassifications 
+Certain reclassifications have been made to the note disclosures of investment-related assets in 2020 
+to conform to the 2021 presentation. 
+(j) Recent Accounting Pronouncements 
+In September 2020, the Financial Accounting Standards Board (FASB) issued Accounting Standards 
+Update (ASU) 2020-07, Not for Profit Entities (Topic 958): Presentations and Disclosures by 
+Not-for-Profit Entities for Contributed Nonfinancial Assets, which amends the accounting guidance to 
+increase the transparency of contributed nonfinancial assets for not-for-profit entities through 
+enhancements to presentation and disclosure. The ASU is effective for annual periods beginning after 
+June 15, 2021, for not-for-profit entities, with early adoption permissible. Adoption of this standard in 
+2022 is not expected to have a material impact on the Trust’s financial statements. 
+
+PDF PAGE 10
+BILL & MELINDA GATES FOUNDATION TRUST 
+Notes to Financial Statements 
+December 31, 2021 and 2020 
+(Dollars in thousands) 
+ 9 (Continued) 
+(3) Investments 
+The Trust’s investments, including placement in the fair value hierarchy of assets and liabilities that are 
+measured at fair value on a recurring basis, are presented in the following tables:  
+Gross Net
+December 31, 2021 Level 1 Level 2 Level 3 fair value Netting* fair value
+Cash equivalents $ —  408,988  —  408,988  —  408,988  
+Equities:
+Berkshire Hathaw ay “B” shares 10,072,317  —  —  10,072,317  —  10,072,317  
+Consumer goods 5,045,144  1,974  342,331  5,389,449  —  5,389,449  
+Energy and utilities 147,112  —  —  147,112  —  147,112  
+Financials 1,466,452  —  —  1,466,452  —  1,466,452  
+Healthcare 553,409  —  —  553,409  —  553,409  
+Industrials 10,331,931  —  46,255  10,378,186  —  10,378,186  
+Information technology 2,624,581  —  —  2,624,581  —  2,624,581  
+Materials 4,537,177  1  —  4,537,178  —  4,537,178  
+Real estate 1,143,008  —  302,392  1,445,400  —  1,445,400  
+Telecommunications 228,174  —  —  228,174  —  228,174  
+Other 4,662  —  —  4,662  —  4,662  
+Debt:
+U.S. government securities 5,415,718  232,317  —  5,648,035  —  5,648,035  
+U.S. municipals —  20,730  —  20,730  —  20,730  
+Foreign government securities —  3,086,808  —  3,086,808  —  3,086,808  
+Corporate debt securities —  1,339,894  —  1,339,894  —  1,339,894  
+Asset-backed securities —  938,913  —  938,913  —  938,913  
+Commingled 1,520,250  95,020  —  1,615,270  —  1,615,270  
+Physical commodities —  2,023,465  —  2,023,465  —  2,023,465  
+Derivative contracts 23,034  67,658  —  90,692  (34,576) 56,116  
+Total investments
+measured at
+fair value 43,112,969  8,215,768  690,978  52,019,715  (34,576) 51,985,139  
+Private investments measured at
+net asset value —  —  —  1,199,131  —  1,199,131  
+Total investment
+assets $ 43,112,969  8,215,768  690,978  53,218,846  (34,576) 53,184,270  
+Derivative liabilities $ 16,530  298,591  —  315,121  (45,980) 269,141  
+* Represents the netting allow ed under legally enforceable master netting agreements, including cash collateral (note 4).
+ 
+
+PDF PAGE 11
+BILL & MELINDA GATES FOUNDATION TRUST 
+Notes to Financial Statements 
+December 31, 2021 and 2020 
+(Dollars in thousands) 
+ 10 (Continued) 
+Unfunded commitments related to private investments as of December 31, 2021 were $245,014. 
+Gross Net
+December 31, 2020 Level 1 Level 2 Level 3 fair value Netting* fair value
+Cash equivalents $ —  699,823  —  699,823  —  699,823  
+Equities:
+Berkshire Hathaw ay “B” shares 9,762,747  —  —  9,762,747  —  9,762,747  
+Consumer goods 6,036,349  2,168  —  6,038,517  —  6,038,517  
+Energy and utilities 84,915  —  —  84,915  —  84,915  
+Financials 1,159,695  —  —  1,159,695  —  1,159,695  
+Healthcare 420,957  —  —  420,957  —  420,957  
+Industrials 9,542,461  —  39,262  9,581,723  —  9,581,723  
+Information technology 3,162,966  —  —  3,162,966  —  3,162,966  
+Materials 3,742,552  1  —  3,742,553  —  3,742,553  
+Real estate 1,021,206  —  214,080  1,235,286  —  1,235,286  
+Telecommunications 203,809  —  —  203,809  —  203,809  
+Other 4,307  —  —  4,307  —  4,307  
+Debt:
+U.S. government securities 6,170,642  295,211  —  6,465,853  —  6,465,853  
+U.S. municipals —  21,692  —  21,692  —  21,692  
+Foreign government securities —  1,800,549  —  1,800,549  —  1,800,549  
+Corporate debt securities —  1,623,779  —  1,623,779  —  1,623,779  
+Asset-backed securities —  956,907  —  956,907  —  956,907  
+Commingled 1,334,058  90,625  —  1,424,683  —  1,424,683  
+Physical commodities —  860,072  —  860,072  —  860,072  
+Derivative contracts 13,403  177,098  —  190,501  (104,561) 85,940  
+Total investments
+measured at
+fair value 42,660,067  6,527,925  253,342  49,441,334  (104,561) 49,336,773  
+Private investments measured at
+net asset value —  —  —  757,076  —  757,076  
+Total investment
+assets $ 42,660,067  6,527,925  253,342  50,198,410  (104,561) 50,093,849  
+Derivative liabilities $ 97,017  237,854  —  334,871  (66,252) 268,619  
+* Represents the netting allow ed under legally enforceable master netting agreements, including cash collateral (note 4).
+ 
+Cash equivalents as of December 31, 2020 include amounts invested in overnight securities purchased 
+under agreements to resell (reverse repurchase agreements). These transactions are treated as 
+collateralized financing transactions and are recorded at their contracted resale amounts. It is the Trust’s 
+policy to obtain possession of securities purchased under agreements to resell.  The Trust manages the 
+credit risk associated with these transactions by monitoring the market value of the collateral obtained, 
+including accrued interest, and by requesting additional collateral when deemed appropriate.  As of 
+December 31, 2020, the contract value of reverse repurchase agreements was $306,200 and the fair value 
+
+PDF PAGE 12
+BILL & MELINDA GATES FOUNDATION TRUST 
+Notes to Financial Statements 
+December 31, 2021 and 2020 
+(Dollars in thousands) 
+ 11 (Continued) 
+of collateral received by the Trust under reverse repurchase agreements was $312,465. There were no 
+reverse repurchase agreements held by the Trust as of December 31, 2021. 
+Private investments measured using NAV as a practical expedient are not classified in the fair value 
+hierarchy. Given the longer-term nature of private investments, many of those holdings could not be 
+liquidated immediately in the unlikely event that such a need were to arise for the Trust. The majority of the 
+private investments held as of December 31, 2021 and 2020 require general partner or managing member 
+approval for an early redemption or transfer of ownership and a 10-90 day waiting period to liquidate the 
+investment. In addition, certain holdings require that membership not exceed a certain number of owners, 
+which could also delay the Trust’s ability to transfer its ownership. The decision to invest in private 
+investments includes consideration of the liquidation limitations as well as expected long -term funding 
+requirements of the Foundation. 
+For the year ended December 31, 2021, changes in Level 3 holdings consisted primarily of acquisitions of 
+stock, units and valuation adjustments in privately held companies in the consumer goods, real estate and 
+industrials industries. For the year ended December 31, 2020, changes in Level 3 holdings consisted 
+primarily of acquisitions of units and valuation adjustments in privately held companies in the real estate 
+and industrials industries, and a preexisting investment in the information technology industry where the fair 
+value became readily determinable during the year. 
+(4) Derivative Financial Instruments 
+In the normal course of business, the Trust uses various financial instruments, includi ng derivative financial 
+instruments, in an effort to manage exposure on long-term investments. 
+In order to manage price and interest rate risk associated with investing activities, the Trust primarily uses a 
+combination of forward contracts and futures. Under these instruments, the Trust agrees to the future 
+delivery of a currency or security, on an agreed-upon date, and at an agreed-upon price. These contracts 
+are entered into with the intent of minimizing the Trust’s economic exposure to adverse fluctuations in 
+financial or currency markets and to reduce interest rate risk. 
+The Trust also enters into derivative instruments for speculative and other purposes, including income 
+enhancement and as an alternative to ownership of the underlying asset. Specifical ly, swaps, written 
+options and forward contracts are used for enhancing returns on other investments and as an alternative to 
+ownership. 
+The Trust nets certain derivative asset positions and derivative liability positions under legally enforceable 
+master netting agreements. The Trust’s net derivative asset positions are included within investments on 
+the accompanying statements of financial position. The Trust’s net derivative liability positions are included 
+in the payable for investment purchases and other in the accompanying statements of financial position. 
+Realized gains and losses as well as changes in fair value for all derivative instruments are included as a 
+component of investment income. 
+
+PDF PAGE 13
+BILL & MELINDA GATES FOUNDATION TRUST 
+Notes to Financial Statements 
+December 31, 2021 and 2020 
+(Dollars in thousands) 
+ 12 (Continued) 
+The fair values of forward contracts, futures, options and swaps as of December 31, 2021 and 2020 are as 
+follows: 
+December 31, 2021
+Derivative Derivative
+assets liabilities
+Forward contracts $ 43,645  (31,778) 
+Futures 22,393  (15,353) 
+Options 641  (1,177) 
+Swaps 24,013  (266,813) 
+Total 90,692  (315,121) 
+Netting offset* (34,576) 45,980  
+Fair value presented in statement of financial
+position 56,116  (269,141) 
+Noncash collateral (12,995) 267,563  
+Net amount $ 43,121  (1,578) 
+ 
+December 31, 2020
+Derivative Derivative
+assets liabilities
+Forward contracts $ 156,528  (65,166) 
+Futures 12,686  (96,000) 
+Options 717  (1,473) 
+Swaps 20,570  (172,232) 
+Total 190,501  (334,871) 
+Netting offset* (104,561) 66,252  
+Fair value presented in statement of financial
+position 85,940  (268,619) 
+Noncash collateral (50,126) 266,471  
+Net amount $ 35,814  (2,148) 
+ 
+* Represents the netting allowed under legally enforceable master netting agreements, in cluding cash 
+collateral of $5,580 and $39,939 netted against derivative assets at December 31, 2021 and 2020, and 
+$16,983 and $1,630 netted against derivative liabilities at December 31, 2021 and 2020, respectively. 
+
+PDF PAGE 14
+BILL & MELINDA GATES FOUNDATION TRUST 
+Notes to Financial Statements 
+December 31, 2021 and 2020 
+(Dollars in thousands) 
+ 13 (Continued) 
+Outstanding notional purchases and sales were as follows: 
+December 31, 2021 December 31, 2020
+Purchases Sales Purchases Sales
+Forward contracts $ 2,450,610  2,529,416  3,387,005  2,196,004  
+Futures 2,215,273  10,080,254  745,053  14,598,990  
+Options 10,156  8,203  7,334  6,988  
+Swaps 559,673  1,120,044  763,225  1,114,521  
+ 
+The Trust’s derivative instruments involve varying degrees of risk of loss in excess of the amount 
+recognized in the statements of financial position, arising either from potential changes in market prices or 
+the possible inability of counterparties to meet the terms of their contracts. The Trust monitors the financial 
+condition of the firms used for these contracts in order to minimize the risk of loss. Management believes 
+the Trust’s use of derivatives does not result in credit or market risk that would materially affect the Trust’s 
+financial statements. 
+(5) Federal Excise Taxes 
+The Trust is subject to federal excise taxes imposed on private foundations. Excise tax is imposed on net 
+investment income, as defined under federal law, which includes interest, dividends, and net realized gains 
+on the sale of investments. The Trust provided for excise taxes at the 1.39% excise tax rate for the years 
+ended December 31, 2021 and 2020. The current portion of excise tax expense was $120,468 and 
+$47,467 for the years ended December 31, 2021 and 2020, respectively. 
+The Trust made provisions for deferred excise taxes, which were recorded at the 1.39% excise tax rate in 
+2021 and 2020. Deferred excise tax payable was $223,507 and $221,948 and tax expense was $1,559 and 
+$60,484 for the years ended December 31, 2021 and 2020, respectively, resulting from net unrealized 
+gains on investments. 
+(6) Commitments and Contingencies 
+In the ordinary course of business, the Trust is subject to certain legal actions. In the opinion of 
+management, such matters will not have a material effect on the financial position of the Trust . 
+
+PDF PAGE 15
+BILL & MELINDA GATES FOUNDATION TRUST 
+Notes to Financial Statements 
+December 31, 2021 and 2020 
+(Dollars in thousands) 
+ 14 
+(7) Conditional Pledge Receivable 
+The Trust recognizes conditional promises to give as revenues when the conditions are met. On June 26, 
+2006, Warren Buffett, then a Trustee of the Foundation, pledged to the Trust 10 million shares (500 million 
+split-adjusted*) of Berkshire Hathaway “B” shares. The shares will be transferred in annual gifts of 5% of 
+the remaining balance of the earmarked shares. Contributions from Mr. Buffett in 2021 and in prior years 
+are as follows (shares in thousands): 
+Berkshire Hathaway “B” shares contributed*
+Date Shares Value
+August 2006 – July 2017 229,820  $ 21,917,559  
+July 2018 13,509  2,586,501  
+July 2019 12,834  2,749,075  
+July 2020 12,192  2,213,374  
+June 2021 11,582  3,194,103  
+Total to date* 279,937  $ 32,660,612  
+ 
+* On January 21, 2010, Berkshire Hathaway “B” shares split 50:1. All shares received prior to this date 
+and the total shares received to date have been converted to reflect this split. 
+Although Mr. Buffett did not designate any significant restrictions on the use of the contributions, he did 
+place three conditions on his remaining pledge: 
+(1) At least one of Bill Gates or Melinda French Gates must remain alive and active in the policy-setting 
+and administration of the Foundation. 
+(2) The Trust must continue to satisfy legal requirements qualifying his gift as charitable and not subject to 
+gift or other taxes. 
+(3) The value of his annual gift must be fully additive to the spending required by the Internal Revenue  
+Code (i.e., approximately 5% of the Trust’s net assets). The additional spending required as a condition 
+of the gift will be based on the prior year’s contribution. 
+As this gift is conditional and the conditions cannot be satisfied in advance of each year ’s installment of 
+the gift, a receivable for the remaining contribution has not been reflected in these financial statements. 
+Rather, future contribution income will be recognized in annual installments as the conditions of the gift 
+are met. 
+(8) Subsequent Events 
+The Trust evaluated subsequent events from December 31, 2021 through May 10, 2022, the date on which 
+the financial statements were available to be issued, and determined that no additional disclosures are 
+required. 

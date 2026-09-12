@@ -20,6 +20,7 @@ const SHARED_MODULES = [
   'src/utils/dataValidation.js',
   'src/utils/constants.js',
   'src/utils/globalParameterRules.js',
+  'src/utils/typeGuards.js',
   'scripts/siteOrigin.js',
 ];
 

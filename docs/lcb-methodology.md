@@ -32,6 +32,8 @@ $$
 
 The exponent uses UTC calendar-day differences, including weekends and leap days. This is uniform compounded interpolation, not observed daily market performance. Missing endpoints or extrapolation fail generation.
 
+The extract follows the saved official HTML table labeled January 5, 2026, including the 2025 endpoint of 1,157,598.95. The later downloaded workbook reports 1,157,009.0876078464 instead. Both source versions are retained and identified separately; the workbook is not the authority for the chosen 2025 endpoint.
+
 CPI-U uses the gift's calendar month and December 2025 for $T$. FRED/BLS has no October 2025 observation, so the saved value is the explicitly labeled arithmetic mean of September and November: $(324.800 + 324.122)/2 = 324.461$. Every transfer using that month is labeled in the export. Any other missing month, or a missing snapshot month, aborts generation.
 
 ## Transfers and reconciliation
@@ -50,7 +52,13 @@ Donor IDs join explicitly to wealth profile IDs. The preferred input is the late
 
 Forbes's March 7, 2025 list supplies most observations through a [third-party transcription by FilesUploader](https://github.com/FilesUploader/Forbes-Billionaire-List/commit/7245d285eeecc3999cf772aa47b276ffe2fb8e3d). The source manifest pins the byte-identical download to that commit and distinguishes the transcription's publication from Forbes's official date and methodology. Dated alternatives cover four people absent from that list. Dustin Moskovitz/Cari Tuna, Steve/Connie Ballmer, and John/Laura Arnold are unranked because the evidence identifies shared wealth pools without defensible individual allocations. Missing or unusable wealth stays null. A matched donor without supported giving retains known wealth, but all giving totals, charity-adjusted wealth, and rank are null.
 
-All current histories are marked partial: the ledger covers every seed event, but many dates retain provisional year estimates and deeper source reconciliation remains bounded. Multi-year aggregates, including the Bloomberg lifetime lump and the unsupported Sainsbury, Dangote, Plattner, and Huang timing estimates, are excluded from compounding. `coverage.json` reports active and excluded files, every included/excluded event, future transfers, wealth status, and unresolved references; population counts are derived from the inputs.
+All current histories are marked partial: the ledger covers every seed event, but many dates retain provisional year estimates and deeper source reconciliation remains bounded. Multi-year aggregates, including the Bloomberg lifetime lump, Scott's cumulative giving, Soros's unsupported annual allocations, and the unsupported Sainsbury, Dangote, Plattner, and Huang timing estimates, are excluded from compounding. The Bezos Earth Fund and Day One commitments and Bloomberg's blended annual spending are also excluded pending evidence of completed personal transfers. Billi Marcus's family wealth is unranked without an individual allocation.
+
+`coverage.json` reports active and excluded files, event counts, future transfers, wealth status, and unresolved references; `transfers.json` supplies every event's decision and reason. Named funding vehicles connect their inflows to downstream distributions, which never receive additional personal-giving credit. Unresolved overlap links resolve to transfer fingerprints or documented reference groups. Population counts are derived from the inputs.
+
+Both ranking formats include the snapshot date and a wealth-record reference keyed by donor ID in `inputs/wealth.json`; that record contains the dated observation, source ID, snapshot estimate, and estimation method. Matched observations must fall within the snapshot year and on or before its date. Duplicate donor records, inconsistent input snapshots, unsupported carried-forward estimates, and inconsistent shared-pool allocations fail generation.
+
+The source manifest saves and hashes the material replacement evidence as full document text or HTML, retaining retrieval metadata and original-document hashes where available. A source without saved evidence must explicitly record null paths/hashes and an unavailable reason. Such remote-only citations remain a disclosed offline-audit limitation.
 
 ## Reproducing the snapshot
 

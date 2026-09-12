@@ -32,6 +32,7 @@ const setupWorkspace = () => {
     'src/utils/dataValidation.js',
     'src/utils/constants.js',
     'src/utils/globalParameterRules.js',
+    'src/utils/typeGuards.js',
   ]) {
     fs.mkdirSync(path.dirname(path.join(workspace, file)), { recursive: true });
     fs.copyFileSync(path.join(root, file), path.join(workspace, file));
@@ -73,6 +74,99 @@ describe('generate LCB data', () => {
   });
 
   it.each([
+    ['duplicate wealth', 'wealth.json', (data) => data.records.push({ ...data.records[0] }), 'Duplicate wealth'],
+    [
+      'missing observation',
+      'wealth.json',
+      (data) => {
+        data.records[0].observation = null;
+      },
+      'sourced observation',
+    ],
+    [
+      'future observation',
+      'wealth.json',
+      (data) => {
+        data.records[0].observation.date = '2026-01-01';
+      },
+      'ineligible observation',
+    ],
+    [
+      'invalid observation date',
+      'wealth.json',
+      (data) => {
+        data.records[0].observation.date = '2025-02-30';
+      },
+      'real calendar date',
+    ],
+    [
+      'changed carried wealth',
+      'wealth.json',
+      (data) => {
+        data.records[0].estimateAtSnapshot += 1;
+      },
+      'forward unchanged',
+    ],
+    [
+      'wealth snapshot mismatch',
+      'wealth.json',
+      (data) => {
+        data.snapshotDate = '2024-12-31';
+      },
+      'snapshotDate does not match',
+    ],
+    [
+      'transfer snapshot mismatch',
+      'transfers.json',
+      (data) => {
+        data.snapshotDate = '2024-12-31';
+      },
+      'snapshotDate does not match',
+    ],
+    ['stale partial donor', 'transfers.json', (data) => data.partialDonorIds.push('stale'), 'unique active donor'],
+    [
+      'unknown overlap',
+      'transfers.json',
+      (data) => data.unresolvedBalances[0].overlapLinks.push('missing'),
+      'unresolved overlap link',
+    ],
+    [
+      'unresolved interval date',
+      'transfers.json',
+      (data) => {
+        Object.values(data.dispositions).find((d) => d.datePrecision === 'unresolved-interval').effectiveDate =
+          '2025-01-01';
+      },
+      'null effectiveDate',
+    ],
+    [
+      'period containment',
+      'transfers.json',
+      (data) => {
+        const d = Object.values(data.dispositions).find((d) => d.datePrecision === 'period');
+        d.periodStart = '2025-01-01';
+        d.periodEnd = '2025-12-31';
+      },
+      'contain its seed date',
+    ],
+    [
+      'missing evidence state',
+      'sources.json',
+      (data) => {
+        delete data.sources[0].savedSource;
+      },
+      'explicit nulls',
+    ],
+    [
+      'included downstream',
+      'transfers.json',
+      (data) => {
+        const d = Object.values(data.dispositions).find((d) => d.transferStage === 'vehicle-distribution');
+        d.decision = 'include';
+        d.exclusionReason = null;
+      },
+      'downstream',
+    ],
     [
       'missing disposition',
       'transfers.json',
@@ -176,8 +270,97 @@ describe('generate LCB data', () => {
   it('keeps JSON and CSV ranking rows aligned', () => {
     const rankings = JSON.parse(fs.readFileSync(path.join(resultsDir, 'rankings.json'), 'utf8'));
     const csv = fs.readFileSync(path.join(resultsDir, 'rankings.csv'), 'utf8');
-    expect(csv.trimEnd().split('\n')).toHaveLength(rankings.rows.length + 1);
-    for (const row of rankings.rows) expect(csv).toContain(`,${row.donorId},`);
+    const [header, ...lines] = csv.trimEnd().split('\n');
+    const columns = header.split(',');
+    expect(columns).toEqual([
+      'rank',
+      'donorId',
+      'name',
+      'snapshotDate',
+      'wealthRecordReference',
+      'wealthStatus',
+      'wealthAtSnapshot',
+      'nominalGiving',
+      'marketAdjustedGiving',
+      'inflationAdjustedGiving',
+      'charityAdjustedWealth',
+      'partialGivingHistory',
+    ]);
+    const parsed = lines.map((line) =>
+      [...line.matchAll(/("(?:[^"]|"")*"|[^,]*)(,|$)/g)]
+        .slice(0, -1)
+        .map((match) => (match[1].startsWith('"') ? match[1].slice(1, -1).replaceAll('""', '"') : match[1]))
+    );
+    expect(parsed).toEqual(
+      rankings.rows.map((row) => columns.map((column) => (row[column] === null ? '' : String(row[column]))))
+    );
+  });
+
+  it.each([
+    ['2024-02-29', 'month', {}, '2024-02-15'],
+    ['2025-12-01', 'month', {}, '2025-12-16'],
+    ['2020-04-05', 'period', { periodStart: '2019-04-06', periodEnd: '2020-04-05' }, '2019-10-05'],
+  ])('aligns %s with %s precision', (seedDate, precision, bounds, expectedDate) => {
+    const workspace = setupWorkspace();
+    const event = loadDonations(path.join(workspace, 'content/donations')).find((e) => e.date === seedDate);
+    expect(event).toBeDefined();
+    editInput(workspace, 'transfers.json', (data) =>
+      Object.assign(data.dispositions[event.fingerprint], {
+        decision: 'include',
+        exclusionReason: null,
+        datePrecision: precision,
+        transferStage: 'personal-transfer',
+        fundingVehicleId: null,
+        effectiveDate: expectedDate,
+        ...bounds,
+      })
+    );
+    const result = runGenerator(workspace);
+    expect(result.status, result.stderr).toBe(0);
+    const output = JSON.parse(fs.readFileSync(path.join(workspace, 'data/lcb/results/transfers.json')));
+    expect(output.transfers.find((t) => t.fingerprint === event.fingerprint).effectiveDate).toBe(expectedDate);
+  });
+
+  it('preserves an explicit exclusion reason for a future event', () => {
+    const workspace = setupWorkspace();
+    const ledger = JSON.parse(fs.readFileSync(path.join(workspace, 'data/lcb/inputs/transfers.json')));
+    const fingerprint = Object.keys(ledger.dispositions).find(
+      (id) => ledger.dispositions[id].effectiveDate > '2025-12-31'
+    );
+    editInput(workspace, 'transfers.json', (data) =>
+      Object.assign(data.dispositions[fingerprint], { decision: 'exclude', exclusionReason: 'unverified-commitment' })
+    );
+    const result = runGenerator(workspace);
+    expect(result.status, result.stderr).toBe(0);
+    const output = JSON.parse(fs.readFileSync(path.join(workspace, 'data/lcb/results/transfers.json')));
+    expect(output.transfers.find((t) => t.fingerprint === fingerprint).exclusionReason).toBe('unverified-commitment');
+  });
+
+  it('independently recomputes an exported donor total and rank', () => {
+    const rankings = JSON.parse(fs.readFileSync(path.join(resultsDir, 'rankings.json')));
+    const transfers = JSON.parse(fs.readFileSync(path.join(resultsDir, 'transfers.json'))).transfers;
+    const giving = transfers.filter((t) => t.decision === 'include' && t.credit['dietmar-hopp']);
+    expect(giving).toHaveLength(1);
+    expect(giving[0]).toMatchObject({
+      amountUSD: 2_971_250,
+      effectiveDate: '2004-07-01',
+      credit: { 'dietmar-hopp': 1 },
+    });
+    const endpoints = fs
+      .readFileSync(path.join(root, 'data/lcb/inputs/sp500-total-return.csv'), 'utf8')
+      .trim()
+      .split('\n')
+      .slice(1)
+      .map((line) => line.split(','));
+    const value = (year) => Number(endpoints.find(([date]) => date === `${year}-12-31`)[1]);
+    const expectedMarket = (2_971_250 * value(2025)) / (value(2003) * (value(2004) / value(2003)) ** (183 / 366));
+    const row = rankings.rows.find((r) => r.donorId === 'dietmar-hopp');
+    expect(row.marketAdjustedGiving).toBeCloseTo(expectedMarket, 2);
+    expect(row.nominalGiving).toBe(2_971_250);
+    expect(row.rank).toBeGreaterThan(0);
+    const ranked = rankings.rows.filter((r) => r.rank !== null);
+    expect(ranked.map((r) => r.rank)).toEqual(ranked.map((_, i) => i + 1));
+    for (const r of ranked) expect(r.charityAdjustedWealth).toBeCloseTo(r.wealthAtSnapshot + r.marketAdjustedGiving, 1);
   });
 
   it('uses the explicit October CPI estimate and dividend-inclusive endpoint ratio', () => {

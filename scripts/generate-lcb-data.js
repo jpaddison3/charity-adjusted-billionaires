@@ -41,7 +41,17 @@ function loadDonors() {
 }
 
 function assertHash(source) {
-  if (!source.savedSource || !source.savedSourceSha256) return;
+  if (!source.savedSource || !source.savedSourceSha256) {
+    if (
+      source.savedSource !== null ||
+      source.savedSourceSha256 !== null ||
+      typeof source.unavailableReason !== 'string' ||
+      !source.unavailableReason.trim()
+    ) {
+      throw new Error(`Source ${source.id} needs saved evidence or explicit nulls and an unavailableReason.`);
+    }
+    return;
+  }
   const bytes = fs.readFileSync(path.join(inputsDir, source.savedSource));
   const actual = crypto.createHash('sha256').update(bytes).digest('hex');
   if (actual !== source.savedSourceSha256) {
@@ -63,6 +73,8 @@ function resolveTransfer(event, disposition, sourceIds, snapshotDate) {
     'estimationRationale',
     'periodStart',
     'periodEnd',
+    'fundingVehicleId',
+    'transferStage',
   ]);
   if (!disposition || typeof disposition !== 'object' || Array.isArray(disposition)) {
     throw new Error(`${context} must be an object.`);
@@ -84,6 +96,16 @@ function resolveTransfer(event, disposition, sourceIds, snapshotDate) {
     if (typeof disposition[field] !== 'string' || !disposition[field].trim()) {
       throw new Error(`${context} needs ${field}.`);
     }
+  }
+  if (!['personal-transfer', 'vehicle-inflow', 'vehicle-distribution'].includes(disposition.transferStage)) {
+    throw new Error(`${context} has invalid transferStage.`);
+  }
+  if (
+    disposition.transferStage === 'personal-transfer'
+      ? disposition.fundingVehicleId !== null
+      : typeof disposition.fundingVehicleId !== 'string' || !disposition.fundingVehicleId
+  ) {
+    throw new Error(`${context} has invalid fundingVehicleId for its stage.`);
   }
   for (const field of ['sourceIds', 'cumulativePeriodMembership']) {
     if (!Array.isArray(disposition[field]) || disposition[field].some((id) => typeof id !== 'string' || !id)) {
@@ -126,7 +148,7 @@ function resolveTransfer(event, disposition, sourceIds, snapshotDate) {
     }
   }
   const transfer = { ...event, ...disposition };
-  return transfer.effectiveDate && transfer.effectiveDate > snapshotDate
+  return transfer.decision === 'include' && transfer.effectiveDate && transfer.effectiveDate > snapshotDate
     ? { ...transfer, decision: 'exclude', exclusionReason: 'after-snapshot' }
     : transfer;
 }
@@ -143,6 +165,12 @@ function buildOutputs() {
   const seedEvents = loadDonations(path.join(contentDir, 'donations'));
   const ledger = readJson('transfers.json');
   const wealth = readJson('wealth.json');
+  for (const [name, input] of [
+    ['transfers', ledger],
+    ['wealth', wealth],
+  ]) {
+    if (input.snapshotDate !== snapshot.snapshotDate) throw new Error(`${name} snapshotDate does not match snapshot.`);
+  }
   const market = readCsv('sp500-total-return.csv').map((row) => ({ ...row, value: Number(row.value) }));
   const cpi = readCsv('cpi-u.csv').map((row) => ({ ...row, value: Number(row.value) }));
 
@@ -171,17 +199,66 @@ function buildOutputs() {
   }
   for (const record of wealth.records) {
     if (!donorIds.has(record.donorId)) throw new Error(`Wealth inputs reference unknown donor ${record.donorId}.`);
+    if (!['matched', 'unmatched', 'unusable'].includes(record.status)) {
+      throw new Error(`Wealth input ${record.donorId} has invalid status.`);
+    }
     for (const sourceId of [record.observation?.sourceId, record.observation?.conversionSourceId].filter(Boolean)) {
       if (!sourceIds.has(sourceId))
         throw new Error(`Wealth input ${record.donorId} references unknown source ${sourceId}.`);
     }
+    if (record.status === 'matched') {
+      const observation = record.observation;
+      if (!observation || !sourceIds.has(observation.sourceId)) {
+        throw new Error(`Matched wealth ${record.donorId} needs a sourced observation.`);
+      }
+      parseUtcDate(observation.date, 'wealth observation date');
+      if (
+        observation.date > snapshot.snapshotDate ||
+        observation.date.slice(0, 4) !== snapshot.snapshotDate.slice(0, 4)
+      ) {
+        throw new Error(`Matched wealth ${record.donorId} has an ineligible observation date.`);
+      }
+      if (!Number.isFinite(observation.amountUSD) || observation.amountUSD < 0 || !record.estimateMethod?.trim()) {
+        throw new Error(`Matched wealth ${record.donorId} needs a valid observed amount and estimateMethod.`);
+      }
+      if (!record.sharedPoolId && record.estimateAtSnapshot !== observation.amountUSD) {
+        throw new Error(`Matched wealth ${record.donorId} must carry the observed amount forward unchanged.`);
+      }
+    } else if (record.estimateAtSnapshot !== null || !record.reason?.trim()) {
+      throw new Error(`Unranked wealth ${record.donorId} needs a null estimate and reason.`);
+    }
   }
 
   const partialIds = new Set(ledger.partialDonorIds);
+  if (partialIds.size !== ledger.partialDonorIds.length || [...partialIds].some((id) => !donorIds.has(id))) {
+    throw new Error('partialDonorIds must contain unique active donor IDs.');
+  }
   const donors = donorProfiles.map((donor) => ({ ...donor, partialGivingHistory: partialIds.has(donor.id) }));
   const transfers = seedEvents.map((event) =>
     resolveTransfer(event, dispositions[event.fingerprint], sourceIds, snapshot.snapshotDate)
   );
+  const vehicles = new Map(ledger.fundingVehicles.map((vehicle) => [vehicle.id, vehicle]));
+  if (vehicles.size !== ledger.fundingVehicles.length) throw new Error('Duplicate funding vehicle ID.');
+  for (const transfer of transfers) {
+    if (!transfer.fundingVehicleId) continue;
+    const vehicle = vehicles.get(transfer.fundingVehicleId);
+    if (
+      !vehicle ||
+      (transfer.transferStage === 'vehicle-inflow' && !vehicle.inflowRecipientIds.includes(transfer.recipientId))
+    ) {
+      throw new Error(`Transfer ${transfer.fingerprint} has an invalid funding vehicle relationship.`);
+    }
+  }
+  const referenceIds = new Set(transfers.flatMap((transfer) => [transfer.fingerprint, transfer.transferIdentity]));
+  for (const reference of [...ledger.unresolvedBalances, ...ledger.referenceGroups]) {
+    if (referenceIds.has(reference.id)) throw new Error(`Duplicate reconciliation reference ${reference.id}.`);
+    referenceIds.add(reference.id);
+  }
+  for (const reference of [...ledger.unresolvedBalances, ...ledger.referenceGroups]) {
+    for (const id of reference.overlapLinks ?? []) {
+      if (!referenceIds.has(id)) throw new Error(`Reconciliation ${reference.id} has unresolved overlap link ${id}.`);
+    }
+  }
   const { rows, transferResults } = aggregateDonors({
     donors,
     transfers,
@@ -195,6 +272,8 @@ function buildOutputs() {
   );
   const roundedRows = rows.map((row) => ({
     ...row,
+    snapshotDate: snapshot.snapshotDate,
+    wealthRecordReference: `../inputs/wealth.json#${row.donorId}`,
     nominalGiving: roundUsd(row.nominalGiving),
     marketAdjustedGiving: roundUsd(row.marketAdjustedGiving),
     inflationAdjustedGiving: roundUsd(row.inflationAdjustedGiving),
@@ -216,6 +295,8 @@ function buildOutputs() {
     exclusionReason: transfer.exclusionReason ?? null,
     transferIdentity: transfer.transferIdentity,
     fundingChain: transfer.fundingChain,
+    fundingVehicleId: transfer.fundingVehicleId,
+    transferStage: transfer.transferStage,
     cumulativePeriodMembership: transfer.cumulativePeriodMembership,
     sourceIds: transfer.sourceIds,
     estimationRationale: transfer.estimationRationale,
@@ -267,11 +348,14 @@ function buildOutputs() {
     ),
     partialGivingHistories: ledger.partialDonorIds.length,
     unresolvedBalances: ledger.unresolvedBalances,
+    referenceGroups: ledger.referenceGroups,
   };
   const csvColumns = [
     'rank',
     'donorId',
     'name',
+    'snapshotDate',
+    'wealthRecordReference',
     'wealthStatus',
     'wealthAtSnapshot',
     'nominalGiving',

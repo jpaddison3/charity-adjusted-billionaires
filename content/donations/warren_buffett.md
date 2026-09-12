@@ -452,7 +452,7 @@ donations:
     amount: 2_404_602_000
     credit:
       warren-buffett: 1.0
-    source: 'https://docs.gatesfoundation.orgilho/documents/f_292755d-1b_billmelindagatesfoundationtrust_fs.pdf'
+    source: 'https://docs.gatesfoundation.org/Documents/F_087119F-1A_19_BillMelindaGatesFoundationTrust_FS.PDF'
     notes: "Audited fair value of Buffett's annual Berkshire share transfer to the Gates Foundation Trust."
 
   - date: 2017-07-10
@@ -460,7 +460,7 @@ donations:
     amount: 240_460_000
     credit:
       warren-buffett: 1.0
-    source: 'https://docs.gatesfoundation.orgilho/documents/f_292755d-1b_billmelindagatesfoundationtrust_fs.pdf'
+    source: 'https://docs.gatesfoundation.org/Documents/F_087119F-1A_19_BillMelindaGatesFoundationTrust_FS.PDF'
     notes: 'Estimated from the same-day Berkshire share-count ratio to the Gates Foundation transfer and its audited fair value; rounded to the nearest $1,000.'
 
   - date: 2017-07-10
@@ -468,7 +468,7 @@ donations:
     amount: 168_322_000
     credit:
       warren-buffett: 1.0
-    source: 'https://docs.gatesfoundation.orgilho/documents/f_292755d-1b_billmelindagatesfoundationtrust_fs.pdf'
+    source: 'https://docs.gatesfoundation.org/Documents/F_087119F-1A_19_BillMelindaGatesFoundationTrust_FS.PDF'
     notes: 'Estimated from the same-day Berkshire share-count ratio to the Gates Foundation transfer and its audited fair value; rounded to the nearest $1,000.'
 
   - date: 2017-07-10
@@ -476,7 +476,7 @@ donations:
     amount: 168_322_000
     credit:
       warren-buffett: 1.0
-    source: 'https://docs.gatesfoundation.orgilho/documents/f_292755d-1b_billmelindagatesfoundationtrust_fs.pdf'
+    source: 'https://docs.gatesfoundation.org/Documents/F_087119F-1A_19_BillMelindaGatesFoundationTrust_FS.PDF'
     notes: 'Estimated from the same-day Berkshire share-count ratio to the Gates Foundation transfer and its audited fair value; rounded to the nearest $1,000.'
 
   - date: 2017-07-10
@@ -484,7 +484,7 @@ donations:
     amount: 168_322_000
     credit:
       warren-buffett: 1.0
-    source: 'https://docs.gatesfoundation.orgilho/documents/f_292755d-1b_billmelindagatesfoundationtrust_fs.pdf'
+    source: 'https://docs.gatesfoundation.org/Documents/F_087119F-1A_19_BillMelindaGatesFoundationTrust_FS.PDF'
     notes: 'Estimated from the same-day Berkshire share-count ratio to the Gates Foundation transfer and its audited fair value; rounded to the nearest $1,000.'
 
   - date: 2018-07-16
@@ -652,7 +652,7 @@ donations:
     amount: 3_081_224_000
     credit:
       warren-buffett: 1.0
-    source: 'https://docs.gatesfoundation.org/documents/2023-gates-foundation-trust-financial-statements.pdf'
+    source: 'https://docs.gatesfoundation.org/documents/bmgf%202023%20trust%20audited%20financial%20statements.pdf'
     notes: "Audited fair value of Buffett's annual Berkshire share transfer to the Gates Foundation Trust."
 
   - date: 2022-06-14
@@ -660,7 +660,7 @@ donations:
     amount: 308_122_000
     credit:
       warren-buffett: 1.0
-    source: 'https://docs.gatesfoundation.org/documents/2023-gates-foundation-trust-financial-statements.pdf'
+    source: 'https://docs.gatesfoundation.org/documents/bmgf%202023%20trust%20audited%20financial%20statements.pdf'
     notes: 'Estimated from the same-day Berkshire share-count ratio to the Gates Foundation transfer and its audited fair value; rounded to the nearest $1,000.'
 
   - date: 2022-06-14
@@ -668,7 +668,7 @@ donations:
     amount: 215_686_000
     credit:
       warren-buffett: 1.0
-    source: 'https://docs.gatesfoundation.org/documents/2023-gates-foundation-trust-financial-statements.pdf'
+    source: 'https://docs.gatesfoundation.org/documents/bmgf%202023%20trust%20audited%20financial%20statements.pdf'
     notes: 'Estimated from the same-day Berkshire share-count ratio to the Gates Foundation transfer and its audited fair value; rounded to the nearest $1,000.'
 
   - date: 2022-06-14
@@ -676,7 +676,7 @@ donations:
     amount: 215_686_000
     credit:
       warren-buffett: 1.0
-    source: 'https://docs.gatesfoundation.org/documents/2023-gates-foundation-trust-financial-statements.pdf'
+    source: 'https://docs.gatesfoundation.org/documents/bmgf%202023%20trust%20audited%20financial%20statements.pdf'
     notes: 'Estimated from the same-day Berkshire share-count ratio to the Gates Foundation transfer and its audited fair value; rounded to the nearest $1,000.'
 
   - date: 2022-06-14
@@ -684,7 +684,7 @@ donations:
     amount: 215_686_000
     credit:
       warren-buffett: 1.0
-    source: 'https://docs.gatesfoundation.org/documents/2023-gates-foundation-trust-financial-statements.pdf'
+    source: 'https://docs.gatesfoundation.org/documents/bmgf%202023%20trust%20audited%20financial%20statements.pdf'
     notes: 'Estimated from the same-day Berkshire share-count ratio to the Gates Foundation transfer and its audited fair value; rounded to the nearest $1,000.'
 
   - date: 2023-06-21

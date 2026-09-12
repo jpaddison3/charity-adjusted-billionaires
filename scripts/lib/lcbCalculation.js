@@ -108,6 +108,9 @@ export function calculateAttributedGift({ event, credit, snapshotDate, market, c
 export function validateFundingChains(events) {
   const identities = new Map();
   for (const event of events.filter((candidate) => candidate.decision === 'include')) {
+    if (event.transferStage === 'vehicle-distribution') {
+      throw new Error(`Transfer ${event.fingerprint} is a downstream vehicle distribution, not a personal inflow.`);
+    }
     const identityKey = `${event.fundingChain}:${event.transferIdentity}`;
     const existing = identities.get(identityKey);
     if (existing) throw new Error(`Included transfers ${existing} and ${event.fingerprint} duplicate ${identityKey}.`);
@@ -117,7 +120,10 @@ export function validateFundingChains(events) {
 
 export function validateWealthAllocations(wealthRecords) {
   const allocations = new Map();
+  const donorIds = new Set();
   for (const record of wealthRecords) {
+    if (donorIds.has(record.donorId)) throw new Error(`Duplicate wealth record for ${record.donorId}.`);
+    donorIds.add(record.donorId);
     if (record.status !== 'matched') continue;
     if (!Number.isFinite(record.estimateAtSnapshot) || record.estimateAtSnapshot < 0) {
       throw new Error(`Matched wealth record ${record.donorId} needs a non-negative estimate.`);
@@ -127,12 +133,23 @@ export function validateWealthAllocations(wealthRecords) {
       if (!Number.isFinite(share) || share <= 0 || share > 1) {
         throw new Error(`Shared wealth record ${record.donorId} needs allocationShare in (0, 1].`);
       }
-      allocations.set(record.sharedPoolId, (allocations.get(record.sharedPoolId) ?? 0) + share);
+      const observation = record.observation;
+      if (!Number.isFinite(observation?.amountUSD) || observation.amountUSD < 0) {
+        throw new Error(`Shared wealth record ${record.donorId} needs a pool observation.`);
+      }
+      const expected = observation.amountUSD * share;
+      if (Math.abs(record.estimateAtSnapshot - expected) > Math.max(0.005, expected * 1e-12)) {
+        throw new Error(`Shared wealth record ${record.donorId} estimate must equal its allocated pool amount.`);
+      }
+      const pool = allocations.get(record.sharedPoolId);
+      if (pool && ['amountUSD', 'date', 'sourceId'].some((key) => pool.observation[key] !== observation[key])) {
+        throw new Error(`Shared wealth pool ${record.sharedPoolId} has inconsistent observations.`);
+      }
+      allocations.set(record.sharedPoolId, { share: (pool?.share ?? 0) + share, observation });
     }
   }
-  for (const [poolId, share] of allocations) {
-    if (share > 1 + Number.EPSILON)
-      throw new Error(`Shared wealth pool ${poolId} is allocated at ${share}, above 100%.`);
+  for (const [poolId, { share }] of allocations) {
+    if (share > 1 + 1e-12) throw new Error(`Shared wealth pool ${poolId} is allocated at ${share}, above 100%.`);
   }
 }
 

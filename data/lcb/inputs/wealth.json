@@ -139,7 +139,7 @@
     {
       "donorId": "billi-marcus",
       "profileId": "billi-marcus",
-      "status": "matched",
+      "status": "unusable",
       "identityType": "household",
       "observation": {
         "date": "2025-01-28",
@@ -147,9 +147,9 @@
         "sourceId": "forbes-philanthropy-2025",
         "sourceName": "Billi Marcus"
       },
-      "estimateAtSnapshot": 10300000000,
-      "estimateMethod": "Latest eligible 2025 observation carried forward unchanged to the snapshot.",
-      "reason": "Household/family observation represented by the sole active household profile."
+      "estimateAtSnapshot": null,
+      "estimateMethod": null,
+      "reason": "The observation covers Billi Marcus & family; being the sole active profile does not establish an individual ownership allocation."
     },
     {
       "donorId": "blake-borgeson",

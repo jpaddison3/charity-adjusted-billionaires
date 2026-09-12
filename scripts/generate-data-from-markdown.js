@@ -343,9 +343,6 @@ function normalizeBirthDate(rawBirthDate, filename) {
   return normalizeStrictDateString(rawBirthDate, `Error: Donor file ${filename} has invalid 'birthDate'.`);
 }
 
-// Pull the raw text of every (uncommented) `date:` line out of a donations
-// file's frontmatter, in document order. See normalizeStrictDateString for why
-// we can't use the YAML-parsed date values.
 // Helper function to extract content excluding "Internal Notes" section
 function extractContentExcludingInternalNotes(content, context = 'content') {
   // Split the content into sections based on headers

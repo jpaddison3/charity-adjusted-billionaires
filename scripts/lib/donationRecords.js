@@ -6,11 +6,10 @@ import path from 'path';
 import matter from 'gray-matter';
 import { glob } from 'glob';
 import { assertValidEntityId } from '../../src/utils/dataValidation.js';
+import { isPlainObject } from '../../src/utils/typeGuards.js';
 
 const DONATION_FIELDS = new Set(['date', 'recipient', 'amount', 'credit', 'source', 'notes']);
 const CREDIT_SUM_TOLERANCE = 0.001;
-
-const isPlainObject = (value) => Boolean(value) && typeof value === 'object' && !Array.isArray(value);
 
 // Content dates must be validated from the raw YAML text. YAML parsers can
 // silently roll invalid dates and can interpret dates in the machine timezone.
@@ -186,7 +185,7 @@ export function loadDonations(donationsDir, sourceRoot = path.resolve(donationsD
         credit: { ...donation.credit },
         source: donation.source,
         notes: donation.notes,
-        sourcePath: path.relative(sourceRoot, file),
+        sourcePath: path.relative(sourceRoot, file).split(path.sep).join('/'),
         rowLocator: `donations[${index}]`,
       };
       events.push({ ...event, fingerprint: eventFingerprint(event) });

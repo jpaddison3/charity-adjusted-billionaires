@@ -3,16 +3,31 @@
   "sources": [
     {
       "id": "damodaran-historical-returns",
+      "title": "Historical Returns on Stocks, Bonds and Bills — HTML table",
+      "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/histretSP.html",
+      "publishedDate": "2026-01-05",
+      "publicationDateNote": "Date displayed on the saved HTML table.",
+      "retrievalDate": "2026-09-12",
+      "savedSource": "sources/damodaran-html-january-2026.html",
+      "savedSourceSha256": "127c772f0fea8763391dbf2c1c7d3ecd3a07ca2b23f81ab47af58b529e2b5647",
+      "originalDocumentSha256": "127c772f0fea8763391dbf2c1c7d3ecd3a07ca2b23f81ab47af58b529e2b5647",
+      "extractionMethod": "Saved HTTP response bytes verbatim.",
+      "observationThrough": "2025-12-31",
+      "units": "Cumulative value of $100 invested at the start of 1928 in the S&P 500, including reinvested dividends",
+      "extract": "sp500-total-return.csv",
+      "notes": "2024 endpoint 982,817.82; 2025 endpoint 1,157,598.95. Later XLS vintage differs; retained separately without using its2025 value."
+    },
+    {
+      "id": "damodaran-later-workbook",
       "title": "Historical Returns on Stocks, Bonds and Bills",
       "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/histretSP.html",
       "downloadUrl": "https://www.stern.nyu.edu/~adamodar/pc/datasets/histretSP.xls",
       "publishedDate": "2026-01-05",
       "observationThrough": "2025-12-31",
       "units": "Cumulative value of $100 invested at the start of 1928 in the S&P 500, including reinvested dividends",
-      "extract": "sp500-total-return.csv",
       "savedSource": "sources/histretSP.xls",
       "savedSourceSha256": "28b8110916a15a4dcc11c87c6422510704608ddedcdfa67a1298abdc22e49c69",
-      "notes": "The page's heading remains stale, but the workbook contains 2025. The downloaded workbook metadata says it was last saved August 24, 2026; the saved 1990–2025 extract agrees with the January 2026 endpoints specified for this snapshot."
+      "notes": "Calculation extract uses the official HTML table labeled Updated January 5, 2026. The later saved XLS differs at the 2025 endpoint (1,157,009.0876078464 vs HTML 1,157,598.95); the requested HTML vintage is authoritative for this snapshot."
     },
     {
       "id": "fred-cpiaucns",
@@ -34,7 +49,10 @@
       "publishedDate": "2026-01-13",
       "observationThrough": "2025-12-01",
       "units": "Index 1982–1984=100, monthly, not seasonally adjusted",
-      "notes": "Confirms December 2025 at 324.054 and the missing October observation. The October input is explicitly estimated as the arithmetic mean of September (324.800) and November (324.122): 324.461."
+      "notes": "Confirms December 2025 at 324.054 and the missing October observation. The October input is explicitly estimated as the arithmetic mean of September (324.800) and November (324.122): 324.461.",
+      "savedSource": null,
+      "savedSourceSha256": null,
+      "unavailableReason": "This source has a remote citation and transcribed observation, but no saved document was available in this snapshot. Offline provenance is incomplete."
     },
     {
       "id": "forbes-billionaires-2025",
@@ -62,7 +80,10 @@
       "url": "https://www.forbes.com/sites/forbeswealthteam/2025/02/03/americas-most-generous-philanthropists-2025/",
       "publishedDate": "2025-02-03",
       "observationDate": "2025-01-28",
-      "units": "USD"
+      "units": "USD",
+      "savedSource": null,
+      "savedSourceSha256": null,
+      "unavailableReason": "This source has a remote citation and transcribed observation, but no saved document was available in this snapshot. Offline provenance is incomplete."
     },
     {
       "id": "sunday-times-rich-list-2025",
@@ -71,7 +92,10 @@
       "publishedDate": "2025-05-16",
       "observationDate": "2025-05-16",
       "units": "GBP",
-      "notes": "David Sainsbury's GBP 402M observation is converted at the Federal Reserve H.10 1.3283 GBP/USD rate."
+      "notes": "David Sainsbury's GBP 402M observation is converted at the Federal Reserve H.10 1.3283 GBP/USD rate.",
+      "savedSource": null,
+      "savedSourceSha256": null,
+      "unavailableReason": "This source has a remote citation and transcribed observation, but no saved document was available in this snapshot. Offline provenance is incomplete."
     },
     {
       "id": "federal-reserve-h10-2025-05-16",
@@ -79,7 +103,10 @@
       "url": "https://www.federalreserve.gov/releases/h10/20250519/",
       "publishedDate": "2025-05-19",
       "observationDate": "2025-05-16",
-      "units": "USD per GBP"
+      "units": "USD per GBP",
+      "savedSource": null,
+      "savedSourceSha256": null,
+      "unavailableReason": "This source has a remote citation and transcribed observation, but no saved document was available in this snapshot. Offline provenance is incomplete."
     },
     {
       "id": "aripaev-rich-list-2025",
@@ -88,7 +115,10 @@
       "publishedDate": "2025-09-10",
       "observationDate": "2025-09-10",
       "units": "EUR",
-      "notes": "Jaan Tallinn's EUR 644M observation is converted at the Federal Reserve H.10 1.1714 EUR/USD rate."
+      "notes": "Jaan Tallinn's EUR 644M observation is converted at the Federal Reserve H.10 1.1714 EUR/USD rate.",
+      "savedSource": null,
+      "savedSourceSha256": null,
+      "unavailableReason": "This source has a remote citation and transcribed observation, but no saved document was available in this snapshot. Offline provenance is incomplete."
     },
     {
       "id": "federal-reserve-h10-2025-09-10",
@@ -96,7 +126,10 @@
       "url": "https://www.federalreserve.gov/releases/h10/20250915/",
       "publishedDate": "2025-09-15",
       "observationDate": "2025-09-10",
-      "units": "USD per EUR"
+      "units": "USD per EUR",
+      "savedSource": null,
+      "savedSourceSha256": null,
+      "unavailableReason": "This source has a remote citation and transcribed observation, but no saved document was available in this snapshot. Offline provenance is incomplete."
     },
     {
       "id": "forbes-rowling-2025",
@@ -104,7 +137,276 @@
       "url": "https://www.forbes.com/sites/mattcraig/2025/05/30/jk-rowling-is-a-billionaire-again/",
       "publishedDate": "2025-05-30",
       "observationDate": "2025-05-30",
-      "units": "USD"
+      "units": "USD",
+      "savedSource": null,
+      "savedSourceSha256": null,
+      "unavailableReason": "This source has a remote citation and transcribed observation, but no saved document was available in this snapshot. Offline provenance is incomplete."
+    },
+    {
+      "id": "transfer-evidence-01",
+      "title": "Unavailable transfer evidence: https://www.washington.edu/news/1991/10/07/bill-gates-gives-uw-12-million-to-create-biotech-department/",
+      "url": "https://www.washington.edu/news/1991/10/07/bill-gates-gives-uw-12-million-to-create-biotech-department/",
+      "publishedDate": null,
+      "retrievalDate": "2026-09-12",
+      "savedSource": null,
+      "savedSourceSha256": null,
+      "unavailableReason": "HTTP retrieval failed during offline-evidence capture; the remote citation remains available for manual verification. See review evidence log."
+    },
+    {
+      "id": "transfer-evidence-02",
+      "title": "Transfer evidence: gates-computer-science-building",
+      "url": "https://www.cs.stanford.edu/about/gates-computer-science-building",
+      "publishedDate": null,
+      "publicationDateNote": "Publication date not independently established; the document identifies its reporting period.",
+      "retrievalDate": "2026-09-12",
+      "savedSource": "sources/transfer-evidence-02.html",
+      "savedSourceSha256": "b403150f50b4619c7a0d7bf879c5d76fa60cc5beeba8eb0e78f5c5fc9f7c1c4b",
+      "originalDocumentSha256": "b403150f50b4619c7a0d7bf879c5d76fa60cc5beeba8eb0e78f5c5fc9f7c1c4b",
+      "extractionMethod": "Saved HTTP response bytes verbatim."
+    },
+    {
+      "id": "transfer-evidence-03",
+      "title": "Transfer evidence: gates-ballmer-donate-25-m-for",
+      "url": "https://www.thecrimson.com/article/1996/10/30/gates-ballmer-donate-25-m-for",
+      "publishedDate": null,
+      "publicationDateNote": "Publication date not independently established; the document identifies its reporting period.",
+      "retrievalDate": "2026-09-12",
+      "savedSource": "sources/transfer-evidence-03.html",
+      "savedSourceSha256": "a2920afff9e69a29d43549a13ee230d127d01765eda5bb203c0eb1ee525e533c",
+      "originalDocumentSha256": "a2920afff9e69a29d43549a13ee230d127d01765eda5bb203c0eb1ee525e533c",
+      "extractionMethod": "Saved HTTP response bytes verbatim."
+    },
+    {
+      "id": "transfer-evidence-04",
+      "title": "Transfer evidence: 2907",
+      "url": "https://www.historylink.org/File/2907",
+      "publishedDate": null,
+      "publicationDateNote": "Publication date not independently established; the document identifies its reporting period.",
+      "retrievalDate": "2026-09-12",
+      "savedSource": "sources/transfer-evidence-04.html",
+      "savedSourceSha256": "83a9257b2b068de583e1fadc2cf2028b613e7d170270763e973c65ee8bb5551d",
+      "originalDocumentSha256": "83a9257b2b068de583e1fadc2cf2028b613e7d170270763e973c65ee8bb5551d",
+      "extractionMethod": "Saved HTTP response bytes verbatim."
+    },
+    {
+      "id": "transfer-evidence-05",
+      "title": "Unavailable transfer evidence: https://www.gatesfoundation.org/-/media/gfo/1annual-reports/1999gates-foundation-annual-report.pdf",
+      "url": "https://www.gatesfoundation.org/-/media/gfo/1annual-reports/1999gates-foundation-annual-report.pdf",
+      "publishedDate": null,
+      "retrievalDate": "2026-09-12",
+      "savedSource": "sources/transfer-evidence-05.txt",
+      "savedSourceSha256": "dc7c591f50db4e2e34928adcfa2466401bc576a11f8703436c8ed8eb9d178bff",
+      "originalDocumentSha256": "404ec0bd31067600127219d3beb66f2f51cf91b4f3f09d0d688e678fa42361f0",
+      "extractionMethod": "pypdf 6.13.2 page text with explicit PDF page markers; amounts retain source units.",
+      "publicationDateNote": "Publication date not independently established; source specifies reporting period."
+    },
+    {
+      "id": "transfer-evidence-06",
+      "title": "Transfer evidence: statement-from-the-bill-melinda-gates-foundation",
+      "url": "https://www.gatesfoundation.org/ideas/media-center/press-releases/2000/01/statement-from-the-bill-melinda-gates-foundation",
+      "publishedDate": null,
+      "publicationDateNote": "Publication date not independently established; the document identifies its reporting period.",
+      "retrievalDate": "2026-09-12",
+      "savedSource": "sources/transfer-evidence-06.html",
+      "savedSourceSha256": "4727fce2927932b9aa1b8e00516d6465761c0cda87491622dd541ef8bee66aa7",
+      "originalDocumentSha256": "4727fce2927932b9aa1b8e00516d6465761c0cda87491622dd541ef8bee66aa7",
+      "extractionMethod": "Saved HTTP response bytes verbatim."
+    },
+    {
+      "id": "transfer-evidence-07",
+      "title": "Unavailable transfer evidence: https://docs.gatesfoundation.org/documents/2017%20BMGFT%20Form%20990PF.PDF",
+      "url": "https://docs.gatesfoundation.org/documents/2017%20BMGFT%20Form%20990PF.PDF",
+      "publishedDate": null,
+      "retrievalDate": "2026-09-12",
+      "savedSource": "sources/transfer-evidence-07.txt",
+      "savedSourceSha256": "6cd5fea3a7d40fa942fa9a3fbfccfc12869c64a2edea67c19583b2cb04c9adb9",
+      "originalDocumentSha256": "6fdcfcabc23cf3c38ef4d15bb7e7618cf75a76a459cf4230e2fbda36f85a03ca",
+      "extractionMethod": "pypdf 6.13.2 page text with explicit PDF page markers; amounts retain source units.",
+      "publicationDateNote": "Publication date not independently established; source specifies reporting period."
+    },
+    {
+      "id": "transfer-evidence-08",
+      "title": "Unavailable transfer evidence: https://docs.gatesfoundation.org/documents/2022%20bmgft%20form%20990-pf.pdf",
+      "url": "https://docs.gatesfoundation.org/documents/2022%20bmgft%20form%20990-pf.pdf",
+      "publishedDate": null,
+      "retrievalDate": "2026-09-12",
+      "savedSource": "sources/transfer-evidence-08.txt",
+      "savedSourceSha256": "098c2f187e58ce8e93fcfd1a5571689584fce10bc958dca7371c48d409da01bf",
+      "originalDocumentSha256": "9dc4d593ac119b1058a59a7b734c79086bafdcb95f0ccb89507be6a5aa904767",
+      "extractionMethod": "pypdf 6.13.2 page text with explicit PDF page markers; amounts retain source units.",
+      "publicationDateNote": "Publication date not independently established; source specifies reporting period."
+    },
+    {
+      "id": "transfer-evidence-09",
+      "title": "Transfer evidence: IRS990ScheduleB",
+      "url": "https://projects.propublica.org/nonprofits/organizations/882918646/202543219349106604/IRS990ScheduleB",
+      "publishedDate": null,
+      "publicationDateNote": "Publication date not independently established; the document identifies its reporting period.",
+      "retrievalDate": "2026-09-12",
+      "savedSource": "sources/transfer-evidence-09.html",
+      "savedSourceSha256": "7b1fea4d15368956b50dd81dbb3faaebc8e1f2411ca9ce60efe2a6d0940e1110",
+      "originalDocumentSha256": "7b1fea4d15368956b50dd81dbb3faaebc8e1f2411ca9ce60efe2a6d0940e1110",
+      "extractionMethod": "Saved HTTP response bytes verbatim.",
+      "downloadUrl": "https://projects.propublica.org/nonprofits/full_text/202543219349106604/IRS990ScheduleB",
+      "notes": "Saved rendered Schedule B iframe including actual contribution data; HTTP content decoding applied."
+    },
+    {
+      "id": "transfer-evidence-10",
+      "title": "Transfer evidence: IRS990ScheduleB",
+      "url": "https://projects.propublica.org/nonprofits/organizations/934378098/202523569349100107/IRS990ScheduleB",
+      "publishedDate": null,
+      "publicationDateNote": "Publication date not independently established; the document identifies its reporting period.",
+      "retrievalDate": "2026-09-12",
+      "savedSource": "sources/transfer-evidence-10.html",
+      "savedSourceSha256": "f6fd071c9005fe1578fb3af4f3f4b546b0dd4b8b048c3ec3a227bc5a585fccdc",
+      "originalDocumentSha256": "f6fd071c9005fe1578fb3af4f3f4b546b0dd4b8b048c3ec3a227bc5a585fccdc",
+      "extractionMethod": "Saved HTTP response bytes verbatim.",
+      "downloadUrl": "https://projects.propublica.org/nonprofits/full_text/202523569349100107/IRS990ScheduleB",
+      "notes": "Saved rendered Schedule B iframe including actual contribution data; HTTP content decoding applied."
+    },
+    {
+      "id": "transfer-evidence-11",
+      "title": "Transfer evidence: IRS990ScheduleB",
+      "url": "https://projects.propublica.org/nonprofits/organizations/934400793/202543569349100509/IRS990ScheduleB",
+      "publishedDate": null,
+      "publicationDateNote": "Publication date not independently established; the document identifies its reporting period.",
+      "retrievalDate": "2026-09-12",
+      "savedSource": "sources/transfer-evidence-11.html",
+      "savedSourceSha256": "aaca44f632faaa2d232e1c83b40610cbba1f316d53183939ae5c542fee2a10d8",
+      "originalDocumentSha256": "aaca44f632faaa2d232e1c83b40610cbba1f316d53183939ae5c542fee2a10d8",
+      "extractionMethod": "Saved HTTP response bytes verbatim.",
+      "downloadUrl": "https://projects.propublica.org/nonprofits/full_text/202543569349100509/IRS990ScheduleB",
+      "notes": "Saved rendered Schedule B iframe including actual contribution data; HTTP content decoding applied."
+    },
+    {
+      "id": "transfer-evidence-12",
+      "title": "Transfer evidence: IRS990ScheduleB",
+      "url": "https://projects.propublica.org/nonprofits/organizations/934414218/202503219349106760/IRS990ScheduleB",
+      "publishedDate": null,
+      "publicationDateNote": "Publication date not independently established; the document identifies its reporting period.",
+      "retrievalDate": "2026-09-12",
+      "savedSource": "sources/transfer-evidence-12.html",
+      "savedSourceSha256": "2dc1604bedddafb796b3bd9687edde846508052ceaeec94e0abd48b71b03dedb",
+      "originalDocumentSha256": "2dc1604bedddafb796b3bd9687edde846508052ceaeec94e0abd48b71b03dedb",
+      "extractionMethod": "Saved HTTP response bytes verbatim.",
+      "downloadUrl": "https://projects.propublica.org/nonprofits/full_text/202503219349106760/IRS990ScheduleB",
+      "notes": "Saved rendered Schedule B iframe including actual contribution data; HTTP content decoding applied."
+    },
+    {
+      "id": "transfer-evidence-13",
+      "title": "Unavailable transfer evidence: https://docs.gatesfoundation.org/Documents/2008-gates-foundation-trust-financial-statements.pdf",
+      "url": "https://docs.gatesfoundation.org/Documents/2008-gates-foundation-trust-financial-statements.pdf",
+      "publishedDate": null,
+      "retrievalDate": "2026-09-12",
+      "savedSource": "sources/transfer-evidence-13.txt",
+      "savedSourceSha256": "11441598af24849541993336d3c294a7b4880305997bee8c625c127e4151351f",
+      "originalDocumentSha256": "4d670a6d779d562c88f626f363fb63d4f20a3e3053156bc83809d52e3e157697",
+      "extractionMethod": "pypdf 6.13.2 page text with explicit PDF page markers; amounts retain source units.",
+      "publicationDateNote": "Publication date not independently established; source specifies reporting period."
+    },
+    {
+      "id": "transfer-evidence-14",
+      "title": "Unavailable transfer evidence: https://docs.gatesfoundation.org/documents/2010-trust-financial-statements.pdf",
+      "url": "https://docs.gatesfoundation.org/documents/2010-trust-financial-statements.pdf",
+      "publishedDate": null,
+      "retrievalDate": "2026-09-12",
+      "savedSource": "sources/transfer-evidence-14.txt",
+      "savedSourceSha256": "f39ecee46d4df7d675a03cfa37fdf6933c924bcffefe8c08e4b9370321d22dfb",
+      "originalDocumentSha256": "ea5f94afedcce0ca02ab1541ad38d61a462d23ee247fc10f1a85d96c42d6ecfc",
+      "extractionMethod": "pypdf 6.13.2 page text with explicit PDF page markers; amounts retain source units.",
+      "publicationDateNote": "Publication date not independently established; source specifies reporting period."
+    },
+    {
+      "id": "transfer-evidence-15",
+      "title": "Unavailable transfer evidence: https://docs.gatesfoundation.org/Documents/F_625215_16_GatesFoundationTrust_FS.PDF",
+      "url": "https://docs.gatesfoundation.org/Documents/F_625215_16_GatesFoundationTrust_FS.PDF",
+      "publishedDate": null,
+      "retrievalDate": "2026-09-12",
+      "savedSource": "sources/transfer-evidence-15.txt",
+      "savedSourceSha256": "4620182786cc66a6c70eeb1eddfba0127e36dc0bc4741642aaff4a92cfc24db0",
+      "originalDocumentSha256": "2a3ff4eb15e88df08d12b0ffd4696117b642b6f1ff19ee5fb8bd8d1a3a025988",
+      "extractionMethod": "pypdf 6.13.2 page text with explicit PDF page markers; amounts retain source units.",
+      "publicationDateNote": "Publication date not independently established; source specifies reporting period."
+    },
+    {
+      "id": "transfer-evidence-16",
+      "title": "Unavailable transfer evidence: https://990s.foundationcenter.org/990pf_pdf_archive/476/476032365/476032365_201212_990PF.pdf",
+      "url": "https://990s.foundationcenter.org/990pf_pdf_archive/476/476032365/476032365_201212_990PF.pdf",
+      "publishedDate": null,
+      "retrievalDate": "2026-09-12",
+      "savedSource": "sources/transfer-evidence-16.txt",
+      "savedSourceSha256": "49e09f305640870d03aec12bc9abb3233582ec9203221cdc8e118656aee88d7b",
+      "originalDocumentSha256": "074da273c9f9ed6932fe7f1b46c5e57b2f10fc153d964e14cc0617972e37c625",
+      "extractionMethod": "pypdf 6.13.2 page text with explicit PDF page markers; amounts retain source units.",
+      "publicationDateNote": "Publication date not independently established; source specifies reporting period."
+    },
+    {
+      "id": "transfer-evidence-17",
+      "title": "Unavailable transfer evidence: https://docs.gatesfoundation.org/Documents/F_087119F-1A_19_BillMelindaGatesFoundationTrust_FS.PDF",
+      "url": "https://docs.gatesfoundation.org/Documents/F_087119F-1A_19_BillMelindaGatesFoundationTrust_FS.PDF",
+      "publishedDate": null,
+      "retrievalDate": "2026-09-12",
+      "savedSource": "sources/transfer-evidence-17.txt",
+      "savedSourceSha256": "246b55ca50820e2313a2a75d62d5705768ea2c750358bdc8153fe326a9076302",
+      "originalDocumentSha256": "13a8430c0a8cb8a1bfb39b205e6992b94cbf1c37cf9fee5bb562ab0bb88c81ee",
+      "extractionMethod": "pypdf 6.13.2 page text with explicit PDF page markers; amounts retain source units.",
+      "publicationDateNote": "Publication date not independently established; source specifies reporting period."
+    },
+    {
+      "id": "transfer-evidence-18",
+      "title": "Unavailable transfer evidence: https://docs.gatesfoundation.org/documents/f_292755d-1b_billmelindagatesfoundationtrust_fs.pdf",
+      "url": "https://docs.gatesfoundation.org/documents/f_292755d-1b_billmelindagatesfoundationtrust_fs.pdf",
+      "publishedDate": null,
+      "retrievalDate": "2026-09-12",
+      "savedSource": "sources/transfer-evidence-18.txt",
+      "savedSourceSha256": "07a6541732bd04573980c095ad46267ad6c7984858bc884ead2a42c875bb7eda",
+      "originalDocumentSha256": "4663dc67e7c56d97a987b845b20bd0f25ffe8a3d276a77b13fdfeb4e5798697b",
+      "extractionMethod": "pypdf 6.13.2 page text with explicit PDF page markers; amounts retain source units.",
+      "publicationDateNote": "Publication date not independently established; source specifies reporting period."
+    },
+    {
+      "id": "transfer-evidence-19",
+      "title": "Unavailable transfer evidence: https://docs.gatesfoundation.org/documents/2023-gates-foundation-trust-financial-statements.pdf",
+      "url": "https://docs.gatesfoundation.org/documents/2023-gates-foundation-trust-financial-statements.pdf",
+      "publishedDate": null,
+      "retrievalDate": "2026-09-12",
+      "savedSource": null,
+      "savedSourceSha256": null,
+      "unavailableReason": "HTTP retrieval failed during offline-evidence capture; the remote citation remains available for manual verification. See review evidence log."
+    },
+    {
+      "id": "transfer-evidence-20",
+      "title": "Unavailable transfer evidence: https://docs.gatesfoundation.org/documents/bmgf%202023%20trust%20audited%20financial%20statements.pdf",
+      "url": "https://docs.gatesfoundation.org/documents/bmgf%202023%20trust%20audited%20financial%20statements.pdf",
+      "publishedDate": null,
+      "retrievalDate": "2026-09-12",
+      "savedSource": "sources/transfer-evidence-20.txt",
+      "savedSourceSha256": "8ed33bd968a1255e01e1939db22c4108b8335ff182385b334910cb3a3b5f90ae",
+      "originalDocumentSha256": "6b2f6f7c7136f313855251e3da4a8100802c9f2b8948051e266340e111e8a0bb",
+      "extractionMethod": "pypdf 6.13.2 page text with explicit PDF page markers; amounts retain source units.",
+      "publicationDateNote": "Publication date not independently established; source specifies reporting period."
+    },
+    {
+      "id": "transfer-evidence-21",
+      "title": "Unavailable transfer evidence: https://www.sec.gov/Archives/edgar/data/1067983/000089924322036922/0000899243-22-036922-index.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/1067983/000089924322036922/0000899243-22-036922-index.htm",
+      "publishedDate": null,
+      "retrievalDate": "2026-09-12",
+      "savedSource": null,
+      "savedSourceSha256": null,
+      "unavailableReason": "HTTP retrieval failed during offline-evidence capture; the remote citation remains available for manual verification. See review evidence log."
+    },
+    {
+      "id": "transfer-evidence-22",
+      "title": "Unavailable transfer evidence: https://www.berkshirehathaway.com/news/nov2123.pdf",
+      "url": "https://www.berkshirehathaway.com/news/nov2123.pdf",
+      "publishedDate": null,
+      "retrievalDate": "2026-09-12",
+      "savedSource": "sources/transfer-evidence-22.txt",
+      "savedSourceSha256": "3dfb165d80f539262a07df2912e50a58b17b53c519a993d821be95c071fcce10",
+      "originalDocumentSha256": "e935c7c82d7e80bf19eda5169ecd72fa0b2f2ed7c7dee24c4674d4dad06c19f3",
+      "extractionMethod": "pypdf 6.13.2 page text with explicit PDF page markers; amounts retain source units.",
+      "publicationDateNote": "Publication date not independently established; source specifies reporting period."
     }
   ]
 }

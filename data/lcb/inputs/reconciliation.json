@@ -76,7 +76,8 @@
         "2023-11-21",
         "2024-11-25",
         "2025-11-10"
-      ]
+      ],
+      "savedEvidenceNote": "Saved Trust financial statements cover annual Gates fair values;2011 is the2016-report cumulative through2011 less the2010-report cumulative through2010. For2017 the audited2019 statement supplies $2,404,602,000; the filed2017 ScheduleB has a more precise $2,404,602,169 and receiptJuly11 versus announced transferJuly10. Preserve the audited rounded annual series and use July precision. Family-foundation estimates use the documented share ratios (Susan0.1 of Gates; each sibling foundation0.035 through2012 and0.07 from2013); these are estimates, not independently audited recipient fair values."
     }
   },
   "gates": {
@@ -163,6 +164,8 @@
       ],
       "attributionCaveat": "Excluding these announcements does not establish that the October 2024 Bill Gates contributions funded them. Pivotal includes an LLC and distinct foundations; the shared brand alone does not identify the legal payer."
     },
-    "unresolvedBalancesReference": "transfers.json#unresolvedBalances"
-  }
+    "unresolvedBalancesReference": "transfers.json#unresolvedBalances",
+    "savedEvidenceNote": "Saved1999 annual-report extract, January2000 announcement,2017/2022 Trust Form990-PF extracts, and all four2024 Pivotal ScheduleB documents are linked from dispositions through the source manifest."
+  },
+  "evidenceManifest": "sources.json"
 }
