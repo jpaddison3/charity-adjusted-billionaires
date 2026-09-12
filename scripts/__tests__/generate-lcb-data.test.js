@@ -108,7 +108,25 @@ describe('generate LCB data', () => {
     const result = runGenerator(workspace);
     expect(result.status, result.stderr).toBe(0);
     const coverage = JSON.parse(fs.readFileSync(path.join(workspace, 'data/lcb/results/coverage.json'), 'utf8'));
-    expect(coverage.excludedInventory.donationFiles[0].donorIds).toEqual(['bill-gates', 'sam-bankman-fried']);
+    expect(coverage.excludedInventory.donationFiles.find((entry) => entry.sourcePath === sourcePath)).toEqual(
+      expect.objectContaining({ sourcePath, eventCount: 1, donorIds: ['bill-gates', 'sam-bankman-fried'] })
+    );
+  });
+
+  it.each(['active', 'excluded'])('rejects archived donor IDs duplicated in %s profiles', (collision) => {
+    const workspace = setupWorkspace();
+    const existingPath =
+      collision === 'active' ? 'content/donors/bill_gates.md' : 'content/donors/sam_bankman_fried.md.excluded';
+    const sourcePath = 'content/donors/duplicate.md.excluded';
+    fs.copyFileSync(path.join(workspace, existingPath), path.join(workspace, sourcePath));
+    editInput(workspace, 'transfers.json', (ledger) => {
+      ledger.excludedFileReasons[sourcePath] = 'Duplicate-ID regression fixture.';
+    });
+    const result = runGenerator(workspace);
+    expect(result.status).not.toBe(0);
+    expect(result.stderr).toContain('Duplicate donor ID');
+    expect(result.stderr).toContain(existingPath);
+    expect(result.stderr).toContain(sourcePath);
   });
 
   it.each(['missing', 'stale'])('rejects %s excluded-file reasons', (condition) => {

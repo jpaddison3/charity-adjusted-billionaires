@@ -39,12 +39,15 @@ function loadDonors() {
     .sync(path.join(contentDir, 'donors/*.md'))
     .sort()
     .filter((file) => path.basename(file) !== '_index.md')
-    .map((file) => matter(fs.readFileSync(file, 'utf8')).data)
-    .map(({ id, name }) => ({ id, name }));
+    .map((file) => {
+      const { id, name } = matter(fs.readFileSync(file, 'utf8')).data;
+      return { id, name, sourcePath: path.relative(root, file).split(path.sep).join('/') };
+    });
 }
 
-function loadExcludedInventory(reasons, activeDonorIds) {
+function loadExcludedInventory(reasons, activeDonors) {
   const seenPaths = new Set();
+  const donorSources = new Map(activeDonors.map(({ id, sourcePath }) => [id, sourcePath]));
   const readFiles = (directory, describe) =>
     glob
       .sync(path.join(contentDir, directory, '*.md.excluded'))
@@ -65,9 +68,13 @@ function loadExcludedInventory(reasons, activeDonorIds) {
       }
     }
     assertValidEntityId(id, 'donor ID', `in excluded donor file ${sourcePath}`);
+    if (donorSources.has(id)) {
+      throw new Error(`Duplicate donor ID ${id} in ${donorSources.get(id)} and ${sourcePath}.`);
+    }
+    donorSources.set(id, sourcePath);
     return { donorId: id, name };
   });
-  const knownDonorIds = new Set([...activeDonorIds, ...donors.map(({ donorId }) => donorId)]);
+  const knownDonorIds = new Set(donorSources.keys());
   const donationFiles = readFiles('donations', ({ donations }, sourcePath) => {
     if (!Array.isArray(donations)) throw new Error(`Excluded donation file ${sourcePath} needs a donations array.`);
     for (const [index, donation] of donations.entries()) {
@@ -219,7 +226,7 @@ function buildOutputs() {
   const donorIds = new Set(donorProfiles.map((donor) => donor.id));
   const seedEvents = loadDonations(path.join(contentDir, 'donations'));
   const ledger = readJson('transfers.json');
-  const excludedInventory = loadExcludedInventory(ledger.excludedFileReasons, donorIds);
+  const excludedInventory = loadExcludedInventory(ledger.excludedFileReasons, donorProfiles);
   const wealth = readJson('wealth.json');
   for (const [name, input] of [
     ['transfers', ledger],
