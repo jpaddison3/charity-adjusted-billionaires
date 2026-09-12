@@ -75,6 +75,30 @@ describe('generate LCB data', () => {
 
   it.each([
     [
+      'missing unresolved donor',
+      'transfers.json',
+      (d) => {
+        delete d.unresolvedBalances[0].donorIds;
+      },
+      'unique active donorIds',
+    ],
+    [
+      'unknown unresolved donor',
+      'transfers.json',
+      (d) => {
+        d.unresolvedBalances[0].donorIds = ['missing'];
+      },
+      'unique active donorIds',
+    ],
+    [
+      'stale source fingerprint',
+      'transfers.json',
+      (d) => {
+        d.unresolvedBalances[0].sourceFingerprint = 'stale';
+      },
+      'stale sourceFingerprint',
+    ],
+    [
       'overallocated pool',
       'wealth.json',
       (d) => {
@@ -477,6 +501,39 @@ describe('generate LCB data', () => {
         )
       )
     );
+  });
+
+  it('publishes every unresolved balance under exactly its explicit donor profiles', () => {
+    const coverage = JSON.parse(fs.readFileSync(path.join(resultsDir, 'coverage.json')));
+    const rankings = JSON.parse(fs.readFileSync(path.join(resultsDir, 'rankings.json')));
+    for (const reference of coverage.unresolvedBalances) {
+      const actual = rankings.rows
+        .filter((row) => row.unresolvedGivingReferences.includes(reference.id))
+        .map((row) => row.donorId)
+        .sort();
+      expect(actual, reference.id).toEqual([...reference.donorIds].sort());
+    }
+    const bill = rankings.rows.find((row) => row.donorId === 'bill-gates');
+    const melinda = rankings.rows.find((row) => row.donorId === 'melinda-gates');
+    expect(bill.unresolvedGivingReferences).toContain('gates-2025-rounded-delta');
+    expect(melinda.unresolvedGivingReferences).toContain('gates-2004-unattributed-contributions');
+    const personal = coverage.unresolvedBalances.filter(
+      (reference) => reference.donorIds.length === 1 && reference.donorIds[0] === 'melinda-gates'
+    );
+    expect(personal).toHaveLength(3);
+    for (const reference of personal) {
+      expect(melinda.unresolvedGivingReferences).toContain(reference.id);
+      expect(bill.unresolvedGivingReferences).not.toContain(reference.id);
+    }
+  });
+
+  it('supports explicitly mapped balances without optional overlap links', () => {
+    const workspace = setupWorkspace();
+    editInput(workspace, 'transfers.json', (data) => {
+      delete data.unresolvedBalances[0].overlapLinks;
+    });
+    const result = runGenerator(workspace);
+    expect(result.status, result.stderr).toBe(0);
   });
 
   it.each([

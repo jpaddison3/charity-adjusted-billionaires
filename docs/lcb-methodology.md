@@ -62,6 +62,8 @@ Both ranking formats include the snapshot date and a wealth-record reference key
 
 Ranking rows also link to donor-related unresolved-balance IDs in `coverage.json`; CSV encodes that list as a JSON array. These expose known gaps separately from the general partial-history flag. References can overlap and must not be summed. Reporting periods extending beyond the snapshot are excluded even when their midpoint precedes it. Economic duplicate identities are independent of donor credits; independently documented parallel gifts need distinct explicit identities.
 
+Every unresolved balance explicitly lists the active donor profiles to which the uncertainty relates. This association takes precedence over overlap links, which can point to a different person's transfers or an unallocated reference group. For unattributed household receipts, listing both candidate profiles identifies the uncertainty; it does not allocate that money or add it to either total. Unknown or missing donor mappings and stale source fingerprints fail generation.
+
 The source manifest saves and hashes the material replacement evidence as full document text or HTML, retaining retrieval metadata and original-document hashes where available. A source without saved evidence must explicitly record null paths/hashes and an unavailable reason. Such remote-only citations remain a disclosed offline-audit limitation.
 
 ## Reproducing the snapshot

@@ -58,11 +58,10 @@
       "unresolvedGivingReferences": [
         "gates-1999-narrative-difference",
         "gates-2000-annual-residual",
+        "gates-2004-unattributed-contributions",
+        "gates-2025-rounded-delta",
         "pivotal-commitment-remainder",
-        "unresolved-eb9b114e0d9a",
-        "melinda-vote-mama-foundation-2024-12-03",
-        "melinda-rosalynn-carter-institute-for-caregivers-2024-12-03",
-        "melinda-wellcome-leap-2025-09-10"
+        "unresolved-eb9b114e0d9a"
       ]
     },
     {
@@ -202,7 +201,10 @@
       "unresolvedGivingReferences": [
         "gates-1999-narrative-difference",
         "gates-2000-annual-residual",
-        "unresolved-eb9b114e0d9a"
+        "gates-2004-unattributed-contributions",
+        "melinda-vote-mama-foundation-2024-12-03",
+        "melinda-rosalynn-carter-institute-for-caregivers-2024-12-03",
+        "melinda-wellcome-leap-2025-09-10"
       ]
     },
     {
@@ -728,11 +730,7 @@
       "rank": 40,
       "snapshotDate": "2025-12-31",
       "wealthRecordReference": "../inputs/wealth.json#david-geffen",
-      "unresolvedGivingReferences": [
-        "unresolved-b8014f9cd10d",
-        "unresolved-39ffed875a28",
-        "unresolved-b35d404b4422"
-      ]
+      "unresolvedGivingReferences": []
     },
     {
       "donorId": "marc-benioff",
@@ -1365,7 +1363,6 @@
       "snapshotDate": "2025-12-31",
       "wealthRecordReference": "../inputs/wealth.json#steve-ballmer",
       "unresolvedGivingReferences": [
-        "unresolved-eb9b114e0d9a",
         "unresolved-59811a34cf5d"
       ]
     },

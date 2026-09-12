@@ -1,7 +1,7 @@
 rank,donorId,name,snapshotDate,wealthRecordReference,unresolvedGivingReferences,wealthStatus,wealthAtSnapshot,nominalGiving,marketAdjustedGiving,inflationAdjustedGiving,charityAdjustedWealth,partialGivingHistory
 1,warren-buffett,Warren Buffett,2025-12-31,../inputs/wealth.json#warren-buffett,[],matched,154000000000,65783005552,222635859871.38,81906240417.11,376635859871.38,true
 2,elon-musk,Elon Musk,2025-12-31,../inputs/wealth.json#elon-musk,[],matched,342000000000,621040000,987100921.07,685410409.11,342987100921.07,true
-3,bill-gates,Bill Gates,2025-12-31,../inputs/wealth.json#bill-gates,"[""gates-1999-narrative-difference"",""gates-2000-annual-residual"",""pivotal-commitment-remainder"",""unresolved-eb9b114e0d9a"",""melinda-vote-mama-foundation-2024-12-03"",""melinda-rosalynn-carter-institute-for-caregivers-2024-12-03"",""melinda-wellcome-leap-2025-09-10""]",matched,108000000000,43417752011,140024921858.12,55886451631.87,248024921858.12,true
+3,bill-gates,Bill Gates,2025-12-31,../inputs/wealth.json#bill-gates,"[""gates-1999-narrative-difference"",""gates-2000-annual-residual"",""gates-2004-unattributed-contributions"",""gates-2025-rounded-delta"",""pivotal-commitment-remainder"",""unresolved-eb9b114e0d9a""]",matched,108000000000,43417752011,140024921858.12,55886451631.87,248024921858.12,true
 4,mark-zuckerberg,Mark Zuckerberg,2025-12-31,../inputs/wealth.json#mark-zuckerberg,[],matched,216000000000,3792375000,10268637611.75,4689731583.11,226268637611.75,true
 5,jeff-bezos,Jeff Bezos,2025-12-31,../inputs/wealth.json#jeff-bezos,"[""unresolved-123ba31d4db0c036ad77df65567b78b152187db2b811147304d2dd7e8aa45798"",""unresolved-ea66e2c01d33ab253e3a6887ef8504b5e6d1b16e776f9c096f4dbd5be4befaef"",""unresolved-332a66cec0bb028853f05f0a4bb63e66f287aed0b53eebd7a1717323b6507928"",""unresolved-3e70afd9c944fece18144cb908b2249cbf4317d43f4c069dc4a7ba651f95ea51"",""unresolved-0baa87942f57ee41bcbd1fa0070ede490f5a555f62395e9db0411f202b34e7e9""]",matched,215000000000,929000000,1776433009.28,1093182125.73,216776433009.28,true
 6,larry-ellison,Larry Ellison,2025-12-31,../inputs/wealth.json#larry-ellison,[],matched,192000000000,1184991516,4856244516.02,1539277636.09,196856244516.02,true
@@ -9,7 +9,7 @@ rank,donorId,name,snapshotDate,wealthRecordReference,unresolvedGivingReferences,
 8,sergey-brin,Sergey Brin,2025-12-31,../inputs/wealth.json#sergey-brin,[],matched,138000000000,3354040000,6666808072.07,3741311341.87,144666808072.07,true
 9,larry-page,Larry Page,2025-12-31,../inputs/wealth.json#larry-page,[],matched,144000000000,136343894,256317699.05,149070640.42,144256317699.05,true
 10,amancio-ortega,Amancio Ortega,2025-12-31,../inputs/wealth.json#amancio-ortega,"[""unresolved-9b048c05cd78""]",matched,124000000000,931649950,1345846460.33,976549792.65,125345846460.33,true
-11,melinda-gates,Melinda French Gates,2025-12-31,../inputs/wealth.json#melinda-gates,"[""gates-1999-narrative-difference"",""gates-2000-annual-residual"",""unresolved-eb9b114e0d9a""]",matched,30400000000,12512240000,89008313631.93,22833221128.4,119408313631.93,true
+11,melinda-gates,Melinda French Gates,2025-12-31,../inputs/wealth.json#melinda-gates,"[""gates-1999-narrative-difference"",""gates-2000-annual-residual"",""gates-2004-unattributed-contributions"",""melinda-vote-mama-foundation-2024-12-03"",""melinda-rosalynn-carter-institute-for-caregivers-2024-12-03"",""melinda-wellcome-leap-2025-09-10""]",matched,30400000000,12512240000,89008313631.93,22833221128.4,119408313631.93,true
 12,carlos-slim,Carlos Slim,2025-12-31,../inputs/wealth.json#carlos-slim,[],matched,82500000000,4000000000,29913055922.89,6157628369.07,112413055922.89,true
 13,michael-bloomberg,Michael Bloomberg,2025-12-31,../inputs/wealth.json#michael-bloomberg,"[""unresolved-d4f056118f07"",""unresolved-3f205f5073e4c8aa42099b1de594132da55179657118c61afb0a5f7eff241514""]",matched,105000000000,1900000000,5891838718.37,2456271937.07,110891838718.37,true
 14,michael-dell,Michael Dell,2025-12-31,../inputs/wealth.json#michael-dell,[],matched,97700000000,5790716144,9958504859.71,6237054144.18,107658504859.71,true
@@ -38,7 +38,7 @@ rank,donorId,name,snapshotDate,wealthRecordReference,unresolvedGivingReferences,
 37,john-doerr,John Doerr,2025-12-31,../inputs/wealth.json#john-doerr,[],matched,13800000000,1128312659,1978615291.47,1242084565.35,15778615291.47,true
 38,hansjorg-wyss,Hansjörg Wyss,2025-12-31,../inputs/wealth.json#hansjorg-wyss,[],matched,4800000000,1692147845,10581714630.9,2387063272.19,15381714630.9,true
 39,stanley-druckenmiller,Stanley Druckenmiller,2025-12-31,../inputs/wealth.json#stanley-druckenmiller,[],matched,6900000000,1174429169,7727794745.03,1650817441.5,14627794745.03,true
-40,david-geffen,David Geffen,2025-12-31,../inputs/wealth.json#david-geffen,"[""unresolved-b8014f9cd10d"",""unresolved-39ffed875a28"",""unresolved-b35d404b4422""]",matched,8700000000,1226000000,5323696734.44,1653928368.78,14023696734.44,true
+40,david-geffen,David Geffen,2025-12-31,../inputs/wealth.json#david-geffen,[],matched,8700000000,1226000000,5323696734.44,1653928368.78,14023696734.44,true
 41,marc-benioff,Marc Benioff,2025-12-31,../inputs/wealth.json#marc-benioff,[],matched,9800000000,873600000,2509231703.48,1052474045.96,12309231703.48,true
 42,john-paulson,John Paulson,2025-12-31,../inputs/wealth.json#john-paulson,[],matched,3800000000,2090927323,8253010318.46,2815473567.73,12053010318.46,true
 43,chris-hohn,Chris Hohn,2025-12-31,../inputs/wealth.json#chris-hohn,"[""unresolved-de74e3f1deb2""]",matched,9200000000,1310853665,1816740060.41,1364202225.5,11016740060.41,true
@@ -75,5 +75,5 @@ rank,donorId,name,snapshotDate,wealthRecordReference,unresolvedGivingReferences,
 ,lisbet-rausing,Lisbet Rausing,2025-12-31,../inputs/wealth.json#lisbet-rausing,"[""unresolved-8e1b11263b8a"",""unresolved-817bc22569c8""]",unmatched,,,,,,true
 ,misha-gurevich,Misha Gurevich,2025-12-31,../inputs/wealth.json#misha-gurevich,"[""unresolved-d1a5fa8aa85c"",""unresolved-2f968cc65e04""]",unmatched,,200370,438571.67,223607.91,,true
 ,oliver-habryka,Oliver Habryka,2025-12-31,../inputs/wealth.json#oliver-habryka,[],unmatched,,290800,479818.88,308244.63,,true
-,steve-ballmer,Steve Ballmer,2025-12-31,../inputs/wealth.json#steve-ballmer,"[""unresolved-eb9b114e0d9a"",""unresolved-59811a34cf5d""]",unusable,,102500000,605935497.76,149191185.73,,true
+,steve-ballmer,Steve Ballmer,2025-12-31,../inputs/wealth.json#steve-ballmer,"[""unresolved-59811a34cf5d""]",unusable,,102500000,605935497.76,149191185.73,,true
 ,vitalik-buterin,Vitalik Buterin,2025-12-31,../inputs/wealth.json#vitalik-buterin,[],unusable,,1137292876,1949132393.92,1338074804.97,,true

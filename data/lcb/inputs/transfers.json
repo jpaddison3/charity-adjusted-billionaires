@@ -18805,7 +18805,11 @@
       "overlapLinks": [
         "651afb6d62b044635476300f44824a25f8b35fc226bca1f466a7beb47fe09f5c"
       ],
-      "reason": "Narrative donor total exceeds audited predecessor-foundation contributions; excluded to avoid adding overlapping totals."
+      "reason": "Narrative donor total exceeds audited predecessor-foundation contributions; excluded to avoid adding overlapping totals.",
+      "donorIds": [
+        "bill-gates",
+        "melinda-gates"
+      ]
     },
     {
       "id": "gates-2000-annual-residual",
@@ -18814,7 +18818,11 @@
       "overlapLinks": [
         "8687bdb0ad1ea2d75b227ee8b48b2af1cd650821ecba4fe561e67e0f9bff0ea5"
       ],
-      "reason": "Annual contributions received exceed the named $5B transfer, but contributor identity is not established."
+      "reason": "Annual contributions received exceed the named $5B transfer, but contributor identity is not established.",
+      "donorIds": [
+        "bill-gates",
+        "melinda-gates"
+      ]
     },
     {
       "id": "gates-2004-unattributed-contributions",
@@ -18823,7 +18831,11 @@
       "overlapLinks": [
         "gates-2004-special-dividend-pledge"
       ],
-      "reason": "Foundation receipts exist, but the $3.3B source described a multi-year plan rather than this completed amount."
+      "reason": "Foundation receipts exist, but the $3.3B source described a multi-year plan rather than this completed amount.",
+      "donorIds": [
+        "bill-gates",
+        "melinda-gates"
+      ]
     },
     {
       "id": "gates-2025-rounded-delta",
@@ -18832,7 +18844,10 @@
       "overlapLinks": [
         "gates-foundation-cumulative-fact-sheet"
       ],
-      "reason": "Difference between rounded cumulative fact-sheet totals is not evidence of an exact Bill-only transfer."
+      "reason": "Difference between rounded cumulative fact-sheet totals is not evidence of an exact Bill-only transfer.",
+      "donorIds": [
+        "bill-gates"
+      ]
     },
     {
       "id": "pivotal-commitment-remainder",
@@ -18844,7 +18859,10 @@
         "39bfc0cad119aa0fb20053c1e4f9b99e7673d122bf018ce2016fb9c53abd780b",
         "395df2d4813c0a538712d1d4fe393d6e8d5060c18b016f1ace309b5fc6d8194c"
       ],
-      "reason": "Unfunded remainder of the public $12.5B commitment; pledges are excluded until transferred."
+      "reason": "Unfunded remainder of the public $12.5B commitment; pledges are excluded until transferred.",
+      "donorIds": [
+        "bill-gates"
+      ]
     },
     {
       "id": "unresolved-58bf015aa9f6",
@@ -20224,7 +20242,10 @@
       "overlapLinks": [
         "7d868f38d1b1cbd0f686c33a69d56bdf1c89d927746cda90b2a784e6e7bc24de"
       ],
-      "reason": "The common cumulative archive citation does not establish this synthetic annual allocation or distinguish personal inflows from endowment spending. Retained as an unresolved, potentially overlapping estimate."
+      "reason": "The common cumulative archive citation does not establish this synthetic annual allocation or distinguish personal inflows from endowment spending. Retained as an unresolved, potentially overlapping estimate.",
+      "donorIds": [
+        "george-soros"
+      ]
     },
     {
       "id": "unresolved-74d1f5aebf4529992e21459ddebaa80fdc665bd0c69aa9f93a99e4f70b46336f",
@@ -20237,7 +20258,10 @@
       "overlapLinks": [
         "74d1f5aebf4529992e21459ddebaa80fdc665bd0c69aa9f93a99e4f70b46336f"
       ],
-      "reason": "The common cumulative archive citation does not establish this synthetic annual allocation or distinguish personal inflows from endowment spending. Retained as an unresolved, potentially overlapping estimate."
+      "reason": "The common cumulative archive citation does not establish this synthetic annual allocation or distinguish personal inflows from endowment spending. Retained as an unresolved, potentially overlapping estimate.",
+      "donorIds": [
+        "george-soros"
+      ]
     },
     {
       "id": "unresolved-2ea5a455b179f797a456cb426ca286c98780d9c4ae82b0a37766f6e23b3040dd",
@@ -20250,7 +20274,10 @@
       "overlapLinks": [
         "2ea5a455b179f797a456cb426ca286c98780d9c4ae82b0a37766f6e23b3040dd"
       ],
-      "reason": "The common cumulative archive citation does not establish this synthetic annual allocation or distinguish personal inflows from endowment spending. Retained as an unresolved, potentially overlapping estimate."
+      "reason": "The common cumulative archive citation does not establish this synthetic annual allocation or distinguish personal inflows from endowment spending. Retained as an unresolved, potentially overlapping estimate.",
+      "donorIds": [
+        "george-soros"
+      ]
     },
     {
       "id": "unresolved-4491bd97c9d6506b01b8801c4d2e5da75bde50ff7fa84cd53d63abc30847223b",
@@ -20263,7 +20290,10 @@
       "overlapLinks": [
         "4491bd97c9d6506b01b8801c4d2e5da75bde50ff7fa84cd53d63abc30847223b"
       ],
-      "reason": "The common cumulative archive citation does not establish this synthetic annual allocation or distinguish personal inflows from endowment spending. Retained as an unresolved, potentially overlapping estimate."
+      "reason": "The common cumulative archive citation does not establish this synthetic annual allocation or distinguish personal inflows from endowment spending. Retained as an unresolved, potentially overlapping estimate.",
+      "donorIds": [
+        "george-soros"
+      ]
     },
     {
       "id": "unresolved-162fbcb0a6ad55d8bd2442fea37872802b616ab6bc3873ea896b358516b22a68",
@@ -20276,7 +20306,10 @@
       "overlapLinks": [
         "162fbcb0a6ad55d8bd2442fea37872802b616ab6bc3873ea896b358516b22a68"
       ],
-      "reason": "The common cumulative archive citation does not establish this synthetic annual allocation or distinguish personal inflows from endowment spending. Retained as an unresolved, potentially overlapping estimate."
+      "reason": "The common cumulative archive citation does not establish this synthetic annual allocation or distinguish personal inflows from endowment spending. Retained as an unresolved, potentially overlapping estimate.",
+      "donorIds": [
+        "george-soros"
+      ]
     },
     {
       "id": "unresolved-fd7fb6befc6a883d5f4b863aeef3a61441fed9b76fb4c22263ba1da8ad00a41d",
@@ -20289,7 +20322,10 @@
       "overlapLinks": [
         "fd7fb6befc6a883d5f4b863aeef3a61441fed9b76fb4c22263ba1da8ad00a41d"
       ],
-      "reason": "The common cumulative archive citation does not establish this synthetic annual allocation or distinguish personal inflows from endowment spending. Retained as an unresolved, potentially overlapping estimate."
+      "reason": "The common cumulative archive citation does not establish this synthetic annual allocation or distinguish personal inflows from endowment spending. Retained as an unresolved, potentially overlapping estimate.",
+      "donorIds": [
+        "george-soros"
+      ]
     },
     {
       "id": "unresolved-3afe6a64b05ee711359dc1c8983aec5f91bc2f35811a0f6e620b6b198cdfcd56",
@@ -20302,7 +20338,10 @@
       "overlapLinks": [
         "3afe6a64b05ee711359dc1c8983aec5f91bc2f35811a0f6e620b6b198cdfcd56"
       ],
-      "reason": "The common cumulative archive citation does not establish this synthetic annual allocation or distinguish personal inflows from endowment spending. Retained as an unresolved, potentially overlapping estimate."
+      "reason": "The common cumulative archive citation does not establish this synthetic annual allocation or distinguish personal inflows from endowment spending. Retained as an unresolved, potentially overlapping estimate.",
+      "donorIds": [
+        "george-soros"
+      ]
     },
     {
       "id": "unresolved-a0264b15378f7d5cc0435bb25ac2369b1d9a46b2e552bc4e3e8b23e3e91e7574",
@@ -20315,7 +20354,10 @@
       "overlapLinks": [
         "a0264b15378f7d5cc0435bb25ac2369b1d9a46b2e552bc4e3e8b23e3e91e7574"
       ],
-      "reason": "The common cumulative archive citation does not establish this synthetic annual allocation or distinguish personal inflows from endowment spending. Retained as an unresolved, potentially overlapping estimate."
+      "reason": "The common cumulative archive citation does not establish this synthetic annual allocation or distinguish personal inflows from endowment spending. Retained as an unresolved, potentially overlapping estimate.",
+      "donorIds": [
+        "george-soros"
+      ]
     },
     {
       "id": "unresolved-f4d5495dfa60759bf044d55af78bf84cf65060b54751cbf000e21aadf2c09283",
@@ -20328,7 +20370,10 @@
       "overlapLinks": [
         "f4d5495dfa60759bf044d55af78bf84cf65060b54751cbf000e21aadf2c09283"
       ],
-      "reason": "The common cumulative archive citation does not establish this synthetic annual allocation or distinguish personal inflows from endowment spending. Retained as an unresolved, potentially overlapping estimate."
+      "reason": "The common cumulative archive citation does not establish this synthetic annual allocation or distinguish personal inflows from endowment spending. Retained as an unresolved, potentially overlapping estimate.",
+      "donorIds": [
+        "george-soros"
+      ]
     },
     {
       "id": "unresolved-047f31ff77319380be43ff990fd7253fc1bd3100fbabe373bdaad87615cde322",
@@ -20341,7 +20386,10 @@
       "overlapLinks": [
         "047f31ff77319380be43ff990fd7253fc1bd3100fbabe373bdaad87615cde322"
       ],
-      "reason": "The common cumulative archive citation does not establish this synthetic annual allocation or distinguish personal inflows from endowment spending. Retained as an unresolved, potentially overlapping estimate."
+      "reason": "The common cumulative archive citation does not establish this synthetic annual allocation or distinguish personal inflows from endowment spending. Retained as an unresolved, potentially overlapping estimate.",
+      "donorIds": [
+        "george-soros"
+      ]
     },
     {
       "id": "unresolved-937f0ac75e0fc9d7c9948ee9fd52905b3b8860af4df3cabcb93250c8bec0e2ea",
@@ -20354,7 +20402,10 @@
       "overlapLinks": [
         "937f0ac75e0fc9d7c9948ee9fd52905b3b8860af4df3cabcb93250c8bec0e2ea"
       ],
-      "reason": "The common cumulative archive citation does not establish this synthetic annual allocation or distinguish personal inflows from endowment spending. Retained as an unresolved, potentially overlapping estimate."
+      "reason": "The common cumulative archive citation does not establish this synthetic annual allocation or distinguish personal inflows from endowment spending. Retained as an unresolved, potentially overlapping estimate.",
+      "donorIds": [
+        "george-soros"
+      ]
     },
     {
       "id": "unresolved-4b18aeea7b8637ffaf5c219ee33435b7d1552c4399026c79149e0378e7560fbd",
@@ -20367,7 +20418,10 @@
       "overlapLinks": [
         "4b18aeea7b8637ffaf5c219ee33435b7d1552c4399026c79149e0378e7560fbd"
       ],
-      "reason": "The common cumulative archive citation does not establish this synthetic annual allocation or distinguish personal inflows from endowment spending. Retained as an unresolved, potentially overlapping estimate."
+      "reason": "The common cumulative archive citation does not establish this synthetic annual allocation or distinguish personal inflows from endowment spending. Retained as an unresolved, potentially overlapping estimate.",
+      "donorIds": [
+        "george-soros"
+      ]
     },
     {
       "id": "unresolved-8caf9c7a0517164d7d65606b8c358a4f00807ee0b514924e86473965fcd86a64",
@@ -20380,7 +20434,10 @@
       "overlapLinks": [
         "8caf9c7a0517164d7d65606b8c358a4f00807ee0b514924e86473965fcd86a64"
       ],
-      "reason": "The common cumulative archive citation does not establish this synthetic annual allocation or distinguish personal inflows from endowment spending. Retained as an unresolved, potentially overlapping estimate."
+      "reason": "The common cumulative archive citation does not establish this synthetic annual allocation or distinguish personal inflows from endowment spending. Retained as an unresolved, potentially overlapping estimate.",
+      "donorIds": [
+        "george-soros"
+      ]
     },
     {
       "id": "unresolved-ae34779ecb64f36f365dc94153ab8b8ba32e732e0d2e1125f165d7b1e8f8fc8f",
@@ -20393,7 +20450,10 @@
       "overlapLinks": [
         "ae34779ecb64f36f365dc94153ab8b8ba32e732e0d2e1125f165d7b1e8f8fc8f"
       ],
-      "reason": "The common cumulative archive citation does not establish this synthetic annual allocation or distinguish personal inflows from endowment spending. Retained as an unresolved, potentially overlapping estimate."
+      "reason": "The common cumulative archive citation does not establish this synthetic annual allocation or distinguish personal inflows from endowment spending. Retained as an unresolved, potentially overlapping estimate.",
+      "donorIds": [
+        "george-soros"
+      ]
     },
     {
       "id": "unresolved-5d51e7ddd5b7cf45fb632243cffbe372219ea5d096d0a727139d028489d5dc29",
@@ -20406,7 +20466,10 @@
       "overlapLinks": [
         "5d51e7ddd5b7cf45fb632243cffbe372219ea5d096d0a727139d028489d5dc29"
       ],
-      "reason": "The common cumulative archive citation does not establish this synthetic annual allocation or distinguish personal inflows from endowment spending. Retained as an unresolved, potentially overlapping estimate."
+      "reason": "The common cumulative archive citation does not establish this synthetic annual allocation or distinguish personal inflows from endowment spending. Retained as an unresolved, potentially overlapping estimate.",
+      "donorIds": [
+        "george-soros"
+      ]
     },
     {
       "id": "unresolved-26974eb9100f688853edcdead59c89ad46b34487a9a760ea2142b5dc94d37887",
@@ -20419,7 +20482,10 @@
       "overlapLinks": [
         "26974eb9100f688853edcdead59c89ad46b34487a9a760ea2142b5dc94d37887"
       ],
-      "reason": "The common cumulative archive citation does not establish this synthetic annual allocation or distinguish personal inflows from endowment spending. Retained as an unresolved, potentially overlapping estimate."
+      "reason": "The common cumulative archive citation does not establish this synthetic annual allocation or distinguish personal inflows from endowment spending. Retained as an unresolved, potentially overlapping estimate.",
+      "donorIds": [
+        "george-soros"
+      ]
     },
     {
       "id": "unresolved-5f9df0fb867cb49bd1536848fe50bda4c6b635f8a661953ba221bc3cbc79145d",
@@ -20432,7 +20498,10 @@
       "overlapLinks": [
         "5f9df0fb867cb49bd1536848fe50bda4c6b635f8a661953ba221bc3cbc79145d"
       ],
-      "reason": "The common cumulative archive citation does not establish this synthetic annual allocation or distinguish personal inflows from endowment spending. Retained as an unresolved, potentially overlapping estimate."
+      "reason": "The common cumulative archive citation does not establish this synthetic annual allocation or distinguish personal inflows from endowment spending. Retained as an unresolved, potentially overlapping estimate.",
+      "donorIds": [
+        "george-soros"
+      ]
     },
     {
       "id": "unresolved-6106fc929a243a3ec85210abdca66743d672054fc5031167cb12b56790da3a5a",
@@ -20445,7 +20514,10 @@
       "overlapLinks": [
         "6106fc929a243a3ec85210abdca66743d672054fc5031167cb12b56790da3a5a"
       ],
-      "reason": "The common cumulative archive citation does not establish this synthetic annual allocation or distinguish personal inflows from endowment spending. Retained as an unresolved, potentially overlapping estimate."
+      "reason": "The common cumulative archive citation does not establish this synthetic annual allocation or distinguish personal inflows from endowment spending. Retained as an unresolved, potentially overlapping estimate.",
+      "donorIds": [
+        "george-soros"
+      ]
     },
     {
       "id": "unresolved-ad64ae05c56d93a8b9c87ba9ebf39a1d4a61c4ba3b7b3e38682c7575694bf052",
@@ -20458,7 +20530,10 @@
       "overlapLinks": [
         "ad64ae05c56d93a8b9c87ba9ebf39a1d4a61c4ba3b7b3e38682c7575694bf052"
       ],
-      "reason": "The common cumulative archive citation does not establish this synthetic annual allocation or distinguish personal inflows from endowment spending. Retained as an unresolved, potentially overlapping estimate."
+      "reason": "The common cumulative archive citation does not establish this synthetic annual allocation or distinguish personal inflows from endowment spending. Retained as an unresolved, potentially overlapping estimate.",
+      "donorIds": [
+        "george-soros"
+      ]
     },
     {
       "id": "unresolved-394ef5f7c913c03c7f66e640189ec8c76d3625c30f7c65c976b41923e3a56df5",
@@ -20471,7 +20546,10 @@
       "overlapLinks": [
         "394ef5f7c913c03c7f66e640189ec8c76d3625c30f7c65c976b41923e3a56df5"
       ],
-      "reason": "University-network launch announces a $1B commitment; a completed new personal transfer is not established."
+      "reason": "University-network launch announces a $1B commitment; a completed new personal transfer is not established.",
+      "donorIds": [
+        "george-soros"
+      ]
     },
     {
       "id": "unresolved-123ba31d4db0c036ad77df65567b78b152187db2b811147304d2dd7e8aa45798",
@@ -20484,7 +20562,10 @@
       "overlapLinks": [
         "123ba31d4db0c036ad77df65567b78b152187db2b811147304d2dd7e8aa45798"
       ],
-      "reason": "Announcement of a commitment does not establish a completed donor-level transfer or payment schedule. Excluded pending completed-transfer evidence."
+      "reason": "Announcement of a commitment does not establish a completed donor-level transfer or payment schedule. Excluded pending completed-transfer evidence.",
+      "donorIds": [
+        "jeff-bezos"
+      ]
     },
     {
       "id": "unresolved-ea66e2c01d33ab253e3a6887ef8504b5e6d1b16e776f9c096f4dbd5be4befaef",
@@ -20497,7 +20578,10 @@
       "overlapLinks": [
         "ea66e2c01d33ab253e3a6887ef8504b5e6d1b16e776f9c096f4dbd5be4befaef"
       ],
-      "reason": "Announcement of a commitment does not establish a completed donor-level transfer or payment schedule. Excluded pending completed-transfer evidence."
+      "reason": "Announcement of a commitment does not establish a completed donor-level transfer or payment schedule. Excluded pending completed-transfer evidence.",
+      "donorIds": [
+        "jeff-bezos"
+      ]
     },
     {
       "id": "unresolved-332a66cec0bb028853f05f0a4bb63e66f287aed0b53eebd7a1717323b6507928",
@@ -20510,7 +20594,10 @@
       "overlapLinks": [
         "332a66cec0bb028853f05f0a4bb63e66f287aed0b53eebd7a1717323b6507928"
       ],
-      "reason": "Award from the Day One vehicle, not evidence of an additional personal inflow. Excluded even while the original commitment remains unresolved."
+      "reason": "Award from the Day One vehicle, not evidence of an additional personal inflow. Excluded even while the original commitment remains unresolved.",
+      "donorIds": [
+        "jeff-bezos"
+      ]
     },
     {
       "id": "unresolved-3e70afd9c944fece18144cb908b2249cbf4317d43f4c069dc4a7ba651f95ea51",
@@ -20523,7 +20610,10 @@
       "overlapLinks": [
         "3e70afd9c944fece18144cb908b2249cbf4317d43f4c069dc4a7ba651f95ea51"
       ],
-      "reason": "Award from the Day One vehicle, not evidence of an additional personal inflow. Excluded even while the original commitment remains unresolved."
+      "reason": "Award from the Day One vehicle, not evidence of an additional personal inflow. Excluded even while the original commitment remains unresolved.",
+      "donorIds": [
+        "jeff-bezos"
+      ]
     },
     {
       "id": "unresolved-0baa87942f57ee41bcbd1fa0070ede490f5a555f62395e9db0411f202b34e7e9",
@@ -20536,7 +20626,10 @@
       "overlapLinks": [
         "0baa87942f57ee41bcbd1fa0070ede490f5a555f62395e9db0411f202b34e7e9"
       ],
-      "reason": "Award from the Day One vehicle, not evidence of an additional personal inflow. Excluded even while the original commitment remains unresolved."
+      "reason": "Award from the Day One vehicle, not evidence of an additional personal inflow. Excluded even while the original commitment remains unresolved.",
+      "donorIds": [
+        "jeff-bezos"
+      ]
     },
     {
       "id": "unresolved-ddec435ffeddf9de34edd6c1669a05861012c05f66326fee067818e542f9a733",
@@ -20549,7 +20642,10 @@
       "overlapLinks": [
         "ddec435ffeddf9de34edd6c1669a05861012c05f66326fee067818e542f9a733"
       ],
-      "reason": "Cumulative 2019–2024 giving cannot be assigned entirely to 2024. Annual completed amounts and overlap with itemized gifts require reconciliation."
+      "reason": "Cumulative 2019–2024 giving cannot be assigned entirely to 2024. Annual completed amounts and overlap with itemized gifts require reconciliation.",
+      "donorIds": [
+        "mackenzie-scott"
+      ]
     },
     {
       "id": "unresolved-3f205f5073e4c8aa42099b1de594132da55179657118c61afb0a5f7eff241514",
@@ -20562,7 +20658,10 @@
       "overlapLinks": [
         "3f205f5073e4c8aa42099b1de594132da55179657118c61afb0a5f7eff241514"
       ],
-      "reason": "Annual total combines personal, foundation, and corporate giving; it does not isolate completed personal transfers."
+      "reason": "Annual total combines personal, foundation, and corporate giving; it does not isolate completed personal transfers.",
+      "donorIds": [
+        "michael-bloomberg"
+      ]
     }
   ],
   "fundingVehicles": [

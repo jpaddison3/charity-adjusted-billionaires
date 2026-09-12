@@ -272,6 +272,19 @@ function buildOutputs() {
     if (referenceIds.has(reference.id)) throw new Error(`Duplicate reconciliation reference ${reference.id}.`);
     referenceIds.add(reference.id);
   }
+  for (const reference of ledger.unresolvedBalances) {
+    if (
+      !Array.isArray(reference.donorIds) ||
+      !reference.donorIds.length ||
+      new Set(reference.donorIds).size !== reference.donorIds.length ||
+      reference.donorIds.some((id) => !donorIds.has(id))
+    ) {
+      throw new Error(`Unresolved balance ${reference.id} needs unique active donorIds.`);
+    }
+    if (reference.sourceFingerprint !== undefined && !fingerprints.has(reference.sourceFingerprint)) {
+      throw new Error(`Unresolved balance ${reference.id} has a stale sourceFingerprint.`);
+    }
+  }
   for (const reference of [...ledger.unresolvedBalances, ...ledger.referenceGroups]) {
     for (const id of reference.overlapLinks ?? []) {
       if (!referenceIds.has(id)) throw new Error(`Reconciliation ${reference.id} has unresolved overlap link ${id}.`);
@@ -293,14 +306,7 @@ function buildOutputs() {
     snapshotDate: snapshot.snapshotDate,
     wealthRecordReference: `../inputs/wealth.json#${row.donorId}`,
     unresolvedGivingReferences: ledger.unresolvedBalances
-      .filter((reference) =>
-        transfers.some(
-          (transfer) =>
-            transfer.credit[row.donorId] &&
-            (reference.sourceFingerprint === transfer.fingerprint ||
-              reference.overlapLinks.includes(transfer.fingerprint))
-        )
-      )
+      .filter((reference) => reference.donorIds.includes(row.donorId))
       .map((reference) => reference.id),
     nominalGiving: roundUsd(row.nominalGiving),
     marketAdjustedGiving: roundUsd(row.marketAdjustedGiving),

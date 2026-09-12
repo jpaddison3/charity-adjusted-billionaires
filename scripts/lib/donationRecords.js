@@ -111,7 +111,7 @@ export function validateDonationAmountAndCredit(donation, context) {
 function eventFingerprint(event) {
   const content = {
     amount: event.amount,
-    credit: Object.fromEntries(Object.entries(event.credit).sort(([a], [b]) => a.localeCompare(b))),
+    credit: Object.fromEntries(Object.entries(event.credit).sort(([a], [b]) => (a < b ? -1 : a > b ? 1 : 0))),
     date: event.date,
     notes: event.notes ?? null,
     recipientId: event.recipientId,
