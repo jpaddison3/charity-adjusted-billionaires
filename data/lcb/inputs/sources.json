@@ -407,6 +407,40 @@
       "originalDocumentSha256": "e935c7c82d7e80bf19eda5169ecd72fa0b2f2ed7c7dee24c4674d4dad06c19f3",
       "extractionMethod": "pypdf 6.13.2 page text with explicit PDF page markers; amounts retain source units.",
       "publicationDateNote": "Publication date not independently established; source specifies reporting period."
+    },
+    {
+      "id": "buffett-nov2524",
+      "title": "Berkshire Hathaway gift announcement 2024-11-25",
+      "url": "https://www.berkshirehathaway.com/news/nov2524.pdf",
+      "publishedDate": "2024-11-25",
+      "retrievalDate": "2026-09-12",
+      "savedSource": "sources/buffett-nov2524.txt",
+      "savedSourceSha256": "d3acc8cf75f7f0dafd6c64cc77fd37119e239bd3c472ef810db04e776e2ab4d2",
+      "originalDocumentSha256": "904414d77175195b649e0e7c6d7c846e8dbf4324de7740690a8885d0e0f9587b",
+      "extractionMethod": "pypdf 6.13.2 extract_text with PDF page markers; full document text retained. Trailing line whitespace and outer blank lines removed."
+    },
+    {
+      "id": "buffett-nov1025",
+      "title": "Berkshire Hathaway gift announcement 2025-11-10",
+      "url": "https://www.berkshirehathaway.com/news/nov1025.pdf",
+      "publishedDate": "2025-11-10",
+      "retrievalDate": "2026-09-12",
+      "savedSource": "sources/buffett-nov1025.txt",
+      "savedSourceSha256": "957ba4e5d88f8edbbcb77951182ff31204deffa7a2ded1d07b509c46e42dff17",
+      "originalDocumentSha256": "be499afab992b9f77353b341efdcc2a01ce09ee702ad88dd24afb91a7f3b9316",
+      "extractionMethod": "pypdf 6.13.2 extract_text with PDF page markers; full document text retained. Trailing line whitespace and outer blank lines removed."
+    },
+    {
+      "id": "forbes-2025-family-identities",
+      "title": "Forbes 2025 family identity audit of active profiles in the top 200",
+      "url": "https://www.forbes.com/sites/chasewithorn/2025/04/01/forbes-worlds-billionaires-list-2025-the-top-200/",
+      "publishedDate": "2025-04-01",
+      "observationDate": "2025-03-07",
+      "retrievalDate": "2026-09-12",
+      "savedSource": "sources/forbes-2025-family-identities.json",
+      "savedSourceSha256": "ef4f30467180b34ccdd782e7cb3df002b38be7ac59997b94979b1c38b81d9ca9",
+      "originalDocumentSha256": "d816196a9e3d97cdae0452db382d9305d16558f686a27d78ba1839add9ae6355",
+      "extractionMethod": "Extracted factual name and USD amount fields from numbered strong-tag list entries, matched to active wealth records. Preserves family suffixes omitted by third-party CSV. Other profiles were not part of this top-200 audit."
     }
   ]
 }

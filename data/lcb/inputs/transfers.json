@@ -7165,17 +7165,15 @@
     "ba5dae7b0ea4726c91799b59b96efd7bdd5e774ac60054aa9c565add45e50b6b": {
       "decision": "include",
       "exclusionReason": null,
-      "datePrecision": "period",
-      "effectiveDate": "2014-05-01",
+      "datePrecision": "day",
+      "effectiveDate": "2014-10-30",
       "transferIdentity": "silicon-valley-community-foundation:2014-10-30:556000000",
       "fundingChain": "donors:jan-koum",
       "cumulativePeriodMembership": [],
       "sourceIds": [
         "https://www.sec.gov/Archives/edgar/data/1326801/000112760214030682/xslF345X03/form4.xml"
       ],
-      "estimationRationale": "The cited seed notes report contributions for a fiscal reporting period ending 2014-10-30, rather than a single transfer that day. Use the earlier middle day of 2013-10-31 through 2014-10-30. SEC Form 4 reports that Jan Koum's Butterfly Trust donated 7.5M Facebook Class A shares to Silicon Valley Community Foundation on this date; Wired/Chronicle reporting valued the gift at about $556M, and New Yorker/Chronicle reporting described it as creating a donor-advised fund. Treated as additive to later Koum Family Foundation inflows because SVCF Schedule I filings through FY2024 show no grants to KFF, while KFF FY2016-FY2017 Schedule B filings identify the major later inflows as Facebook-stock contributions from Koum or the Jan Koum Family Trust.",
-      "periodEnd": "2014-10-30",
-      "periodStart": "2013-10-31",
+      "estimationRationale": "SEC Form 4 Table I records the 7,500,000-share SVCF gift on October 30, 2014; use its transaction date. Amount remains the seed valuation estimate.",
       "transferStage": "personal-transfer",
       "fundingVehicleId": null
     },
@@ -12395,17 +12393,15 @@
     "83779213d8e0d64c1428cbc80916dbb8ac4ab6dce44393836f35a4317099e608": {
       "decision": "include",
       "exclusionReason": null,
-      "datePrecision": "period",
-      "effectiveDate": "2023-04-19",
+      "datePrecision": "day",
+      "effectiveDate": "2023-10-18",
       "transferIdentity": "michael-and-susan-dell-foundation:2023-10-18:27000000",
       "fundingChain": "donors:michael-dell",
       "cumulativePeriodMembership": [],
       "sourceIds": [
         "https://www.sec.gov/Archives/edgar/data/1571996/000106299323019567/form4.xml"
       ],
-      "estimationRationale": "The cited seed notes report contributions for a fiscal reporting period ending 2023-10-18, rather than a single transfer that day. Use the earlier middle day of 2022-10-19 through 2023-10-18. Michael Dell Form 4 reports a 1,300,000-share Dell Technologies Class C gift on 2023-10-18. Footnote 1 allocates 400,000 shares to the Michael & Susan Dell Foundation and 900,000 shares to donor-advised charitable funds established by Michael and Susan Dell. Amount is rounded from DELL trading around $67-$68 per share; the FY2023 foundation aggregate row below is reduced by this estimated MSDF portion to avoid double-counting.",
-      "periodEnd": "2023-10-18",
-      "periodStart": "2022-10-19",
+      "estimationRationale": "Use the 2023-10-18 Form 4 transaction date explicitly transcribed in the seed notes, not a synthetic fiscal period. SEC HTTP retrieval returned 403 during this review; the transaction date and allocation rely on the existing source transcription. Amount remains the seed rounded share-price estimate.",
       "transferStage": "personal-transfer",
       "fundingVehicleId": null
     },
@@ -12420,24 +12416,22 @@
       "sourceIds": [
         "https://www.sec.gov/Archives/edgar/data/1571996/000106299323019567/form4.xml"
       ],
-      "estimationRationale": "Gift transaction date retained from the SEC filing cited in the seed record.",
+      "estimationRationale": "Use the 2023-10-18 Form 4 transaction date explicitly transcribed in the seed notes, not a synthetic fiscal period. SEC HTTP retrieval returned 403 during this review; the transaction date and allocation rely on the existing source transcription. Amount remains the seed rounded share-price estimate.",
       "transferStage": "personal-transfer",
       "fundingVehicleId": null
     },
     "4d89e226ad7797b01933c81e6c963d97e51f4aa99c8f19c7985295904137607a": {
       "decision": "include",
       "exclusionReason": null,
-      "datePrecision": "period",
-      "effectiveDate": "2023-04-20",
+      "datePrecision": "day",
+      "effectiveDate": "2023-10-19",
       "transferIdentity": "michael-and-susan-dell-foundation:2023-10-19:27000000",
       "fundingChain": "donors:michael-dell",
       "cumulativePeriodMembership": [],
       "sourceIds": [
         "https://www.sec.gov/Archives/edgar/data/1571996/000106299323019567/form4.xml"
       ],
-      "estimationRationale": "The cited seed notes report contributions for a fiscal reporting period ending 2023-10-19, rather than a single transfer that day. Use the earlier middle day of 2022-10-20 through 2023-10-19. Michael Dell Form 4 reports a second 1,300,000-share Dell Technologies Class C gift on 2023-10-19. Footnote 1 allocates 400,000 shares to the Michael & Susan Dell Foundation and 900,000 shares to donor-advised charitable funds established by Michael and Susan Dell. Amount is rounded from DELL trading around $67-$68 per share; the FY2023 foundation aggregate row below is reduced by this estimated MSDF portion to avoid double-counting.",
-      "periodEnd": "2023-10-19",
-      "periodStart": "2022-10-20",
+      "estimationRationale": "Use the 2023-10-19 Form 4 transaction date explicitly transcribed in the seed notes, not a synthetic fiscal period. SEC HTTP retrieval returned 403 during this review; the transaction date and allocation rely on the existing source transcription. Amount remains the seed rounded share-price estimate.",
       "transferStage": "personal-transfer",
       "fundingVehicleId": null
     },
@@ -12452,7 +12446,7 @@
       "sourceIds": [
         "https://www.sec.gov/Archives/edgar/data/1571996/000106299323019567/form4.xml"
       ],
-      "estimationRationale": "Gift transaction date retained from the SEC filing cited in the seed record.",
+      "estimationRationale": "Use the 2023-10-19 Form 4 transaction date explicitly transcribed in the seed notes, not a synthetic fiscal period. SEC HTTP retrieval returned 403 during this review; the transaction date and allocation rely on the existing source transcription. Amount remains the seed rounded share-price estimate.",
       "transferStage": "personal-transfer",
       "fundingVehicleId": null
     },
@@ -15386,45 +15380,48 @@
     "88e88c9092746082aaebb8f2760db202c555c67652f196f38063cb4225da6c71": {
       "decision": "include",
       "exclusionReason": null,
-      "datePrecision": "year",
-      "effectiveDate": "2025-07-02",
+      "datePrecision": "day",
+      "effectiveDate": "2025-11-26",
       "transferIdentity": "catalyst4:2025-11-26:1000000000",
       "fundingChain": "donors:sergey-brin",
       "cumulativePeriodMembership": [],
       "sourceIds": [
+        "https://www.sec.gov/Archives/edgar/data/1652044/000119312525302626/xslF345X03/ownership.xml",
         "https://fortune.com/2025/11/30/sergey-brin-gift-1-billion-alphabet-stock-ai-rally-michael-j-fox/"
       ],
-      "estimationRationale": "Provisional calendar-year estimate from the cited seed record; its month and day have not been established as transfer dates. Use the earlier middle day and retain partial-history status.",
+      "estimationRationale": "SEC Form 4 Table I records the 3,557,300-share gift on November 26, 2025; use that transaction date. Recipient allocation and dollar estimates remain from the seed family-office reporting.",
       "transferStage": "personal-transfer",
       "fundingVehicleId": null
     },
     "5a077ad18aa14460752e00d09307a8b3eae1cdd4b40e825d7bc62df87fb562ec": {
       "decision": "include",
       "exclusionReason": null,
-      "datePrecision": "year",
-      "effectiveDate": "2025-07-02",
+      "datePrecision": "day",
+      "effectiveDate": "2025-11-26",
       "transferIdentity": "sergey-brin-family-foundation:2025-11-26:90000000",
       "fundingChain": "donors:sergey-brin",
       "cumulativePeriodMembership": [],
       "sourceIds": [
+        "https://www.sec.gov/Archives/edgar/data/1652044/000119312525302626/xslF345X03/ownership.xml",
         "https://fortune.com/2025/11/30/sergey-brin-gift-1-billion-alphabet-stock-ai-rally-michael-j-fox/"
       ],
-      "estimationRationale": "Provisional calendar-year estimate from the cited seed record; its month and day have not been established as transfer dates. Use the earlier middle day and retain partial-history status.",
+      "estimationRationale": "SEC Form 4 Table I records the 3,557,300-share gift on November 26, 2025; use that transaction date. Recipient allocation and dollar estimates remain from the seed family-office reporting.",
       "transferStage": "personal-transfer",
       "fundingVehicleId": null
     },
     "dace185fa7838784bbc1fe78afeacc3e1f97e7093e476e201e0d4b169e7de8c7": {
       "decision": "include",
       "exclusionReason": null,
-      "datePrecision": "year",
-      "effectiveDate": "2025-07-02",
+      "datePrecision": "day",
+      "effectiveDate": "2025-11-26",
       "transferIdentity": "michael-j-fox-foundation-for-parkinsons-research:2025-11-26:45000000",
       "fundingChain": "donors:sergey-brin",
       "cumulativePeriodMembership": [],
       "sourceIds": [
+        "https://www.sec.gov/Archives/edgar/data/1652044/000119312525302626/xslF345X03/ownership.xml",
         "https://fortune.com/2025/11/30/sergey-brin-gift-1-billion-alphabet-stock-ai-rally-michael-j-fox/"
       ],
-      "estimationRationale": "Provisional calendar-year estimate from the cited seed record; its month and day have not been established as transfer dates. Use the earlier middle day and retain partial-history status.",
+      "estimationRationale": "SEC Form 4 Table I records the 3,557,300-share gift on November 26, 2025; use that transaction date. Recipient allocation and dollar estimates remain from the seed family-office reporting.",
       "transferStage": "personal-transfer",
       "fundingVehicleId": null
     },
@@ -18211,8 +18208,8 @@
     "f726da27de1a5b1d55138512cf4121be28cfb56f83c271bab495a3019a381ba7": {
       "decision": "include",
       "exclusionReason": null,
-      "datePrecision": "year",
-      "effectiveDate": "2023-07-02",
+      "datePrecision": "day",
+      "effectiveDate": "2023-11-21",
       "transferIdentity": "susan-thompson-buffett-foundation:2023-11-21:541500000",
       "fundingChain": "donors:warren-buffett",
       "cumulativePeriodMembership": [],
@@ -18220,15 +18217,15 @@
         "transfer-evidence-22",
         "https://www.berkshirehathaway.com/news/nov2123.pdf"
       ],
-      "estimationRationale": "Provisional calendar-year estimate from the cited seed record; its month and day have not been established as transfer dates. Use the earlier middle day and retain partial-history status.",
+      "estimationRationale": "The Berkshire announcement dated 2023-11-21 describes gifts made that day; use day precision. Existing transfer-time dollar estimates are unchanged.",
       "transferStage": "personal-transfer",
       "fundingVehicleId": null
     },
     "9bac22b60c496cc9ced7255c16f1b1200f2f98bdc24fbe57ed50c9d4c8b61910": {
       "decision": "include",
       "exclusionReason": null,
-      "datePrecision": "year",
-      "effectiveDate": "2023-07-02",
+      "datePrecision": "day",
+      "effectiveDate": "2023-11-21",
       "transferIdentity": "sherwood-foundation:2023-11-21:108300000",
       "fundingChain": "donors:warren-buffett",
       "cumulativePeriodMembership": [],
@@ -18236,15 +18233,15 @@
         "transfer-evidence-22",
         "https://www.berkshirehathaway.com/news/nov2123.pdf"
       ],
-      "estimationRationale": "Provisional calendar-year estimate from the cited seed record; its month and day have not been established as transfer dates. Use the earlier middle day and retain partial-history status.",
+      "estimationRationale": "The Berkshire announcement dated 2023-11-21 describes gifts made that day; use day precision. Existing transfer-time dollar estimates are unchanged.",
       "transferStage": "personal-transfer",
       "fundingVehicleId": null
     },
     "f1c1e4abb17f50e51461332bc274cd9e1f8ed08aeb2308ce0703aa3ebffe8ae0": {
       "decision": "include",
       "exclusionReason": null,
-      "datePrecision": "year",
-      "effectiveDate": "2023-07-02",
+      "datePrecision": "day",
+      "effectiveDate": "2023-11-21",
       "transferIdentity": "howard-g-buffett-foundation:2023-11-21:108300000",
       "fundingChain": "donors:warren-buffett",
       "cumulativePeriodMembership": [],
@@ -18252,15 +18249,15 @@
         "transfer-evidence-22",
         "https://www.berkshirehathaway.com/news/nov2123.pdf"
       ],
-      "estimationRationale": "Provisional calendar-year estimate from the cited seed record; its month and day have not been established as transfer dates. Use the earlier middle day and retain partial-history status.",
+      "estimationRationale": "The Berkshire announcement dated 2023-11-21 describes gifts made that day; use day precision. Existing transfer-time dollar estimates are unchanged.",
       "transferStage": "personal-transfer",
       "fundingVehicleId": null
     },
     "443060975c04b41bd693d773a4793d15bbaf7fc3fdb15b6ca81c27a5fb24a501": {
       "decision": "include",
       "exclusionReason": null,
-      "datePrecision": "year",
-      "effectiveDate": "2023-07-02",
+      "datePrecision": "day",
+      "effectiveDate": "2023-11-21",
       "transferIdentity": "novo-foundation:2023-11-21:108300000",
       "fundingChain": "donors:warren-buffett",
       "cumulativePeriodMembership": [],
@@ -18268,7 +18265,7 @@
         "transfer-evidence-22",
         "https://www.berkshirehathaway.com/news/nov2123.pdf"
       ],
-      "estimationRationale": "Provisional calendar-year estimate from the cited seed record; its month and day have not been established as transfer dates. Use the earlier middle day and retain partial-history status.",
+      "estimationRationale": "The Berkshire announcement dated 2023-11-21 describes gifts made that day; use day precision. Existing transfer-time dollar estimates are unchanged.",
       "transferStage": "personal-transfer",
       "fundingVehicleId": null
     },
@@ -18350,60 +18347,64 @@
     "794418d40e8909f87e7f72315b4bb77e622817b3bc99382dac48a376b4a52e1a": {
       "decision": "include",
       "exclusionReason": null,
-      "datePrecision": "year",
-      "effectiveDate": "2024-07-01",
+      "datePrecision": "day",
+      "effectiveDate": "2024-11-25",
       "transferIdentity": "susan-thompson-buffett-foundation:2024-11-25:716145000",
       "fundingChain": "donors:warren-buffett",
       "cumulativePeriodMembership": [],
       "sourceIds": [
+        "buffett-nov2524",
         "https://www.cnbc.com/2024/11/25/warren-buffett-speaks-out-against-creating-family-wealth-dynasties-gives-away-another-1point1-billion.html"
       ],
-      "estimationRationale": "Provisional calendar-year estimate from the cited seed record; its month and day have not been established as transfer dates. Use the earlier middle day and retain partial-history status.",
+      "estimationRationale": "The Berkshire announcement dated 2024-11-25 describes gifts made that day; use day precision. Existing transfer-time dollar estimates are unchanged.",
       "transferStage": "personal-transfer",
       "fundingVehicleId": null
     },
     "081df6c650087edca1e5a14795765d5fdc517e9277ed26fea13b67f3dab98264": {
       "decision": "include",
       "exclusionReason": null,
-      "datePrecision": "year",
-      "effectiveDate": "2024-07-01",
+      "datePrecision": "day",
+      "effectiveDate": "2024-11-25",
       "transferIdentity": "sherwood-foundation:2024-11-25:143229000",
       "fundingChain": "donors:warren-buffett",
       "cumulativePeriodMembership": [],
       "sourceIds": [
+        "buffett-nov2524",
         "https://www.cnbc.com/2024/11/25/warren-buffett-speaks-out-against-creating-family-wealth-dynasties-gives-away-another-1point1-billion.html"
       ],
-      "estimationRationale": "Provisional calendar-year estimate from the cited seed record; its month and day have not been established as transfer dates. Use the earlier middle day and retain partial-history status.",
+      "estimationRationale": "The Berkshire announcement dated 2024-11-25 describes gifts made that day; use day precision. Existing transfer-time dollar estimates are unchanged.",
       "transferStage": "personal-transfer",
       "fundingVehicleId": null
     },
     "1b124344bf93b1e68d767c62180c7452501ea723ba385cdbe6012b834bc34e59": {
       "decision": "include",
       "exclusionReason": null,
-      "datePrecision": "year",
-      "effectiveDate": "2024-07-01",
+      "datePrecision": "day",
+      "effectiveDate": "2024-11-25",
       "transferIdentity": "howard-g-buffett-foundation:2024-11-25:143229000",
       "fundingChain": "donors:warren-buffett",
       "cumulativePeriodMembership": [],
       "sourceIds": [
+        "buffett-nov2524",
         "https://www.cnbc.com/2024/11/25/warren-buffett-speaks-out-against-creating-family-wealth-dynasties-gives-away-another-1point1-billion.html"
       ],
-      "estimationRationale": "Provisional calendar-year estimate from the cited seed record; its month and day have not been established as transfer dates. Use the earlier middle day and retain partial-history status.",
+      "estimationRationale": "The Berkshire announcement dated 2024-11-25 describes gifts made that day; use day precision. Existing transfer-time dollar estimates are unchanged.",
       "transferStage": "personal-transfer",
       "fundingVehicleId": null
     },
     "b3a994ad553258e0a628f493a4d7facd67fa3162b5c5a09c960428abcd466aa5": {
       "decision": "include",
       "exclusionReason": null,
-      "datePrecision": "year",
-      "effectiveDate": "2024-07-01",
+      "datePrecision": "day",
+      "effectiveDate": "2024-11-25",
       "transferIdentity": "novo-foundation:2024-11-25:143229000",
       "fundingChain": "donors:warren-buffett",
       "cumulativePeriodMembership": [],
       "sourceIds": [
+        "buffett-nov2524",
         "https://www.cnbc.com/2024/11/25/warren-buffett-speaks-out-against-creating-family-wealth-dynasties-gives-away-another-1point1-billion.html"
       ],
-      "estimationRationale": "Provisional calendar-year estimate from the cited seed record; its month and day have not been established as transfer dates. Use the earlier middle day and retain partial-history status.",
+      "estimationRationale": "The Berkshire announcement dated 2024-11-25 describes gifts made that day; use day precision. Existing transfer-time dollar estimates are unchanged.",
       "transferStage": "personal-transfer",
       "fundingVehicleId": null
     },
@@ -18485,60 +18486,64 @@
     "ce12d928f8611d5575499988ede225d01834955a5ef16ac78e42cd3b033edafd": {
       "decision": "include",
       "exclusionReason": null,
-      "datePrecision": "year",
-      "effectiveDate": "2025-07-02",
+      "datePrecision": "day",
+      "effectiveDate": "2025-11-10",
       "transferIdentity": "susan-thompson-buffett-foundation:2025-11-10:750000000",
       "fundingChain": "donors:warren-buffett",
       "cumulativePeriodMembership": [],
       "sourceIds": [
+        "buffett-nov1025",
         "https://www.marketwatch.com/story/warren-buffett-is-giving-away-1-4-billion-just-before-he-retires-and-has-nearly-150-billion-to-go-9af87312"
       ],
-      "estimationRationale": "Provisional calendar-year estimate from the cited seed record; its month and day have not been established as transfer dates. Use the earlier middle day and retain partial-history status.",
+      "estimationRationale": "The Berkshire announcement dated 2025-11-10 describes gifts made that day; use day precision. Existing transfer-time dollar estimates are unchanged.",
       "transferStage": "personal-transfer",
       "fundingVehicleId": null
     },
     "d95a9bdac53f9bb5eceaeda334dcf4388cb49ed8fff636b7023c9bbc26f87c5c": {
       "decision": "include",
       "exclusionReason": null,
-      "datePrecision": "year",
-      "effectiveDate": "2025-07-02",
+      "datePrecision": "day",
+      "effectiveDate": "2025-11-10",
       "transferIdentity": "sherwood-foundation:2025-11-10:200000000",
       "fundingChain": "donors:warren-buffett",
       "cumulativePeriodMembership": [],
       "sourceIds": [
+        "buffett-nov1025",
         "https://www.marketwatch.com/story/warren-buffett-is-giving-away-1-4-billion-just-before-he-retires-and-has-nearly-150-billion-to-go-9af87312"
       ],
-      "estimationRationale": "Provisional calendar-year estimate from the cited seed record; its month and day have not been established as transfer dates. Use the earlier middle day and retain partial-history status.",
+      "estimationRationale": "The Berkshire announcement dated 2025-11-10 describes gifts made that day; use day precision. Existing transfer-time dollar estimates are unchanged.",
       "transferStage": "personal-transfer",
       "fundingVehicleId": null
     },
     "0bd4393f325dea5f08810d82d622f0c984e39229cfc2d69a50a059615b036e37": {
       "decision": "include",
       "exclusionReason": null,
-      "datePrecision": "year",
-      "effectiveDate": "2025-07-02",
+      "datePrecision": "day",
+      "effectiveDate": "2025-11-10",
       "transferIdentity": "howard-g-buffett-foundation:2025-11-10:200000000",
       "fundingChain": "donors:warren-buffett",
       "cumulativePeriodMembership": [],
       "sourceIds": [
+        "buffett-nov1025",
         "https://www.marketwatch.com/story/warren-buffett-is-giving-away-1-4-billion-just-before-he-retires-and-has-nearly-150-billion-to-go-9af87312"
       ],
-      "estimationRationale": "Provisional calendar-year estimate from the cited seed record; its month and day have not been established as transfer dates. Use the earlier middle day and retain partial-history status.",
+      "estimationRationale": "The Berkshire announcement dated 2025-11-10 describes gifts made that day; use day precision. Existing transfer-time dollar estimates are unchanged.",
       "transferStage": "personal-transfer",
       "fundingVehicleId": null
     },
     "393cfbe4c51eada8c753d3221ee53fa83a94223af346e6c4265547870778eb67": {
       "decision": "include",
       "exclusionReason": null,
-      "datePrecision": "year",
-      "effectiveDate": "2025-07-02",
+      "datePrecision": "day",
+      "effectiveDate": "2025-11-10",
       "transferIdentity": "novo-foundation:2025-11-10:200000000",
       "fundingChain": "donors:warren-buffett",
       "cumulativePeriodMembership": [],
       "sourceIds": [
+        "buffett-nov1025",
         "https://www.marketwatch.com/story/warren-buffett-is-giving-away-1-4-billion-just-before-he-retires-and-has-nearly-150-billion-to-go-9af87312"
       ],
-      "estimationRationale": "Provisional calendar-year estimate from the cited seed record; its month and day have not been established as transfer dates. Use the earlier middle day and retain partial-history status.",
+      "estimationRationale": "The Berkshire announcement dated 2025-11-10 describes gifts made that day; use day precision. Existing transfer-time dollar estimates are unchanged.",
       "transferStage": "personal-transfer",
       "fundingVehicleId": null
     },

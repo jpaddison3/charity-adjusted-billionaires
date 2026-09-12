@@ -8,9 +8,9 @@
   "excludedTransfers": 88,
   "futureTransfers": 10,
   "wealth": {
-    "matched": 61,
+    "matched": 52,
     "unmatched": 8,
-    "unusable": 9
+    "unusable": 18
   },
   "partialGivingHistories": 78,
   "unresolvedBalances": [

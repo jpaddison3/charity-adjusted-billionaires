@@ -10,6 +10,17 @@ import { loadDonations } from '../lib/donationRecords.js';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const resultsDir = path.join(root, 'data/lcb/results');
 const resultNames = ['rankings.json', 'rankings.csv', 'transfers.json', 'coverage.json'];
+const parseRankingCsv = (csv) => {
+  const [header, ...lines] = csv.trimEnd().split('\n');
+  return {
+    columns: header.split(','),
+    rows: lines.map((line) =>
+      [...line.matchAll(/("(?:[^"]|"")*"|[^,]*)(,|$)/g)]
+        .slice(0, -1)
+        .map((match) => (match[1].startsWith('"') ? match[1].slice(1, -1).replaceAll('""', '"') : match[1]))
+    ),
+  };
+};
 const hashResults = (directory = resultsDir) =>
   resultNames.map((name) =>
     crypto
@@ -472,8 +483,7 @@ describe('generate LCB data', () => {
   it('keeps JSON and CSV ranking rows aligned', () => {
     const rankings = JSON.parse(fs.readFileSync(path.join(resultsDir, 'rankings.json'), 'utf8'));
     const csv = fs.readFileSync(path.join(resultsDir, 'rankings.csv'), 'utf8');
-    const [header, ...lines] = csv.trimEnd().split('\n');
-    const columns = header.split(',');
+    const { columns, rows: parsed } = parseRankingCsv(csv);
     expect(columns).toEqual([
       'rank',
       'donorId',
@@ -486,14 +496,10 @@ describe('generate LCB data', () => {
       'nominalGiving',
       'marketAdjustedGiving',
       'inflationAdjustedGiving',
+      'usesEstimatedCpi',
       'charityAdjustedWealth',
       'partialGivingHistory',
     ]);
-    const parsed = lines.map((line) =>
-      [...line.matchAll(/("(?:[^"]|"")*"|[^,]*)(,|$)/g)]
-        .slice(0, -1)
-        .map((match) => (match[1].startsWith('"') ? match[1].slice(1, -1).replaceAll('""', '"') : match[1]))
-    );
     expect(parsed).toEqual(
       rankings.rows.map((row) =>
         columns.map((column) =>
@@ -501,6 +507,72 @@ describe('generate LCB data', () => {
         )
       )
     );
+  });
+
+  it('exports estimated-CPI dependency in standalone donor rankings', () => {
+    const workspace = setupWorkspace();
+    const event = loadDonations(path.join(workspace, 'content/donations')).find(
+      (e) => e.date === '2025-10-13' && e.credit['marc-benioff']
+    );
+    editInput(workspace, 'transfers.json', (data) => {
+      const disposition = data.dispositions[event.fingerprint];
+      Object.assign(disposition, { datePrecision: 'day', effectiveDate: event.date });
+      delete disposition.periodStart;
+      delete disposition.periodEnd;
+    });
+    const result = runGenerator(workspace);
+    expect(result.status, result.stderr).toBe(0);
+    const output = path.join(workspace, 'data/lcb/results');
+    const rankings = JSON.parse(fs.readFileSync(path.join(output, 'rankings.json')));
+    expect(rankings.rows.find((r) => r.donorId === 'marc-benioff').usesEstimatedCpi).toBe(true);
+    expect(rankings.rows.find((r) => r.donorId === 'bill-gates').usesEstimatedCpi).toBe(false);
+    const { columns, rows } = parseRankingCsv(fs.readFileSync(path.join(output, 'rankings.csv'), 'utf8'));
+    const cells = rows.find((row) => row[columns.indexOf('donorId')] === 'marc-benioff');
+    expect(cells[columns.indexOf('usesEstimatedCpi')]).toBe('true');
+  });
+
+  it('preserves transaction dates instead of inventing reporting periods', () => {
+    const rows = JSON.parse(fs.readFileSync(path.join(resultsDir, 'transfers.json'))).transfers;
+    const cases = [
+      ['jan-koum', '2014-10-30', 1],
+      ['michael-dell', '2023-10-18', 2],
+      ['michael-dell', '2023-10-19', 2],
+      ['sergey-brin', '2025-11-26', 3],
+      ['warren-buffett', '2023-11-21', 4],
+      ['warren-buffett', '2024-11-25', 4],
+      ['warren-buffett', '2025-11-10', 4],
+    ];
+    for (const [donor, date, count] of cases) {
+      const gifts = rows.filter((r) => r.credit[donor] && r.originalDate === date);
+      expect(gifts).toHaveLength(count);
+      for (const gift of gifts) {
+        expect(gift).toMatchObject({ datePrecision: 'day', effectiveDate: date });
+        expect(gift).not.toHaveProperty('periodStart');
+        expect(gift).not.toHaveProperty('periodEnd');
+      }
+    }
+    expect(rows.some((r) => r.datePrecision === 'period' && r.decision === 'include')).toBe(true);
+  });
+
+  it('keeps confirmed family observations unranked and references the actual shared source row', () => {
+    const wealth = JSON.parse(fs.readFileSync(path.join(root, 'data/lcb/inputs/wealth.json')));
+    const families = JSON.parse(
+      fs.readFileSync(path.join(root, 'data/lcb/inputs/sources/forbes-2025-family-identities.json'))
+    );
+    const rankings = JSON.parse(fs.readFileSync(path.join(resultsDir, 'rankings.json')));
+    for (const { donorId, sourceName, amountUSD } of families.records) {
+      const record = wealth.records.find((r) => r.donorId === donorId);
+      expect(record).toMatchObject({
+        status: 'unusable',
+        allocationShare: null,
+        observation: { sourceName, amountUSD },
+      });
+      expect(rankings.rows.find((r) => r.donorId === donorId)).toMatchObject({ wealthAtSnapshot: null, rank: null });
+    }
+    const cari = wealth.records.find((r) => r.donorId === 'cari-tuna');
+    const dustin = wealth.records.find((r) => r.donorId === 'dustin-moskovitz');
+    expect(cari.observation).toEqual(dustin.observation);
+    expect(cari.sharedPoolId).toBe(dustin.sharedPoolId);
   });
 
   it('publishes every unresolved balance under exactly its explicit donor profiles', () => {
@@ -580,7 +652,7 @@ describe('generate LCB data', () => {
     );
   });
 
-  it('independently recomputes an exported donor total and rank', () => {
+  it('independently recomputes giving for a donor with unresolved wealth and checks ranking arithmetic', () => {
     const rankings = JSON.parse(fs.readFileSync(path.join(resultsDir, 'rankings.json')));
     const transfers = JSON.parse(fs.readFileSync(path.join(resultsDir, 'transfers.json'))).transfers;
     const giving = transfers.filter((t) => t.decision === 'include' && t.credit['dietmar-hopp']);
@@ -601,7 +673,8 @@ describe('generate LCB data', () => {
     const row = rankings.rows.find((r) => r.donorId === 'dietmar-hopp');
     expect(row.marketAdjustedGiving).toBeCloseTo(expectedMarket, 2);
     expect(row.nominalGiving).toBe(2_971_250);
-    expect(row.rank).toBeGreaterThan(0);
+    expect(row.wealthStatus).toBe('unusable');
+    expect(row.rank).toBeNull();
     const ranked = rankings.rows.filter((r) => r.rank !== null);
     expect(ranked.map((r) => r.rank)).toEqual(ranked.map((_, i) => i + 1));
     for (const r of ranked) expect(r.charityAdjustedWealth).toBeCloseTo(r.wealthAtSnapshot + r.marketAdjustedGiving, 1);

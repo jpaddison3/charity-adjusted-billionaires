@@ -34,17 +34,19 @@
     {
       "donorId": "andrew-forrest",
       "profileId": "andrew-forrest",
-      "status": "matched",
-      "identityType": "individual",
+      "status": "unusable",
+      "identityType": "shared-pool",
       "observation": {
         "date": "2025-03-07",
         "amountUSD": 14400000000,
-        "sourceId": "forbes-billionaires-2025",
-        "sourceName": "Andrew Forrest"
+        "sourceId": "forbes-2025-family-identities",
+        "sourceName": "Andrew Forrest & family"
       },
-      "estimateAtSnapshot": 14400000000,
-      "estimateMethod": "Latest eligible 2025 observation carried forward unchanged to the snapshot.",
-      "reason": null
+      "estimateAtSnapshot": null,
+      "estimateMethod": null,
+      "reason": "Official Forbes 2025 entry is Andrew Forrest & family. No supported individual allocation of this family fortune is available; the third-party CSV omitted the family suffix.",
+      "sharedPoolId": "andrew-forrest-family-2025",
+      "allocationShare": null
     },
     {
       "donorId": "anne-wojcicki",
@@ -94,17 +96,19 @@
     {
       "donorId": "bernard-arnault",
       "profileId": "bernard-arnault",
-      "status": "matched",
-      "identityType": "individual",
+      "status": "unusable",
+      "identityType": "shared-pool",
       "observation": {
         "date": "2025-03-07",
         "amountUSD": 178000000000,
-        "sourceId": "forbes-billionaires-2025",
-        "sourceName": "Bernard Arnault"
+        "sourceId": "forbes-2025-family-identities",
+        "sourceName": "Bernard Arnault & family"
       },
-      "estimateAtSnapshot": 178000000000,
-      "estimateMethod": "Latest eligible 2025 observation carried forward unchanged to the snapshot.",
-      "reason": null
+      "estimateAtSnapshot": null,
+      "estimateMethod": null,
+      "reason": "Official Forbes 2025 entry is Bernard Arnault & family. No supported individual allocation of this family fortune is available; the third-party CSV omitted the family suffix.",
+      "sharedPoolId": "bernard-arnault-family-2025",
+      "allocationShare": null
     },
     {
       "donorId": "bill-ackman",
@@ -172,7 +176,7 @@
         "date": "2025-03-07",
         "amountUSD": 17000000000,
         "sourceId": "forbes-billionaires-2025",
-        "sourceName": "Cari Tuna"
+        "sourceName": "Dustin Moskovitz"
       },
       "estimateAtSnapshot": null,
       "estimateMethod": null,
@@ -181,32 +185,36 @@
     {
       "donorId": "carlos-slim",
       "profileId": "carlos-slim",
-      "status": "matched",
-      "identityType": "individual",
+      "status": "unusable",
+      "identityType": "shared-pool",
       "observation": {
         "date": "2025-03-07",
         "amountUSD": 82500000000,
-        "sourceId": "forbes-billionaires-2025",
-        "sourceName": "Carlos Slim Helu"
+        "sourceId": "forbes-2025-family-identities",
+        "sourceName": "Carlos Slim Helu & family"
       },
-      "estimateAtSnapshot": 82500000000,
-      "estimateMethod": "Latest eligible 2025 observation carried forward unchanged to the snapshot.",
-      "reason": null
+      "estimateAtSnapshot": null,
+      "estimateMethod": null,
+      "reason": "Official Forbes 2025 entry is Carlos Slim Helu & family. No supported individual allocation of this family fortune is available; the third-party CSV omitted the family suffix.",
+      "sharedPoolId": "carlos-slim-family-2025",
+      "allocationShare": null
     },
     {
       "donorId": "charles-koch",
       "profileId": "charles-koch",
-      "status": "matched",
-      "identityType": "individual",
+      "status": "unusable",
+      "identityType": "shared-pool",
       "observation": {
         "date": "2025-03-07",
         "amountUSD": 67500000000,
-        "sourceId": "forbes-billionaires-2025",
-        "sourceName": "Charles Koch"
+        "sourceId": "forbes-2025-family-identities",
+        "sourceName": "Charles Koch & family"
       },
-      "estimateAtSnapshot": 67500000000,
-      "estimateMethod": "Latest eligible 2025 observation carried forward unchanged to the snapshot.",
-      "reason": null
+      "estimateAtSnapshot": null,
+      "estimateMethod": null,
+      "reason": "Official Forbes 2025 entry is Charles Koch & family. No supported individual allocation of this family fortune is available; the third-party CSV omitted the family suffix.",
+      "sharedPoolId": "charles-koch-family-2025",
+      "allocationShare": null
     },
     {
       "donorId": "chris-hohn",
@@ -277,17 +285,19 @@
     {
       "donorId": "dietmar-hopp",
       "profileId": "dietmar-hopp",
-      "status": "matched",
-      "identityType": "individual",
+      "status": "unusable",
+      "identityType": "shared-pool",
       "observation": {
         "date": "2025-03-07",
         "amountUSD": 5200000000,
         "sourceId": "forbes-billionaires-2025",
         "sourceName": "Dietmar Hopp"
       },
-      "estimateAtSnapshot": 5200000000,
-      "estimateMethod": "Latest eligible 2025 observation carried forward unchanged to the snapshot.",
-      "reason": null
+      "estimateAtSnapshot": null,
+      "estimateMethod": null,
+      "reason": "Identity unresolved: Forbes currently labels its profile Dietmar Hopp & family (https://www.forbes.com/profile/dietmar-hopp/, checked 2026-09-12), while the 2025 transcription omits family suffixes. The current label is not a dated 2025 allocation; the saved 2025 amount cannot be confidently attributed to the individual.",
+      "sharedPoolId": "hopp-family-2025",
+      "allocationShare": null
     },
     {
       "donorId": "donald-bren",
@@ -324,17 +334,19 @@
     {
       "donorId": "edythe-broad",
       "profileId": "edythe-broad",
-      "status": "matched",
-      "identityType": "individual",
+      "status": "unusable",
+      "identityType": "shared-pool",
       "observation": {
-        "date": "2025-03-07",
+        "date": "2025-01-28",
         "amountUSD": 7000000000,
-        "sourceId": "forbes-billionaires-2025",
-        "sourceName": "Edythe Broad"
+        "sourceId": "forbes-philanthropy-2025",
+        "sourceName": "Edythe Broad & family"
       },
-      "estimateAtSnapshot": 7000000000,
-      "estimateMethod": "Latest eligible 2025 observation carried forward unchanged to the snapshot.",
-      "reason": null
+      "estimateAtSnapshot": null,
+      "estimateMethod": null,
+      "reason": "The dated Forbes philanthropy list identifies Edythe Broad & family at $7B; no individual allocation is established.",
+      "sharedPoolId": "broad-family-2025",
+      "allocationShare": null
     },
     {
       "donorId": "elon-musk",
@@ -439,17 +451,19 @@
     {
       "donorId": "hasso-plattner",
       "profileId": "hasso-plattner",
-      "status": "matched",
-      "identityType": "individual",
+      "status": "unusable",
+      "identityType": "shared-pool",
       "observation": {
         "date": "2025-03-07",
         "amountUSD": 15200000000,
-        "sourceId": "forbes-billionaires-2025",
-        "sourceName": "Hasso Plattner"
+        "sourceId": "forbes-2025-family-identities",
+        "sourceName": "Hasso Plattner & family"
       },
-      "estimateAtSnapshot": 15200000000,
-      "estimateMethod": "Latest eligible 2025 observation carried forward unchanged to the snapshot.",
-      "reason": null
+      "estimateAtSnapshot": null,
+      "estimateMethod": null,
+      "reason": "Official Forbes 2025 entry is Hasso Plattner & family. No supported individual allocation of this family fortune is available; the third-party CSV omitted the family suffix.",
+      "sharedPoolId": "hasso-plattner-family-2025",
+      "allocationShare": null
     },
     {
       "donorId": "jaan-tallinn",
@@ -767,17 +781,19 @@
     {
       "donorId": "marilyn-simons",
       "profileId": "marilyn-simons",
-      "status": "matched",
-      "identityType": "individual",
+      "status": "unusable",
+      "identityType": "shared-pool",
       "observation": {
         "date": "2025-03-07",
         "amountUSD": 31000000000,
-        "sourceId": "forbes-billionaires-2025",
-        "sourceName": "Marilyn Simons"
+        "sourceId": "forbes-2025-family-identities",
+        "sourceName": "Marilyn Simons & family"
       },
-      "estimateAtSnapshot": 31000000000,
-      "estimateMethod": "Latest eligible 2025 observation carried forward unchanged to the snapshot.",
-      "reason": null
+      "estimateAtSnapshot": null,
+      "estimateMethod": null,
+      "reason": "Official Forbes 2025 entry is Marilyn Simons & family. No supported individual allocation of this family fortune is available; the third-party CSV omitted the family suffix.",
+      "sharedPoolId": "marilyn-simons-family-2025",
+      "allocationShare": null
     },
     {
       "donorId": "mark-zuckerberg",
@@ -907,17 +923,19 @@
     {
       "donorId": "phil-knight",
       "profileId": "phil-knight",
-      "status": "matched",
-      "identityType": "individual",
+      "status": "unusable",
+      "identityType": "shared-pool",
       "observation": {
         "date": "2025-03-07",
         "amountUSD": 35400000000,
-        "sourceId": "forbes-billionaires-2025",
-        "sourceName": "Phil Knight"
+        "sourceId": "forbes-2025-family-identities",
+        "sourceName": "Phil Knight & family"
       },
-      "estimateAtSnapshot": 35400000000,
-      "estimateMethod": "Latest eligible 2025 observation carried forward unchanged to the snapshot.",
-      "reason": null
+      "estimateAtSnapshot": null,
+      "estimateMethod": null,
+      "reason": "Official Forbes 2025 entry is Phil Knight & family. No supported individual allocation of this family fortune is available; the third-party CSV omitted the family suffix.",
+      "sharedPoolId": "phil-knight-family-2025",
+      "allocationShare": null
     },
     {
       "donorId": "pierre-omidyar",

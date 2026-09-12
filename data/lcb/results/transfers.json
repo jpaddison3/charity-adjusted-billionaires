@@ -16282,10 +16282,8 @@
       "sourcePath": "content/donations/jan_koum.md",
       "rowLocator": "donations[0]",
       "originalDate": "2014-10-30",
-      "datePrecision": "period",
-      "effectiveDate": "2014-05-01",
-      "periodStart": "2013-10-31",
-      "periodEnd": "2014-10-30",
+      "datePrecision": "day",
+      "effectiveDate": "2014-10-30",
       "recipientId": "silicon-valley-community-foundation",
       "amountUSD": 556000000,
       "credit": {
@@ -16301,16 +16299,16 @@
       "sourceIds": [
         "https://www.sec.gov/Archives/edgar/data/1326801/000112760214030682/xslF345X03/form4.xml"
       ],
-      "estimationRationale": "The cited seed notes report contributions for a fiscal reporting period ending 2014-10-30, rather than a single transfer that day. Use the earlier middle day of 2013-10-31 through 2014-10-30. SEC Form 4 reports that Jan Koum's Butterfly Trust donated 7.5M Facebook Class A shares to Silicon Valley Community Foundation on this date; Wired/Chronicle reporting valued the gift at about $556M, and New Yorker/Chronicle reporting described it as creating a donor-advised fund. Treated as additive to later Koum Family Foundation inflows because SVCF Schedule I filings through FY2024 show no grants to KFF, while KFF FY2016-FY2017 Schedule B filings identify the major later inflows as Facebook-stock contributions from Koum or the Jan Koum Family Trust.",
+      "estimationRationale": "SEC Form 4 Table I records the 7,500,000-share SVCF gift on October 30, 2014; use its transaction date. Amount remains the seed valuation estimate.",
       "usesEstimatedCpi": false,
       "attributions": [
         {
           "donorId": "jan-koum",
           "credit": 1,
-          "marketFactor": 4.343243043463825,
-          "inflationFactor": 1.3621437578814626,
-          "marketContribution": 2414843132.17,
-          "inflationContribution": 757351929.38
+          "marketFactor": 4.077039756144697,
+          "inflationFactor": 1.3648229184654197,
+          "marketContribution": 2266834104.42,
+          "inflationContribution": 758841542.67
         }
       ]
     },
@@ -28220,10 +28218,8 @@
       "sourcePath": "content/donations/michael_dell.md",
       "rowLocator": "donations[10]",
       "originalDate": "2023-10-18",
-      "datePrecision": "period",
-      "effectiveDate": "2023-04-19",
-      "periodStart": "2022-10-19",
-      "periodEnd": "2023-10-18",
+      "datePrecision": "day",
+      "effectiveDate": "2023-10-18",
       "recipientId": "michael-and-susan-dell-foundation",
       "amountUSD": 27000000,
       "credit": {
@@ -28239,16 +28235,16 @@
       "sourceIds": [
         "https://www.sec.gov/Archives/edgar/data/1571996/000106299323019567/form4.xml"
       ],
-      "estimationRationale": "The cited seed notes report contributions for a fiscal reporting period ending 2023-10-18, rather than a single transfer that day. Use the earlier middle day of 2022-10-19 through 2023-10-18. Michael Dell Form 4 reports a 1,300,000-share Dell Technologies Class C gift on 2023-10-18. Footnote 1 allocates 400,000 shares to the Michael & Susan Dell Foundation and 900,000 shares to donor-advised charitable funds established by Michael and Susan Dell. Amount is rounded from DELL trading around $67-$68 per share; the FY2023 foundation aggregate row below is reduced by this estimated MSDF portion to avoid double-counting.",
+      "estimationRationale": "Use the 2023-10-18 Form 4 transaction date explicitly transcribed in the seed notes, not a synthetic fiscal period. SEC HTTP retrieval returned 403 during this review; the transaction date and allocation rely on the existing source transcription. Amount remains the seed rounded share-price estimate.",
       "usesEstimatedCpi": false,
       "attributions": [
         {
           "donorId": "michael-dell",
           "credit": 1,
-          "marketFactor": 1.7302812724043877,
-          "inflationFactor": 1.0682054172723765,
-          "marketContribution": 46717594.35,
-          "inflationContribution": 28841546.27
+          "marketFactor": 1.54157500010125,
+          "inflationFactor": 1.0532484374542936,
+          "marketContribution": 41622525,
+          "inflationContribution": 28437707.81
         }
       ]
     },
@@ -28274,7 +28270,7 @@
       "sourceIds": [
         "https://www.sec.gov/Archives/edgar/data/1571996/000106299323019567/form4.xml"
       ],
-      "estimationRationale": "Gift transaction date retained from the SEC filing cited in the seed record.",
+      "estimationRationale": "Use the 2023-10-18 Form 4 transaction date explicitly transcribed in the seed notes, not a synthetic fiscal period. SEC HTTP retrieval returned 403 during this review; the transaction date and allocation rely on the existing source transcription. Amount remains the seed rounded share-price estimate.",
       "usesEstimatedCpi": false,
       "attributions": [
         {
@@ -28292,10 +28288,8 @@
       "sourcePath": "content/donations/michael_dell.md",
       "rowLocator": "donations[12]",
       "originalDate": "2023-10-19",
-      "datePrecision": "period",
-      "effectiveDate": "2023-04-20",
-      "periodStart": "2022-10-20",
-      "periodEnd": "2023-10-19",
+      "datePrecision": "day",
+      "effectiveDate": "2023-10-19",
       "recipientId": "michael-and-susan-dell-foundation",
       "amountUSD": 27000000,
       "credit": {
@@ -28311,16 +28305,16 @@
       "sourceIds": [
         "https://www.sec.gov/Archives/edgar/data/1571996/000106299323019567/form4.xml"
       ],
-      "estimationRationale": "The cited seed notes report contributions for a fiscal reporting period ending 2023-10-19, rather than a single transfer that day. Use the earlier middle day of 2022-10-20 through 2023-10-19. Michael Dell Form 4 reports a second 1,300,000-share Dell Technologies Class C gift on 2023-10-19. Footnote 1 allocates 400,000 shares to the Michael & Susan Dell Foundation and 900,000 shares to donor-advised charitable funds established by Michael and Susan Dell. Amount is rounded from DELL trading around $67-$68 per share; the FY2023 foundation aggregate row below is reduced by this estimated MSDF portion to avoid double-counting.",
+      "estimationRationale": "Use the 2023-10-19 Form 4 transaction date explicitly transcribed in the seed notes, not a synthetic fiscal period. SEC HTTP retrieval returned 403 during this review; the transaction date and allocation rely on the existing source transcription. Amount remains the seed rounded share-price estimate.",
       "usesEstimatedCpi": false,
       "attributions": [
         {
           "donorId": "michael-dell",
           "credit": 1,
-          "marketFactor": 1.7291837537462558,
-          "inflationFactor": 1.0682054172723765,
-          "marketContribution": 46687961.35,
-          "inflationContribution": 28841546.27
+          "marketFactor": 1.540597177967644,
+          "inflationFactor": 1.0532484374542936,
+          "marketContribution": 41596123.81,
+          "inflationContribution": 28437707.81
         }
       ]
     },
@@ -28346,7 +28340,7 @@
       "sourceIds": [
         "https://www.sec.gov/Archives/edgar/data/1571996/000106299323019567/form4.xml"
       ],
-      "estimationRationale": "Gift transaction date retained from the SEC filing cited in the seed record.",
+      "estimationRationale": "Use the 2023-10-19 Form 4 transaction date explicitly transcribed in the seed notes, not a synthetic fiscal period. SEC HTTP retrieval returned 403 during this review; the transaction date and allocation rely on the existing source transcription. Amount remains the seed rounded share-price estimate.",
       "usesEstimatedCpi": false,
       "attributions": [
         {
@@ -34956,8 +34950,8 @@
       "sourcePath": "content/donations/sergey_brin.md",
       "rowLocator": "donations[16]",
       "originalDate": "2025-11-26",
-      "datePrecision": "year",
-      "effectiveDate": "2025-07-02",
+      "datePrecision": "day",
+      "effectiveDate": "2025-11-26",
       "recipientId": "catalyst4",
       "amountUSD": 1000000000,
       "credit": {
@@ -34971,18 +34965,19 @@
       "transferStage": "personal-transfer",
       "cumulativePeriodMembership": [],
       "sourceIds": [
+        "https://www.sec.gov/Archives/edgar/data/1652044/000119312525302626/xslF345X03/ownership.xml",
         "https://fortune.com/2025/11/30/sergey-brin-gift-1-billion-alphabet-stock-ai-rally-michael-j-fox/"
       ],
-      "estimationRationale": "Provisional calendar-year estimate from the cited seed record; its month and day have not been established as transfer dates. Use the earlier middle day and retain partial-history status.",
+      "estimationRationale": "SEC Form 4 Table I records the 3,557,300-share gift on November 26, 2025; use that transaction date. Recipient allocation and dollar estimates remain from the seed family-office reporting.",
       "usesEstimatedCpi": false,
       "attributions": [
         {
           "donorId": "sergey-brin",
           "credit": 1,
-          "marketFactor": 1.0850385642745355,
-          "inflationFactor": 1.003114088308858,
-          "marketContribution": 1085038564.27,
-          "inflationContribution": 1003114088.31
+          "marketFactor": 1.0158191121967721,
+          "inflationFactor": 0.9997902024546311,
+          "marketContribution": 1015819112.2,
+          "inflationContribution": 999790202.45
         }
       ]
     },
@@ -34991,8 +34986,8 @@
       "sourcePath": "content/donations/sergey_brin.md",
       "rowLocator": "donations[17]",
       "originalDate": "2025-11-26",
-      "datePrecision": "year",
-      "effectiveDate": "2025-07-02",
+      "datePrecision": "day",
+      "effectiveDate": "2025-11-26",
       "recipientId": "sergey-brin-family-foundation",
       "amountUSD": 90000000,
       "credit": {
@@ -35006,18 +35001,19 @@
       "transferStage": "personal-transfer",
       "cumulativePeriodMembership": [],
       "sourceIds": [
+        "https://www.sec.gov/Archives/edgar/data/1652044/000119312525302626/xslF345X03/ownership.xml",
         "https://fortune.com/2025/11/30/sergey-brin-gift-1-billion-alphabet-stock-ai-rally-michael-j-fox/"
       ],
-      "estimationRationale": "Provisional calendar-year estimate from the cited seed record; its month and day have not been established as transfer dates. Use the earlier middle day and retain partial-history status.",
+      "estimationRationale": "SEC Form 4 Table I records the 3,557,300-share gift on November 26, 2025; use that transaction date. Recipient allocation and dollar estimates remain from the seed family-office reporting.",
       "usesEstimatedCpi": false,
       "attributions": [
         {
           "donorId": "sergey-brin",
           "credit": 1,
-          "marketFactor": 1.0850385642745355,
-          "inflationFactor": 1.003114088308858,
-          "marketContribution": 97653470.78,
-          "inflationContribution": 90280267.95
+          "marketFactor": 1.0158191121967721,
+          "inflationFactor": 0.9997902024546311,
+          "marketContribution": 91423720.1,
+          "inflationContribution": 89981118.22
         }
       ]
     },
@@ -35026,8 +35022,8 @@
       "sourcePath": "content/donations/sergey_brin.md",
       "rowLocator": "donations[18]",
       "originalDate": "2025-11-26",
-      "datePrecision": "year",
-      "effectiveDate": "2025-07-02",
+      "datePrecision": "day",
+      "effectiveDate": "2025-11-26",
       "recipientId": "michael-j-fox-foundation-for-parkinsons-research",
       "amountUSD": 45000000,
       "credit": {
@@ -35041,18 +35037,19 @@
       "transferStage": "personal-transfer",
       "cumulativePeriodMembership": [],
       "sourceIds": [
+        "https://www.sec.gov/Archives/edgar/data/1652044/000119312525302626/xslF345X03/ownership.xml",
         "https://fortune.com/2025/11/30/sergey-brin-gift-1-billion-alphabet-stock-ai-rally-michael-j-fox/"
       ],
-      "estimationRationale": "Provisional calendar-year estimate from the cited seed record; its month and day have not been established as transfer dates. Use the earlier middle day and retain partial-history status.",
+      "estimationRationale": "SEC Form 4 Table I records the 3,557,300-share gift on November 26, 2025; use that transaction date. Recipient allocation and dollar estimates remain from the seed family-office reporting.",
       "usesEstimatedCpi": false,
       "attributions": [
         {
           "donorId": "sergey-brin",
           "credit": 1,
-          "marketFactor": 1.0850385642745355,
-          "inflationFactor": 1.003114088308858,
-          "marketContribution": 48826735.39,
-          "inflationContribution": 45140133.97
+          "marketFactor": 1.0158191121967721,
+          "inflationFactor": 0.9997902024546311,
+          "marketContribution": 45711860.05,
+          "inflationContribution": 44990559.11
         }
       ]
     },
@@ -41728,8 +41725,8 @@
       "sourcePath": "content/donations/warren_buffett.md",
       "rowLocator": "donations[95]",
       "originalDate": "2023-11-21",
-      "datePrecision": "year",
-      "effectiveDate": "2023-07-02",
+      "datePrecision": "day",
+      "effectiveDate": "2023-11-21",
       "recipientId": "susan-thompson-buffett-foundation",
       "amountUSD": 541500000,
       "credit": {
@@ -41746,16 +41743,16 @@
         "transfer-evidence-22",
         "https://www.berkshirehathaway.com/news/nov2123.pdf"
       ],
-      "estimationRationale": "Provisional calendar-year estimate from the cited seed record; its month and day have not been established as transfer dates. Use the earlier middle day and retain partial-history status.",
+      "estimationRationale": "The Berkshire announcement dated 2023-11-21 describes gifts made that day; use day precision. Existing transfer-time dollar estimates are unchanged.",
       "usesEstimatedCpi": false,
       "attributions": [
         {
           "donorId": "warren-buffett",
           "credit": 1,
-          "marketFactor": 1.6509169063462021,
-          "inflationFactor": 1.0600704633109905,
-          "marketContribution": 893971504.79,
-          "inflationContribution": 574028155.88
+          "marketFactor": 1.5086746557680244,
+          "inflationFactor": 1.0553751656890875,
+          "marketContribution": 816947326.1,
+          "inflationContribution": 571485652.22
         }
       ]
     },
@@ -41764,8 +41761,8 @@
       "sourcePath": "content/donations/warren_buffett.md",
       "rowLocator": "donations[96]",
       "originalDate": "2023-11-21",
-      "datePrecision": "year",
-      "effectiveDate": "2023-07-02",
+      "datePrecision": "day",
+      "effectiveDate": "2023-11-21",
       "recipientId": "sherwood-foundation",
       "amountUSD": 108300000,
       "credit": {
@@ -41782,16 +41779,16 @@
         "transfer-evidence-22",
         "https://www.berkshirehathaway.com/news/nov2123.pdf"
       ],
-      "estimationRationale": "Provisional calendar-year estimate from the cited seed record; its month and day have not been established as transfer dates. Use the earlier middle day and retain partial-history status.",
+      "estimationRationale": "The Berkshire announcement dated 2023-11-21 describes gifts made that day; use day precision. Existing transfer-time dollar estimates are unchanged.",
       "usesEstimatedCpi": false,
       "attributions": [
         {
           "donorId": "warren-buffett",
           "credit": 1,
-          "marketFactor": 1.6509169063462021,
-          "inflationFactor": 1.0600704633109905,
-          "marketContribution": 178794300.96,
-          "inflationContribution": 114805631.18
+          "marketFactor": 1.5086746557680244,
+          "inflationFactor": 1.0553751656890875,
+          "marketContribution": 163389465.22,
+          "inflationContribution": 114297130.44
         }
       ]
     },
@@ -41800,8 +41797,8 @@
       "sourcePath": "content/donations/warren_buffett.md",
       "rowLocator": "donations[97]",
       "originalDate": "2023-11-21",
-      "datePrecision": "year",
-      "effectiveDate": "2023-07-02",
+      "datePrecision": "day",
+      "effectiveDate": "2023-11-21",
       "recipientId": "howard-g-buffett-foundation",
       "amountUSD": 108300000,
       "credit": {
@@ -41818,16 +41815,16 @@
         "transfer-evidence-22",
         "https://www.berkshirehathaway.com/news/nov2123.pdf"
       ],
-      "estimationRationale": "Provisional calendar-year estimate from the cited seed record; its month and day have not been established as transfer dates. Use the earlier middle day and retain partial-history status.",
+      "estimationRationale": "The Berkshire announcement dated 2023-11-21 describes gifts made that day; use day precision. Existing transfer-time dollar estimates are unchanged.",
       "usesEstimatedCpi": false,
       "attributions": [
         {
           "donorId": "warren-buffett",
           "credit": 1,
-          "marketFactor": 1.6509169063462021,
-          "inflationFactor": 1.0600704633109905,
-          "marketContribution": 178794300.96,
-          "inflationContribution": 114805631.18
+          "marketFactor": 1.5086746557680244,
+          "inflationFactor": 1.0553751656890875,
+          "marketContribution": 163389465.22,
+          "inflationContribution": 114297130.44
         }
       ]
     },
@@ -41836,8 +41833,8 @@
       "sourcePath": "content/donations/warren_buffett.md",
       "rowLocator": "donations[98]",
       "originalDate": "2023-11-21",
-      "datePrecision": "year",
-      "effectiveDate": "2023-07-02",
+      "datePrecision": "day",
+      "effectiveDate": "2023-11-21",
       "recipientId": "novo-foundation",
       "amountUSD": 108300000,
       "credit": {
@@ -41854,16 +41851,16 @@
         "transfer-evidence-22",
         "https://www.berkshirehathaway.com/news/nov2123.pdf"
       ],
-      "estimationRationale": "Provisional calendar-year estimate from the cited seed record; its month and day have not been established as transfer dates. Use the earlier middle day and retain partial-history status.",
+      "estimationRationale": "The Berkshire announcement dated 2023-11-21 describes gifts made that day; use day precision. Existing transfer-time dollar estimates are unchanged.",
       "usesEstimatedCpi": false,
       "attributions": [
         {
           "donorId": "warren-buffett",
           "credit": 1,
-          "marketFactor": 1.6509169063462021,
-          "inflationFactor": 1.0600704633109905,
-          "marketContribution": 178794300.96,
-          "inflationContribution": 114805631.18
+          "marketFactor": 1.5086746557680244,
+          "inflationFactor": 1.0553751656890875,
+          "marketContribution": 163389465.22,
+          "inflationContribution": 114297130.44
         }
       ]
     },
@@ -42047,8 +42044,8 @@
       "sourcePath": "content/donations/warren_buffett.md",
       "rowLocator": "donations[104]",
       "originalDate": "2024-11-25",
-      "datePrecision": "year",
-      "effectiveDate": "2024-07-01",
+      "datePrecision": "day",
+      "effectiveDate": "2024-11-25",
       "recipientId": "susan-thompson-buffett-foundation",
       "amountUSD": 716145000,
       "credit": {
@@ -42062,18 +42059,19 @@
       "transferStage": "personal-transfer",
       "cumulativePeriodMembership": [],
       "sourceIds": [
+        "buffett-nov2524",
         "https://www.cnbc.com/2024/11/25/warren-buffett-speaks-out-against-creating-family-wealth-dynasties-gives-away-another-1point1-billion.html"
       ],
-      "estimationRationale": "Provisional calendar-year estimate from the cited seed record; its month and day have not been established as transfer dates. Use the earlier middle day and retain partial-history status.",
+      "estimationRationale": "The Berkshire announcement dated 2024-11-25 describes gifts made that day; use day precision. Existing transfer-time dollar estimates are unchanged.",
       "usesEstimatedCpi": false,
       "attributions": [
         {
           "donorId": "warren-buffett",
           "credit": 1,
-          "marketFactor": 1.3162219654927614,
-          "inflationFactor": 1.0302473453296876,
-          "marketContribution": 942605779.48,
-          "inflationContribution": 737806485.12
+          "marketFactor": 1.2038592974421525,
+          "inflationFactor": 1.0271353088658068,
+          "marketContribution": 862137816.57,
+          "inflationContribution": 735577815.77
         }
       ]
     },
@@ -42082,8 +42080,8 @@
       "sourcePath": "content/donations/warren_buffett.md",
       "rowLocator": "donations[105]",
       "originalDate": "2024-11-25",
-      "datePrecision": "year",
-      "effectiveDate": "2024-07-01",
+      "datePrecision": "day",
+      "effectiveDate": "2024-11-25",
       "recipientId": "sherwood-foundation",
       "amountUSD": 143229000,
       "credit": {
@@ -42097,18 +42095,19 @@
       "transferStage": "personal-transfer",
       "cumulativePeriodMembership": [],
       "sourceIds": [
+        "buffett-nov2524",
         "https://www.cnbc.com/2024/11/25/warren-buffett-speaks-out-against-creating-family-wealth-dynasties-gives-away-another-1point1-billion.html"
       ],
-      "estimationRationale": "Provisional calendar-year estimate from the cited seed record; its month and day have not been established as transfer dates. Use the earlier middle day and retain partial-history status.",
+      "estimationRationale": "The Berkshire announcement dated 2024-11-25 describes gifts made that day; use day precision. Existing transfer-time dollar estimates are unchanged.",
       "usesEstimatedCpi": false,
       "attributions": [
         {
           "donorId": "warren-buffett",
           "credit": 1,
-          "marketFactor": 1.3162219654927614,
-          "inflationFactor": 1.0302473453296876,
-          "marketContribution": 188521155.9,
-          "inflationContribution": 147561297.02
+          "marketFactor": 1.2038592974421525,
+          "inflationFactor": 1.0271353088658068,
+          "marketContribution": 172427563.31,
+          "inflationContribution": 147115563.15
         }
       ]
     },
@@ -42117,8 +42116,8 @@
       "sourcePath": "content/donations/warren_buffett.md",
       "rowLocator": "donations[106]",
       "originalDate": "2024-11-25",
-      "datePrecision": "year",
-      "effectiveDate": "2024-07-01",
+      "datePrecision": "day",
+      "effectiveDate": "2024-11-25",
       "recipientId": "howard-g-buffett-foundation",
       "amountUSD": 143229000,
       "credit": {
@@ -42132,18 +42131,19 @@
       "transferStage": "personal-transfer",
       "cumulativePeriodMembership": [],
       "sourceIds": [
+        "buffett-nov2524",
         "https://www.cnbc.com/2024/11/25/warren-buffett-speaks-out-against-creating-family-wealth-dynasties-gives-away-another-1point1-billion.html"
       ],
-      "estimationRationale": "Provisional calendar-year estimate from the cited seed record; its month and day have not been established as transfer dates. Use the earlier middle day and retain partial-history status.",
+      "estimationRationale": "The Berkshire announcement dated 2024-11-25 describes gifts made that day; use day precision. Existing transfer-time dollar estimates are unchanged.",
       "usesEstimatedCpi": false,
       "attributions": [
         {
           "donorId": "warren-buffett",
           "credit": 1,
-          "marketFactor": 1.3162219654927614,
-          "inflationFactor": 1.0302473453296876,
-          "marketContribution": 188521155.9,
-          "inflationContribution": 147561297.02
+          "marketFactor": 1.2038592974421525,
+          "inflationFactor": 1.0271353088658068,
+          "marketContribution": 172427563.31,
+          "inflationContribution": 147115563.15
         }
       ]
     },
@@ -42152,8 +42152,8 @@
       "sourcePath": "content/donations/warren_buffett.md",
       "rowLocator": "donations[107]",
       "originalDate": "2024-11-25",
-      "datePrecision": "year",
-      "effectiveDate": "2024-07-01",
+      "datePrecision": "day",
+      "effectiveDate": "2024-11-25",
       "recipientId": "novo-foundation",
       "amountUSD": 143229000,
       "credit": {
@@ -42167,18 +42167,19 @@
       "transferStage": "personal-transfer",
       "cumulativePeriodMembership": [],
       "sourceIds": [
+        "buffett-nov2524",
         "https://www.cnbc.com/2024/11/25/warren-buffett-speaks-out-against-creating-family-wealth-dynasties-gives-away-another-1point1-billion.html"
       ],
-      "estimationRationale": "Provisional calendar-year estimate from the cited seed record; its month and day have not been established as transfer dates. Use the earlier middle day and retain partial-history status.",
+      "estimationRationale": "The Berkshire announcement dated 2024-11-25 describes gifts made that day; use day precision. Existing transfer-time dollar estimates are unchanged.",
       "usesEstimatedCpi": false,
       "attributions": [
         {
           "donorId": "warren-buffett",
           "credit": 1,
-          "marketFactor": 1.3162219654927614,
-          "inflationFactor": 1.0302473453296876,
-          "marketContribution": 188521155.9,
-          "inflationContribution": 147561297.02
+          "marketFactor": 1.2038592974421525,
+          "inflationFactor": 1.0271353088658068,
+          "marketContribution": 172427563.31,
+          "inflationContribution": 147115563.15
         }
       ]
     },
@@ -42362,8 +42363,8 @@
       "sourcePath": "content/donations/warren_buffett.md",
       "rowLocator": "donations[113]",
       "originalDate": "2025-11-10",
-      "datePrecision": "year",
-      "effectiveDate": "2025-07-02",
+      "datePrecision": "day",
+      "effectiveDate": "2025-11-10",
       "recipientId": "susan-thompson-buffett-foundation",
       "amountUSD": 750000000,
       "credit": {
@@ -42377,18 +42378,19 @@
       "transferStage": "personal-transfer",
       "cumulativePeriodMembership": [],
       "sourceIds": [
+        "buffett-nov1025",
         "https://www.marketwatch.com/story/warren-buffett-is-giving-away-1-4-billion-just-before-he-retires-and-has-nearly-150-billion-to-go-9af87312"
       ],
-      "estimationRationale": "Provisional calendar-year estimate from the cited seed record; its month and day have not been established as transfer dates. Use the earlier middle day and retain partial-history status.",
+      "estimationRationale": "The Berkshire announcement dated 2025-11-10 describes gifts made that day; use day precision. Existing transfer-time dollar estimates are unchanged.",
       "usesEstimatedCpi": false,
       "attributions": [
         {
           "donorId": "warren-buffett",
           "credit": 1,
-          "marketFactor": 1.0850385642745355,
-          "inflationFactor": 1.003114088308858,
-          "marketContribution": 813778923.21,
-          "inflationContribution": 752335566.23
+          "marketFactor": 1.023133815884179,
+          "inflationFactor": 0.9997902024546311,
+          "marketContribution": 767350361.91,
+          "inflationContribution": 749842651.84
         }
       ]
     },
@@ -42397,8 +42399,8 @@
       "sourcePath": "content/donations/warren_buffett.md",
       "rowLocator": "donations[114]",
       "originalDate": "2025-11-10",
-      "datePrecision": "year",
-      "effectiveDate": "2025-07-02",
+      "datePrecision": "day",
+      "effectiveDate": "2025-11-10",
       "recipientId": "sherwood-foundation",
       "amountUSD": 200000000,
       "credit": {
@@ -42412,18 +42414,19 @@
       "transferStage": "personal-transfer",
       "cumulativePeriodMembership": [],
       "sourceIds": [
+        "buffett-nov1025",
         "https://www.marketwatch.com/story/warren-buffett-is-giving-away-1-4-billion-just-before-he-retires-and-has-nearly-150-billion-to-go-9af87312"
       ],
-      "estimationRationale": "Provisional calendar-year estimate from the cited seed record; its month and day have not been established as transfer dates. Use the earlier middle day and retain partial-history status.",
+      "estimationRationale": "The Berkshire announcement dated 2025-11-10 describes gifts made that day; use day precision. Existing transfer-time dollar estimates are unchanged.",
       "usesEstimatedCpi": false,
       "attributions": [
         {
           "donorId": "warren-buffett",
           "credit": 1,
-          "marketFactor": 1.0850385642745355,
-          "inflationFactor": 1.003114088308858,
-          "marketContribution": 217007712.85,
-          "inflationContribution": 200622817.66
+          "marketFactor": 1.023133815884179,
+          "inflationFactor": 0.9997902024546311,
+          "marketContribution": 204626763.18,
+          "inflationContribution": 199958040.49
         }
       ]
     },
@@ -42432,8 +42435,8 @@
       "sourcePath": "content/donations/warren_buffett.md",
       "rowLocator": "donations[115]",
       "originalDate": "2025-11-10",
-      "datePrecision": "year",
-      "effectiveDate": "2025-07-02",
+      "datePrecision": "day",
+      "effectiveDate": "2025-11-10",
       "recipientId": "howard-g-buffett-foundation",
       "amountUSD": 200000000,
       "credit": {
@@ -42447,18 +42450,19 @@
       "transferStage": "personal-transfer",
       "cumulativePeriodMembership": [],
       "sourceIds": [
+        "buffett-nov1025",
         "https://www.marketwatch.com/story/warren-buffett-is-giving-away-1-4-billion-just-before-he-retires-and-has-nearly-150-billion-to-go-9af87312"
       ],
-      "estimationRationale": "Provisional calendar-year estimate from the cited seed record; its month and day have not been established as transfer dates. Use the earlier middle day and retain partial-history status.",
+      "estimationRationale": "The Berkshire announcement dated 2025-11-10 describes gifts made that day; use day precision. Existing transfer-time dollar estimates are unchanged.",
       "usesEstimatedCpi": false,
       "attributions": [
         {
           "donorId": "warren-buffett",
           "credit": 1,
-          "marketFactor": 1.0850385642745355,
-          "inflationFactor": 1.003114088308858,
-          "marketContribution": 217007712.85,
-          "inflationContribution": 200622817.66
+          "marketFactor": 1.023133815884179,
+          "inflationFactor": 0.9997902024546311,
+          "marketContribution": 204626763.18,
+          "inflationContribution": 199958040.49
         }
       ]
     },
@@ -42467,8 +42471,8 @@
       "sourcePath": "content/donations/warren_buffett.md",
       "rowLocator": "donations[116]",
       "originalDate": "2025-11-10",
-      "datePrecision": "year",
-      "effectiveDate": "2025-07-02",
+      "datePrecision": "day",
+      "effectiveDate": "2025-11-10",
       "recipientId": "novo-foundation",
       "amountUSD": 200000000,
       "credit": {
@@ -42482,18 +42486,19 @@
       "transferStage": "personal-transfer",
       "cumulativePeriodMembership": [],
       "sourceIds": [
+        "buffett-nov1025",
         "https://www.marketwatch.com/story/warren-buffett-is-giving-away-1-4-billion-just-before-he-retires-and-has-nearly-150-billion-to-go-9af87312"
       ],
-      "estimationRationale": "Provisional calendar-year estimate from the cited seed record; its month and day have not been established as transfer dates. Use the earlier middle day and retain partial-history status.",
+      "estimationRationale": "The Berkshire announcement dated 2025-11-10 describes gifts made that day; use day precision. Existing transfer-time dollar estimates are unchanged.",
       "usesEstimatedCpi": false,
       "attributions": [
         {
           "donorId": "warren-buffett",
           "credit": 1,
-          "marketFactor": 1.0850385642745355,
-          "inflationFactor": 1.003114088308858,
-          "marketContribution": 217007712.85,
-          "inflationContribution": 200622817.66
+          "marketFactor": 1.023133815884179,
+          "inflationFactor": 0.9997902024546311,
+          "marketContribution": 204626763.18,
+          "inflationContribution": 199958040.49
         }
       ]
     },

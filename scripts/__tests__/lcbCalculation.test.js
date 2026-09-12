@@ -106,6 +106,51 @@ describe('LCB calculation', () => {
     expect(result.usesEstimatedCpi).toBe(true);
   });
 
+  it('carries estimated CPI into donor totals only for included attributed gifts', () => {
+    const { rows } = aggregateDonors({
+      donors: ['a', 'b', 'c'].map((id) => ({ id, name: id })),
+      transfers: [
+        {
+          fingerprint: 'estimated',
+          transferIdentity: 'estimated',
+          decision: 'include',
+          amount: 100,
+          effectiveDate: '2020-01-01',
+          credit: { a: 1 },
+        },
+        {
+          fingerprint: 'observed',
+          transferIdentity: 'observed',
+          decision: 'include',
+          amount: 50,
+          effectiveDate: '2021-12-31',
+          credit: { a: 0.5, b: 0.5 },
+        },
+        {
+          fingerprint: 'excluded',
+          transferIdentity: 'excluded',
+          decision: 'exclude',
+          amount: 100,
+          effectiveDate: '2020-01-01',
+          credit: { b: 1 },
+        },
+      ],
+      wealthRecords: [],
+      snapshotDate: fixture.snapshotDate,
+      market: fixture.market,
+      cpi: fixture.cpi.map((row) => ({
+        ...row,
+        status: row.date === '2020-01-01' ? 'estimated-missing-source' : 'observed',
+      })),
+    });
+    expect(rows.find((r) => r.donorId === 'a')).toMatchObject({ usesEstimatedCpi: true, inflationAdjustedGiving: 150 });
+    expect(rows.find((r) => r.donorId === 'b')).toMatchObject({ usesEstimatedCpi: false, inflationAdjustedGiving: 25 });
+    expect(rows.find((r) => r.donorId === 'c')).toMatchObject({
+      usesEstimatedCpi: false,
+      inflationAdjustedGiving: null,
+    });
+  });
+
   it('rejects duplicate funding-chain transfers and overallocated shared wealth', () => {
     expect(() =>
       validateFundingChains([

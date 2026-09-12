@@ -396,6 +396,7 @@ function buildOutputs() {
     'nominalGiving',
     'marketAdjustedGiving',
     'inflationAdjustedGiving',
+    'usesEstimatedCpi',
     'charityAdjustedWealth',
     'partialGivingHistory',
   ];

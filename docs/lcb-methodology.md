@@ -34,7 +34,7 @@ The exponent uses UTC calendar-day differences, including weekends and leap days
 
 The extract follows the saved official HTML table labeled January 5, 2026, including the 2025 endpoint of 1,157,598.95. The later downloaded workbook reports 1,157,009.0876078464 instead. Both source versions are retained and identified separately; the workbook is not the authority for the chosen 2025 endpoint.
 
-CPI-U uses the gift's calendar month and December 2025 for $T$. FRED/BLS has no October 2025 observation, so the saved value is the explicitly labeled arithmetic mean of September and November: $(324.800 + 324.122)/2 = 324.461$. Every transfer using that month is labeled in the export. Any other missing month, or a missing snapshot month, aborts generation.
+CPI-U uses the gift's calendar month and December 2025 for $T$. FRED/BLS has no October 2025 observation, so the saved value is the explicitly labeled arithmetic mean of September and November: $(324.800 + 324.122)/2 = 324.461$. Every included attribution using an estimated observation is labeled with `usesEstimatedCpi`; that flag is also true in both ranking formats whenever any included gift in the donor's total uses the estimate. Excluded gifts do not set the flag. Any other missing month, or a missing snapshot month, aborts generation.
 
 ## Transfers and reconciliation
 
@@ -77,3 +77,7 @@ No network access is used during generation.
 5. Run the focused tests, lint, coverage suite, and build as described in the repository README.
 
 When donation content changes, the transfer fingerprint changes; update its explicit ledger disposition before regenerating. When a saved raw source changes, update its recorded SHA-256 and provenance deliberately.
+
+The third-party Forbes transcription omits some `& family` labels. An additional saved factual extract from the official 2025 top-200 list identifies family observations for Bernard Arnault, Carlos Slim, Charles Koch, Phil Knight, Marilyn Simons, Hasso Plattner, and Andrew Forrest. Those profiles are unranked without individual allocations. Edythe Broad's dated philanthropy-list observation explicitly covers her family. Dietmar Hopp is also unranked: the current Forbes profile identifies a family, and the abbreviated 2025 transcription does not establish a historical individual allocation. This identity audit is bounded; a missing family suffix alone is not affirmative ownership evidence. Cari Tuna's unresolved pool cites the actual Dustin Moskovitz source row.
+
+The ledger preserves day precision for the Koum October 2014 and Brin November 2025 SEC transactions and Buffett's November 2023–2025 family gifts. The Dell October 2023 rows retain their explicitly transcribed Form 4 transaction dates; direct SEC retrieval was unavailable during the follow-up check, so their existing source transcription and rounded valuations remain provisional. Genuine annual or fiscal totals retain midpoint treatment. Date precision does not make an estimated dollar valuation exact.

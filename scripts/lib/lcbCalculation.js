@@ -177,6 +177,7 @@ export function aggregateDonors({ donors, transfers, wealthRecords, snapshotDate
         nominalGiving: 0,
         marketAdjustedGiving: 0,
         inflationAdjustedGiving: 0,
+        usesEstimatedCpi: false,
         partialGivingHistory: Boolean(donor.partialGivingHistory),
       },
     ])
@@ -195,6 +196,7 @@ export function aggregateDonors({ donors, transfers, wealthRecords, snapshotDate
       donor.nominalGiving += result.attributedAmount;
       donor.marketAdjustedGiving += result.marketContribution;
       donor.inflationAdjustedGiving += result.inflationContribution;
+      donor.usesEstimatedCpi ||= result.usesEstimatedCpi;
     }
   }
 
