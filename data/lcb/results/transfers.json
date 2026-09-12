@@ -2085,8 +2085,8 @@
       "sourcePath": "content/donations/bill_gates.md",
       "rowLocator": "donations[6]",
       "originalDate": "2017-06-06",
-      "datePrecision": "year",
-      "effectiveDate": "2017-07-02",
+      "datePrecision": "day",
+      "effectiveDate": "2017-06-06",
       "recipientId": "gates-foundation",
       "amountUSD": 4636480000,
       "credit": {
@@ -2104,24 +2104,24 @@
         "transfer-evidence-07",
         "https://docs.gatesfoundation.org/documents/2017%20BMGFT%20Form%20990PF.PDF"
       ],
-      "estimationRationale": "Provisional calendar-year estimate from the cited seed record; its month and day have not been established as transfer dates. Use the earlier middle day and retain partial-history status.",
+      "estimationRationale": "Saved 2017 Trust Schedule B, Part II, reports June 6, 2017 as the receipt date for 64 million Microsoft shares. Preserve this documented day.",
       "usesEstimatedCpi": false,
       "attributions": [
         {
           "donorId": "bill-gates",
           "credit": 0.5,
-          "marketFactor": 3.19234343666737,
-          "inflationFactor": 1.323825708986625,
-          "marketContribution": 7400618248.62,
-          "inflationContribution": 3068945711.6
+          "marketFactor": 3.23713689137924,
+          "inflationFactor": 1.3229123716601006,
+          "marketContribution": 7504460227.07,
+          "inflationContribution": 3066828376.48
         },
         {
           "donorId": "melinda-gates",
           "credit": 0.5,
-          "marketFactor": 3.19234343666737,
-          "inflationFactor": 1.323825708986625,
-          "marketContribution": 7400618248.62,
-          "inflationContribution": 3068945711.6
+          "marketFactor": 3.23713689137924,
+          "inflationFactor": 1.3229123716601006,
+          "marketContribution": 7504460227.07,
+          "inflationContribution": 3066828376.48
         }
       ]
     },
@@ -8636,33 +8636,34 @@
       "sourcePath": "content/donations/eric_schmidt.md",
       "rowLocator": "donations[9]",
       "originalDate": "2019-11-13",
-      "datePrecision": "year",
-      "effectiveDate": "2019-07-02",
+      "datePrecision": "unresolved-interval",
+      "effectiveDate": null,
       "recipientId": "schmidt-futures",
       "amountUSD": 1000000000,
       "credit": {
         "eric-schmidt": 1
       },
-      "decision": "include",
-      "exclusionReason": null,
+      "decision": "exclude",
+      "exclusionReason": "unresolved-interval",
       "transferIdentity": "schmidt-futures:2019-11-13:1000000000",
       "fundingChain": "donors:eric-schmidt",
       "fundingVehicleId": null,
       "transferStage": "personal-transfer",
       "cumulativePeriodMembership": [],
       "sourceIds": [
-        "https://ericschmidt.com/eric-and-wendy-schmidt-announce-new-1-billion-philanthropic-commitment-to-identify-develop-and-support-global-talent-working-in-service-of-others/"
+        "https://ericschmidt.com/eric-and-wendy-schmidt-announce-new-1-billion-philanthropic-commitment-to-identify-develop-and-support-global-talent-working-in-service-of-others/",
+        "review-schmidt-2019-commitment"
       ],
-      "estimationRationale": "Provisional calendar-year estimate from the cited seed record; its month and day have not been established as transfer dates. Use the earlier middle day and retain partial-history status.",
+      "estimationRationale": "The 2019 announcement is a multi-year commitment, not evidence of a completed personal transfer. Payments may overlap separately recorded foundation receipts; neither the commitment nor unresolved remainder is added to giving.",
       "usesEstimatedCpi": false,
       "attributions": [
         {
           "donorId": "eric-schmidt",
           "credit": 1,
-          "marketFactor": 2.63850466614772,
-          "inflationFactor": 1.263018813505813,
-          "marketContribution": 2638504666.15,
-          "inflationContribution": 1263018813.51
+          "marketFactor": null,
+          "inflationFactor": null,
+          "marketContribution": null,
+          "inflationContribution": null
         }
       ]
     },
@@ -20027,15 +20028,15 @@
       "sourcePath": "content/donations/jk_rowling.md",
       "rowLocator": "donations[4]",
       "originalDate": "2025-05-17",
-      "datePrecision": "year",
-      "effectiveDate": "2025-07-02",
+      "datePrecision": "unresolved-interval",
+      "effectiveDate": null,
       "recipientId": "volant-charitable-trust",
       "amountUSD": 143000000,
       "credit": {
         "jk-rowling": 1
       },
-      "decision": "include",
-      "exclusionReason": null,
+      "decision": "exclude",
+      "exclusionReason": "unresolved-interval",
       "transferIdentity": "volant-charitable-trust:2025-05-17:143000000",
       "fundingChain": "donors:jk-rowling",
       "fundingVehicleId": null,
@@ -20044,16 +20045,16 @@
       "sourceIds": [
         "https://www.thetimes.co.uk/article/jk-rowling-interview-2025-philanthropy-wk6hhcfc0"
       ],
-      "estimationRationale": "Provisional calendar-year estimate from the cited seed record; its month and day have not been established as transfer dates. Use the earlier middle day and retain partial-history status.",
+      "estimationRationale": "The seed is an inferred cumulative Volant total since 2000, not a 2025 transfer. Annual completed amounts and their overlap with other giving remain unresolved.",
       "usesEstimatedCpi": false,
       "attributions": [
         {
           "donorId": "jk-rowling",
           "credit": 1,
-          "marketFactor": 1.08503856427454,
-          "inflationFactor": 1.003114088308858,
-          "marketContribution": 155160514.69,
-          "inflationContribution": 143445314.63
+          "marketFactor": null,
+          "inflationFactor": null,
+          "marketContribution": null,
+          "inflationContribution": null
         }
       ]
     },
@@ -33341,8 +33342,8 @@
       "sourcePath": "content/donations/reed_hastings.md",
       "rowLocator": "donations[9]",
       "originalDate": "2024-01-26",
-      "datePrecision": "year",
-      "effectiveDate": "2024-07-01",
+      "datePrecision": "month",
+      "effectiveDate": "2024-01-16",
       "recipientId": "hastings-fund",
       "amountUSD": 1100000000,
       "credit": {
@@ -33356,18 +33357,19 @@
       "transferStage": "personal-transfer",
       "cumulativePeriodMembership": [],
       "sourceIds": [
-        "https://apnews.com/article/a9315aa44d18007abbfebb814fc84437"
+        "https://apnews.com/article/a9315aa44d18007abbfebb814fc84437",
+        "review-hastings-2024-month"
       ],
-      "estimationRationale": "Provisional calendar-year estimate from the cited seed record; its month and day have not been established as transfer dates. Use the earlier middle day and retain partial-history status.",
+      "estimationRationale": "AP/Chronicle identifies January 2024 as the completed gift month. The exact day is not established; use the earlier middle day of January.",
       "usesEstimatedCpi": false,
       "attributions": [
         {
           "donorId": "reed-hastings",
           "credit": 1,
-          "marketFactor": 1.31622196549276,
-          "inflationFactor": 1.0302473453296876,
-          "marketContribution": 1447844162.04,
-          "inflationContribution": 1133272079.86
+          "marketFactor": 1.45664965047442,
+          "inflationFactor": 1.0507008368539996,
+          "marketContribution": 1602314615.52,
+          "inflationContribution": 1155770920.54
         }
       ]
     },
@@ -36504,10 +36506,8 @@
       "sourcePath": "content/donations/steven_spielberg.md",
       "rowLocator": "donations[12]",
       "originalDate": "2021-06-01",
-      "datePrecision": "period",
-      "effectiveDate": "2020-12-01",
-      "periodStart": "2020-06-02",
-      "periodEnd": "2021-06-01",
+      "datePrecision": "year",
+      "effectiveDate": "2021-07-02",
       "recipientId": "genesis-prize-justice-nonprofits",
       "amountUSD": 1000000,
       "credit": {
@@ -36521,18 +36521,19 @@
       "transferStage": "personal-transfer",
       "cumulativePeriodMembership": [],
       "sourceIds": [
-        "https://en.wikipedia.org/wiki/2021_Genesis_Prize#Aftermath"
+        "https://en.wikipedia.org/wiki/2021_Genesis_Prize#Aftermath",
+        "review-spielberg-2021-prize"
       ],
-      "estimationRationale": "The cited seed notes report contributions for a fiscal reporting period ending 2021-06-01, rather than a single transfer that day. Use the earlier middle day of 2020-06-02 through 2021-06-01. Spielberg donated the $1M Genesis Prize to 10 racial and economic justice nonprofits. Exact grant date approximated to the first of the announcement month. The same reporting says Spielberg and Kate Capshaw matched it with $1M of their own money, but the public source does not identify whether the match was paid directly or through the Righteous Persons Foundation; the match is therefore not stacked on top of the FY2021 foundation inflow.",
+      "estimationRationale": "The primary March 2021 Genesis Prize announcement supports a 2021 prize allocation, not the fiscal period of a separate foundation contribution. Exact settlement timing is unverified; use the provisional 2021 midpoint. The seed June date is retained as seed text, not established timing.",
       "usesEstimatedCpi": false,
       "attributions": [
         {
           "donorId": "steven-spielberg",
           "credit": 1,
-          "marketFactor": 1.97908660646333,
-          "inflationFactor": 1.244093460383762,
-          "marketContribution": 1979086.61,
-          "inflationContribution": 1244093.46
+          "marketFactor": 1.721939447466,
+          "inflationFactor": 1.1869979450775265,
+          "marketContribution": 1721939.45,
+          "inflationContribution": 1186997.95
         }
       ]
     },
@@ -38291,33 +38292,34 @@
       "sourcePath": "content/donations/warren_buffett.md",
       "rowLocator": "donations[0]",
       "originalDate": "2006-09-19",
-      "datePrecision": "year",
-      "effectiveDate": "2006-07-02",
+      "datePrecision": "unresolved-interval",
+      "effectiveDate": null,
       "recipientId": "iaea-nuclear-fuel-bank",
       "amountUSD": 50000000,
       "credit": {
         "warren-buffett": 1
       },
-      "decision": "include",
-      "exclusionReason": null,
+      "decision": "exclude",
+      "exclusionReason": "unresolved-interval",
       "transferIdentity": "iaea-nuclear-fuel-bank:2006-09-19:50000000",
       "fundingChain": "donors:warren-buffett",
       "fundingVehicleId": null,
       "transferStage": "personal-transfer",
       "cumulativePeriodMembership": [],
       "sourceIds": [
-        "https://www.nti.org/news/nti-commits-50-million-iaea-nuclear-fuel-bank/"
+        "https://www.nti.org/news/nti-commits-50-million-iaea-nuclear-fuel-bank/",
+        "review-buffett-nti-2010-pledge"
       ],
-      "estimationRationale": "Provisional calendar-year estimate from the cited seed record; its month and day have not been established as transfer dates. Use the earlier middle day and retain partial-history status.",
+      "estimationRationale": "The 2006 fuel-bank commitment was conditional; NTI still described Buffett’s payment as forthcoming in December 2010. The completed personal-transfer date and recipient remain unresolved.",
       "usesEstimatedCpi": false,
       "attributions": [
         {
           "donorId": "warren-buffett",
           "credit": 1,
-          "marketFactor": 7.36859931467017,
-          "inflationFactor": 1.5924029484029483,
-          "marketContribution": 368429965.73,
-          "inflationContribution": 79620147.42
+          "marketFactor": null,
+          "inflationFactor": null,
+          "marketContribution": null,
+          "inflationContribution": null
         }
       ]
     },

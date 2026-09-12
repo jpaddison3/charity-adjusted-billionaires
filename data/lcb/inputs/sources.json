@@ -88,14 +88,15 @@
     {
       "id": "sunday-times-rich-list-2025",
       "title": "The Sunday Times Rich List 2025",
-      "url": "https://www.news.co.uk/latest-news/the-sunday-times-rich-list-2025/",
+      "url": "https://www.thetimes.com/sunday-times-rich-list/feature/article/richest-people-uk-2025-revealed-vnkmnlxgz",
       "publishedDate": "2025-05-16",
       "observationDate": "2025-05-16",
       "units": "GBP",
-      "notes": "David Sainsbury's GBP 402M observation is converted at the Federal Reserve H.10 1.3283 GBP/USD rate.",
-      "savedSource": null,
-      "savedSourceSha256": null,
-      "unavailableReason": "This source has a remote citation and transcribed observation, but no saved document was available in this snapshot. Offline provenance is incomplete."
+      "notes": "Rank 310 explicitly lists Lord Sainsbury at GBP 402M. The saved factual extract identifies David Sainsbury individually. May 16 is the dated list publication, not a claimed common pricing day for all assets. Converted at the Federal Reserve H.10 1.3283 USD/GBP rate.",
+      "savedSource": "sources/sainsbury-2025-wealth.json",
+      "savedSourceSha256": "63a5499da4e7545be3be72f2e9bcd13d3aa4e6ff17cca66292e9c21269000b8d",
+      "archiveUrl": "https://archive.ph/xNvPk",
+      "retrievedDate": "2026-09-12"
     },
     {
       "id": "federal-reserve-h10-2025-05-16",
@@ -441,6 +442,50 @@
       "savedSourceSha256": "ef4f30467180b34ccdd782e7cb3df002b38be7ac59997b94979b1c38b81d9ca9",
       "originalDocumentSha256": "d816196a9e3d97cdae0452db382d9305d16558f686a27d78ba1839add9ae6355",
       "extractionMethod": "Extracted factual name and USD amount fields from numbered strong-tag list entries, matched to active wealth records. Preserves family suffixes omitted by third-party CSV. Other profiles were not part of this top-200 audit."
+    },
+    {
+      "id": "review-schmidt-2019-commitment",
+      "title": "review-schmidt-2019-commitment",
+      "url": "https://ericschmidt.com/eric-and-wendy-schmidt-announce-new-1-billion-philanthropic-commitment-to-identify-develop-and-support-global-talent-working-in-service-of-others/",
+      "publishedDate": "2019-11-13",
+      "retrievedDate": "2026-09-12",
+      "units": "USD",
+      "savedSource": "sources/review-transfer-facts.json",
+      "savedSourceSha256": "bdc684f61324e0781b35966ee829769aee1356f48b68a21f2e6a14ff5fce8668",
+      "notes": "Paraphrased factual extract keyed by source ID; original full document is not saved."
+    },
+    {
+      "id": "review-hastings-2024-month",
+      "title": "review-hastings-2024-month",
+      "url": "https://apnews.com/article/a9315aa44d18007abbfebb814fc84437",
+      "publishedDate": "2024-12-17",
+      "retrievedDate": "2026-09-12",
+      "units": "USD",
+      "savedSource": "sources/review-transfer-facts.json",
+      "savedSourceSha256": "bdc684f61324e0781b35966ee829769aee1356f48b68a21f2e6a14ff5fce8668",
+      "notes": "Paraphrased factual extract keyed by source ID; original full document is not saved."
+    },
+    {
+      "id": "review-spielberg-2021-prize",
+      "title": "review-spielberg-2021-prize",
+      "url": "https://www.genesisprize.org/press-center/2021-03-25-steven-spielberg-donates-his-1m-genesis-prize-to-us-non-profits-fighting-for-racial-and-economic-justice",
+      "publishedDate": "2021-03-25",
+      "retrievedDate": "2026-09-12",
+      "units": "USD",
+      "savedSource": "sources/review-transfer-facts.json",
+      "savedSourceSha256": "bdc684f61324e0781b35966ee829769aee1356f48b68a21f2e6a14ff5fce8668",
+      "notes": "Paraphrased factual extract keyed by source ID; original full document is not saved."
+    },
+    {
+      "id": "review-buffett-nti-2010-pledge",
+      "title": "review-buffett-nti-2010-pledge",
+      "url": "https://www.nti.org/news/breakthrough-warren-buffett-nti/",
+      "publishedDate": "2010-12-02",
+      "retrievedDate": "2026-09-12",
+      "units": "USD",
+      "savedSource": "sources/review-transfer-facts.json",
+      "savedSourceSha256": "bdc684f61324e0781b35966ee829769aee1356f48b68a21f2e6a14ff5fce8668",
+      "notes": "Paraphrased factual extract keyed by source ID; original full document is not saved."
     }
   ]
 }

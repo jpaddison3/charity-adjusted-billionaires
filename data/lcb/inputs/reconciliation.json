@@ -167,5 +167,78 @@
     "unresolvedBalancesReference": "transfers.json#unresolvedBalances",
     "savedEvidenceNote": "Saved1999 annual-report extract, January2000 announcement,2017/2022 Trust Form990-PF extracts, and all four2024 Pivotal ScheduleB documents are linked from dispositions through the source manifest."
   },
-  "evidenceManifest": "sources.json"
+  "evidenceManifest": "sources.json",
+  "reviewCorrections": [
+    {
+      "fingerprint": "fa8b3423fa3df40d4627625a81e347287552c1e3c56e6714d4706daf72a1ccbe",
+      "previousDecision": "include",
+      "decision": "include",
+      "previousEffectiveDate": "2017-07-02",
+      "effectiveDate": "2017-06-06",
+      "sourceIds": [
+        "transfer-evidence-07",
+        "https://docs.gatesfoundation.org/documents/2017%20BMGFT%20Form%20990PF.PDF"
+      ],
+      "reason": "Saved 2017 Trust Schedule B, Part II, reports June 6, 2017 as the receipt date for 64 million Microsoft shares. Preserve this documented day."
+    },
+    {
+      "fingerprint": "f25c8ef0915f8d015d679eee80a6bfe0c095a096153a163681ec90e049416c5a",
+      "previousDecision": "include",
+      "decision": "exclude",
+      "previousEffectiveDate": "2019-07-02",
+      "effectiveDate": null,
+      "sourceIds": [
+        "https://ericschmidt.com/eric-and-wendy-schmidt-announce-new-1-billion-philanthropic-commitment-to-identify-develop-and-support-global-talent-working-in-service-of-others/",
+        "review-schmidt-2019-commitment"
+      ],
+      "reason": "The 2019 announcement is a multi-year commitment, not evidence of a completed personal transfer. Payments may overlap separately recorded foundation receipts; neither the commitment nor unresolved remainder is added to giving."
+    },
+    {
+      "fingerprint": "3b15f77e11d73831d6f2a5d09d739d82baca07fb2684d29148412381a1e62622",
+      "previousDecision": "include",
+      "decision": "exclude",
+      "previousEffectiveDate": "2025-07-02",
+      "effectiveDate": null,
+      "sourceIds": [
+        "https://www.thetimes.co.uk/article/jk-rowling-interview-2025-philanthropy-wk6hhcfc0"
+      ],
+      "reason": "The seed is an inferred cumulative Volant total since 2000, not a 2025 transfer. Annual completed amounts and their overlap with other giving remain unresolved."
+    },
+    {
+      "fingerprint": "ccc4b617b7afd62950286574b2ca1af46debbda77aa30ca8fbb4ac76116be214",
+      "previousDecision": "include",
+      "decision": "include",
+      "previousEffectiveDate": "2024-07-01",
+      "effectiveDate": "2024-01-16",
+      "sourceIds": [
+        "https://apnews.com/article/a9315aa44d18007abbfebb814fc84437",
+        "review-hastings-2024-month"
+      ],
+      "reason": "AP/Chronicle identifies January 2024 as the completed gift month. The exact day is not established; use the earlier middle day of January."
+    },
+    {
+      "fingerprint": "84f0d8938872e83b18be1b771131ccf5cdbbf3bf6fd82f44ed6b93b8fba8e603",
+      "previousDecision": "include",
+      "decision": "include",
+      "previousEffectiveDate": "2020-12-01",
+      "effectiveDate": "2021-07-02",
+      "sourceIds": [
+        "https://en.wikipedia.org/wiki/2021_Genesis_Prize#Aftermath",
+        "review-spielberg-2021-prize"
+      ],
+      "reason": "The primary March 2021 Genesis Prize announcement supports a 2021 prize allocation, not the fiscal period of a separate foundation contribution. Exact settlement timing is unverified; use the provisional 2021 midpoint. The seed June date is retained as seed text, not established timing."
+    },
+    {
+      "fingerprint": "2449c781a89fa0a31d90b983b75905815c88ccb36767029142935ba5f34b4ac6",
+      "previousDecision": "include",
+      "decision": "exclude",
+      "previousEffectiveDate": "2006-07-02",
+      "effectiveDate": null,
+      "sourceIds": [
+        "https://www.nti.org/news/nti-commits-50-million-iaea-nuclear-fuel-bank/",
+        "review-buffett-nti-2010-pledge"
+      ],
+      "reason": "The 2006 fuel-bank commitment was conditional; NTI still described Buffett’s payment as forthcoming in December 2010. The completed personal-transfer date and recipient remain unresolved."
+    }
+  ]
 }

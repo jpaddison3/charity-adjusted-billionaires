@@ -999,8 +999,8 @@
     "fa8b3423fa3df40d4627625a81e347287552c1e3c56e6714d4706daf72a1ccbe": {
       "decision": "include",
       "exclusionReason": null,
-      "datePrecision": "year",
-      "effectiveDate": "2017-07-02",
+      "datePrecision": "day",
+      "effectiveDate": "2017-06-06",
       "transferIdentity": "gates-foundation:2017-06-06:4636480000",
       "fundingChain": "donors:bill-gates+melinda-gates",
       "cumulativePeriodMembership": [],
@@ -1008,7 +1008,7 @@
         "transfer-evidence-07",
         "https://docs.gatesfoundation.org/documents/2017%20BMGFT%20Form%20990PF.PDF"
       ],
-      "estimationRationale": "Provisional calendar-year estimate from the cited seed record; its month and day have not been established as transfer dates. Use the earlier middle day and retain partial-history status.",
+      "estimationRationale": "Saved 2017 Trust Schedule B, Part II, reports June 6, 2017 as the receipt date for 64 million Microsoft shares. Preserve this documented day.",
       "transferStage": "vehicle-inflow",
       "fundingVehicleId": "gates-foundation"
     },
@@ -3837,17 +3837,18 @@
       "fundingVehicleId": null
     },
     "f25c8ef0915f8d015d679eee80a6bfe0c095a096153a163681ec90e049416c5a": {
-      "decision": "include",
-      "exclusionReason": null,
-      "datePrecision": "year",
-      "effectiveDate": "2019-07-02",
+      "decision": "exclude",
+      "exclusionReason": "unresolved-interval",
+      "datePrecision": "unresolved-interval",
+      "effectiveDate": null,
       "transferIdentity": "schmidt-futures:2019-11-13:1000000000",
       "fundingChain": "donors:eric-schmidt",
       "cumulativePeriodMembership": [],
       "sourceIds": [
-        "https://ericschmidt.com/eric-and-wendy-schmidt-announce-new-1-billion-philanthropic-commitment-to-identify-develop-and-support-global-talent-working-in-service-of-others/"
+        "https://ericschmidt.com/eric-and-wendy-schmidt-announce-new-1-billion-philanthropic-commitment-to-identify-develop-and-support-global-talent-working-in-service-of-others/",
+        "review-schmidt-2019-commitment"
       ],
-      "estimationRationale": "Provisional calendar-year estimate from the cited seed record; its month and day have not been established as transfer dates. Use the earlier middle day and retain partial-history status.",
+      "estimationRationale": "The 2019 announcement is a multi-year commitment, not evidence of a completed personal transfer. Payments may overlap separately recorded foundation receipts; neither the commitment nor unresolved remainder is added to giving.",
       "transferStage": "personal-transfer",
       "fundingVehicleId": null
     },
@@ -8808,17 +8809,17 @@
       "fundingVehicleId": null
     },
     "3b15f77e11d73831d6f2a5d09d739d82baca07fb2684d29148412381a1e62622": {
-      "decision": "include",
-      "exclusionReason": null,
-      "datePrecision": "year",
-      "effectiveDate": "2025-07-02",
+      "decision": "exclude",
+      "exclusionReason": "unresolved-interval",
+      "datePrecision": "unresolved-interval",
+      "effectiveDate": null,
       "transferIdentity": "volant-charitable-trust:2025-05-17:143000000",
       "fundingChain": "donors:jk-rowling",
       "cumulativePeriodMembership": [],
       "sourceIds": [
         "https://www.thetimes.co.uk/article/jk-rowling-interview-2025-philanthropy-wk6hhcfc0"
       ],
-      "estimationRationale": "Provisional calendar-year estimate from the cited seed record; its month and day have not been established as transfer dates. Use the earlier middle day and retain partial-history status.",
+      "estimationRationale": "The seed is an inferred cumulative Volant total since 2000, not a 2025 transfer. Annual completed amounts and their overlap with other giving remain unresolved.",
       "transferStage": "personal-transfer",
       "fundingVehicleId": null
     },
@@ -14696,15 +14697,16 @@
     "ccc4b617b7afd62950286574b2ca1af46debbda77aa30ca8fbb4ac76116be214": {
       "decision": "include",
       "exclusionReason": null,
-      "datePrecision": "year",
-      "effectiveDate": "2024-07-01",
+      "datePrecision": "month",
+      "effectiveDate": "2024-01-16",
       "transferIdentity": "hastings-fund:2024-01-26:1100000000",
       "fundingChain": "donors:reed-hastings",
       "cumulativePeriodMembership": [],
       "sourceIds": [
-        "https://apnews.com/article/a9315aa44d18007abbfebb814fc84437"
+        "https://apnews.com/article/a9315aa44d18007abbfebb814fc84437",
+        "review-hastings-2024-month"
       ],
-      "estimationRationale": "Provisional calendar-year estimate from the cited seed record; its month and day have not been established as transfer dates. Use the earlier middle day and retain partial-history status.",
+      "estimationRationale": "AP/Chronicle identifies January 2024 as the completed gift month. The exact day is not established; use the earlier middle day of January.",
       "transferStage": "personal-transfer",
       "fundingVehicleId": null
     },
@@ -16067,17 +16069,16 @@
     "84f0d8938872e83b18be1b771131ccf5cdbbf3bf6fd82f44ed6b93b8fba8e603": {
       "decision": "include",
       "exclusionReason": null,
-      "datePrecision": "period",
-      "effectiveDate": "2020-12-01",
+      "datePrecision": "year",
+      "effectiveDate": "2021-07-02",
       "transferIdentity": "genesis-prize-justice-nonprofits:2021-06-01:1000000",
       "fundingChain": "donors:steven-spielberg",
       "cumulativePeriodMembership": [],
       "sourceIds": [
-        "https://en.wikipedia.org/wiki/2021_Genesis_Prize#Aftermath"
+        "https://en.wikipedia.org/wiki/2021_Genesis_Prize#Aftermath",
+        "review-spielberg-2021-prize"
       ],
-      "estimationRationale": "The cited seed notes report contributions for a fiscal reporting period ending 2021-06-01, rather than a single transfer that day. Use the earlier middle day of 2020-06-02 through 2021-06-01. Spielberg donated the $1M Genesis Prize to 10 racial and economic justice nonprofits. Exact grant date approximated to the first of the announcement month. The same reporting says Spielberg and Kate Capshaw matched it with $1M of their own money, but the public source does not identify whether the match was paid directly or through the Righteous Persons Foundation; the match is therefore not stacked on top of the FY2021 foundation inflow.",
-      "periodEnd": "2021-06-01",
-      "periodStart": "2020-06-02",
+      "estimationRationale": "The primary March 2021 Genesis Prize announcement supports a 2021 prize allocation, not the fiscal period of a separate foundation contribution. Exact settlement timing is unverified; use the provisional 2021 midpoint. The seed June date is retained as seed text, not established timing.",
       "transferStage": "personal-transfer",
       "fundingVehicleId": null
     },
@@ -16832,17 +16833,18 @@
       "fundingVehicleId": null
     },
     "2449c781a89fa0a31d90b983b75905815c88ccb36767029142935ba5f34b4ac6": {
-      "decision": "include",
-      "exclusionReason": null,
-      "datePrecision": "year",
-      "effectiveDate": "2006-07-02",
+      "decision": "exclude",
+      "exclusionReason": "unresolved-interval",
+      "datePrecision": "unresolved-interval",
+      "effectiveDate": null,
       "transferIdentity": "iaea-nuclear-fuel-bank:2006-09-19:50000000",
       "fundingChain": "donors:warren-buffett",
       "cumulativePeriodMembership": [],
       "sourceIds": [
-        "https://www.nti.org/news/nti-commits-50-million-iaea-nuclear-fuel-bank/"
+        "https://www.nti.org/news/nti-commits-50-million-iaea-nuclear-fuel-bank/",
+        "review-buffett-nti-2010-pledge"
       ],
-      "estimationRationale": "Provisional calendar-year estimate from the cited seed record; its month and day have not been established as transfer dates. Use the earlier middle day and retain partial-history status.",
+      "estimationRationale": "The 2006 fuel-bank commitment was conditional; NTI still described Buffett’s payment as forthcoming in December 2010. The completed personal-transfer date and recipient remain unresolved.",
       "transferStage": "personal-transfer",
       "fundingVehicleId": null
     },
@@ -20667,6 +20669,57 @@
       "donorIds": [
         "michael-bloomberg"
       ]
+    },
+    {
+      "id": "unresolved-f25c8ef0915f8d015d679eee80a6bfe0c095a096153a163681ec90e049416c5a",
+      "amountUSD": 1000000000,
+      "period": "2019 onward",
+      "sourceFingerprint": "f25c8ef0915f8d015d679eee80a6bfe0c095a096153a163681ec90e049416c5a",
+      "sourceIds": [
+        "https://ericschmidt.com/eric-and-wendy-schmidt-announce-new-1-billion-philanthropic-commitment-to-identify-develop-and-support-global-talent-working-in-service-of-others/",
+        "review-schmidt-2019-commitment"
+      ],
+      "overlapLinks": [
+        "f25c8ef0915f8d015d679eee80a6bfe0c095a096153a163681ec90e049416c5a",
+        "353080de7af6f6166b62f65a705cf63665bee510e57a26c7f9e7914e65759655"
+      ],
+      "reason": "The 2019 announcement is a multi-year commitment, not evidence of a completed personal transfer. Payments may overlap separately recorded foundation receipts; neither the commitment nor unresolved remainder is added to giving.",
+      "donorIds": [
+        "eric-schmidt"
+      ]
+    },
+    {
+      "id": "unresolved-3b15f77e11d73831d6f2a5d09d739d82baca07fb2684d29148412381a1e62622",
+      "amountUSD": 143000000,
+      "period": "2000–2025",
+      "sourceFingerprint": "3b15f77e11d73831d6f2a5d09d739d82baca07fb2684d29148412381a1e62622",
+      "sourceIds": [
+        "https://www.thetimes.co.uk/article/jk-rowling-interview-2025-philanthropy-wk6hhcfc0"
+      ],
+      "overlapLinks": [
+        "3b15f77e11d73831d6f2a5d09d739d82baca07fb2684d29148412381a1e62622"
+      ],
+      "reason": "The seed is an inferred cumulative Volant total since 2000, not a 2025 transfer. Annual completed amounts and their overlap with other giving remain unresolved.",
+      "donorIds": [
+        "jk-rowling"
+      ]
+    },
+    {
+      "id": "unresolved-2449c781a89fa0a31d90b983b75905815c88ccb36767029142935ba5f34b4ac6",
+      "amountUSD": 50000000,
+      "period": "2006 pledge; payment date unresolved",
+      "sourceFingerprint": "2449c781a89fa0a31d90b983b75905815c88ccb36767029142935ba5f34b4ac6",
+      "sourceIds": [
+        "https://www.nti.org/news/nti-commits-50-million-iaea-nuclear-fuel-bank/",
+        "review-buffett-nti-2010-pledge"
+      ],
+      "overlapLinks": [
+        "2449c781a89fa0a31d90b983b75905815c88ccb36767029142935ba5f34b4ac6"
+      ],
+      "reason": "The 2006 fuel-bank commitment was conditional; NTI still described Buffett’s payment as forthcoming in December 2010. The completed personal-transfer date and recipient remain unresolved.",
+      "donorIds": [
+        "warren-buffett"
+      ]
     }
   ],
   "fundingVehicles": [
@@ -20736,5 +20789,9 @@
       "description": "Rounded cumulative donor totals, not exact annual transfer evidence; see reconciliation.json gates.removedOrReplaced and gates-2025-rounded-delta.",
       "overlapLinks": []
     }
-  ]
+  ],
+  "excludedFileReasons": {
+    "content/donors/sam_bankman_fried.md.excluded": "Excluded from the site because donations were funded by misappropriated FTX customer money; rationale is recorded in this source file and the FAQ.",
+    "content/donations/sam_bankman_fried.md.excluded": "Excluded with the Sam Bankman-Fried donor profile because the funds were not eligible personal charitable giving; see content/donors/sam_bankman_fried.md.excluded."
+  }
 }

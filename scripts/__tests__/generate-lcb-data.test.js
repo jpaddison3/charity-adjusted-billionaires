@@ -5,6 +5,7 @@ import path from 'path';
 import { spawnSync } from 'child_process';
 import { fileURLToPath } from 'url';
 import { afterEach, describe, expect, it } from 'vitest';
+import matter from 'gray-matter';
 import { loadDonations } from '../lib/donationRecords.js';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
@@ -40,6 +41,7 @@ const setupWorkspace = () => {
     'scripts/generate-lcb-data.js',
     'scripts/lib/donationRecords.js',
     'scripts/lib/lcbCalculation.js',
+    'scripts/lib/strictDate.js',
     'src/utils/dataValidation.js',
     'src/utils/constants.js',
     'src/utils/globalParameterRules.js',
@@ -69,6 +71,17 @@ afterEach(() => {
 });
 
 describe('generate LCB data', () => {
+  it.each(['missing', 'stale'])('rejects %s excluded-file reasons', (condition) => {
+    const workspace = setupWorkspace();
+    editInput(workspace, 'transfers.json', (ledger) => {
+      if (condition === 'missing') delete ledger.excludedFileReasons['content/donors/sam_bankman_fried.md.excluded'];
+      else ledger.excludedFileReasons['content/donors/absent.md.excluded'] = 'Not a real excluded file.';
+    });
+    const result = runGenerator(workspace);
+    expect(result.status).not.toBe(0);
+    expect(result.stderr).toContain(condition === 'missing' ? 'explicit exclusion reason' : 'Stale excluded file');
+  });
+
   it('generates byte-identical offline outputs and passes drift checking', () => {
     const originalHashes = hashResults();
     const workspace = setupWorkspace();
@@ -798,6 +811,29 @@ describe('generate LCB data', () => {
     }
     expect(coverage.includedTransfers + coverage.excludedTransfers).toBe(coverage.seedEvents);
     const transfers = JSON.parse(fs.readFileSync(path.join(resultsDir, 'transfers.json'), 'utf8')).transfers;
+    const seedFingerprints = loadDonations(path.join(root, 'content/donations')).map((event) => event.fingerprint);
+    const exportedFingerprints = transfers.map((transfer) => transfer.fingerprint);
+    expect(exportedFingerprints.length).toBe(new Set(exportedFingerprints).size);
+    expect([...exportedFingerprints].sort()).toEqual(seedFingerprints.sort());
+    const donorDir = path.join(root, 'content/donors');
+    const activeIds = fs
+      .readdirSync(donorDir)
+      .filter((name) => name.endsWith('.md') && name !== '_index.md')
+      .map((name) => matter(fs.readFileSync(path.join(donorDir, name), 'utf8')).data.id);
+    const exportedIds = rankings.rows.map((row) => row.donorId);
+    expect(exportedIds.length).toBe(new Set(exportedIds).size);
+    expect([...exportedIds].sort()).toEqual(activeIds.sort());
+    expect(coverage.excludedInventory.donors).toEqual([
+      expect.objectContaining({
+        donorId: 'sam-bankman-fried',
+        sourcePath: 'content/donors/sam_bankman_fried.md.excluded',
+        reason: expect.stringContaining('misappropriated'),
+      }),
+    ]);
+    expect(coverage.excludedInventory.donationFiles).toEqual([
+      expect.objectContaining({ donorIds: ['sam-bankman-fried'], eventCount: 3 }),
+    ]);
+    expect(exportedIds).not.toContain('sam-bankman-fried');
     expect(coverage.futureTransfers).toBe(transfers.filter((row) => row.effectiveDate > coverage.snapshotDate).length);
     expect(
       transfers.filter((row) => row.effectiveDate > coverage.snapshotDate).every((row) => row.decision === 'exclude')
@@ -812,5 +848,34 @@ describe('generate LCB data', () => {
         .map((row) => row.donorId)
         .sort()
     ).toEqual([...ledger.partialDonorIds].sort());
+  });
+
+  it('keeps unsupported commitments and cumulative totals out of compounding and preserves supported dates', () => {
+    const { transfers } = JSON.parse(fs.readFileSync(path.join(resultsDir, 'transfers.json'), 'utf8'));
+    const { unresolvedBalances } = JSON.parse(fs.readFileSync(path.join(resultsDir, 'coverage.json'), 'utf8'));
+    for (const [recipientId, amountUSD] of [
+      ['schmidt-futures', 1_000_000_000],
+      ['volant-charitable-trust', 143_000_000],
+      ['iaea-nuclear-fuel-bank', 50_000_000],
+    ]) {
+      const transfer = transfers.find((row) => row.recipientId === recipientId && row.amountUSD === amountUSD);
+      expect(transfer).toMatchObject({
+        decision: 'exclude',
+        effectiveDate: null,
+        datePrecision: 'unresolved-interval',
+      });
+      expect(transfer.attributions.every((row) => row.marketContribution === null)).toBe(true);
+      expect(unresolvedBalances).toContainEqual(expect.objectContaining({ sourceFingerprint: transfer.fingerprint }));
+    }
+    for (const [recipientId, amountUSD, datePrecision, effectiveDate] of [
+      ['hastings-fund', 1_100_000_000, 'month', '2024-01-16'],
+      ['gates-foundation', 4_636_480_000, 'day', '2017-06-06'],
+      ['genesis-prize-justice-nonprofits', 1_000_000, 'year', '2021-07-02'],
+    ]) {
+      const transfer = transfers.find((row) => row.recipientId === recipientId && row.amountUSD === amountUSD);
+      expect(transfer).toMatchObject({ decision: 'include', datePrecision, effectiveDate });
+      expect(transfer).not.toHaveProperty('periodStart');
+      expect(transfer).not.toHaveProperty('periodEnd');
+    }
   });
 });

@@ -17,6 +17,7 @@ const tempWorkspaces = [];
 // workspace for the script's relative imports to resolve.
 const SHARED_MODULES = [
   'scripts/lib/donationRecords.js',
+  'scripts/lib/strictDate.js',
   'src/utils/dataValidation.js',
   'src/utils/constants.js',
   'src/utils/globalParameterRules.js',

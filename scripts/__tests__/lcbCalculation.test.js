@@ -7,15 +7,28 @@ import {
   calculateAttributedGift,
   marketIndexAt,
   midpointDate,
+  parseUtcDate,
   validateFundingChains,
   validateMarketSeries,
   validateWealthAllocations,
 } from '../lib/lcbCalculation.js';
+import { normalizeStrictDateString } from '../lib/donationRecords.js';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const fixture = JSON.parse(fs.readFileSync(path.join(here, '../__fixtures__/lcb/synthetic.json'), 'utf8'));
 
 describe('LCB calculation', () => {
+  it('shares calendar validation while retaining the stricter calculation input contract', () => {
+    expect(parseUtcDate('0000-02-29').toISOString()).toBe('0000-02-29T00:00:00.000Z');
+    expect(parseUtcDate('0099-01-01').getUTCFullYear()).toBe(99);
+    expect(normalizeStrictDateString(' "0099-01-01" ', 'seed')).toBe('0099-01-01');
+    expect(() => parseUtcDate(' "0099-01-01" ')).toThrow('YYYY-MM-DD');
+    for (const invalid of ['0099-02-29', '2025-02-29', '2024-13-01']) {
+      expect(() => parseUtcDate(invalid)).toThrow('real calendar date');
+      expect(() => normalizeStrictDateString(invalid, 'seed')).toThrow('real calendar date');
+    }
+  });
+
   it('uses independently calculable market and CPI factors', () => {
     const result = calculateAttributedGift({
       event: { amount: 100, effectiveDate: '2020-01-01' },

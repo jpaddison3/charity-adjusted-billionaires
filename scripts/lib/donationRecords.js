@@ -7,6 +7,7 @@ import matter from 'gray-matter';
 import { glob } from 'glob';
 import { assertValidEntityId } from '../../src/utils/dataValidation.js';
 import { isPlainObject } from '../../src/utils/typeGuards.js';
+import { parseStrictUtcDate } from './strictDate.js';
 
 const DONATION_FIELDS = new Set(['date', 'recipient', 'amount', 'credit', 'source', 'notes']);
 const CREDIT_SUM_TOLERANCE = 0.001;
@@ -17,22 +18,7 @@ export function normalizeStrictDateString(rawValue, errorPrefix) {
   const normalized = String(rawValue)
     .trim()
     .replace(/^['"]|['"]$/g, '');
-  const match = normalized.match(/^(\d{4})-(\d{2})-(\d{2})$/);
-  if (!match) throw new Error(`${errorPrefix} Expected YYYY-MM-DD.`);
-
-  const year = Number(match[1]);
-  const month = Number(match[2]);
-  const day = Number(match[3]);
-  const normalizedDate = new Date(0);
-  normalizedDate.setUTCHours(0, 0, 0, 0);
-  normalizedDate.setUTCFullYear(year, month - 1, day);
-  if (
-    normalizedDate.getUTCFullYear() !== year ||
-    normalizedDate.getUTCMonth() !== month - 1 ||
-    normalizedDate.getUTCDate() !== day
-  ) {
-    throw new Error(`${errorPrefix} Expected a real calendar date.`);
-  }
+  parseStrictUtcDate(normalized, errorPrefix);
   return normalized;
 }
 
@@ -53,9 +39,12 @@ export function buildDonationKeys(donation, date) {
     .map(([donorId, creditAmount]) => `${donorId}:${creditAmount}`)
     .sort()
     .join(',');
+  // A new citation does not create a new gift, so source is excluded. Notes
+  // distinguish genuinely separate gifts with otherwise identical details.
   const eventIdentity = [donation.recipient, date, donation.amount, donation.notes ?? null];
   return {
     exactKey: JSON.stringify([...eventIdentity, creditKey]),
+    // Omitting credit also catches one joint gift recorded once per donor.
     eventKey: JSON.stringify(eventIdentity),
   };
 }

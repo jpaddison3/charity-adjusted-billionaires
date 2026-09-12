@@ -41,6 +41,35 @@ function loadDonors() {
     .map(({ id, name }) => ({ id, name }));
 }
 
+function loadExcludedInventory(reasons) {
+  const seenPaths = new Set();
+  const readFiles = (directory, describe) =>
+    glob
+      .sync(path.join(contentDir, directory, '*.md.excluded'))
+      .sort()
+      .map((file) => {
+        const sourcePath = path.relative(root, file).split(path.sep).join('/');
+        const reason = reasons?.[sourcePath];
+        if (typeof reason !== 'string' || !reason.trim()) {
+          throw new Error(`Excluded file ${sourcePath} needs an explicit exclusion reason.`);
+        }
+        seenPaths.add(sourcePath);
+        return { sourcePath, reason, ...describe(matter(fs.readFileSync(file, 'utf8')).data) };
+      });
+  const donors = readFiles('donors', ({ id, name }) => ({ donorId: id, name }));
+  const donationFiles = readFiles('donations', ({ donations }) => {
+    if (!Array.isArray(donations)) throw new Error('Excluded donation file needs a donations array.');
+    return {
+      donorIds: [...new Set(donations.flatMap(({ credit }) => Object.keys(credit)))].sort(),
+      eventCount: donations.length,
+    };
+  });
+  for (const sourcePath of Object.keys(reasons ?? {})) {
+    if (!seenPaths.has(sourcePath)) throw new Error(`Stale excluded file reason for ${sourcePath}.`);
+  }
+  return { donors, donationFiles };
+}
+
 function assertHash(source) {
   if (!source.savedSource || !source.savedSourceSha256) {
     if (
@@ -168,6 +197,7 @@ function buildOutputs() {
   const donorIds = new Set(donorProfiles.map((donor) => donor.id));
   const seedEvents = loadDonations(path.join(contentDir, 'donations'));
   const ledger = readJson('transfers.json');
+  const excludedInventory = loadExcludedInventory(ledger.excludedFileReasons);
   const wealth = readJson('wealth.json');
   for (const [name, input] of [
     ['transfers', ledger],
@@ -370,8 +400,9 @@ function buildOutputs() {
     snapshotDate: snapshot.snapshotDate,
     activeDonors: donorProfiles.length,
     seedEvents: seedEvents.length,
-    excludedDonorFiles: glob.sync(path.join(contentDir, 'donors/*.md.excluded')).length,
-    excludedDonationFiles: glob.sync(path.join(contentDir, 'donations/*.md.excluded')).length,
+    excludedDonorFiles: excludedInventory.donors.length,
+    excludedDonationFiles: excludedInventory.donationFiles.length,
+    excludedInventory,
     includedTransfers: transfers.filter((transfer) => transfer.decision === 'include').length,
     excludedTransfers: transfers.filter((transfer) => transfer.decision === 'exclude').length,
     futureTransfers: transfers.filter((transfer) => transfer.effectiveDate > snapshot.snapshotDate).length,

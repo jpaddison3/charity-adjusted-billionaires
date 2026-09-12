@@ -66,6 +66,10 @@ Every unresolved balance explicitly lists the active donor profiles to which the
 
 The source manifest saves and hashes the material replacement evidence as full document text or HTML, retaining retrieval metadata and original-document hashes where available. A source without saved evidence must explicitly record null paths/hashes and an unavailable reason. Such remote-only citations remain a disclosed offline-audit limitation.
 
+That manifest policy applies to cataloged source IDs. The transfer ledger also retains unmanaged HTTP(S) URLs from seed records: the generator checks their URL prefix, but does not validate their destinations, save their contents, or require manifest metadata. Those citations do not carry the catalog's provenance guarantees. Small saved factual extracts are labeled as extracts rather than full source documents.
+
+Coverage includes an excluded-file inventory with donor identities, donation-file credit identities and event counts, source paths, and explicit reasons from `inputs/transfers.json`. Excluded records never enter the active transfer ledger or rankings; missing or stale inventory reasons fail generation.
+
 ## Reproducing the snapshot
 
 No network access is used during generation.
@@ -75,6 +79,8 @@ No network access is used during generation.
 3. Run `npm run generate-lcb-data` to write the four committed exports.
 4. Run `npm run check-lcb-data` to regenerate in memory and byte-compare every export.
 5. Run the focused tests, lint, coverage suite, and build as described in the repository README.
+
+CI compares the same committed exports against generation on both Node 22 and Node 24. This checks the current dataset across those runtimes; it does not promise identical floating-point results for arbitrary future inputs.
 
 When donation content changes, the transfer fingerprint changes; update its explicit ledger disposition before regenerating. When a saved raw source changes, update its recorded SHA-256 and provenance deliberately.
 

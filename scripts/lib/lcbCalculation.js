@@ -1,18 +1,11 @@
 /* eslint-env node */
 
+import { parseStrictUtcDate as parseUtcDate } from './strictDate.js';
+
+export { parseUtcDate };
+
 const DAY_MS = 24 * 60 * 60 * 1000;
 const compareIds = (a, b) => (a < b ? -1 : a > b ? 1 : 0);
-
-export function parseUtcDate(value, label = 'date') {
-  if (typeof value !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(value)) {
-    throw new Error(`${label} must use YYYY-MM-DD.`);
-  }
-  const date = new Date(`${value}T00:00:00.000Z`);
-  if (Number.isNaN(date.valueOf()) || date.toISOString().slice(0, 10) !== value) {
-    throw new Error(`${label} must be a real calendar date.`);
-  }
-  return date;
-}
 
 export function midpointDate(start, end) {
   const startDate = parseUtcDate(start, 'period start');

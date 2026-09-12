@@ -6,6 +6,19 @@ on:
   pull_request:
 
 jobs:
+  lcb-node22:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      # Both runtimes compare against the same committed bytes; the main job checks Node 24.
+      - name: Check exported data on Node 22
+        run: npm run check-lcb-data
+
   ci:
     runs-on: ubuntu-latest
     steps:
