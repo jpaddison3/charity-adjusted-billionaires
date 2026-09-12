@@ -34,14 +34,25 @@ function readCsv(name) {
   return lines.map((line) => Object.fromEntries(line.split(',').map((value, index) => [columns[index], value])));
 }
 
+function validateDonorIdentity({ id, name }, sourcePath, status) {
+  for (const [field, value] of Object.entries({ id, name })) {
+    if (typeof value !== 'string' || !value.trim()) {
+      throw new Error(`${status} donor file ${sourcePath} needs a non-empty ${field}.`);
+    }
+  }
+  assertValidEntityId(id, 'donor ID', `in ${status.toLowerCase()} donor file ${sourcePath}`);
+  return { id, name };
+}
+
 function loadDonors() {
   return glob
     .sync(path.join(contentDir, 'donors/*.md'))
     .sort()
     .filter((file) => path.basename(file) !== '_index.md')
     .map((file) => {
-      const { id, name } = matter(fs.readFileSync(file, 'utf8')).data;
-      return { id, name, sourcePath: path.relative(root, file).split(path.sep).join('/') };
+      const sourcePath = path.relative(root, file).split(path.sep).join('/');
+      const { id, name } = validateDonorIdentity(matter(fs.readFileSync(file, 'utf8')).data, sourcePath, 'Active');
+      return { id, name, sourcePath };
     });
 }
 
@@ -68,13 +79,8 @@ function loadExcludedInventory(reasons, activeDonors) {
         seenPaths.add(sourcePath);
         return { sourcePath, reason, ...describe(matter(fs.readFileSync(file, 'utf8')).data, sourcePath) };
       });
-  const donors = readFiles('donors', ({ id, name }, sourcePath) => {
-    for (const [field, value] of Object.entries({ id, name })) {
-      if (typeof value !== 'string' || !value.trim()) {
-        throw new Error(`Excluded donor file ${sourcePath} needs a non-empty ${field}.`);
-      }
-    }
-    assertValidEntityId(id, 'donor ID', `in excluded donor file ${sourcePath}`);
+  const donors = readFiles('donors', (data, sourcePath) => {
+    const { id, name } = validateDonorIdentity(data, sourcePath, 'Excluded');
     registerDonor(id, sourcePath);
     return { donorId: id, name };
   });

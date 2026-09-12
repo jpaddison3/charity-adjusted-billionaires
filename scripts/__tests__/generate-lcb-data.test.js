@@ -71,6 +71,19 @@ afterEach(() => {
 });
 
 describe('generate LCB data', () => {
+  it('rejects malformed active donor frontmatter with the source path', () => {
+    const workspace = setupWorkspace();
+    const sourcePath = 'content/donors/malformed.md';
+    fs.copyFileSync(
+      path.join(root, 'scripts/__fixtures__/lcb/malformed-active-donor.md'),
+      path.join(workspace, sourcePath)
+    );
+    const result = runGenerator(workspace);
+    expect(result.status).not.toBe(0);
+    expect(result.stderr).toContain(sourcePath);
+    expect(result.stderr).toContain('non-empty id');
+  });
+
   it.each([
     ['donors', { name: 'Excluded donor' }, 'non-empty id'],
     ['donors', { id: 'excluded' }, 'non-empty name'],
