@@ -19,6 +19,7 @@ const checkOnly = process.argv.includes('--check');
 
 const readJson = (name) => JSON.parse(fs.readFileSync(path.join(inputsDir, name), 'utf8'));
 const stableJson = (value) => `${JSON.stringify(value, null, 2)}\n`;
+const stableMarketFactor = (value) => (value === null ? null : Number(value.toPrecision(15)));
 const csvEscape = (value) => {
   if (value === null || value === undefined) return '';
   const string = String(value);
@@ -343,7 +344,7 @@ function buildOutputs() {
         ? {
             donorId,
             credit: result.credit,
-            marketFactor: result.marketFactor,
+            marketFactor: stableMarketFactor(result.marketFactor),
             inflationFactor: result.inflationFactor,
             marketContribution: roundUsd(result.marketContribution),
             inflationContribution: roundUsd(result.inflationContribution),

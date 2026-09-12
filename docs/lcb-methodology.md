@@ -18,7 +18,7 @@ $$
 \sum_g A_g C_{g,d}\frac{\operatorname{CPI}(T)}{\operatorname{CPI}(t_g)}.
 $$
 
-It is not added to wealth. Calculations retain JavaScript numeric precision; exported dollar values are rounded to cents. Ranking uses unrounded charity-adjusted wealth and breaks ties by donor ID.
+It is not added to wealth. Calculations retain JavaScript numeric precision; exported dollar values are rounded to cents, and exported market factors are rounded to 15 significant digits for byte-stable output across JavaScript engines. Ranking uses unrounded charity-adjusted wealth and breaks ties by donor ID.
 
 ## Dates and alignment
 

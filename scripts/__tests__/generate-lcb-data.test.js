@@ -81,6 +81,12 @@ describe('generate LCB data', () => {
     expect(hashResults(output)).toEqual(firstHashes);
     const check = runGenerator(workspace, ['--check'], path.join(workspace, 'scripts'));
     expect(check.status, check.stderr).toBe(0);
+    const transfers = JSON.parse(fs.readFileSync(path.join(output, 'transfers.json'), 'utf8')).transfers;
+    for (const attribution of transfers.flatMap((transfer) => transfer.attributions)) {
+      if (attribution.marketFactor !== null) {
+        expect(attribution.marketFactor).toBe(Number(attribution.marketFactor.toPrecision(15)));
+      }
+    }
     expect(hashResults()).toEqual(originalHashes);
   });
 
