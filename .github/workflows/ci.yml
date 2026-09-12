@@ -22,6 +22,9 @@ jobs:
       - name: Generate data from markdown
         run: npm run generate-data
 
+      - name: Check charity-adjusted wealth data
+        run: npm run check-lcb-data
+
       - name: Lint
         run: npm run lint
 

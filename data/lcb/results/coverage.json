@@ -1,0 +1,63 @@
+{
+  "snapshotDate": "2025-12-31",
+  "activeDonors": 78,
+  "seedEvents": 1178,
+  "excludedDonorFiles": 1,
+  "excludedDonationFiles": 1,
+  "includedTransfers": 1166,
+  "excludedTransfers": 12,
+  "futureTransfers": 11,
+  "wealth": {
+    "matched": 62,
+    "unmatched": 8,
+    "unusable": 8
+  },
+  "partialGivingHistories": 78,
+  "unresolvedBalances": [
+    {
+      "id": "gates-1999-narrative-difference",
+      "amountUSD": 624500000,
+      "period": "1999",
+      "overlapLinks": [
+        "gates-1999-audited-contributions"
+      ],
+      "reason": "Narrative donor total exceeds audited predecessor-foundation contributions; excluded to avoid adding overlapping totals."
+    },
+    {
+      "id": "gates-2000-annual-residual",
+      "amountUSD": 68000000,
+      "period": "2000",
+      "overlapLinks": [
+        "gates-2000-five-billion-transfer"
+      ],
+      "reason": "Annual contributions received exceed the named $5B transfer, but contributor identity is not established."
+    },
+    {
+      "id": "gates-2004-unattributed-contributions",
+      "amountUSD": 711453000,
+      "period": "2004",
+      "overlapLinks": [
+        "gates-2004-special-dividend-pledge"
+      ],
+      "reason": "Foundation receipts exist, but the $3.3B source described a multi-year plan rather than this completed amount."
+    },
+    {
+      "id": "gates-2025-rounded-delta",
+      "amountUSD": 3700000000,
+      "period": "2025",
+      "overlapLinks": [
+        "gates-foundation-cumulative-fact-sheet"
+      ],
+      "reason": "Difference between rounded cumulative fact-sheet totals is not evidence of an exact Bill-only transfer."
+    },
+    {
+      "id": "pivotal-commitment-remainder",
+      "amountUSD": 1673494270,
+      "period": "2024+",
+      "overlapLinks": [
+        "gates-pivotal-four-filed-transfers"
+      ],
+      "reason": "Unfunded remainder of the public $12.5B commitment; pledges are excluded until transferred."
+    }
+  ]
+}

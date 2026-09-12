@@ -1,0 +1,101 @@
+{
+  "retrievalDate": "2026-09-12",
+  "sources": [
+    {
+      "id": "damodaran-historical-returns",
+      "title": "Historical Returns on Stocks, Bonds and Bills",
+      "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/histretSP.html",
+      "downloadUrl": "https://www.stern.nyu.edu/~adamodar/pc/datasets/histretSP.xls",
+      "publishedDate": "2026-01-05",
+      "observationThrough": "2025-12-31",
+      "units": "Cumulative value of $100 invested at the start of 1928 in the S&P 500, including reinvested dividends",
+      "extract": "sp500-total-return.csv",
+      "savedSource": "sources/histretSP.xls",
+      "savedSourceSha256": "28b8110916a15a4dcc11c87c6422510704608ddedcdfa67a1298abdc22e49c69",
+      "notes": "The page's heading remains stale, but the workbook contains 2025. The downloaded workbook metadata says it was last saved August 24, 2026; the saved 1990–2025 extract agrees with the January 2026 endpoints specified for this snapshot."
+    },
+    {
+      "id": "fred-cpiaucns",
+      "title": "Consumer Price Index for All Urban Consumers: All Items in U.S. City Average",
+      "url": "https://fred.stlouisfed.org/data/CPIAUCNS",
+      "downloadUrl": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=CPIAUCNS&cosd=1991-01-01&coed=2025-12-31",
+      "publishedDate": "2026-09-11",
+      "observationThrough": "2025-12-01",
+      "units": "Index 1982–1984=100, monthly, not seasonally adjusted",
+      "extract": "cpi-u.csv",
+      "savedSource": "sources/CPIAUCNS-1991-2025.csv",
+      "savedSourceSha256": "612613e2901ce5af4a5ab365a5b30c526ce9cc0a0996bda11725652e40dbfc0c",
+      "notes": "The source preserves the missing October 2025 observation."
+    },
+    {
+      "id": "cpi-bls-december-2025-release",
+      "title": "Consumer Price Index — December 2025",
+      "url": "https://www.bls.gov/news.release/archives/cpi_01132026.htm",
+      "publishedDate": "2026-01-13",
+      "observationThrough": "2025-12-01",
+      "units": "Index 1982–1984=100, monthly, not seasonally adjusted",
+      "notes": "Confirms December 2025 at 324.054 and the missing October observation. The October input is explicitly estimated as the arithmetic mean of September (324.800) and November (324.122): 324.461."
+    },
+    {
+      "id": "forbes-billionaires-2025",
+      "title": "Forbes 39th Annual World's Billionaires List",
+      "url": "https://www.forbes.com/sites/chasewithorn/2025/04/01/forbes-39th-annual-worlds-billionaires-list-more-than-3000-worth-16-trillion/",
+      "publishedDate": "2025-04-01",
+      "observationDate": "2025-03-07",
+      "units": "USD",
+      "savedSource": "sources/forbes-2025-transcription.csv",
+      "savedSourceSha256": "7471718bb5887a40857a945ed1f175af3c446f27fc08fb20ce335c1ae7e3a2af",
+      "notes": "The saved CSV is an independent transcription, not a Forbes export. It is paired with Forbes's official publication and methodology pages, and aliases are explicit in wealth.json. Forbes notes that a founder's figure can include wealth belonging to a spouse or children."
+    },
+    {
+      "id": "forbes-philanthropy-2025",
+      "title": "America's Most Generous Philanthropists 2025",
+      "url": "https://www.forbes.com/sites/forbeswealthteam/2025/02/03/americas-most-generous-philanthropists-2025/",
+      "publishedDate": "2025-02-03",
+      "observationDate": "2025-01-28",
+      "units": "USD"
+    },
+    {
+      "id": "sunday-times-rich-list-2025",
+      "title": "The Sunday Times Rich List 2025",
+      "url": "https://www.news.co.uk/latest-news/the-sunday-times-rich-list-2025/",
+      "publishedDate": "2025-05-16",
+      "observationDate": "2025-05-16",
+      "units": "GBP",
+      "notes": "David Sainsbury's GBP 402M observation is converted at the Federal Reserve H.10 1.3283 GBP/USD rate."
+    },
+    {
+      "id": "federal-reserve-h10-2025-05-16",
+      "title": "Foreign Exchange Rates — H.10 release",
+      "url": "https://www.federalreserve.gov/releases/h10/20250519/",
+      "publishedDate": "2025-05-19",
+      "observationDate": "2025-05-16",
+      "units": "USD per GBP"
+    },
+    {
+      "id": "aripaev-rich-list-2025",
+      "title": "Äripäev estimate of Estonia's wealthiest people",
+      "url": "https://www.err.ee/1609795182/aripaeva-hinnangul-on-eesti-rikkaimad-inimesed-kaarmann-ja-hinrikus",
+      "publishedDate": "2025-09-10",
+      "observationDate": "2025-09-10",
+      "units": "EUR",
+      "notes": "Jaan Tallinn's EUR 644M observation is converted at the Federal Reserve H.10 1.1714 EUR/USD rate."
+    },
+    {
+      "id": "federal-reserve-h10-2025-09-10",
+      "title": "Foreign Exchange Rates — H.10 release",
+      "url": "https://www.federalreserve.gov/releases/h10/20250915/",
+      "publishedDate": "2025-09-15",
+      "observationDate": "2025-09-10",
+      "units": "USD per EUR"
+    },
+    {
+      "id": "forbes-rowling-2025",
+      "title": "J.K. Rowling Is A Billionaire Again",
+      "url": "https://www.forbes.com/sites/mattcraig/2025/05/30/jk-rowling-is-a-billionaire-again/",
+      "publishedDate": "2025-05-30",
+      "observationDate": "2025-05-30",
+      "units": "USD"
+    }
+  ]
+}

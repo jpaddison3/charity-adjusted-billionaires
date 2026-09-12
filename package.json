@@ -13,6 +13,8 @@
     "build": "npm run generate-data && vite build",
     "preview": "vite preview",
     "generate-data": "node scripts/generate-data-from-markdown.js",
+    "generate-lcb-data": "node scripts/generate-lcb-data.js",
+    "check-lcb-data": "node scripts/generate-lcb-data.js --check",
     "sync-skills": "node scripts/sync-skills.js",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",

@@ -1,0 +1,88 @@
+{
+  "inspectionBaseline": {
+    "activeDonors": 78,
+    "activeDonationEventsBeforeCorrections": 1027,
+    "excludedDonorFiles": 1,
+    "excludedDonationFiles": 1,
+    "notes": "Counts describe the inspected checkout and are not population limits. Annual Buffett replacements increase the post-reconciliation event count."
+  },
+  "buffett": {
+    "removed": [
+      {
+        "date": "2006-11-25",
+        "recipient": "gates-foundation",
+        "amountUSD": 43000000000,
+        "reason": "Cumulative pledge/later-giving estimate, not a 2006 transfer."
+      },
+      {
+        "date": "2006-11-25",
+        "recipient": "susan-thompson-buffett-foundation",
+        "amountUSD": 5800000000,
+        "reason": "Cumulative estimate replaced by annual transfers."
+      },
+      {
+        "date": "2006-11-25",
+        "recipient": "howard-g-buffett-foundation",
+        "amountUSD": 2600000000,
+        "reason": "Cumulative estimate replaced by annual transfers."
+      },
+      {
+        "date": "2006-11-25",
+        "recipient": "sherwood-foundation",
+        "amountUSD": 2600000000,
+        "reason": "Cumulative estimate replaced by annual transfers."
+      },
+      {
+        "date": "2006-11-25",
+        "recipient": "novo-foundation",
+        "amountUSD": 2600000000,
+        "reason": "Cumulative estimate replaced by annual transfers."
+      },
+      {
+        "date": "2006-11-25",
+        "recipient": "glide-foundation",
+        "amountUSD": 53000000,
+        "reason": "Auction proceeds came from winning bidders; Buffett donated access rather than this cash."
+      }
+    ],
+    "replacement": {
+      "summerTransferYears": [
+        2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023,
+        2024, 2025
+      ],
+      "gatesFoundationAuditedTotalUSD": 47915285000,
+      "allFiveFoundationsEstimatedTotalUSD": 61610606000,
+      "valuation": "Gates Foundation Trust figures use audited fair values. Family-foundation values use same-transfer Berkshire share ratios and are explicitly estimated unless recipient filings supplied fair value.",
+      "separateSupplements": ["2022-11-23", "2023-11-21", "2024-11-25", "2025-11-10"]
+    }
+  },
+  "gates": {
+    "removedOrReplaced": [
+      {
+        "item": "1999 $1.265B UNCF and $750M Gavi rows",
+        "reason": "Downstream foundation grants already represented by foundation inflows."
+      },
+      {
+        "item": "Other university, library, PATH, and CMU foundation-out grants",
+        "reason": "Downstream grants removed under the once-only transfer rule."
+      },
+      { "item": "2004 $3.3B row", "reason": "Source described a multi-year plan, not a completed 2004 transfer." },
+      { "item": "2017 $4.68B row", "replacement": "June 6 filing value of $4,636,480,000." },
+      {
+        "item": "2022 $20B announcement row",
+        "replacement": "$551,541,000 cash plus $19,515,465,281 securities from the filed return."
+      },
+      {
+        "item": "2025 $3.7B row",
+        "reason": "Rounded cumulative fact-sheet delta did not establish amount, contributor, or date."
+      }
+    ],
+    "pivotal": {
+      "filedTransfersUSD": 10826505730,
+      "legalRecipients": 4,
+      "unresolvedCommitmentRemainderUSD": 1673494270,
+      "downstreamMelindaRowsRemoved": 5
+    },
+    "unresolvedBalancesReference": "transfers.json#unresolvedBalances"
+  }
+}

@@ -12,23 +12,8 @@ donations:
     amount: 6_000_000
     credit:
       bill-gates: 1.0
-    source: 'https://www.cs.stanford.edu/about/gates-computer-science-building#:~:text=The%20Gates%20Building%20is%20named,month%20period'
-
-  - date: 1995-01-01
-    recipient: university-of-washington
-    amount: 10_000_000
-    credit:
-      bill-gates: 0.5
-      melinda-gates: 0.5
-    source: 'https://www.washington.edu/news/1999/10/28/uw-awarded-10-million-from-bill-and-melinda-gates-foundation/'
-
-  - date: 1996-01-01
-    recipient: university-of-washington
-    amount: 12_000_000
-    credit:
-      bill-gates: 0.5
-      melinda-gates: 0.5
-    source: 'https://archive.seattletimes.com/archive/20030424/gatesgift24/gates-gives-70-million-for-genome-work-at-uw'
+    source: 'https://www.cs.stanford.edu/about/gates-computer-science-building'
+    notes: 'Stanford reports that Gates donated the building funds over an 18-month period; the exact transfer dates are unavailable.'
 
   - date: 1996-09-01
     recipient: harvard-university
@@ -38,7 +23,7 @@ donations:
       melinda-gates: 0.25
       steve-ballmer: 0.5
     source: 'https://www.thecrimson.com/article/1996/10/30/gates-ballmer-donate-25-m-for'
-    notes: 'Joint gift from Bill Gates and Steve Ballmer for the Maxwell Dworkin engineering building, named for their mothers. Individual shares were not disclosed, so the gift is split evenly between the Gates household and Ballmer.'
+    notes: 'Joint gift from Bill Gates and Steve Ballmer for the Maxwell Dworkin engineering building. Individual shares were not disclosed, so the gift is split evenly between the Gates household and Ballmer.'
 
   - date: 1997-07-23
     recipient: gates-library-foundation
@@ -48,53 +33,14 @@ donations:
       melinda-gates: 0.5
     source: 'https://www.historylink.org/File/2907'
 
-  - date: 1998-12-01
-    recipient: seattle-public-libraries
-    amount: 20_000_000
-    credit:
-      bill-gates: 0.5
-      melinda-gates: 0.5
-    source: 'https://www.historylink.org/File/2907#:~:text=gifts%20of%20%24133%20million%20for,program%20approved%20the%20previous%20month'
-
-  - date: 1998-12-01
-    recipient: path
-    amount: 100_000_000
-    credit:
-      bill-gates: 0.5
-      melinda-gates: 0.5
-    source: 'https://www.washingtonpost.com/archive/politics/1998/12/02/gates-giving-100-million-to-help-immunize-children-in-3rd-world/11648ec3-4e48-4dee-82c6-7c323f1b19cf/'
-
   - date: 1999-01-01
     recipient: gates-foundation
-    amount: 15_800_000_000
+    amount: 15_175_500_000
     credit:
       bill-gates: 0.5
       melinda-gates: 0.5
-    source: 'https://www.gatesfoundation.org/-/media/gfo/1annual-reports/1999gates-foundation-annual-report.pdf#:~:text=Continuing%20their%20generous%20and%20aggressive,national%20and%20global%20challenges%2C%20it'
-
-  - date: 1999-01-01
-    recipient: united-negro-college-fund
-    amount: 1_265_000_000
-    credit:
-      bill-gates: 0.5
-      melinda-gates: 0.5
-    source: 'https://spearswms.com/impact-philanthropy/the-12-biggest-bill-gates-donations/'
-
-  - date: 1999-04-14
-    recipient: mit
-    amount: 20_000_000
-    credit:
-      bill-gates: 0.5
-      melinda-gates: 0.5
-    source: 'https://news.mit.edu/1999/gates1-0414#:~:text=April%2014%2C%201999'
-
-  - date: 1999-11-01
-    recipient: gavi-alliance-the-vaccine-fund
-    amount: 750_000_000
-    credit:
-      bill-gates: 0.5
-      melinda-gates: 0.5
-    source: 'https://www.gatesfoundation.org/ideas/media-center/press-releases/2001/06/global-alliance-for-vaccines-and-immunization'
+    source: 'https://www.gatesfoundation.org/-/media/gfo/1annual-reports/1999gates-foundation-annual-report.pdf'
+    notes: 'Audited 1999 contributions received by the two predecessor foundations. The narrative reports Bill and Melinda Gates gave $15.8B, leaving a $624.5M discrepancy recorded in the LCB reconciliation. Exact transfer dates are unavailable.'
 
   - date: 2000-01-24
     recipient: gates-foundation
@@ -102,79 +48,65 @@ donations:
     credit:
       bill-gates: 0.5
       melinda-gates: 0.5
-    source: 'https://www.gatesfoundation.org/ideas/media-center/press-releases/2000/01/statement-from-the-bill-melinda-gates-foundation#:~:text=SEATTLE%20,8%20billion'
+    source: 'https://www.gatesfoundation.org/ideas/media-center/press-releases/2000/01/statement-from-the-bill-melinda-gates-foundation'
+    notes: 'The January 24 release says the $5B had been given earlier that month; the exact transfer date is unavailable.'
 
-  - date: 2003-04-24
-    recipient: university-of-washington-research
-    amount: 70_000_000
-    credit:
-      bill-gates: 0.5
-      melinda-gates: 0.5
-    source: 'https://archive.seattletimes.com/archive/20030424/gatesgift24/gates-gives-70-million-for-genome-work-at-uw#:~:text=The%20Bill%20%26%20Melinda%20Gates,genome%20research'
-
-  - date: 2004-11-01
+  - date: 2017-06-06
     recipient: gates-foundation
-    amount: 3_300_000_000
+    amount: 4_636_480_000
     credit:
       bill-gates: 0.5
       melinda-gates: 0.5
-    source: 'https://money.cnn.com/2004/09/21/technology/gates_pay/index.htm?cnn#:~:text=This%20November%2C%20the%20company%20plans,for%20him%20and%20his%20wife'
+    source: 'https://docs.gatesfoundation.org/documents/2017%20BMGFT%20Form%20990PF.PDF'
+    notes: "The Trust Form 990-PF reports 64M Microsoft shares received from William H. Gates III. The repo's marriage-window convention retains equal Bill/Melinda credit."
 
-  - date: 2017-06-01
+  - date: 2022-01-01
     recipient: gates-foundation
-    amount: 4_680_000_000
-    credit:
-      bill-gates: 0.5
-      melinda-gates: 0.5
-    source: 'https://www.wsj.com/articles/bill-gates-donates-billions-in-stock-to-foundation-1502822229'
-
-  - date: 2017-11-01
-    recipient: dementia-discovery-fund
-    amount: 50_000_000
-    credit:
-      bill-gates: 0.5
-      melinda-gates: 0.5
-    source: 'https://en.wikipedia.org/wiki/Bill_Gates#Philanthropy'
-
-  - date: 2022-07-13
-    recipient: gates-foundation
-    amount: 20_000_000_000
+    amount: 551_541_000
     credit:
       bill-gates: 1.0
-    source: 'https://www.reuters.com/world/bill-gates-donates-20-bln-his-foundation-2022-07-13/#:~:text=July%2013%20%28Reuters%29%20,to%20boost%20its%20annual%20distributions'
+    source: 'https://docs.gatesfoundation.org/documents/2022%20bmgft%20form%20990-pf.pdf'
+    notes: "The Trust Form 990-PF reports Bill Gates's cash contribution during 2022; the exact date is unavailable."
+
+  - date: 2022-12-31
+    recipient: gates-foundation
+    amount: 19_515_465_281
+    credit:
+      bill-gates: 1.0
+    source: 'https://docs.gatesfoundation.org/documents/2022%20bmgft%20form%20990-pf.pdf'
+    notes: 'The Trust Form 990-PF reports marketable securities received from Bill Gates on December 31, 2022.'
 
   - date: 2024-10-01
     recipient: pivotal-philanthropies-foundation
-    amount: 7_900_000_000
+    amount: 7_879_818_784
     credit:
       bill-gates: 1.0
-    source: 'https://www.forbes.com/sites/mattdurot/2025/09/16/bill-gates-might-drop-in-the-forbes-400-rankings-after-donating-50-billion-but-his-giving-goes-back-decades/'
-    notes: 'Forbes reported that Pivotal Philanthropies Foundation received a public stock grant worth $7.9B from Gates in October 2024. Exact day not specified; normalized to October 1, 2024.'
+    source: 'https://projects.propublica.org/nonprofits/organizations/882918646/202543219349106604/IRS990ScheduleB'
+    notes: 'The 2024 Form 990-PF Schedule B reports publicly traded stock received from Bill Gates on October 1, 2024.'
 
-  - date: 2025-12-31
-    recipient: gates-foundation
-    amount: 3_700_000_000
+  - date: 2024-10-01
+    recipient: pivotal-philanthropies-opportunity-foundation
+    amount: 982_228_982
     credit:
       bill-gates: 1.0
-    source: 'https://www.gatesfoundation.org/about/foundation-fact-sheet'
-    notes: 'Bill Gates'' calendar-year-2025 personal contribution to the Gates Foundation endowment. Derived from the foundation fact sheet ($63.9B total giving through 2025 vs $60.2B through 2024 = $3.7B) and corroborated by the Chronicle of Philanthropy Philanthropy 50 ($3.7B). Exact intra-2025 transfer date undisclosed; normalized to year-end. Credit bill-gates 1.0 (post-2021 divorce).'
+    source: 'https://projects.propublica.org/nonprofits/organizations/934378098/202523569349100107/IRS990ScheduleB'
+    notes: 'The 2024 Form 990-PF Schedule B reports publicly traded stock received from Bill Gates on October 1, 2024.'
 
-  - date: 2024-12-31
-    recipient: pivotal-philanthropies-foundation
-    amount: 2_946_686_946
+  - date: 2024-10-01
+    recipient: pivotal-philanthropies-momentum-foundation
+    amount: 982_228_982
     credit:
       bill-gates: 1.0
-    source: 'https://www.inc.com/leila-sheridan/melinda-gates-just-received-another-2-billion-from-her-ex-heres-what-new-filings-reveal/91294023'
-    notes: 'FY2024 tax filings (reported Jan 2026) show Bill Gates contributed $982,228,982 each to three additional Pivotal-affiliated foundations (Pivotal Philanthropies Pathways, Opportunity, and Momentum) = $2,946,686,946. This is IN ADDITION TO the $7.9B to the main Pivotal Philanthropies Foundation (the 2024-10-01 entry); together >$10.8B in 2024, part of a $12.5B divorce-settlement commitment. Mapped to the existing pivotal-philanthropies-foundation recipient (distinct event from the $7.9B). Date normalized to FY2024 year-end.'
+    source: 'https://projects.propublica.org/nonprofits/organizations/934400793/202543569349100509/IRS990ScheduleB'
+    notes: 'The 2024 Form 990-PF Schedule B reports publicly traded stock received from Bill Gates on October 1, 2024.'
 
-  - date: 2004-09-14
-    recipient: carnegie-mellon-university
-    amount: 20_000_000
+  - date: 2024-10-01
+    recipient: pivotal-philanthropies-pathways-foundation
+    amount: 982_228_982
     credit:
-      bill-gates: 0.5
-      melinda-gates: 0.5
-    source: 'https://www.cmu.edu/cmnews/extra/040914_gates.html'
-    notes: 'Gift for the building that became the Gates Center for Computer Science (announced 2004-09-14; dedicated 2009). CMU states the gift was from the Bill & Melinda Gates Foundation; included on the same basis as the file''s other foundation-routed university gifts, with marriage-window 0.5/0.5 credit.'
+      bill-gates: 1.0
+    source: 'https://projects.propublica.org/nonprofits/organizations/934414218/202503219349106760/IRS990ScheduleB'
+    notes: 'The 2024 Form 990-PF Schedule B reports publicly traded stock received from Bill Gates on October 1, 2024.'
 ---
 
 Bill Gates and Melinda Gates were married between January 1, 1994, and August 2, 2021, so Melinda gets half credit for donations made by the couple during that time.
