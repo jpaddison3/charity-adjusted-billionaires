@@ -10,6 +10,8 @@ import matter from 'gray-matter';
 import { glob } from 'glob';
 import { aggregateDonors, midpointDate, parseUtcDate, roundUsd } from './lib/lcbCalculation.js';
 import { loadDonations } from './lib/donationRecords.js';
+import { assertValidEntityId } from '../src/utils/dataValidation.js';
+import { isPlainObject } from '../src/utils/typeGuards.js';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const inputsDir = path.join(root, 'data/lcb/inputs');
@@ -41,7 +43,7 @@ function loadDonors() {
     .map(({ id, name }) => ({ id, name }));
 }
 
-function loadExcludedInventory(reasons) {
+function loadExcludedInventory(reasons, activeDonorIds) {
   const seenPaths = new Set();
   const readFiles = (directory, describe) =>
     glob
@@ -62,20 +64,21 @@ function loadExcludedInventory(reasons) {
         throw new Error(`Excluded donor file ${sourcePath} needs a non-empty ${field}.`);
       }
     }
+    assertValidEntityId(id, 'donor ID', `in excluded donor file ${sourcePath}`);
     return { donorId: id, name };
   });
+  const knownDonorIds = new Set([...activeDonorIds, ...donors.map(({ donorId }) => donorId)]);
   const donationFiles = readFiles('donations', ({ donations }, sourcePath) => {
     if (!Array.isArray(donations)) throw new Error(`Excluded donation file ${sourcePath} needs a donations array.`);
     for (const [index, donation] of donations.entries()) {
       const credit = donation?.credit;
-      if (
-        !credit ||
-        typeof credit !== 'object' ||
-        Array.isArray(credit) ||
-        !Object.keys(credit).length ||
-        Object.keys(credit).some((id) => !id.trim())
-      ) {
+      if (!isPlainObject(credit) || !Object.keys(credit).length) {
         throw new Error(`Excluded donation file ${sourcePath} row ${index + 1} needs a non-empty credit map.`);
+      }
+      for (const donorId of Object.keys(credit)) {
+        const context = `in excluded donation file ${sourcePath} row ${index + 1}`;
+        assertValidEntityId(donorId, 'donor ID', context);
+        if (!knownDonorIds.has(donorId)) throw new Error(`Unknown donor ${donorId} ${context}.`);
       }
     }
     return {
@@ -216,7 +219,7 @@ function buildOutputs() {
   const donorIds = new Set(donorProfiles.map((donor) => donor.id));
   const seedEvents = loadDonations(path.join(contentDir, 'donations'));
   const ledger = readJson('transfers.json');
-  const excludedInventory = loadExcludedInventory(ledger.excludedFileReasons);
+  const excludedInventory = loadExcludedInventory(ledger.excludedFileReasons, donorIds);
   const wealth = readJson('wealth.json');
   for (const [name, input] of [
     ['transfers', ledger],

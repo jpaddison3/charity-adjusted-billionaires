@@ -76,6 +76,7 @@ describe('generate LCB data', () => {
     ['donors', { id: 'excluded' }, 'non-empty name'],
     ['donors', { id: 123, name: 'Excluded donor' }, 'non-empty id'],
     ['donors', { id: 'excluded', name: ' ' }, 'non-empty name'],
+    ['donors', { id: 'invalid/id', name: 'Excluded donor' }, 'must use lowercase'],
     ['donations', {}, 'donations array'],
     ['donations', { donations: null }, 'donations array'],
     ['donations', { donations: [null] }, 'row 1 needs a non-empty credit map'],
@@ -83,7 +84,10 @@ describe('generate LCB data', () => {
     ['donations', { donations: [{ credit: [] }] }, 'row 1 needs a non-empty credit map'],
     ['donations', { donations: [{ credit: {} }] }, 'row 1 needs a non-empty credit map'],
     ['donations', { donations: [{ credit: 'excluded' }] }, 'row 1 needs a non-empty credit map'],
-    ['donations', { donations: [{ credit: { ' ': 1 } }] }, 'row 1 needs a non-empty credit map'],
+    ['donations', { donations: [{ credit: { ' ': 1 } }] }, 'must use lowercase'],
+    ['donations', { donations: [{ credit: { 'invalid/id': 1 } }] }, 'must use lowercase'],
+    ['donations', { donations: [{ credit: { constructor: 1 } }] }, 'reserved object key'],
+    ['donations', { donations: [{ credit: { 'sam-bankman-freid': 1 } }] }, 'Unknown donor sam-bankman-freid'],
   ])('rejects malformed excluded %s metadata %j', (directory, metadata, message) => {
     const workspace = setupWorkspace();
     const sourcePath = `content/${directory}/sam_bankman_fried.md.excluded`;
@@ -92,6 +96,19 @@ describe('generate LCB data', () => {
     expect(result.status).not.toBe(0);
     expect(result.stderr).toContain(sourcePath);
     expect(result.stderr).toContain(message);
+  });
+
+  it('accepts archived donation references to both active and excluded donors', () => {
+    const workspace = setupWorkspace();
+    const sourcePath = 'content/donations/sam_bankman_fried.md.excluded';
+    fs.writeFileSync(
+      path.join(workspace, sourcePath),
+      matter.stringify('', { donations: [{ credit: { 'bill-gates': 0.5, 'sam-bankman-fried': 0.5 } }] })
+    );
+    const result = runGenerator(workspace);
+    expect(result.status, result.stderr).toBe(0);
+    const coverage = JSON.parse(fs.readFileSync(path.join(workspace, 'data/lcb/results/coverage.json'), 'utf8'));
+    expect(coverage.excludedInventory.donationFiles[0].donorIds).toEqual(['bill-gates', 'sam-bankman-fried']);
   });
 
   it.each(['missing', 'stale'])('rejects %s excluded-file reasons', (condition) => {
