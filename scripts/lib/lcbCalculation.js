@@ -1,8 +1,13 @@
 /* eslint-env node */
 
-import { parseStrictUtcDate as parseUtcDate } from './strictDate.js';
+import { parseStrictUtcDate } from './strictDate.js';
 
-export { parseUtcDate };
+export function parseUtcDate(value, label = 'date') {
+  return parseStrictUtcDate(value, label, {
+    format: `${label} must use YYYY-MM-DD.`,
+    calendar: `${label} must be a real calendar date.`,
+  });
+}
 
 const DAY_MS = 24 * 60 * 60 * 1000;
 const compareIds = (a, b) => (a < b ? -1 : a > b ? 1 : 0);

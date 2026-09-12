@@ -23,6 +23,10 @@ describe('LCB calculation', () => {
     expect(parseUtcDate('0099-01-01').getUTCFullYear()).toBe(99);
     expect(normalizeStrictDateString(' "0099-01-01" ', 'seed')).toBe('0099-01-01');
     expect(() => parseUtcDate(' "0099-01-01" ')).toThrow('YYYY-MM-DD');
+    expect(() => parseUtcDate('bad', 'period start')).toThrow('period start must use YYYY-MM-DD.');
+    expect(() => parseUtcDate('2025-02-29', 'period start')).toThrow('period start must be a real calendar date.');
+    expect(() => normalizeStrictDateString('bad', 'seed')).toThrow('seed Expected YYYY-MM-DD.');
+    expect(() => normalizeStrictDateString('2025-02-29', 'seed')).toThrow('seed Expected a real calendar date.');
     for (const invalid of ['0099-02-29', '2025-02-29', '2024-13-01']) {
       expect(() => parseUtcDate(invalid)).toThrow('real calendar date');
       expect(() => normalizeStrictDateString(invalid, 'seed')).toThrow('real calendar date');

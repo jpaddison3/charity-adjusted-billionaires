@@ -3838,7 +3838,7 @@
     },
     "f25c8ef0915f8d015d679eee80a6bfe0c095a096153a163681ec90e049416c5a": {
       "decision": "exclude",
-      "exclusionReason": "unresolved-interval",
+      "exclusionReason": "unverified-commitment",
       "datePrecision": "unresolved-interval",
       "effectiveDate": null,
       "transferIdentity": "schmidt-futures:2019-11-13:1000000000",
@@ -16834,7 +16834,7 @@
     },
     "2449c781a89fa0a31d90b983b75905815c88ccb36767029142935ba5f34b4ac6": {
       "decision": "exclude",
-      "exclusionReason": "unresolved-interval",
+      "exclusionReason": "unverified-commitment",
       "datePrecision": "unresolved-interval",
       "effectiveDate": null,
       "transferIdentity": "iaea-nuclear-fuel-bank:2006-09-19:50000000",

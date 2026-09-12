@@ -54,11 +54,30 @@ function loadExcludedInventory(reasons) {
           throw new Error(`Excluded file ${sourcePath} needs an explicit exclusion reason.`);
         }
         seenPaths.add(sourcePath);
-        return { sourcePath, reason, ...describe(matter(fs.readFileSync(file, 'utf8')).data) };
+        return { sourcePath, reason, ...describe(matter(fs.readFileSync(file, 'utf8')).data, sourcePath) };
       });
-  const donors = readFiles('donors', ({ id, name }) => ({ donorId: id, name }));
-  const donationFiles = readFiles('donations', ({ donations }) => {
-    if (!Array.isArray(donations)) throw new Error('Excluded donation file needs a donations array.');
+  const donors = readFiles('donors', ({ id, name }, sourcePath) => {
+    for (const [field, value] of Object.entries({ id, name })) {
+      if (typeof value !== 'string' || !value.trim()) {
+        throw new Error(`Excluded donor file ${sourcePath} needs a non-empty ${field}.`);
+      }
+    }
+    return { donorId: id, name };
+  });
+  const donationFiles = readFiles('donations', ({ donations }, sourcePath) => {
+    if (!Array.isArray(donations)) throw new Error(`Excluded donation file ${sourcePath} needs a donations array.`);
+    for (const [index, donation] of donations.entries()) {
+      const credit = donation?.credit;
+      if (
+        !credit ||
+        typeof credit !== 'object' ||
+        Array.isArray(credit) ||
+        !Object.keys(credit).length ||
+        Object.keys(credit).some((id) => !id.trim())
+      ) {
+        throw new Error(`Excluded donation file ${sourcePath} row ${index + 1} needs a non-empty credit map.`);
+      }
+    }
     return {
       donorIds: [...new Set(donations.flatMap(({ credit }) => Object.keys(credit)))].sort(),
       eventCount: donations.length,

@@ -71,6 +71,29 @@ afterEach(() => {
 });
 
 describe('generate LCB data', () => {
+  it.each([
+    ['donors', { name: 'Excluded donor' }, 'non-empty id'],
+    ['donors', { id: 'excluded' }, 'non-empty name'],
+    ['donors', { id: 123, name: 'Excluded donor' }, 'non-empty id'],
+    ['donors', { id: 'excluded', name: ' ' }, 'non-empty name'],
+    ['donations', {}, 'donations array'],
+    ['donations', { donations: null }, 'donations array'],
+    ['donations', { donations: [null] }, 'row 1 needs a non-empty credit map'],
+    ['donations', { donations: [{}] }, 'row 1 needs a non-empty credit map'],
+    ['donations', { donations: [{ credit: [] }] }, 'row 1 needs a non-empty credit map'],
+    ['donations', { donations: [{ credit: {} }] }, 'row 1 needs a non-empty credit map'],
+    ['donations', { donations: [{ credit: 'excluded' }] }, 'row 1 needs a non-empty credit map'],
+    ['donations', { donations: [{ credit: { ' ': 1 } }] }, 'row 1 needs a non-empty credit map'],
+  ])('rejects malformed excluded %s metadata %j', (directory, metadata, message) => {
+    const workspace = setupWorkspace();
+    const sourcePath = `content/${directory}/sam_bankman_fried.md.excluded`;
+    fs.writeFileSync(path.join(workspace, sourcePath), matter.stringify('', metadata));
+    const result = runGenerator(workspace);
+    expect(result.status).not.toBe(0);
+    expect(result.stderr).toContain(sourcePath);
+    expect(result.stderr).toContain(message);
+  });
+
   it.each(['missing', 'stale'])('rejects %s excluded-file reasons', (condition) => {
     const workspace = setupWorkspace();
     editInput(workspace, 'transfers.json', (ledger) => {

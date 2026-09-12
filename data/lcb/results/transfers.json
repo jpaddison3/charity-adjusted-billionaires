@@ -8644,7 +8644,7 @@
         "eric-schmidt": 1
       },
       "decision": "exclude",
-      "exclusionReason": "unresolved-interval",
+      "exclusionReason": "unverified-commitment",
       "transferIdentity": "schmidt-futures:2019-11-13:1000000000",
       "fundingChain": "donors:eric-schmidt",
       "fundingVehicleId": null,
@@ -38300,7 +38300,7 @@
         "warren-buffett": 1
       },
       "decision": "exclude",
-      "exclusionReason": "unresolved-interval",
+      "exclusionReason": "unverified-commitment",
       "transferIdentity": "iaea-nuclear-fuel-bank:2006-09-19:50000000",
       "fundingChain": "donors:warren-buffett",
       "fundingVehicleId": null,
