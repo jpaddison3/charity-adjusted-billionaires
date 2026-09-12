@@ -74,6 +74,151 @@ describe('generate LCB data', () => {
   });
 
   it.each([
+    [
+      'overallocated pool',
+      'wealth.json',
+      (d) => {
+        const observation = { ...d.records[0].observation };
+        d.records.slice(0, 2).forEach((r, i) =>
+          Object.assign(r, {
+            sharedPoolId: 'test-pool',
+            allocationShare: i ? 0.5 : 0.6,
+            estimateAtSnapshot: observation.amountUSD * (i ? 0.5 : 0.6),
+            observation,
+          })
+        );
+      },
+      'above 100%',
+    ],
+    [
+      'invalid stage',
+      'transfers.json',
+      (d) => {
+        Object.values(d.dispositions)[0].transferStage = 'other';
+      },
+      'invalid transferStage',
+    ],
+    [
+      'stage mismatch',
+      'transfers.json',
+      (d) => {
+        Object.values(d.dispositions).find((x) => x.transferStage === 'personal-transfer').fundingVehicleId = 'fund';
+      },
+      'invalid fundingVehicleId',
+    ],
+    [
+      'unknown vehicle',
+      'transfers.json',
+      (d) => {
+        const x = Object.values(d.dispositions).find((x) => x.transferStage === 'personal-transfer');
+        x.transferStage = 'vehicle-inflow';
+        x.fundingVehicleId = 'missing';
+      },
+      'invalid funding vehicle relationship',
+    ],
+    [
+      'wrong inflow recipient',
+      'transfers.json',
+      (d) => {
+        const x = Object.values(d.dispositions).find((x) => x.transferStage === 'personal-transfer');
+        x.transferStage = 'vehicle-inflow';
+        x.fundingVehicleId = d.fundingVehicles[0].id;
+      },
+      'invalid funding vehicle relationship',
+    ],
+    [
+      'duplicate vehicle',
+      'transfers.json',
+      (d) => {
+        d.fundingVehicles.push({ ...d.fundingVehicles[0] });
+      },
+      'Duplicate funding vehicle',
+    ],
+    [
+      'ambiguous vehicle',
+      'transfers.json',
+      (d) => {
+        d.fundingVehicles.push({ ...d.fundingVehicles[0], id: 'second' });
+      },
+      'Ambiguous funding vehicle',
+    ],
+    [
+      'hidden inflow',
+      'transfers.json',
+      (d) => {
+        const x = Object.values(d.dispositions).find((x) => x.transferStage === 'vehicle-inflow');
+        x.transferStage = 'personal-transfer';
+        x.fundingVehicleId = null;
+      },
+      'must identify',
+    ],
+    [
+      'duplicate reference',
+      'transfers.json',
+      (d) => {
+        d.referenceGroups.push({ ...d.referenceGroups[0] });
+      },
+      'Duplicate reconciliation reference',
+    ],
+    [
+      'include with exclusion reason',
+      'transfers.json',
+      (d) => {
+        const x = Object.values(d.dispositions)[0];
+        x.decision = 'include';
+        x.exclusionReason = 'excluded';
+      },
+      'invalid exclusionReason',
+    ],
+    [
+      'period bounds on year',
+      'transfers.json',
+      (d) => {
+        const x = Object.values(d.dispositions).find((x) => x.datePrecision === 'year');
+        x.periodStart = '2020-01-01';
+      },
+      'bounds without period',
+    ],
+    [
+      'unknown source',
+      'transfers.json',
+      (d) => {
+        Object.values(d.dispositions)[0].sourceIds = ['missing'];
+      },
+      'unknown or missing source',
+    ],
+    [
+      'empty sources',
+      'transfers.json',
+      (d) => {
+        Object.values(d.dispositions)[0].sourceIds = [];
+      },
+      'unknown or missing source',
+    ],
+    [
+      'invalid unranked estimate',
+      'wealth.json',
+      (d) => {
+        d.records.find((x) => x.status === 'unmatched').estimateAtSnapshot = 1;
+      },
+      'null estimate and reason',
+    ],
+    [
+      'missing unranked reason',
+      'wealth.json',
+      (d) => {
+        d.records.find((x) => x.status === 'unusable').reason = '';
+      },
+      'null estimate and reason',
+    ],
+    [
+      'invalid wealth status',
+      'wealth.json',
+      (d) => {
+        d.records[0].status = 'match';
+      },
+      'invalid status',
+    ],
     ['duplicate wealth', 'wealth.json', (data) => data.records.push({ ...data.records[0] }), 'Duplicate wealth'],
     [
       'missing observation',
@@ -267,6 +412,39 @@ describe('generate LCB data', () => {
     expect(result.stderr).toContain('October 2025 CPI');
   });
 
+  it.each(['cpi-u.csv', 'sp500-total-return.csv'])('rejects undocumented status in %s', (file) => {
+    const workspace = setupWorkspace();
+    const target = path.join(workspace, 'data/lcb/inputs', file);
+    fs.writeFileSync(target, fs.readFileSync(target, 'utf8').replace(',observed,', ',observd,'));
+    const result = runGenerator(workspace);
+    expect(result.status).not.toBe(0);
+    expect(result.stderr).toContain('observed status');
+  });
+
+  it('excludes reporting periods that cross the snapshot despite an earlier midpoint', () => {
+    const workspace = setupWorkspace();
+    const event = loadDonations(path.join(workspace, 'content/donations')).find(
+      (e) => e.date > '2025-12-31' && e.date < '2026-07-01'
+    );
+    editInput(workspace, 'transfers.json', (data) =>
+      Object.assign(data.dispositions[event.fingerprint], {
+        decision: 'include',
+        exclusionReason: null,
+        datePrecision: 'period',
+        periodStart: '2025-07-01',
+        periodEnd: '2026-06-30',
+        effectiveDate: '2025-12-30',
+      })
+    );
+    const result = runGenerator(workspace);
+    expect(result.status, result.stderr).toBe(0);
+    const output = JSON.parse(fs.readFileSync(path.join(workspace, 'data/lcb/results/transfers.json')));
+    expect(output.transfers.find((t) => t.fingerprint === event.fingerprint)).toMatchObject({
+      decision: 'exclude',
+      exclusionReason: 'period-crosses-snapshot',
+    });
+  });
+
   it('keeps JSON and CSV ranking rows aligned', () => {
     const rankings = JSON.parse(fs.readFileSync(path.join(resultsDir, 'rankings.json'), 'utf8'));
     const csv = fs.readFileSync(path.join(resultsDir, 'rankings.csv'), 'utf8');
@@ -278,6 +456,7 @@ describe('generate LCB data', () => {
       'name',
       'snapshotDate',
       'wealthRecordReference',
+      'unresolvedGivingReferences',
       'wealthStatus',
       'wealthAtSnapshot',
       'nominalGiving',
@@ -292,7 +471,11 @@ describe('generate LCB data', () => {
         .map((match) => (match[1].startsWith('"') ? match[1].slice(1, -1).replaceAll('""', '"') : match[1]))
     );
     expect(parsed).toEqual(
-      rankings.rows.map((row) => columns.map((column) => (row[column] === null ? '' : String(row[column]))))
+      rankings.rows.map((row) =>
+        columns.map((column) =>
+          row[column] === null ? '' : Array.isArray(row[column]) ? JSON.stringify(row[column]) : String(row[column])
+        )
+      )
     );
   });
 
@@ -334,6 +517,10 @@ describe('generate LCB data', () => {
     expect(result.status, result.stderr).toBe(0);
     const output = JSON.parse(fs.readFileSync(path.join(workspace, 'data/lcb/results/transfers.json')));
     expect(output.transfers.find((t) => t.fingerprint === fingerprint).exclusionReason).toBe('unverified-commitment');
+    const coverage = JSON.parse(fs.readFileSync(path.join(workspace, 'data/lcb/results/coverage.json')));
+    expect(coverage.futureTransfers).toBe(
+      output.transfers.filter((t) => t.effectiveDate > coverage.snapshotDate).length
+    );
   });
 
   it('independently recomputes an exported donor total and rank', () => {
@@ -396,6 +583,53 @@ describe('generate LCB data', () => {
         .reduce((sum, event) => sum + event.amount, 0)
     ).toBe(10_826_505_730);
     const transfers = JSON.parse(fs.readFileSync(path.join(resultsDir, 'transfers.json'), 'utf8')).transfers;
+    const billTransfers = transfers.filter((t) => t.credit['bill-gates'] && t.decision === 'include');
+    expect(billTransfers.some((t) => t.amountUSD === 551_541_000)).toBe(false);
+    expect(billTransfers.find((t) => t.amountUSD === 500_000_000)).toMatchObject({
+      effectiveDate: '2022-07-02',
+      credit: { 'bill-gates': 1 },
+    });
+    expect(billTransfers.find((t) => t.amountUSD === 51_541_000)).toMatchObject({
+      effectiveDate: '2023-01-16',
+      credit: { 'bill-gates': 1 },
+    });
+    const endpoints = Object.fromEntries(
+      fs
+        .readFileSync(path.join(root, 'data/lcb/inputs/sp500-total-return.csv'), 'utf8')
+        .trim()
+        .split('\n')
+        .slice(1)
+        .map((line) => {
+          const [date, value] = line.split(',');
+          return [date, Number(value)];
+        })
+    );
+    const independentIndex = (date) => {
+      if (endpoints[date]) return endpoints[date];
+      const year = Number(date.slice(0, 4));
+      const before = `${year - 1}-12-31`,
+        after = `${year}-12-31`;
+      return (
+        endpoints[before] *
+        Math.pow(
+          endpoints[after] / endpoints[before],
+          (Date.parse(date) - Date.parse(before)) / (Date.parse(after) - Date.parse(before))
+        )
+      );
+    };
+    const expected = billTransfers.reduce(
+      (total, t) =>
+        total + (t.amountUSD * t.credit['bill-gates'] * endpoints['2025-12-31']) / independentIndex(t.effectiveDate),
+      0
+    );
+    const rankings = JSON.parse(fs.readFileSync(path.join(resultsDir, 'rankings.json')));
+    const bill = rankings.rows.find((r) => r.donorId === 'bill-gates');
+    expect(bill.marketAdjustedGiving).toBeCloseTo(expected, 2);
+    expect(bill.charityAdjustedWealth).toBeCloseTo(bill.wealthAtSnapshot + expected, 2);
+    const soros = rankings.rows.find((r) => r.donorId === 'george-soros');
+    expect(soros.unresolvedGivingReferences.length).toBeGreaterThan(0);
+    const unresolved = JSON.parse(fs.readFileSync(path.join(resultsDir, 'coverage.json'))).unresolvedBalances;
+    expect(soros.unresolvedGivingReferences.every((id) => unresolved.some((r) => r.id === id))).toBe(true);
     for (const [file, amount] of [
       ['david_sainsbury.md', 1_837_499_000],
       ['michael_bloomberg.md', 21_000_000_000],

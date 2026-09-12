@@ -111,7 +111,7 @@ export function validateFundingChains(events) {
     if (event.transferStage === 'vehicle-distribution') {
       throw new Error(`Transfer ${event.fingerprint} is a downstream vehicle distribution, not a personal inflow.`);
     }
-    const identityKey = `${event.fundingChain}:${event.transferIdentity}`;
+    const identityKey = event.transferIdentity;
     const existing = identities.get(identityKey);
     if (existing) throw new Error(`Included transfers ${existing} and ${event.fingerprint} duplicate ${identityKey}.`);
     identities.set(identityKey, event.fingerprint);
@@ -121,10 +121,21 @@ export function validateFundingChains(events) {
 export function validateWealthAllocations(wealthRecords) {
   const allocations = new Map();
   const donorIds = new Set();
+  const observationOwners = new Map();
   for (const record of wealthRecords) {
     if (donorIds.has(record.donorId)) throw new Error(`Duplicate wealth record for ${record.donorId}.`);
     donorIds.add(record.donorId);
     if (record.status !== 'matched') continue;
+    if (record.observation) {
+      const key = JSON.stringify(
+        ['sourceId', 'sourceName', 'date', 'amountUSD'].map((field) => record.observation[field])
+      );
+      const owner = observationOwners.get(key);
+      if (owner && (!record.sharedPoolId || record.sharedPoolId !== owner.sharedPoolId)) {
+        throw new Error(`Wealth observation reused by ${owner.donorId} and ${record.donorId} without a shared pool.`);
+      }
+      observationOwners.set(key, record);
+    }
     if (!Number.isFinite(record.estimateAtSnapshot) || record.estimateAtSnapshot < 0) {
       throw new Error(`Matched wealth record ${record.donorId} needs a non-negative estimate.`);
     }

@@ -22,7 +22,8 @@
       "charityAdjustedWealth": 376635859871.38,
       "rank": 1,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#warren-buffett"
+      "wealthRecordReference": "../inputs/wealth.json#warren-buffett",
+      "unresolvedGivingReferences": []
     },
     {
       "donorId": "elon-musk",
@@ -37,22 +38,32 @@
       "charityAdjustedWealth": 342987100921.07,
       "rank": 2,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#elon-musk"
+      "wealthRecordReference": "../inputs/wealth.json#elon-musk",
+      "unresolvedGivingReferences": []
     },
     {
       "donorId": "bill-gates",
       "name": "Bill Gates",
-      "giftCount": 12,
+      "giftCount": 13,
       "nominalGiving": 43417752011,
-      "marketAdjustedGiving": 140016863575.71,
-      "inflationAdjustedGiving": 55886996955.41,
+      "marketAdjustedGiving": 140024921858.12,
+      "inflationAdjustedGiving": 55886451631.87,
       "partialGivingHistory": true,
       "wealthStatus": "matched",
       "wealthAtSnapshot": 108000000000,
-      "charityAdjustedWealth": 248016863575.71,
+      "charityAdjustedWealth": 248024921858.12,
       "rank": 3,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#bill-gates"
+      "wealthRecordReference": "../inputs/wealth.json#bill-gates",
+      "unresolvedGivingReferences": [
+        "gates-1999-narrative-difference",
+        "gates-2000-annual-residual",
+        "pivotal-commitment-remainder",
+        "unresolved-eb9b114e0d9a",
+        "melinda-vote-mama-foundation-2024-12-03",
+        "melinda-rosalynn-carter-institute-for-caregivers-2024-12-03",
+        "melinda-wellcome-leap-2025-09-10"
+      ]
     },
     {
       "donorId": "mark-zuckerberg",
@@ -67,7 +78,8 @@
       "charityAdjustedWealth": 226268637611.75,
       "rank": 4,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#mark-zuckerberg"
+      "wealthRecordReference": "../inputs/wealth.json#mark-zuckerberg",
+      "unresolvedGivingReferences": []
     },
     {
       "donorId": "jeff-bezos",
@@ -82,7 +94,14 @@
       "charityAdjustedWealth": 216776433009.28,
       "rank": 5,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#jeff-bezos"
+      "wealthRecordReference": "../inputs/wealth.json#jeff-bezos",
+      "unresolvedGivingReferences": [
+        "unresolved-123ba31d4db0c036ad77df65567b78b152187db2b811147304d2dd7e8aa45798",
+        "unresolved-ea66e2c01d33ab253e3a6887ef8504b5e6d1b16e776f9c096f4dbd5be4befaef",
+        "unresolved-332a66cec0bb028853f05f0a4bb63e66f287aed0b53eebd7a1717323b6507928",
+        "unresolved-3e70afd9c944fece18144cb908b2249cbf4317d43f4c069dc4a7ba651f95ea51",
+        "unresolved-0baa87942f57ee41bcbd1fa0070ede490f5a555f62395e9db0411f202b34e7e9"
+      ]
     },
     {
       "donorId": "larry-ellison",
@@ -97,7 +116,8 @@
       "charityAdjustedWealth": 196856244516.02,
       "rank": 6,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#larry-ellison"
+      "wealthRecordReference": "../inputs/wealth.json#larry-ellison",
+      "unresolvedGivingReferences": []
     },
     {
       "donorId": "bernard-arnault",
@@ -112,7 +132,8 @@
       "charityAdjustedWealth": 178307900324.17,
       "rank": 7,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#bernard-arnault"
+      "wealthRecordReference": "../inputs/wealth.json#bernard-arnault",
+      "unresolvedGivingReferences": []
     },
     {
       "donorId": "sergey-brin",
@@ -127,7 +148,8 @@
       "charityAdjustedWealth": 144666808072.07,
       "rank": 8,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#sergey-brin"
+      "wealthRecordReference": "../inputs/wealth.json#sergey-brin",
+      "unresolvedGivingReferences": []
     },
     {
       "donorId": "larry-page",
@@ -142,7 +164,8 @@
       "charityAdjustedWealth": 144256317699.05,
       "rank": 9,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#larry-page"
+      "wealthRecordReference": "../inputs/wealth.json#larry-page",
+      "unresolvedGivingReferences": []
     },
     {
       "donorId": "amancio-ortega",
@@ -157,7 +180,10 @@
       "charityAdjustedWealth": 125345846460.33,
       "rank": 10,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#amancio-ortega"
+      "wealthRecordReference": "../inputs/wealth.json#amancio-ortega",
+      "unresolvedGivingReferences": [
+        "unresolved-9b048c05cd78"
+      ]
     },
     {
       "donorId": "melinda-gates",
@@ -172,7 +198,12 @@
       "charityAdjustedWealth": 119408313631.93,
       "rank": 11,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#melinda-gates"
+      "wealthRecordReference": "../inputs/wealth.json#melinda-gates",
+      "unresolvedGivingReferences": [
+        "gates-1999-narrative-difference",
+        "gates-2000-annual-residual",
+        "unresolved-eb9b114e0d9a"
+      ]
     },
     {
       "donorId": "carlos-slim",
@@ -187,7 +218,8 @@
       "charityAdjustedWealth": 112413055922.89,
       "rank": 12,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#carlos-slim"
+      "wealthRecordReference": "../inputs/wealth.json#carlos-slim",
+      "unresolvedGivingReferences": []
     },
     {
       "donorId": "michael-bloomberg",
@@ -202,7 +234,11 @@
       "charityAdjustedWealth": 110891838718.37,
       "rank": 13,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#michael-bloomberg"
+      "wealthRecordReference": "../inputs/wealth.json#michael-bloomberg",
+      "unresolvedGivingReferences": [
+        "unresolved-d4f056118f07",
+        "unresolved-3f205f5073e4c8aa42099b1de594132da55179657118c61afb0a5f7eff241514"
+      ]
     },
     {
       "donorId": "michael-dell",
@@ -217,7 +253,8 @@
       "charityAdjustedWealth": 107658504859.71,
       "rank": 14,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#michael-dell"
+      "wealthRecordReference": "../inputs/wealth.json#michael-dell",
+      "unresolvedGivingReferences": []
     },
     {
       "donorId": "jensen-huang",
@@ -232,7 +269,10 @@
       "charityAdjustedWealth": 99685717627.66,
       "rank": 15,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#jensen-huang"
+      "wealthRecordReference": "../inputs/wealth.json#jensen-huang",
+      "unresolvedGivingReferences": [
+        "unresolved-d449b2cb4cad"
+      ]
     },
     {
       "donorId": "azim-premji",
@@ -247,7 +287,8 @@
       "charityAdjustedWealth": 75869545965.1,
       "rank": 16,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#azim-premji"
+      "wealthRecordReference": "../inputs/wealth.json#azim-premji",
+      "unresolvedGivingReferences": []
     },
     {
       "donorId": "charles-koch",
@@ -262,7 +303,8 @@
       "charityAdjustedWealth": 71438354253.34,
       "rank": 17,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#charles-koch"
+      "wealthRecordReference": "../inputs/wealth.json#charles-koch",
+      "unresolvedGivingReferences": []
     },
     {
       "donorId": "pony-ma",
@@ -277,7 +319,8 @@
       "charityAdjustedWealth": 64762468924.87,
       "rank": 18,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#pony-ma"
+      "wealthRecordReference": "../inputs/wealth.json#pony-ma",
+      "unresolvedGivingReferences": []
     },
     {
       "donorId": "phil-knight",
@@ -292,7 +335,8 @@
       "charityAdjustedWealth": 50568712196.32,
       "rank": 19,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#phil-knight"
+      "wealthRecordReference": "../inputs/wealth.json#phil-knight",
+      "unresolvedGivingReferences": []
     },
     {
       "donorId": "george-kaiser",
@@ -307,7 +351,8 @@
       "charityAdjustedWealth": 47901742295.13,
       "rank": 20,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#george-kaiser"
+      "wealthRecordReference": "../inputs/wealth.json#george-kaiser",
+      "unresolvedGivingReferences": []
     },
     {
       "donorId": "li-ka-shing",
@@ -322,7 +367,11 @@
       "charityAdjustedWealth": 47013303760.95,
       "rank": 21,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#li-ka-shing"
+      "wealthRecordReference": "../inputs/wealth.json#li-ka-shing",
+      "unresolvedGivingReferences": [
+        "unresolved-14cc80ee969f",
+        "unresolved-ca713b978b7b"
+      ]
     },
     {
       "donorId": "stephen-schwarzman",
@@ -337,7 +386,10 @@
       "charityAdjustedWealth": 46883986882.18,
       "rank": 22,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#stephen-schwarzman"
+      "wealthRecordReference": "../inputs/wealth.json#stephen-schwarzman",
+      "unresolvedGivingReferences": [
+        "unresolved-e0220d2589b9"
+      ]
     },
     {
       "donorId": "ken-griffin",
@@ -352,7 +404,12 @@
       "charityAdjustedWealth": 44019661512.35,
       "rank": 23,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#ken-griffin"
+      "wealthRecordReference": "../inputs/wealth.json#ken-griffin",
+      "unresolvedGivingReferences": [
+        "unresolved-b8014f9cd10d",
+        "unresolved-39ffed875a28",
+        "unresolved-b35d404b4422"
+      ]
     },
     {
       "donorId": "marilyn-simons",
@@ -367,7 +424,10 @@
       "charityAdjustedWealth": 38511691437.35,
       "rank": 24,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#marilyn-simons"
+      "wealthRecordReference": "../inputs/wealth.json#marilyn-simons",
+      "unresolvedGivingReferences": [
+        "unresolved-460794df3b8c"
+      ]
     },
     {
       "donorId": "eric-schmidt",
@@ -382,7 +442,8 @@
       "charityAdjustedWealth": 38194116911.63,
       "rank": 25,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#eric-schmidt"
+      "wealthRecordReference": "../inputs/wealth.json#eric-schmidt",
+      "unresolvedGivingReferences": []
     },
     {
       "donorId": "mackenzie-scott",
@@ -397,7 +458,10 @@
       "charityAdjustedWealth": 35975386351.59,
       "rank": 26,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#mackenzie-scott"
+      "wealthRecordReference": "../inputs/wealth.json#mackenzie-scott",
+      "unresolvedGivingReferences": [
+        "unresolved-ddec435ffeddf9de34edd6c1669a05861012c05f66326fee067818e542f9a733"
+      ]
     },
     {
       "donorId": "shiv-nadar",
@@ -412,7 +476,10 @@
       "charityAdjustedWealth": 34508585388.94,
       "rank": 27,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#shiv-nadar"
+      "wealthRecordReference": "../inputs/wealth.json#shiv-nadar",
+      "unresolvedGivingReferences": [
+        "unresolved-e3c91257502b"
+      ]
     },
     {
       "donorId": "andrew-forrest",
@@ -427,7 +494,10 @@
       "charityAdjustedWealth": 24538287417.26,
       "rank": 28,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#andrew-forrest"
+      "wealthRecordReference": "../inputs/wealth.json#andrew-forrest",
+      "unresolvedGivingReferences": [
+        "unresolved-cd9cfec4956a"
+      ]
     },
     {
       "donorId": "jan-koum",
@@ -442,7 +512,8 @@
       "charityAdjustedWealth": 24522387674.48,
       "rank": 29,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#jan-koum"
+      "wealthRecordReference": "../inputs/wealth.json#jan-koum",
+      "unresolvedGivingReferences": []
     },
     {
       "donorId": "ray-dalio",
@@ -457,7 +528,10 @@
       "charityAdjustedWealth": 20223992413.33,
       "rank": 30,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#ray-dalio"
+      "wealthRecordReference": "../inputs/wealth.json#ray-dalio",
+      "unresolvedGivingReferences": [
+        "unresolved-0bf1666a1e17"
+      ]
     },
     {
       "donorId": "donald-bren",
@@ -472,7 +546,10 @@
       "charityAdjustedWealth": 19404899793.78,
       "rank": 31,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#donald-bren"
+      "wealthRecordReference": "../inputs/wealth.json#donald-bren",
+      "unresolvedGivingReferences": [
+        "unresolved-8c506714d102"
+      ]
     },
     {
       "donorId": "george-soros",
@@ -487,7 +564,29 @@
       "charityAdjustedWealth": 16629961133.58,
       "rank": 32,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#george-soros"
+      "wealthRecordReference": "../inputs/wealth.json#george-soros",
+      "unresolvedGivingReferences": [
+        "unresolved-7d868f38d1b1cbd0f686c33a69d56bdf1c89d927746cda90b2a784e6e7bc24de",
+        "unresolved-74d1f5aebf4529992e21459ddebaa80fdc665bd0c69aa9f93a99e4f70b46336f",
+        "unresolved-2ea5a455b179f797a456cb426ca286c98780d9c4ae82b0a37766f6e23b3040dd",
+        "unresolved-4491bd97c9d6506b01b8801c4d2e5da75bde50ff7fa84cd53d63abc30847223b",
+        "unresolved-162fbcb0a6ad55d8bd2442fea37872802b616ab6bc3873ea896b358516b22a68",
+        "unresolved-fd7fb6befc6a883d5f4b863aeef3a61441fed9b76fb4c22263ba1da8ad00a41d",
+        "unresolved-3afe6a64b05ee711359dc1c8983aec5f91bc2f35811a0f6e620b6b198cdfcd56",
+        "unresolved-a0264b15378f7d5cc0435bb25ac2369b1d9a46b2e552bc4e3e8b23e3e91e7574",
+        "unresolved-f4d5495dfa60759bf044d55af78bf84cf65060b54751cbf000e21aadf2c09283",
+        "unresolved-047f31ff77319380be43ff990fd7253fc1bd3100fbabe373bdaad87615cde322",
+        "unresolved-937f0ac75e0fc9d7c9948ee9fd52905b3b8860af4df3cabcb93250c8bec0e2ea",
+        "unresolved-4b18aeea7b8637ffaf5c219ee33435b7d1552c4399026c79149e0378e7560fbd",
+        "unresolved-8caf9c7a0517164d7d65606b8c358a4f00807ee0b514924e86473965fcd86a64",
+        "unresolved-ae34779ecb64f36f365dc94153ab8b8ba32e732e0d2e1125f165d7b1e8f8fc8f",
+        "unresolved-5d51e7ddd5b7cf45fb632243cffbe372219ea5d096d0a727139d028489d5dc29",
+        "unresolved-26974eb9100f688853edcdead59c89ad46b34487a9a760ea2142b5dc94d37887",
+        "unresolved-5f9df0fb867cb49bd1536848fe50bda4c6b635f8a661953ba221bc3cbc79145d",
+        "unresolved-6106fc929a243a3ec85210abdca66743d672054fc5031167cb12b56790da3a5a",
+        "unresolved-ad64ae05c56d93a8b9c87ba9ebf39a1d4a61c4ba3b7b3e38682c7575694bf052",
+        "unresolved-394ef5f7c913c03c7f66e640189ec8c76d3625c30f7c65c976b41923e3a56df5"
+      ]
     },
     {
       "donorId": "george-lucas",
@@ -502,7 +601,8 @@
       "charityAdjustedWealth": 16500831241.62,
       "rank": 33,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#george-lucas"
+      "wealthRecordReference": "../inputs/wealth.json#george-lucas",
+      "unresolvedGivingReferences": []
     },
     {
       "donorId": "peter-thiel",
@@ -517,7 +617,20 @@
       "charityAdjustedWealth": 16320173530.19,
       "rank": 34,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#peter-thiel"
+      "wealthRecordReference": "../inputs/wealth.json#peter-thiel",
+      "unresolvedGivingReferences": [
+        "unresolved-5d2e2562f9d5",
+        "unresolved-465294c7c5c0",
+        "unresolved-da8b1dd955a4",
+        "unresolved-45c7e14d8758",
+        "unresolved-16bbcc4e2ca2",
+        "unresolved-693c0a446a09",
+        "unresolved-5a4ee72629de",
+        "unresolved-8aa24c392330",
+        "unresolved-06a821b35e19",
+        "unresolved-28606ce0c70a",
+        "unresolved-daebb4de0d1d"
+      ]
     },
     {
       "donorId": "pierre-omidyar",
@@ -532,7 +645,8 @@
       "charityAdjustedWealth": 15945723039.37,
       "rank": 35,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#pierre-omidyar"
+      "wealthRecordReference": "../inputs/wealth.json#pierre-omidyar",
+      "unresolvedGivingReferences": []
     },
     {
       "donorId": "hasso-plattner",
@@ -547,7 +661,10 @@
       "charityAdjustedWealth": 15877385146.55,
       "rank": 36,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#hasso-plattner"
+      "wealthRecordReference": "../inputs/wealth.json#hasso-plattner",
+      "unresolvedGivingReferences": [
+        "unresolved-7a7ba161736d"
+      ]
     },
     {
       "donorId": "john-doerr",
@@ -562,7 +679,8 @@
       "charityAdjustedWealth": 15778615291.47,
       "rank": 37,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#john-doerr"
+      "wealthRecordReference": "../inputs/wealth.json#john-doerr",
+      "unresolvedGivingReferences": []
     },
     {
       "donorId": "hansjorg-wyss",
@@ -577,7 +695,8 @@
       "charityAdjustedWealth": 15381714630.9,
       "rank": 38,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#hansjorg-wyss"
+      "wealthRecordReference": "../inputs/wealth.json#hansjorg-wyss",
+      "unresolvedGivingReferences": []
     },
     {
       "donorId": "stanley-druckenmiller",
@@ -592,7 +711,8 @@
       "charityAdjustedWealth": 14627794745.03,
       "rank": 39,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#stanley-druckenmiller"
+      "wealthRecordReference": "../inputs/wealth.json#stanley-druckenmiller",
+      "unresolvedGivingReferences": []
     },
     {
       "donorId": "david-geffen",
@@ -607,7 +727,12 @@
       "charityAdjustedWealth": 14023696734.44,
       "rank": 40,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#david-geffen"
+      "wealthRecordReference": "../inputs/wealth.json#david-geffen",
+      "unresolvedGivingReferences": [
+        "unresolved-b8014f9cd10d",
+        "unresolved-39ffed875a28",
+        "unresolved-b35d404b4422"
+      ]
     },
     {
       "donorId": "marc-benioff",
@@ -622,7 +747,8 @@
       "charityAdjustedWealth": 12309231703.48,
       "rank": 41,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#marc-benioff"
+      "wealthRecordReference": "../inputs/wealth.json#marc-benioff",
+      "unresolvedGivingReferences": []
     },
     {
       "donorId": "john-paulson",
@@ -637,7 +763,8 @@
       "charityAdjustedWealth": 12053010318.46,
       "rank": 42,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#john-paulson"
+      "wealthRecordReference": "../inputs/wealth.json#john-paulson",
+      "unresolvedGivingReferences": []
     },
     {
       "donorId": "chris-hohn",
@@ -652,7 +779,10 @@
       "charityAdjustedWealth": 11016740060.41,
       "rank": 43,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#chris-hohn"
+      "wealthRecordReference": "../inputs/wealth.json#chris-hohn",
+      "unresolvedGivingReferences": [
+        "unresolved-de74e3f1deb2"
+      ]
     },
     {
       "donorId": "bill-ackman",
@@ -667,7 +797,8 @@
       "charityAdjustedWealth": 10987826936.84,
       "rank": 44,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#bill-ackman"
+      "wealthRecordReference": "../inputs/wealth.json#bill-ackman",
+      "unresolvedGivingReferences": []
     },
     {
       "donorId": "t-denny-sanford",
@@ -682,7 +813,8 @@
       "charityAdjustedWealth": 10109361923.63,
       "rank": 45,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#t-denny-sanford"
+      "wealthRecordReference": "../inputs/wealth.json#t-denny-sanford",
+      "unresolvedGivingReferences": []
     },
     {
       "donorId": "edythe-broad",
@@ -697,7 +829,10 @@
       "charityAdjustedWealth": 9476262335.35,
       "rank": 46,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#edythe-broad"
+      "wealthRecordReference": "../inputs/wealth.json#edythe-broad",
+      "unresolvedGivingReferences": [
+        "unresolved-3ed4fe28b78a"
+      ]
     },
     {
       "donorId": "jed-mccaleb",
@@ -712,7 +847,8 @@
       "charityAdjustedWealth": 8397373295.55,
       "rank": 47,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#jed-mccaleb"
+      "wealthRecordReference": "../inputs/wealth.json#jed-mccaleb",
+      "unresolvedGivingReferences": []
     },
     {
       "donorId": "michael-milken",
@@ -727,7 +863,8 @@
       "charityAdjustedWealth": 8119288413.1,
       "rank": 48,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#michael-milken"
+      "wealthRecordReference": "../inputs/wealth.json#michael-milken",
+      "unresolvedGivingReferences": []
     },
     {
       "donorId": "reed-hastings",
@@ -742,7 +879,8 @@
       "charityAdjustedWealth": 7403751624.03,
       "rank": 49,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#reed-hastings"
+      "wealthRecordReference": "../inputs/wealth.json#reed-hastings",
+      "unresolvedGivingReferences": []
     },
     {
       "donorId": "lynn-schusterman",
@@ -757,7 +895,10 @@
       "charityAdjustedWealth": 5638194654.17,
       "rank": 50,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#lynn-schusterman"
+      "wealthRecordReference": "../inputs/wealth.json#lynn-schusterman",
+      "unresolvedGivingReferences": [
+        "unresolved-8c4785aa816d"
+      ]
     },
     {
       "donorId": "reid-hoffman",
@@ -772,7 +913,10 @@
       "charityAdjustedWealth": 5581069945.97,
       "rank": 51,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#reid-hoffman"
+      "wealthRecordReference": "../inputs/wealth.json#reid-hoffman",
+      "unresolvedGivingReferences": [
+        "unresolved-6b286502a225"
+      ]
     },
     {
       "donorId": "steven-spielberg",
@@ -787,7 +931,10 @@
       "charityAdjustedWealth": 5397155064.6,
       "rank": 52,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#steven-spielberg"
+      "wealthRecordReference": "../inputs/wealth.json#steven-spielberg",
+      "unresolvedGivingReferences": [
+        "unresolved-fbb1a51f6db9"
+      ]
     },
     {
       "donorId": "sean-parker",
@@ -802,7 +949,8 @@
       "charityAdjustedWealth": 5229686545.05,
       "rank": 53,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#sean-parker"
+      "wealthRecordReference": "../inputs/wealth.json#sean-parker",
+      "unresolvedGivingReferences": []
     },
     {
       "donorId": "dietmar-hopp",
@@ -817,7 +965,10 @@
       "charityAdjustedWealth": 5225976150.16,
       "rank": 54,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#dietmar-hopp"
+      "wealthRecordReference": "../inputs/wealth.json#dietmar-hopp",
+      "unresolvedGivingReferences": [
+        "unresolved-5af2b96057d6"
+      ]
     },
     {
       "donorId": "oprah-winfrey",
@@ -832,7 +983,10 @@
       "charityAdjustedWealth": 3318395274.46,
       "rank": 55,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#oprah-winfrey"
+      "wealthRecordReference": "../inputs/wealth.json#oprah-winfrey",
+      "unresolvedGivingReferences": [
+        "unresolved-0dfad9fad584"
+      ]
     },
     {
       "donorId": "david-sainsbury",
@@ -847,7 +1001,10 @@
       "charityAdjustedWealth": 1627032300.49,
       "rank": 56,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#david-sainsbury"
+      "wealthRecordReference": "../inputs/wealth.json#david-sainsbury",
+      "unresolvedGivingReferences": [
+        "unresolved-77c3294ce7ef"
+      ]
     },
     {
       "donorId": "jk-rowling",
@@ -862,7 +1019,11 @@
       "charityAdjustedWealth": 1522377296.44,
       "rank": 57,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#jk-rowling"
+      "wealthRecordReference": "../inputs/wealth.json#jk-rowling",
+      "unresolvedGivingReferences": [
+        "unresolved-3268adf4ffa4",
+        "unresolved-0d05f54393f9"
+      ]
     },
     {
       "donorId": "jaan-tallinn",
@@ -877,7 +1038,8 @@
       "charityAdjustedWealth": 921813419.96,
       "rank": 58,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#jaan-tallinn"
+      "wealthRecordReference": "../inputs/wealth.json#jaan-tallinn",
+      "unresolvedGivingReferences": []
     },
     {
       "donorId": "aliko-dangote",
@@ -892,7 +1054,12 @@
       "charityAdjustedWealth": null,
       "rank": null,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#aliko-dangote"
+      "wealthRecordReference": "../inputs/wealth.json#aliko-dangote",
+      "unresolvedGivingReferences": [
+        "unresolved-58bf015aa9f6",
+        "unresolved-60a8ebedb8df",
+        "unresolved-e2652a702bb9"
+      ]
     },
     {
       "donorId": "anne-wojcicki",
@@ -907,7 +1074,8 @@
       "charityAdjustedWealth": null,
       "rank": null,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#anne-wojcicki"
+      "wealthRecordReference": "../inputs/wealth.json#anne-wojcicki",
+      "unresolvedGivingReferences": []
     },
     {
       "donorId": "barbara-picower",
@@ -922,7 +1090,8 @@
       "charityAdjustedWealth": null,
       "rank": null,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#barbara-picower"
+      "wealthRecordReference": "../inputs/wealth.json#barbara-picower",
+      "unresolvedGivingReferences": []
     },
     {
       "donorId": "ben-hoskin",
@@ -937,7 +1106,8 @@
       "charityAdjustedWealth": null,
       "rank": null,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#ben-hoskin"
+      "wealthRecordReference": "../inputs/wealth.json#ben-hoskin",
+      "unresolvedGivingReferences": []
     },
     {
       "donorId": "billi-marcus",
@@ -952,7 +1122,8 @@
       "charityAdjustedWealth": null,
       "rank": null,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#billi-marcus"
+      "wealthRecordReference": "../inputs/wealth.json#billi-marcus",
+      "unresolvedGivingReferences": []
     },
     {
       "donorId": "blake-borgeson",
@@ -967,7 +1138,13 @@
       "charityAdjustedWealth": null,
       "rank": null,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#blake-borgeson"
+      "wealthRecordReference": "../inputs/wealth.json#blake-borgeson",
+      "unresolvedGivingReferences": [
+        "unresolved-392aec0dcc15",
+        "unresolved-771fb8f42e53",
+        "unresolved-2e9bce83625b",
+        "unresolved-03962a4c4c42"
+      ]
     },
     {
       "donorId": "cari-tuna",
@@ -982,7 +1159,8 @@
       "charityAdjustedWealth": null,
       "rank": null,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#cari-tuna"
+      "wealthRecordReference": "../inputs/wealth.json#cari-tuna",
+      "unresolvedGivingReferences": []
     },
     {
       "donorId": "connie-ballmer",
@@ -997,7 +1175,10 @@
       "charityAdjustedWealth": null,
       "rank": null,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#connie-ballmer"
+      "wealthRecordReference": "../inputs/wealth.json#connie-ballmer",
+      "unresolvedGivingReferences": [
+        "unresolved-59811a34cf5d"
+      ]
     },
     {
       "donorId": "dustin-moskovitz",
@@ -1012,7 +1193,8 @@
       "charityAdjustedWealth": null,
       "rank": null,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#dustin-moskovitz"
+      "wealthRecordReference": "../inputs/wealth.json#dustin-moskovitz",
+      "unresolvedGivingReferences": []
     },
     {
       "donorId": "haseeb-qureshi",
@@ -1027,7 +1209,8 @@
       "charityAdjustedWealth": null,
       "rank": null,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#haseeb-qureshi"
+      "wealthRecordReference": "../inputs/wealth.json#haseeb-qureshi",
+      "unresolvedGivingReferences": []
     },
     {
       "donorId": "jack-dorsey",
@@ -1042,7 +1225,10 @@
       "charityAdjustedWealth": null,
       "rank": null,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#jack-dorsey"
+      "wealthRecordReference": "../inputs/wealth.json#jack-dorsey",
+      "unresolvedGivingReferences": [
+        "unresolved-7031c4a744b9"
+      ]
     },
     {
       "donorId": "jeremy-grantham",
@@ -1057,7 +1243,8 @@
       "charityAdjustedWealth": null,
       "rank": null,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#jeremy-grantham"
+      "wealthRecordReference": "../inputs/wealth.json#jeremy-grantham",
+      "unresolvedGivingReferences": []
     },
     {
       "donorId": "john-arnold",
@@ -1072,7 +1259,8 @@
       "charityAdjustedWealth": null,
       "rank": null,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#john-arnold"
+      "wealthRecordReference": "../inputs/wealth.json#john-arnold",
+      "unresolvedGivingReferences": []
     },
     {
       "donorId": "laura-arnold",
@@ -1087,7 +1275,8 @@
       "charityAdjustedWealth": null,
       "rank": null,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#laura-arnold"
+      "wealthRecordReference": "../inputs/wealth.json#laura-arnold",
+      "unresolvedGivingReferences": []
     },
     {
       "donorId": "laurene-powell-jobs",
@@ -1102,7 +1291,10 @@
       "charityAdjustedWealth": null,
       "rank": null,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#laurene-powell-jobs"
+      "wealthRecordReference": "../inputs/wealth.json#laurene-powell-jobs",
+      "unresolvedGivingReferences": [
+        "unresolved-9423b7b881e6"
+      ]
     },
     {
       "donorId": "lisbet-rausing",
@@ -1117,7 +1309,11 @@
       "charityAdjustedWealth": null,
       "rank": null,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#lisbet-rausing"
+      "wealthRecordReference": "../inputs/wealth.json#lisbet-rausing",
+      "unresolvedGivingReferences": [
+        "unresolved-8e1b11263b8a",
+        "unresolved-817bc22569c8"
+      ]
     },
     {
       "donorId": "misha-gurevich",
@@ -1132,7 +1328,11 @@
       "charityAdjustedWealth": null,
       "rank": null,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#misha-gurevich"
+      "wealthRecordReference": "../inputs/wealth.json#misha-gurevich",
+      "unresolvedGivingReferences": [
+        "unresolved-d1a5fa8aa85c",
+        "unresolved-2f968cc65e04"
+      ]
     },
     {
       "donorId": "oliver-habryka",
@@ -1147,7 +1347,8 @@
       "charityAdjustedWealth": null,
       "rank": null,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#oliver-habryka"
+      "wealthRecordReference": "../inputs/wealth.json#oliver-habryka",
+      "unresolvedGivingReferences": []
     },
     {
       "donorId": "steve-ballmer",
@@ -1162,7 +1363,11 @@
       "charityAdjustedWealth": null,
       "rank": null,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#steve-ballmer"
+      "wealthRecordReference": "../inputs/wealth.json#steve-ballmer",
+      "unresolvedGivingReferences": [
+        "unresolved-eb9b114e0d9a",
+        "unresolved-59811a34cf5d"
+      ]
     },
     {
       "donorId": "vitalik-buterin",
@@ -1177,7 +1382,8 @@
       "charityAdjustedWealth": null,
       "rank": null,
       "snapshotDate": "2025-12-31",
-      "wealthRecordReference": "../inputs/wealth.json#vitalik-buterin"
+      "wealthRecordReference": "../inputs/wealth.json#vitalik-buterin",
+      "unresolvedGivingReferences": []
     }
   ]
 }

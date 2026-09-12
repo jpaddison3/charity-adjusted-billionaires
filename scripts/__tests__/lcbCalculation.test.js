@@ -110,7 +110,7 @@ describe('LCB calculation', () => {
     expect(() =>
       validateFundingChains([
         { decision: 'include', fingerprint: 'a', fundingChain: 'pool', transferIdentity: 'gift' },
-        { decision: 'include', fingerprint: 'b', fundingChain: 'pool', transferIdentity: 'gift' },
+        { decision: 'include', fingerprint: 'b', fundingChain: 'other-donor-set', transferIdentity: 'gift' },
       ])
     ).toThrow('duplicate');
     expect(() =>
@@ -178,6 +178,15 @@ describe('LCB calculation', () => {
         { ...record('b', 0.5), observation: { amountUSD: 100, date: '2025-02-01', sourceId: 'source' } },
       ])
     ).toThrow('inconsistent observations');
+  });
+
+  it('rejects reusing a wealth observation under different individual donors', () => {
+    const observation = { sourceId: 'forbes', sourceName: 'Founder', date: '2025-03-07', amountUSD: 100 };
+    expect(() =>
+      validateWealthAllocations(
+        ['a', 'b'].map((donorId) => ({ donorId, status: 'matched', estimateAtSnapshot: 100, observation }))
+      )
+    ).toThrow('without a shared pool');
   });
 
   it('keeps missing wealth and no-giving donors unranked while retaining partial donors', () => {

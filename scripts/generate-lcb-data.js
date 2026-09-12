@@ -148,6 +148,9 @@ function resolveTransfer(event, disposition, sourceIds, snapshotDate) {
     }
   }
   const transfer = { ...event, ...disposition };
+  if (transfer.decision === 'include' && transfer.periodEnd > snapshotDate) {
+    return { ...transfer, decision: 'exclude', exclusionReason: 'period-crosses-snapshot' };
+  }
   return transfer.decision === 'include' && transfer.effectiveDate && transfer.effectiveDate > snapshotDate
     ? { ...transfer, decision: 'exclude', exclusionReason: 'after-snapshot' }
     : transfer;
@@ -179,6 +182,10 @@ function buildOutputs() {
   const november = cpi.find((row) => row.date === '2025-11-01')?.value;
   if (october?.status !== 'estimated-missing-source' || october.value !== (september + november) / 2) {
     throw new Error('October 2025 CPI must be the labeled arithmetic mean of September and November.');
+  }
+  if (market.some((row) => row.status !== 'observed')) throw new Error('Market endpoints must have observed status.');
+  if (cpi.some((row) => row.date !== '2025-10-01' && row.status !== 'observed')) {
+    throw new Error('Only the documented October 2025 CPI estimate may have non-observed status.');
   }
 
   const fingerprints = new Set(seedEvents.map((event) => event.fingerprint));
@@ -239,7 +246,18 @@ function buildOutputs() {
   );
   const vehicles = new Map(ledger.fundingVehicles.map((vehicle) => [vehicle.id, vehicle]));
   if (vehicles.size !== ledger.fundingVehicles.length) throw new Error('Duplicate funding vehicle ID.');
+  const vehicleByRecipient = new Map();
+  for (const vehicle of vehicles.values()) {
+    for (const recipientId of vehicle.inflowRecipientIds) {
+      if (vehicleByRecipient.has(recipientId)) throw new Error(`Ambiguous funding vehicle recipient ${recipientId}.`);
+      vehicleByRecipient.set(recipientId, vehicle.id);
+    }
+  }
   for (const transfer of transfers) {
+    const inflowVehicle = vehicleByRecipient.get(transfer.recipientId);
+    if (inflowVehicle && (transfer.transferStage !== 'vehicle-inflow' || transfer.fundingVehicleId !== inflowVehicle)) {
+      throw new Error(`Transfer ${transfer.fingerprint} must identify its recipient's funding vehicle inflow.`);
+    }
     if (!transfer.fundingVehicleId) continue;
     const vehicle = vehicles.get(transfer.fundingVehicleId);
     if (
@@ -274,6 +292,16 @@ function buildOutputs() {
     ...row,
     snapshotDate: snapshot.snapshotDate,
     wealthRecordReference: `../inputs/wealth.json#${row.donorId}`,
+    unresolvedGivingReferences: ledger.unresolvedBalances
+      .filter((reference) =>
+        transfers.some(
+          (transfer) =>
+            transfer.credit[row.donorId] &&
+            (reference.sourceFingerprint === transfer.fingerprint ||
+              reference.overlapLinks.includes(transfer.fingerprint))
+        )
+      )
+      .map((reference) => reference.id),
     nominalGiving: roundUsd(row.nominalGiving),
     marketAdjustedGiving: roundUsd(row.marketAdjustedGiving),
     inflationAdjustedGiving: roundUsd(row.inflationAdjustedGiving),
@@ -339,7 +367,7 @@ function buildOutputs() {
     excludedDonationFiles: glob.sync(path.join(contentDir, 'donations/*.md.excluded')).length,
     includedTransfers: transfers.filter((transfer) => transfer.decision === 'include').length,
     excludedTransfers: transfers.filter((transfer) => transfer.decision === 'exclude').length,
-    futureTransfers: transfers.filter((transfer) => transfer.exclusionReason === 'after-snapshot').length,
+    futureTransfers: transfers.filter((transfer) => transfer.effectiveDate > snapshot.snapshotDate).length,
     wealth: Object.fromEntries(
       ['matched', 'unmatched', 'unusable'].map((status) => [
         status,
@@ -356,6 +384,7 @@ function buildOutputs() {
     'name',
     'snapshotDate',
     'wealthRecordReference',
+    'unresolvedGivingReferences',
     'wealthStatus',
     'wealthAtSnapshot',
     'nominalGiving',
@@ -365,7 +394,11 @@ function buildOutputs() {
     'partialGivingHistory',
   ];
   const rankingsCsv = `${csvColumns.join(',')}\n${roundedRows
-    .map((row) => csvColumns.map((column) => csvEscape(row[column])).join(','))
+    .map((row) =>
+      csvColumns
+        .map((column) => csvEscape(Array.isArray(row[column]) ? JSON.stringify(row[column]) : row[column]))
+        .join(',')
+    )
     .join('\n')}\n`;
   return {
     'rankings.json': stableJson(rankings),

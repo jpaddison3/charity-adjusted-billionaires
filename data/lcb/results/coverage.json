@@ -1,10 +1,10 @@
 {
   "snapshotDate": "2025-12-31",
   "activeDonors": 78,
-  "seedEvents": 1178,
+  "seedEvents": 1179,
   "excludedDonorFiles": 1,
   "excludedDonationFiles": 1,
-  "includedTransfers": 1090,
+  "includedTransfers": 1091,
   "excludedTransfers": 88,
   "futureTransfers": 10,
   "wealth": {
@@ -170,7 +170,8 @@
         "651afb6d62b044635476300f44824a25f8b35fc226bca1f466a7beb47fe09f5c",
         "8687bdb0ad1ea2d75b227ee8b48b2af1cd650821ecba4fe561e67e0f9bff0ea5",
         "fa8b3423fa3df40d4627625a81e347287552c1e3c56e6714d4706daf72a1ccbe",
-        "be58c856635f69ef33e882dfc643d4d022930b4144b4375bc3ce4f6819e4b5ff",
+        "cc199df8109444be21db3907a99e5a771db730d60b4374806e161473c6b87dbb",
+        "7b5d0112ded93729d6a13a44b76b49a8d2c6fd2f1d2d90df168b75ba29c31c64",
         "efd858c5d5f2c72b69b06030feac936b0d4740beb54f30743143ac3692a706a3",
         "157e480391acdee55cd96e0063da22cfa1c6894110468cf02920bc0ddf861aa2",
         "ad7f6411162178950a24bbc410f590df38a81fa0ac901444946c71b38408d8a3",

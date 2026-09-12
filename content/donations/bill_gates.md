@@ -62,11 +62,19 @@ donations:
 
   - date: 2022-01-01
     recipient: gates-foundation
-    amount: 551_541_000
+    amount: 500_000_000
     credit:
       bill-gates: 1.0
     source: 'https://docs.gatesfoundation.org/documents/2022%20bmgft%20form%20990-pf.pdf'
-    notes: "The Trust Form 990-PF reports Bill Gates's cash contribution during 2022; the exact date is unavailable."
+    notes: "The filed $551.541M includes a $51.541M receivable paid in January 2023, per the 2023 audited statements. This row records the $500M received in 2022; the exact transfer date is unavailable."
+
+  - date: 2023-01-01
+    recipient: gates-foundation
+    amount: 51_541_000
+    credit:
+      bill-gates: 1.0
+    source: 'https://docs.gatesfoundation.org/documents/bmgf%202023%20trust%20audited%20financial%20statements.pdf'
+    notes: 'The 2023 audited statements identify this cash as received in January 2023 after recognition as a 2022 contribution receivable. Exact receipt day is not stated.'
 
   - date: 2022-12-31
     recipient: gates-foundation
