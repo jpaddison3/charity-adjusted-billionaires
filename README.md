@@ -171,8 +171,9 @@ The committed npm policy waits seven days before selecting a newly published pac
 install scripts with `ignore-scripts=true`. Fresh setup uses `npm run setup` to install the lockfile and explicitly initialize
 Husky. Data generation is part of the `dev`, `test`, `test:run`, `test:coverage`, `test:watch`, and `build` commands themselves,
 so it still runs with automatic lifecycle hooks disabled. The locked esbuild packages work with their packaged binaries
-without running install hooks. The locked fsevents packages ship their native binaries and have no install hooks;
-the explicit deny entry remains a policy decision for future versions. Watcher fallbacks remain available.
+without running install hooks. The locked fsevents packages ship their native binaries, but the lockfile marks them as
+having install scripts; the explicit deny entry supports strict, scripts-enabled installs of these locked versions too.
+Watcher fallbacks remain available.
 
 `strict-allow-scripts` and the version-specific `allowScripts` entries remain an extra check for an intentional rebuild with
 scripts enabled. They are not the default execution barrier: npm 11.16.0 can discover a tarball's `binding.gyp` only after its
