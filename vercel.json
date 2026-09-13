@@ -45,6 +45,6 @@
       ]
     }
   ],
-  "installCommand": "npm install --global \"npm@$(node -p \"require('./package.json').engines.npm\")\" --ignore-scripts && npm run setup",
+  "installCommand": "sh scripts/bootstrap-npm.sh && npm run setup",
   "buildCommand": "npm run build"
 }

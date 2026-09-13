@@ -12,7 +12,7 @@
 
 ## Build, Test, and Development Commands
 
-- `npm run generate-data`: Build `src/data/generatedData.js` from `content/`. `npm run dev`/`npm test*`/`npm run build` run it automatically via pre-scripts; run it manually only before direct `npx vitest`/`npx playwright` invocations.
+- `npm run generate-data`: Build `src/data/generatedData.js` from `content/`. `npm run dev`/`npm test*`/`npm run build` run it automatically through explicit command chains; run it manually only before direct `npx vitest`/`npx playwright` invocations. Automatic pre/post lifecycle hooks are disabled by `.npmrc` (`ignore-scripts=true`); keep generation in the command bodies and use `npm run setup` to install dependencies and initialize Husky.
 - `npm run dev`: Start Vite dev server.
 - `npm run build`: Generate data, then production build via Vite.
 - `npm run preview`: Serve the built app locally.

@@ -1,6 +1,6 @@
 # scripts/ — content → data generator
 
-`generate-data-from-markdown.js` compiles `content/**/*.md` into `src/data/generatedData.js` (gitignored). Run via `npm run generate-data`; `npm run build`, `npm run dev`, and the `npm test*` scripts all run it automatically via pre-scripts (direct `npx vitest` invocations do NOT). It also emits `public/sitemap.xml` and `public/robots.txt` (gitignored) — every entity route, no `<lastmod>` (determinism), origin resolved `SITE_ORIGIN` → `VERCEL_PROJECT_PRODUCTION_URL` → localhost.
+`generate-data-from-markdown.js` compiles `content/**/*.md` into `src/data/generatedData.js` (gitignored). Run via `npm run generate-data`; `npm run build`, `npm run dev`, and the `npm test*` scripts all run it automatically through explicit command chains (direct `npx vitest` invocations do NOT). It also emits `public/sitemap.xml` and `public/robots.txt` (gitignored) — every entity route, no `<lastmod>` (determinism), origin resolved `SITE_ORIGIN` → `VERCEL_PROJECT_PRODUCTION_URL` → localhost. Automatic pre/post lifecycle hooks are disabled by `.npmrc` (`ignore-scripts=true`); keep generation in the command bodies and use `npm run setup` to install dependencies and initialize Husky.
 
 ## Validation philosophy
 

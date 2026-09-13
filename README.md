@@ -31,7 +31,7 @@ Join [the discord](https://discord.gg/6GNre8U2ta) to learn more about these and 
 3. Install the npm version pinned in `package.json`, verify the toolchain, and install the locked dependencies:
 
    ```sh
-   npm install --global "npm@$(node -p "require('./package.json').engines.npm")" --ignore-scripts
+   sh scripts/bootstrap-npm.sh
    node --version
    npm --version
    npm run setup

@@ -240,8 +240,6 @@ describe('dependency install-script policy', () => {
   });
 
   test('suppresses implicit native builds omitted from registry metadata for install and ci', async () => {
-    const project = await createProject({}, { 'fixture-native-build': '1.0.0' });
-    const marker = join(project, 'native-build-marker');
     const tarball = await createPackageTarball('fixture-native-build', '1.0.0', undefined, {
       'binding.gyp': JSON.stringify({
         variables: { marker: "<!(node -e \"require('fs').writeFileSync(process.env.INSTALL_MARKER, 'ran')\")" },
@@ -253,6 +251,11 @@ describe('dependency install-script policy', () => {
       new Map([['1.0.0', tarball]]),
       async (registry) => {
         for (const command of ['install', 'ci']) {
+          const project = await createProject({}, { 'fixture-native-build': '1.0.0' });
+          const marker = join(project, 'native-build-marker');
+          if (command === 'ci') {
+            await runNpm(project, ['install', '--package-lock-only'], { marker, registry });
+          }
           await runNpm(project, [command], { marker, registry });
           await readFile(join(project, 'node_modules/fixture-native-build/binding.gyp'));
           await expect(readFile(marker)).rejects.toMatchObject({ code: 'ENOENT' });
