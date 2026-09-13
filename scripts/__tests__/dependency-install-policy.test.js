@@ -22,15 +22,18 @@ const createTemporaryDirectory = async (prefix) => {
 
 const runNpm = async (directory, args, options = {}) => {
   const cache = options.cache ?? join(directory, '.npm-cache');
+  const environment = Object.fromEntries(Object.entries(process.env).filter(([key]) => !/^npm_config_/i.test(key)));
   return execFile(process.execPath, [npmCli, ...args], {
     cwd: directory,
     env: {
-      ...process.env,
+      ...environment,
       INSTALL_MARKER: options.marker,
       npm_config_audit: 'false',
       npm_config_cache: cache,
       npm_config_fund: 'false',
       npm_config_registry: options.registry,
+      npm_config_userconfig: join(directory, 'empty-user-npmrc'),
+      npm_config_globalconfig: join(directory, 'empty-global-npmrc'),
     },
     maxBuffer: 1024 * 1024,
   });
@@ -41,6 +44,8 @@ const writeJson = (path, value) => writeFile(path, `${JSON.stringify(value, null
 const createProject = async (allowScripts = {}, dependencies = {}) => {
   const directory = await createTemporaryDirectory('impactlist-install-policy-');
   await writeFile(join(directory, '.npmrc'), projectPolicy.npmrc);
+  await writeFile(join(directory, 'empty-user-npmrc'), '');
+  await writeFile(join(directory, 'empty-global-npmrc'), '');
   await writeJson(join(directory, 'package.json'), {
     name: 'install-policy-test-project',
     version: '1.0.0',
@@ -56,7 +61,7 @@ const createProject = async (allowScripts = {}, dependencies = {}) => {
   return directory;
 };
 
-const createPackageTarball = async (name, version, installScript) => {
+const createPackageTarball = async (name, version, installScript, extraFiles = {}) => {
   const directory = await createTemporaryDirectory('impactlist-install-package-');
   const packageDirectory = join(directory, 'package');
   await mkdir(packageDirectory);
@@ -66,6 +71,9 @@ const createPackageTarball = async (name, version, installScript) => {
     ...(installScript ? { scripts: { install: installScript } } : {}),
   });
   await writeFile(join(packageDirectory, 'index.js'), `export default '${version}';\n`);
+  for (const [name, contents] of Object.entries(extraFiles)) {
+    await writeFile(join(packageDirectory, name), contents);
+  }
 
   const tarball = join(directory, `${name}-${version}.tgz`);
   await execFile('tar', ['-czf', tarball, '-C', directory, 'package']);
@@ -86,7 +94,7 @@ const listen = (server) =>
 const close = (server) =>
   new Promise((resolve, reject) => server.close((error) => (error ? reject(error) : resolve())));
 
-const withRegistryPackage = async (name, tarballs, callback) => {
+const withRegistryPackage = async (name, tarballs, callback, installScript = markerInstallScript) => {
   let registryOrigin;
   const server = createServer(async (request, response) => {
     const tarballEntry = [...tarballs.entries()].find(
@@ -107,7 +115,7 @@ const withRegistryPackage = async (name, tarballs, callback) => {
       await Promise.all(
         [...tarballs.entries()].map(async ([version, tarball]) => [
           version,
-          await registryVersion(name, version, tarball, registryOrigin, markerInstallScript),
+          await registryVersion(name, version, tarball, registryOrigin, installScript),
         ])
       )
     );
@@ -142,6 +150,7 @@ beforeAll(async () => {
     readFile(join(repositoryRoot, 'package.json'), 'utf8').then(JSON.parse),
   ]);
   expect(npmVersion.trim()).toBe(packageJson.engines.npm);
+  expect(packageJson.packageManager).toBe(`npm@${packageJson.engines.npm}`);
   projectPolicy = { npmrc, packageJson };
 });
 
@@ -150,17 +159,13 @@ afterEach(async () => {
 });
 
 describe('dependency install-script policy', () => {
-  test('rejects an unreviewed install script before it can run', async () => {
+  test('installs an unreviewed dependency without running its install script', async () => {
     const project = await createProject();
     const tarball = await createPackageTarball('fixture-unapproved', '1.0.0', markerInstallScript);
     const marker = join(project, 'unapproved-marker');
 
     await withRegistryPackage('fixture-unapproved', new Map([['1.0.0', tarball]]), async (registry) => {
-      await expect(
-        runNpm(project, ['install', 'fixture-unapproved@1.0.0'], { marker, registry })
-      ).rejects.toMatchObject({
-        code: 1,
-      });
+      await runNpm(project, ['install', 'fixture-unapproved@1.0.0'], { marker, registry });
     });
     await expect(readFile(marker)).rejects.toMatchObject({ code: 'ENOENT' });
   });
@@ -177,7 +182,7 @@ describe('dependency install-script policy', () => {
     await expect(readFile(marker)).rejects.toMatchObject({ code: 'ENOENT' });
   });
 
-  test('runs an exactly approved version and requires review again for a version change', async () => {
+  test('only runs an exactly approved version when explicitly rebuilding with scripts enabled', async () => {
     const project = await createProject({ 'fixture-approved@1.0.0': true });
     const approvedTarball = await createPackageTarball('fixture-approved', '1.0.0', markerInstallScript);
     const changedTarball = await createPackageTarball('fixture-approved', '1.0.1', markerInstallScript);
@@ -191,20 +196,24 @@ describe('dependency install-script policy', () => {
       ]),
       async (registry) => {
         await runNpm(project, ['install', 'fixture-approved@1.0.0'], { marker, registry });
+        await expect(readFile(marker)).rejects.toMatchObject({ code: 'ENOENT' });
+        await runNpm(project, ['rebuild', 'fixture-approved@1.0.0', '--ignore-scripts=false'], { marker, registry });
         expect(await readFile(marker, 'utf8')).toBe('ran');
 
         await rm(marker);
+        await runNpm(project, ['install', 'fixture-approved@1.0.1'], { marker, registry });
         await expect(
-          runNpm(project, ['install', 'fixture-approved@1.0.1'], { marker, registry })
+          runNpm(project, ['rebuild', 'fixture-approved@1.0.1', '--ignore-scripts=false'], { marker, registry })
         ).rejects.toMatchObject({
           code: 1,
+          stderr: expect.stringContaining('ESTRICTALLOWSCRIPTS'),
         });
       }
     );
     await expect(readFile(marker)).rejects.toMatchObject({ code: 'ENOENT' });
   });
 
-  test('applies the same approval when npm ci restores the lockfile', async () => {
+  test('suppresses even approved scripts when npm ci restores the lockfile', async () => {
     const tarball = await createPackageTarball('fixture-approved-ci', '1.0.0', markerInstallScript);
     const project = await createProject({ 'fixture-approved-ci@1.0.0': true }, { 'fixture-approved-ci': '1.0.0' });
     const marker = join(project, 'ci-marker');
@@ -212,11 +221,45 @@ describe('dependency install-script policy', () => {
     await withRegistryPackage('fixture-approved-ci', new Map([['1.0.0', tarball]]), async (registry) => {
       await runNpm(project, ['install'], { marker, registry });
       await rm(join(project, 'node_modules'), { recursive: true, force: true });
-      await rm(marker);
       await runNpm(project, ['ci'], { marker, registry });
     });
 
-    expect(await readFile(marker, 'utf8')).toBe('ran');
+    await expect(readFile(marker)).rejects.toMatchObject({ code: 'ENOENT' });
+  });
+
+  test('suppresses unapproved scripts in the locked npm ci path', async () => {
+    const tarball = await createPackageTarball('fixture-unapproved-ci', '1.0.0', markerInstallScript);
+    const project = await createProject({}, { 'fixture-unapproved-ci': '1.0.0' });
+    const marker = join(project, 'ci-marker');
+    await withRegistryPackage('fixture-unapproved-ci', new Map([['1.0.0', tarball]]), async (registry) => {
+      await runNpm(project, ['install', '--package-lock-only'], { marker, registry });
+      await runNpm(project, ['ci'], { marker, registry });
+      await readFile(join(project, 'node_modules/fixture-unapproved-ci/package.json'));
+    });
+    await expect(readFile(marker)).rejects.toMatchObject({ code: 'ENOENT' });
+  });
+
+  test('suppresses implicit native builds omitted from registry metadata for install and ci', async () => {
+    const project = await createProject({}, { 'fixture-native-build': '1.0.0' });
+    const marker = join(project, 'native-build-marker');
+    const tarball = await createPackageTarball('fixture-native-build', '1.0.0', undefined, {
+      'binding.gyp': JSON.stringify({
+        variables: { marker: "<!(node -e \"require('fs').writeFileSync(process.env.INSTALL_MARKER, 'ran')\")" },
+        targets: [{ target_name: 'fixture', sources: [] }],
+      }),
+    });
+    await withRegistryPackage(
+      'fixture-native-build',
+      new Map([['1.0.0', tarball]]),
+      async (registry) => {
+        for (const command of ['install', 'ci']) {
+          await runNpm(project, [command], { marker, registry });
+          await readFile(join(project, 'node_modules/fixture-native-build/binding.gyp'));
+          await expect(readFile(marker)).rejects.toMatchObject({ code: 'ENOENT' });
+        }
+      },
+      null
+    );
   });
 });
 
@@ -230,6 +273,7 @@ describe('minimum release age policy', () => {
     ]);
     let includeRecentVersion = false;
     let registryOrigin;
+    const daysAgo = (days) => new Date(Date.now() - days * 24 * 60 * 60 * 1000).toISOString();
 
     const server = createServer(async (request, response) => {
       if (tarballs.has(request.url)) {
@@ -258,8 +302,8 @@ describe('minimum release age policy', () => {
           time: {
             created: '2020-01-01T00:00:00.000Z',
             modified: new Date().toISOString(),
-            '1.0.0': '2020-01-01T00:00:00.000Z',
-            ...(includeRecentVersion ? { '1.1.0': new Date().toISOString() } : {}),
+            '1.0.0': daysAgo(7.5),
+            ...(includeRecentVersion ? { '1.1.0': daysAgo(6.5) } : {}),
           },
         })
       );

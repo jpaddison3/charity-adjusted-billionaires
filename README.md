@@ -31,13 +31,15 @@ Join [the discord](https://discord.gg/6GNre8U2ta) to learn more about these and 
 3. Install the npm version pinned in `package.json`, verify the toolchain, and install the locked dependencies:
 
    ```sh
-   npm install --global npm@11.16.0 --ignore-scripts
+   npm install --global "npm@$(node -p "require('./package.json').engines.npm")" --ignore-scripts
    node --version
    npm --version
-   npm ci
+   npm run setup
    ```
 
    The version checks should report Node 24.x and npm 11.16.0.
+   `setup` runs `npm ci` with dependency scripts disabled, then explicitly initializes Husky with `npm run prepare`.
+   CI and Vercel use the same setup command; Vercel also bootstraps the pinned npm before installation.
 
 4. Generate data
    ```
@@ -165,11 +167,20 @@ Each worktree can be linked to a different Vercel project, and `vercel pull` ove
 
 ### Dependency updates and install scripts
 
-The committed npm policy waits seven days before selecting a newly published package version and rejects dependency
-install scripts unless `package.json#allowScripts` explicitly approves that package and version. `fsevents` install scripts
-are explicitly denied because its packaged macOS binary and watcher fallbacks work without them. These safeguards cover
-installation only; they do not sandbox dependency code when the application or development tools run. npm's explicit
-command-line and environment overrides also remain available.
+The committed npm policy waits seven days before selecting a newly published package version and disables dependency
+install scripts with `ignore-scripts=true`. Fresh setup uses `npm run setup` to install the lockfile and explicitly initialize
+Husky. Data generation is part of the `dev`, `test`, `test:run`, `test:coverage`, `test:watch`, and `build` commands themselves,
+so it still runs with automatic lifecycle hooks disabled. The locked esbuild and fsevents packages work with their packaged
+binaries and watcher fallbacks; normal setup does not need their install hooks.
+
+`strict-allow-scripts` and the version-specific `allowScripts` entries remain an extra check for an intentional rebuild with
+scripts enabled. They are not the default execution barrier: npm 11.16.0 can discover a tarball's `binding.gyp` only after its
+strict preflight and run an implicit native build even when registry metadata declares no scripts. The install-policy
+fixtures cover this case under both `npm install` and `npm ci`. Do not re-enable scripts for a general install. If a reviewed
+package needs a rebuild, target its reviewed exact version, for example `npm rebuild esbuild@0.25.2 --ignore-scripts=false`.
+
+These safeguards cover installation only; they do not sandbox dependency code when the application or development tools
+run. npm's explicit command-line and environment overrides remain available.
 
 Before installing a dependency update, review the manifest and lockfile diffs, publication dates, package provenance and
 source, and changes to any install code or helpers it invokes (including binary-download fallbacks). Keep approvals
@@ -188,4 +199,4 @@ Keep the committed seven-day default unchanged and document why the exception wa
 
 When running `npm audit` or `npm audit fix`, add `--omit=dev` to analyze only the dependencies in the deployed app/runtime.
 `npm audit fix --omit=dev` prunes devDependencies from `node_modules`; repeat the pinned toolchain checks above and run
-`npm ci` afterwards to restore the reproducible development environment.
+`npm run setup` afterwards to restore the reproducible development environment and hooks.
