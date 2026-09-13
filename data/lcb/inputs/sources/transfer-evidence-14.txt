@@ -1,0 +1,617 @@
+PDF PAGE 1
+ 
+ 
+BILL & MELINDA GATES FOUNDATION TRUST 
+Financial Statements 
+December 31, 2010 and 2009 
+(With Independent Auditors’ Report Thereon) 
+ 
+
+PDF PAGE 2
+ 
+ 
+Independent Auditors’ Report 
+The Trustees 
+Bill & Melinda Gates Foundation Trust: 
+We have audited the accompanying statements of financial position of the Bill & Melinda G ates 
+Foundation Trust (the Trust) as of December 31, 2010 and 2009, and the related statements of activities 
+and cash flows for the years then ended. These financial statements are the responsibility of the Trust ’s 
+management. Our responsibility is to express an opinion on these financial statements based on our audits. 
+We conducted our audits in accordance with auditing standards generally accepted in the United States of 
+America. Those standards require that we plan and perform the audit to obtain reasonable assurance about 
+whether the financial statements are free of material misstatement. An audit includes consideration of 
+internal control over financial reporting as a basis for designing audit procedures that are appropriate in the 
+circumstances, but not for the purpose of expressing an opinion on the effectiveness of the Trust ’s internal 
+control over financial reporting. Accordingly, we express no such opinion. An audit also includes 
+examining, on a test basis, evidence supporting the am ounts and disclosures in the financial statements, 
+assessing the accounting principles used and significant estimates made by management, as well as 
+evaluating the overall financial statement presentation. We believe that our audits provide a reasonable 
+basis for our opinion. 
+In our opinion, the financial statements referred to above present fairly, in all material respects, the 
+financial position of the Bill & Melinda Gates Foundation Trust as of December  31, 2010 and 2009, and 
+the changes in its net asset s and its cash flows for the years then ended in conformity with U.S.  generally 
+accepted accounting principles. 
+ 
+May 26, 2011 
+KPMG LLP 
+Suite 900 
+801 Second Avenue 
+Seattle, WA 98104 
+KPMG LLP, is Delaware limited liability partnership, 
+the U.S. member firm of KPMG International Cooperative 
+(“KPMG International”), a Swiss entity. 
+
+
+PDF PAGE 3
+2
+BILL & MELINDA GATES FOUNDATION TRUST
+Statements of Financial Position
+December 31, 2010 and 2009
+(In thousands)
+Assets 2010 2009
+Cash $ 215,710    255,626    
+Investments 36,479,855   33,136,308   
+Investments loaned under secured lending transactions 329,882   497,166   
+Investment sales receivable 151,217   87,836   
+Interest and dividends receivable 89,278   111,330   
+Total assets $ 37,265,942    34,088,266    
+L
+iabilities and Net Assets
+Liabilities:
+Accounts payable and other accrued liabilities $ 2,696   1,466   
+Payable under investment loan agreements 335,119   507,849   
+Investment purchases payable 157,568   118,664   
+Federal current and deferred excise tax payable 50,350   20,490   
+Total liabilities 545,733    648,469    
+N
+et assets – unrestricted 36,720,209
+ 
+ 
+ 33,439,797
+ 
+ 
+ 
+T
+otal liabilities and net assets $ 37,265,942
+ 
+ 
+ 34,088,266
+ 
+ 
+ 
+S
+ee accompanying notes to financial statements.
+
+PDF PAGE 4
+3
+BILL & MELINDA GATES FOUNDATION TRUST
+Statements of Activities
+Years ended December 31, 2010 and 2009
+(In thousands)
+2010 2009
+Change in net assets:
+Revenues and gains:
+Contributions $ 2,007,803   1,752,905   
+Investment income, net 4,486,493   5,809,084   
+Total revenues and gains 6,494,296    7,561,989    
+E
+xpenses:
+Grants to the Bill & Melinda Gates Foundation 3,161,730   3,626,100   
+Federal excise and other taxes expense 52,154   70,578   
+Total expenses, net 3,213,884    3,696,678    
+C
+hange in net assets 3,280,412
+ 
+ 
+ 3,865,311
+ 
+ 
+ 
+U
+nrestricted net assets, beginning of year 33,439,797
+ 
+ 
+ 29,574,486
+ 
+ 
+ 
+U
+nrestricted net assets, end of year $ 36,720,209
+ 
+ 
+ 33,439,797
+ 
+ 
+ 
+S
+ee accompanying notes to financial statements.
+
+PDF PAGE 5
+4
+BILL & MELINDA GATES FOUNDATION TRUST
+Statements of Cash Flows
+Years ended December 31, 2010 and 2009
+(In thousands)
+2010 2009
+Cash flows from operating activities:
+Change in net assets $ 3,280,412   3,865,311   
+Adjustments to reconcile change in net assets to net cash
+used in operating activities:
+Stock and non-cash contributions (1,615,657)  (1,598,771)  
+Net realized and unrealized gains on investments (4,230,516)  (5,268,724)  
+Changes in operating assets and liabilities:
+Interest and dividends receivable 22,052   30,583   
+Federal current and deferred excise tax receivable —    44,119   
+Accounts payable and other accrued liabilities 1,230   967   
+Federal current and deferred excise tax payable 29,860   20,490   
+Net cash used in operating activities ( 2,512,619)  ( 2,906,025)  
+C
+ash flows from investing activities:
+Purchases of investments (215,227,372)  (211,743,762)  
+Proceeds from sales of investments 217,700,075   214,600,229   
+Net cash provided by investing activities 2,472,703    2,856,467    
+N
+et decrease in cash and cash equivalents (
+39,916) 
+ (
+49,558) 
+ 
+C
+ash, beginning of year 255,626
+ 
+ 
+ 305,184
+ 
+ 
+ 
+C
+ash, end of year $ 215,710
+ 
+ 
+ 255,626
+ 
+ 
+ 
+S
+upplemental disclosure of cash flow information:
+Cash paid during the year for excise taxes $ 22,023   5,975   
+See accompanying notes to financial statements.
+
+PDF PAGE 6
+BILL & MELINDA GATES FOUNDATION TRUST 
+Notes to Financial Statements 
+December 31, 2010 and 2009 
+(In thousands) 
+ 5 (Continued) 
+(1) Organization 
+The Bill & Meli nda Gates Foundation Trust (the  Trust) is a charitable trust that holds the donated 
+investment assets from Bill and Melinda Gates, and receives contributions from Warren Buffett. The Trust 
+operates its main office in Seattle, Washington. Bill and Melinda Gates are its Trustees. The primary role 
+of the Trust is to manage the investment assets and transfer proceeds to the Bill & Melind a Gates 
+Foundation (the Foundation) as necessary to achieve the Foundation ’s charitable goals (see note 8 Related 
+Parties). 
+(2) Summary of Significant Accounting Policies 
+(a) Basis of Financial Presentation 
+The accompanying financial statements have been prepared on the accrual basis of accounting. 
+The Trust recognizes contributions, including unconditional promises to give, as revenue in the 
+period received. Contributions, net assets, and changes therein are classified and reported based on 
+the existence or absence of donor -imposed restrictions. For the years ended December  31, 2010 and 
+2009, all activities of the Trust were classified as unrestricted due to the lack of donor -imposed 
+restrictions. 
+(b) Cash 
+Cash consists of U.S. and foreign currencies. 
+(c) Investments 
+Investments are stated at fair value. The estimated fair value of investments is based on quoted 
+market prices, except for alternative investments for which quoted market prices are not available. 
+Alternative investments include private equity interests, commin gled funds, nonreadily marketable 
+bonds and notes, and other investments. The estimated fair value of certain alternative investments, 
+such as private equity interests, is based on valuations provided by the general partner. The Trust 
+reviews and evaluates the values provided by the general partner and assesses the valuation methods 
+and assumptions used in determining the fair value of private equity investments. Other alternative 
+investments are valued in a variety of ways including broker quotations and pricing models. 
+Alternative investments make up less than 5% of total investments. Because alternative investments 
+are not readily marketable, their estimated value is subject to uncertainty and therefore may differ 
+from the value that would have been used had a ready market for such investments existed. Such 
+difference could be material. Unrealized gains or losses on investments resulting from fair value 
+fluctuations are recorded in the statement of activities in the period that such fluctuations occur. 
+There have been no changes to the valuation policy during the year ended December 31, 2010. 
+Investment sales and purchases are recorded on a trade- date basis, which results in both investment 
+receivables and payables on unsettled investment trades. Dividend i ncome is recorded based upon 
+the ex -dividend date, and interest income is recorded as earned on an accrual basis. Futures, 
+forwards, and options contracts are marked to market with the change reflected in investment 
+income. 
+
+PDF PAGE 7
+BILL & MELINDA GATES FOUNDATION TRUST 
+Notes to Financial Statements 
+December 31, 2010 and 2009 
+(In thousands) 
+ 6 (Continued) 
+(d) Fair Value of Financial Instruments 
+The Trust utilizes valuation techniques that maximize the use of observable inputs and minimize the 
+use of unobservable inputs to the extent possible. The Trust determines fair value based on 
+assumptions that market participants would use in pricing an asset or liability in the principal or most 
+advantageous market. When considering market participant assumptions in fair value measurements, 
+the following fair value hierarchy distinguishes between observable and unobservable inputs, which 
+are characterized in one of the following levels: 
+• Level 1 Inputs: Unadjusted quoted prices in active markets for identical assets or liabilities 
+accessible to the reporting entity at the measurement date. 
+• Level 2 Inputs: Other than quoted prices included in Level 1 inputs that are observable for the 
+asset or liability, either directly or indirectly, for substantially the full term of the asset or 
+liability. 
+• Level 3 Inputs: Unobservable inputs for the asset or liability used to measure fair value to the 
+extent that observable inputs are not available, thereby allowing for situations in which there is 
+little, if any, market activity for the asset or liability at measurement date. 
+(e) Contributed Services 
+Contributed services are recognized if the services received (a) create or enhance long-lived assets or 
+(b) require specialized skills, are provided by individuals possessing those skills, and would typically 
+need to be purchased if not provided by donation. The value of contributed services recorded in the 
+accompanying statement  of activities, consisting primarily of investment management services 
+donated by Bill Gates, totaled $386,508 and $154,134 for the years ended December  31, 2010 and 
+2009, respectively. Investment management services contributed are reflected as contributi ons 
+revenue, and as investment management services expense, which is netted against investment 
+income. 
+(f) Tax-Exempt Status 
+The Trust is exempt from federal income taxes under Section  501(c)(3) and is classified as a p rivate 
+foundation under Section 509(a) of the Internal Revenue Code. The Trust is subject to federal excise 
+taxes as well as federal and state unrelated business income tax. In addition, some investments in 
+foreign countries are subject to foreign income tax. 
+(g) Use of Estimates 
+The preparation of f inancial statements in conformity with U.S.  generally accepted accounting 
+principles requires management to make estimates and assumptions that affect the reported amounts 
+of assets and liabilities and disclosure of contingent assets and liabilities at the date of the financial 
+statements and the reported amounts of revenues and expenses during the reporting period. Actual 
+results could differ from those estimates. 
+
+PDF PAGE 8
+BILL & MELINDA GATES FOUNDATION TRUST 
+Notes to Financial Statements 
+December 31, 2010 and 2009 
+(In thousands) 
+ 7 (Continued) 
+(h) Contributions Received 
+The Trust receives contributions from related and unrelated parties. R elated-party contributions in 
+2010 and 2009 were received from Warren Buffett and Bill Gates. Warren Buffett contributed 
+Berkshire Hathaway “ B” shares valued at $1,604,577 and $1,248,770 in 2010 and 2009, 
+respectively. Bill Gates made cash and non- cash contributions of $16,061 in 2010 and $350,001 in 
+2009. In addition, Bill Gates contributed third- party management fees totaling $44,758 and $34,533 
+in 2010 and 2009, respectively, which are a part of the contributed investment management services 
+as described in note 2(e). Contributions from unrelated parties are only accepted by the Trust if they 
+are unrestricted. From time to time, the Trust is notified that it has been named as the beneficiary in 
+the estate of certain individuals under revocable agreements.  Such amounts are recorded as 
+contributions upon the passing of the donor and the amounts become irrevocable. 
+(3) Investments 
+At December 31, 2010 and 2009, the Trust’s investments consist of the following: 
+2010 2009
+Cash equivalents $ 391,083   303,538   
+Equities:
+Berkshire Hathaway “B” Shares 7,158,594   5,191,676   
+Consumer goods 4,924,662   3,367,368   
+Energy 702,546   567,689   
+Financials 1,126,816   928,972   
+Healthcare 360,431   243,167   
+Industrials 3,972,304   2,577,722   
+Information technology 812,628   501,593   
+Materials 1,075,261   396,501   
+Telecommunications and utilities 452,405   426,437   
+Commingled and other 874,726   686,290   
+Debt:
+U.S. government securities 7,978,249   10,724,735   
+U.S. municipals 7,930   4,214   
+Foreign government securities 2,096,887   2,530,136   
+Corporate debt securities 2,117,353   2,718,079   
+Mortgage-backed securities 673,509   710,899   
+Other debt securities 411,083   474,936   
+Derivative contracts 291,350   104,894   
+Private investments 1,381,920   1,174,628   
+36,809,737   33,633,474   
+Less investments loaned under secured lending transactions (329,882)  (497,166)  
+Total investments $ 36,479,855   33,136,308   
+ 
+
+PDF PAGE 9
+BILL & MELINDA GATES FOUNDATION TRUST 
+Notes to Financial Statements 
+December 31, 2010 and 2009 
+(In thousands) 
+ 8 (Continued) 
+ASC Subtopic 820-10 allows for the use of a practical expedient for the estimation of the fair value of 
+investments in investment companies for which the investment does not have a readily determinable fair 
+value. The practical expedient used by the Trust to value private investment s is the NAV per share, or its 
+equivalent. In some instances, the NAV may not equal the fair value that would be calculated under fair 
+value accounting standards. Valuations provided by fund administrators consider variables such as the 
+financial performance of underlying investments, recent sales prices of underlying investments and other 
+pertinent information. In addition, actual market exchanges at year -end provide additional observable 
+market inputs of the exit price. The Trust reviews valuations and assumptions provided by fund 
+administrators for reasonableness and believes that the carrying amounts of these financial instruments are 
+reasonable estimates of fair value. 
+Investment income comprises the following for the years ended December 31, 2010 and 2009: 
+2010 2009
+Interest and dividend income $ 661,976   714,757   
+Net realized and unrealized gains on investments 4,230,516   5,268,724   
+Investment expenses:
+Investment management expenses (388,118)  (154,134)  
+Third-party investment management and custodian fees
+and other expenses (17,881)  (20,263)  
+Investment income, net $ 4,486,493   5,809,084   
+ 
+
+PDF PAGE 10
+BILL & MELINDA GATES FOUNDATION TRUST 
+Notes to Financial Statements 
+December 31, 2010 and 2009 
+(In thousands) 
+ 9 (Continued) 
+The following tables present the placement in the fair value hierarchy of assets and liabilities that are 
+measured at fair value on a recurring basis at December 31, 2010 and 2009: 
+Quoted
+prices
+in active Significant
+markets for other Significant
+identical observable unobservable
+December 31, assets inputs inputs
+2010 (Level 1) (Level 2) (Level 3)
+Cash equivalents $ 391,083   391,083   —    —    
+Equities:
+Berkshire Hathaway “B”
+Shares 7,158,594   7,158,594   —    —    
+Consumer goods 4,924,662   4,924,381   —    281   
+Energy 702,546   702,546   —    —    
+Financials 1,126,816   1,126,816   —    —    
+Healthcare 360,431   360,431   —    —    
+Industrials 3,972,304   3,972,241   —    63   
+Information technology 812,628   812,628   —    —    
+Materials 1,075,261   1,075,261   —    —    
+Telecommunications and
+utilities 452,405   452,405   —    —    
+Commingled and other 874,726   833,076   29,610   12,040   
+Debt:
+U.S. government securities 7,648,367   7,503,010   145,357   —    
+U.S. municipals 7,930   —    7,930   —    
+Foreign government securities 2,096,887   2,096,887   —    —    
+Corporate debt securities 2,117,353   —    2,109,836   7,517   
+Mortgage-backed securities 673,509   —    664,041   9,468   
+Other debt securities 411,083   —    409,632   1,451   
+Derivative contracts 291,350   (573)  291,921   2   
+Private investments 1,381,920   —    433,401   948,519   
+$ 36,479,855   31,408,786   4,091,728   979,341   
+ 
+U.S. government securities in the above table is net of investments loaned under secured lending 
+transactions of $329,882, of which all are related to level 1 assets. 
+Given the nature of private investments, some of the holdings represented here cannot be liquidated 
+immediately were such a need to arise. Many of the private investments held on December  31, 2009 and 
+December 31, 2010 require general partner or managing member approval, and a 10- 90 day waiting period 
+to liquidate the investment. Additionally, some holdings require that membership not exceed a certain 
+number of owners. 
+
+PDF PAGE 11
+BILL & MELINDA GATES FOUNDATION TRUST 
+Notes to Financial Statements 
+December 31, 2010 and 2009 
+(In thousands) 
+ 10 (Continued) 
+Quoted
+prices
+in active Significant
+markets for other Significant
+identical observable unobservable
+December 31, assets inputs inputs
+2009 (Level 1) (Level 2) (Level 3)
+Cash equivalents $ 303,538   303,538   —    —    
+Equities:
+Berkshire Hathaway Class B 5,191,676   5,191,676   
+Consumer goods 3,367,368   3,367,368   —    —    
+Energy 567,689   567,035   —    654   
+Financials 928,972   928,972   —    —    
+Healthcare 243,167   243,167   —    —    
+Industrials 2,577,722   2,577,718   —    4   
+Information technology 501,593   501,593   —    —    
+Materials 396,501   396,501   —    —    
+Telecommunications and
+utilities 426,437   426,437   —    —    
+Commingled and other 686,290   594,757   82,150   9,383   
+Debt:
+U.S. government securities 10,227,569   9,393,588   830,935   3,046   
+U.S. municipals 4,214   —    4,214   —    
+Foreign government securities 2,530,136   —    2,530,136   —    
+Corporate debt securities 2,718,079   —    2,711,205   6,874   
+Mortgage-backed securities 710,899   —    703,194   7,705   
+Other debt securities 474,936   —    427,380   47,556   
+Derivative contracts 104,894   (653)  105,547   —    
+Private investments 1,174,628   —    374,839   799,789   
+$ 33,136,308   24,491,697   7,769,600   875,011   
+ 
+U.S. government securities in the above table is net of investments loaned under secured lending 
+transactions of $497,166, of which $487,414 related to level 1 assets, and $9,752 related to level 2 assets. 
+
+PDF PAGE 12
+BILL & MELINDA GATES FOUNDATION TRUST 
+Notes to Financial Statements 
+December 31, 2010 and 2009 
+(In thousands) 
+ 11 (Continued) 
+The following is a summary of 2010 significant transfers into and out of Level  1 and Level  2 fair value 
+measurements. 
+Level 1 Level 2
+transfers in transfers out transfer in transfers out
+Equities:
+Commingled and other $ 71,585   —    —    71,585   
+Debt:
+U.S. government securities 35,015   —    —    35,015   
+Foreign government securities 720,808   —    —    720,808   
+$ 827,408   —    —    827,408   
+ 
+The following is a reconciliation of investments in which signifi cant unobservable inputs (Level  3) were 
+used in determining fair value for 2010 and 2009 respectively: 
+Total
+Balance as of realized and Balance as of
+December 31, unrealized Purchases and Net December 31,
+2009 gains (losses) (settlements) transfers out 2010
+Equities:
+Consumer goods $ —  (1,472) 1,753  —  281  
+Energy 654  43  —  (697) —  
+Financials —  (141) 141  —  —  
+Industrials 4  63  (4) —  63  
+Commingled and other 9,383  (4,426) 7,217  (134) 12,040  
+Debt:
+U.S. government securities 3,046  (769) (23) (2,254) —  
+Corporate debt securities 6,874  (11,508) 12,680  (530) 7,516  
+Mortgage-backed securities 7,705  (403) 3,239  (1,074) 9,467  
+Other debt securities 47,556  (655) (25,952) (19,496) 1,453  
+Derivatives Contracts —  —  2  —  2  
+Private investments 799,789  60,352  88,378  —  948,519  
+$ 875,011  41,084  87,431  (24,185) 979,341  
+ 
+The Trust records net transfers in (out) of Level  3 as of December  31. Unrealized gains included in 
+investment income related to Level 3 assets held as of December 31, 2010 totaled $41,653. 
+
+PDF PAGE 13
+BILL & MELINDA GATES FOUNDATION TRUST 
+Notes to Financial Statements 
+December 31, 2010 and 2009 
+(In thousands) 
+ 12 (Continued) 
+Total
+Balance as of realized and Balance as of
+December 31, unrealized Purchases and Net December 31,
+2008 gains (losses) (settlements) transfers in 2009
+Equities:
+Consumer goods $ —  (438) (546) 984  —  
+Energy —  (9,154) 9,808  —  654  
+Financials 516  (220) (296) —  —  
+Industrials —  —  4  —  4  
+Materials 328  (328) —  —  —  
+Commingled and other 119,489  4,697  (114,892) 89  9,383  
+Debt:
+U.S. government securities 2,842  204  —  —  3,046  
+U.S. municipals 5,000  (3) (4,997) —  —  
+Corporate debt securities 33,091  2,715  (17,504) (11,428) 6,874  
+Mortgage-backed securities 1,373  2,401  4,490  (559) 7,705  
+Other debt securities 1,020  (4,587) 50,076  1,047  47,556  
+Private investments 744,026  (8,612) 5,222  59,153  799,789  
+$ 907,685  (13,325) (68,635) 49,286  875,011  
+ 
+Unrealized losses included in investment income related to Level  3 assets held as of December  31, 2009 
+totaled $12,856. 
+(4) Securities Lending 
+The Trust participates in securities lending transactions with a third- party investment company whereby 
+the Trust lends certain investments in exchange for a premium. Under the terms of its securities lending 
+agreement, the Trust requires collateral of a value at least equal to 102% of the fair value of loaned 
+domestic investments and accrued interest, if any. Collateral of a value at least equal to 105% of the fair 
+value and accrued interest, if any, is required on loaned international investments. The Trust maintains 
+effective control of the loaned investments during the term of the agreement, in that they may be redeemed 
+prior to the agreement’s maturity. Upon the maturity of the agreement, the borrower must return the same, 
+or substantially the same, investments that were borrowed. The prin cipal risks to the Trust of securities 
+lending are that the yield earned on the collateral is insufficient to cover the rebate owed to the borrower, 
+and that an investment purchased via the collateral reinvestment process becomes impaired. As of 
+December 31, 2010, amounts received as collateral and reinvested in other investments decreased $14,245 
+as a result of unrealized losses due to market declines, bringing the total value to $320,874. Investments 
+loaned under secured lending transactions totaled $329,882 and $497,166 as of December 31, 2010 and 
+2009, respectively. 
+Amounts received as collateral totaled $335,119 and $507,849 as of December  31, 2010 and 2009, 
+respectively. Amounts received as collateral are included in investments and as a payable under investment 
+loan agreements in the accompanying statements of financial position. 
+
+PDF PAGE 14
+BILL & MELINDA GATES FOUNDATION TRUST 
+Notes to Financial Statements 
+December 31, 2010 and 2009 
+(In thousands) 
+ 13 (Continued) 
+(5) Derivative Financial Instruments 
+In the normal course of business, the Trust uses various financial instruments, including derivative 
+financial instruments, in an effort to manage exposure on long-term investments. 
+In order to manage price and interest rate risk associated with investing activities, the Trust primarily uses 
+a combination of forward contracts and futures. Under these instruments, the Trust agrees to the future 
+delivery of a currency or security, on an agreed-upon date, and at an agreed-upon price. These contracts are 
+entered into with the intent of minimizing the Trust ’s economic exposure to adverse fluctuations in 
+financial or currency markets and to reduce interest rate risk. 
+The Trust also enters into derivative instruments for speculative and other purposes, including income 
+enhancement and as an alternative to ownership of the underlying asset. Specifically, written options and 
+forward contracts are used for enhancing returns on other investments and as an alternative to ownership. 
+All of the Trust’s derivative instrument positions are marked to current value as a component of investment 
+income. 
+The fair values of forward contracts, futures, options, and swaps  as of December 31, 2010 and 2009 are as 
+follows: 
+2010 fair 2009 fair
+value value
+Forward contracts $ 233,611   (11,348)  
+Futures —    —    
+Options 68,120   133,467   
+Swaps (10,381)  (17,225)  
+$ 291,350   104,894   
+ 
+Average notional purchases were $6,061,806 in forward contracts, $82 in futures, $484,095 in options, and 
+$45,048 in swaps. Average notional sales were $7,107,412 in forward contra cts, $51 in futures, $4 in 
+options, and $45,542 in swaps. Amounts due to the Trust of $81,126, as well as payable by the Trust of 
+$43,963 for open futures contracts are included in investment sales receivable and investment purchases 
+payable, respectively, within the statement of financial position as of December 31, 2010. 
+The Trust ’s derivative instruments involve varying degrees of risk of loss in excess of the amount 
+recognized in the statement of financial position, arising either from potential changes  in market prices or 
+the possible inability of counterparties to meet the terms of their contracts. The Trust monitors the financial 
+condition of the firms used for these contracts in order to minimize the risk of loss. Management believes 
+the Trust’s use of derivatives does not result in credit or market risk that would materially affect the Trust’s 
+financial statements. 
+
+PDF PAGE 15
+BILL & MELINDA GATES FOUNDATION TRUST 
+Notes to Financial Statements 
+December 31, 2010 and 2009 
+(In thousands) 
+ 14 (Continued) 
+(6) Federal Excise Taxes 
+The Trust is subject to federal excise taxes imposed on private foundations at 2%, or at 1% if certain 
+conditions are met. The excise tax is imposed on net investment income, as defined under federal law, 
+which includes interest, dividends, and net realized gains on the sale of investments. The Trust qualified 
+for a 1% excise tax rate for the years ended December 31, 2010 and 2009. The current portion of excise tax 
+expense is $18,851 and $26,424 for the years ended December 31, 2010 and 2009, respectively. 
+The Trust made provisions for deferred excise taxes, which were recorded at the 1% excise tax rate in 2010 
+and 2009. Deferred excise tax expense was $33,410 and $44,160 for the years ended December  31, 2010 
+and 2009, respectively, resulting from net unrealized gains on investments. 
+(7) Commitments and Contingencies 
+Legal Matters 
+In the ordinary course of business, the Trust is subject to certain legal actions. In the opinion of 
+management, such matters will not have a material effect on the financial position of the Trust. 
+(8) Related Parties 
+The Trust holds and invests assets to fund a related party, the Bill & Melinda Gates Foundation 
+(the Foundation). The Trust makes annual grants to the Foundation as necessary to carry out the 
+Foundation’s charitable goals. Neit her entity controls the other; however, they share two trustees in 
+common. In 2010 and 2009, the Trust made grants to the Foundation totaling $3,161,730 and $3,626,100, 
+respectively. 
+(9) Conditional Pledge Receivable 
+The Trust recognizes conditional promises t o give as revenues when the conditions are met. On June 26, 
+2006, Warren Buffett, a Trustee of the Foundation, pledged to the Trust ten million  shares of Berkshire 
+Hathaway “B” shares. The shares will be transferred in annual gifts of 5% of the balance of the earmarked 
+shares. Contributions from Mr. Buffett in 2010 and in prior years are as follows: 
+Berkshire Hathaway “B” shares contributed *
+Date Shares Value
+August 24, 2006 – July 1, 2008 71,313   $ 5,165,776   
+July 1, 2009 21,434   1,248,770   
+July 1, 2010 20,363   1,604,577   
+Total to date * 113,110   $ 8,019,123   
+ 
+* On January 21, 2010, Berkshire Hathaway “ B” shares split 50:1. All shares received prior to this 
+date and the total shares received to date have been converted to reflect this split. 
+
+PDF PAGE 16
+BILL & MELINDA GATES FOUNDATION TRUST 
+Notes to Financial Statements 
+December 31, 2010 and 2009 
+(In thousands) 
+ 15 
+Although Mr. Buffett did not designate any significant restrictions on the use of the contributions, he did 
+place three conditions on his remaining pledge: 
+(1) At least one of Bill or Melinda Gates must remain alive and active in the policy -setting and 
+administration of the Foundation. 
+(2) The Trust must continue to satisfy legal requirements qualifying his gift as charitable and not subject 
+to gift or other taxes. 
+(3) The value of his annual gift must be fully additive to the spending required by the Internal Revenue 
+Service Code (i.e., approximately 5% of the Trust ’s net assets). The additional spending required as 
+a condition of the gift will be based on the prior year’s contribution. 
+As this gift is conditional and the conditions cannot be satisfied in advance of each year ’s installment of 
+the gift, a receivable for the remaining contribution has not been reflected in the financial statements. 
+Rather, future contribution income will be recognized in annual installments as the conditions of the gift 
+are met. 
+(10) Subsequent Events 
+The Trust evaluated subsequent events from December 31, 2010 through May 26, 2011, the date on which 
+the financial statements were available to be issued. 

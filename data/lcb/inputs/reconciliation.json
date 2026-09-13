@@ -1,0 +1,244 @@
+{
+  "inspectionBaseline": {
+    "activeDonors": 78,
+    "activeDonationEventsBeforeCorrections": 1027,
+    "excludedDonorFiles": 1,
+    "excludedDonationFiles": 1,
+    "notes": "Counts describe the inspected checkout and are not population limits. Annual Buffett replacements increase the post-reconciliation event count."
+  },
+  "buffett": {
+    "removed": [
+      {
+        "date": "2006-11-25",
+        "recipient": "gates-foundation",
+        "amountUSD": 43000000000,
+        "reason": "Cumulative pledge/later-giving estimate, not a 2006 transfer."
+      },
+      {
+        "date": "2006-11-25",
+        "recipient": "susan-thompson-buffett-foundation",
+        "amountUSD": 5800000000,
+        "reason": "Cumulative estimate replaced by annual transfers."
+      },
+      {
+        "date": "2006-11-25",
+        "recipient": "howard-g-buffett-foundation",
+        "amountUSD": 2600000000,
+        "reason": "Cumulative estimate replaced by annual transfers."
+      },
+      {
+        "date": "2006-11-25",
+        "recipient": "sherwood-foundation",
+        "amountUSD": 2600000000,
+        "reason": "Cumulative estimate replaced by annual transfers."
+      },
+      {
+        "date": "2006-11-25",
+        "recipient": "novo-foundation",
+        "amountUSD": 2600000000,
+        "reason": "Cumulative estimate replaced by annual transfers."
+      },
+      {
+        "date": "2006-11-25",
+        "recipient": "glide-foundation",
+        "amountUSD": 53000000,
+        "reason": "Auction proceeds came from winning bidders; Buffett donated access rather than this cash."
+      }
+    ],
+    "replacement": {
+      "summerTransferYears": [
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "gatesFoundationAuditedTotalUSD": 47915285000,
+      "allFiveFoundationsEstimatedTotalUSD": 61610606000,
+      "valuation": "Gates Foundation Trust figures use audited fair values. Family-foundation values use same-transfer Berkshire share ratios and are explicitly estimated unless recipient filings supplied fair value.",
+      "separateSupplements": [
+        "2022-11-23",
+        "2023-11-21",
+        "2024-11-25",
+        "2025-11-10"
+      ],
+      "savedEvidenceNote": "Saved Trust financial statements cover annual Gates fair values;2011 is the2016-report cumulative through2011 less the2010-report cumulative through2010. For2017 the audited2019 statement supplies $2,404,602,000; the filed2017 ScheduleB has a more precise $2,404,602,169 and receiptJuly11 versus announced transferJuly10. Preserve the audited rounded annual series and use July precision. Family-foundation estimates use the documented share ratios (Susan0.1 of Gates; each sibling foundation0.035 through2012 and0.07 from2013); these are estimates, not independently audited recipient fair values."
+    }
+  },
+  "gates": {
+    "removedOrReplaced": [
+      {
+        "item": "1999 $1.265B UNCF and $750M Gavi rows",
+        "reason": "Downstream foundation grants already represented by foundation inflows."
+      },
+      {
+        "item": "Other university, library, PATH, and CMU foundation-out grants",
+        "reason": "Downstream grants removed under the once-only transfer rule."
+      },
+      {
+        "item": "2004 $3.3B row",
+        "reason": "Source described a multi-year plan, not a completed 2004 transfer."
+      },
+      {
+        "item": "2017 $4.68B row",
+        "replacement": "June 6 filing value of $4,636,480,000."
+      },
+      {
+        "item": "2022 $20B announcement row",
+        "replacement": "$500M cash received2022, $51.541M cash receivedJanuary2023 (previously booked as2022receivable), and $19,515,465,281 securities receivedDecember31,2022."
+      },
+      {
+        "item": "2025 $3.7B row",
+        "reason": "Rounded cumulative fact-sheet delta did not establish amount, contributor, or date."
+      }
+    ],
+    "pivotal": {
+      "filedTransfersUSD": 10826505730,
+      "legalRecipients": 4,
+      "unresolvedCommitmentRemainderUSD": 1673494270,
+      "removedMelindaAnnouncements": [
+        {
+          "date": "2024-05-28",
+          "reportedAmountUSD": 440000000,
+          "classification": "foundation-program-commitment",
+          "reason": "The source assigns the program to Pivotal Philanthropies Foundation (formed in 2022), not a new donor-level transfer. The seed combined $200M of organizational grants with $240M of leader-directed funds; later updated allocations differ. Neither $440M paid on May 28 nor funding by the October Bill Gates transfers is established.",
+          "sources": [
+            "https://www.pivotal.com/media/melinda-french-gates-announces-1-billion-dollar-commitment-advance-womens-power"
+          ]
+        },
+        {
+          "date": "2024-12-03",
+          "reportedAmountUSD": 500000,
+          "recipient": "vote-mama-foundation",
+          "classification": "unresolved-conditional-match",
+          "reason": "Up-to-$500K conditional match through December 13; actual paid match and donor-level payer not established. The recipient is a charity; this is not excluded as political giving.",
+          "sources": [
+            "https://www.every.org/votemama/f/a-million-for-mamas-vote"
+          ]
+        },
+        {
+          "date": "2024-12-03",
+          "reportedAmountUSD": 500000,
+          "recipient": "rosalynn-carter-institute-for-caregivers",
+          "classification": "unresolved-conditional-match",
+          "reason": "Up-to-$500K conditional match; actual paid match and donor-level payer not established.",
+          "sources": [
+            "https://apnews.com/article/5420658329b7094765f80e1a94b90829"
+          ]
+        },
+        {
+          "date": "2025-11-12",
+          "reportedAmountUSD": 250000000,
+          "classification": "downstream-foundation-daf-grants",
+          "reason": "Pivotal explicitly identifies Pivotal Philanthropies funding a National Philanthropic Trust DAF that then funded the Action for Women’s Health winners. This is not an additional personal inflow.",
+          "sources": [
+            "https://image.pivotal.com/-/media/Files/Pivotal/PPF/990/Understanding-a-Form-990-and-Pivotals-Giving-Terminology.pdf"
+          ]
+        },
+        {
+          "date": "2025-09-10",
+          "reportedAmountUSD": 50000000,
+          "recipient": "wellcome-leap",
+          "classification": "unresolved-partnership-commitment",
+          "reason": "The $100M partnership announcement and reported $50M Pivotal share do not establish the legal payer or a completed personal transfer date. Programs begin in 2026. No specific link to the October Bill Gates inflows is assumed.",
+          "sources": [
+            "https://wellcomeleap.org/news/pivotal_partnership_news/",
+            "https://abcnews.go.com/GMA/Wellness/melinda-gates-announces-100m-investment-womens-health-research/story?id=125409962"
+          ]
+        }
+      ],
+      "attributionCaveat": "Excluding these announcements does not establish that the October 2024 Bill Gates contributions funded them. Pivotal includes an LLC and distinct foundations; the shared brand alone does not identify the legal payer."
+    },
+    "unresolvedBalancesReference": "transfers.json#unresolvedBalances",
+    "savedEvidenceNote": "Saved1999 annual-report extract, January2000 announcement,2017/2022 Trust Form990-PF extracts, and all four2024 Pivotal ScheduleB documents are linked from dispositions through the source manifest."
+  },
+  "evidenceManifest": "sources.json",
+  "reviewCorrections": [
+    {
+      "fingerprint": "fa8b3423fa3df40d4627625a81e347287552c1e3c56e6714d4706daf72a1ccbe",
+      "previousDecision": "include",
+      "decision": "include",
+      "previousEffectiveDate": "2017-07-02",
+      "effectiveDate": "2017-06-06",
+      "sourceIds": [
+        "transfer-evidence-07",
+        "https://docs.gatesfoundation.org/documents/2017%20BMGFT%20Form%20990PF.PDF"
+      ],
+      "reason": "Saved 2017 Trust Schedule B, Part II, reports June 6, 2017 as the receipt date for 64 million Microsoft shares. Preserve this documented day."
+    },
+    {
+      "fingerprint": "f25c8ef0915f8d015d679eee80a6bfe0c095a096153a163681ec90e049416c5a",
+      "previousDecision": "include",
+      "decision": "exclude",
+      "previousEffectiveDate": "2019-07-02",
+      "effectiveDate": null,
+      "sourceIds": [
+        "https://ericschmidt.com/eric-and-wendy-schmidt-announce-new-1-billion-philanthropic-commitment-to-identify-develop-and-support-global-talent-working-in-service-of-others/",
+        "review-schmidt-2019-commitment"
+      ],
+      "reason": "The 2019 announcement is a multi-year commitment, not evidence of a completed personal transfer. Payments may overlap separately recorded foundation receipts; neither the commitment nor unresolved remainder is added to giving."
+    },
+    {
+      "fingerprint": "3b15f77e11d73831d6f2a5d09d739d82baca07fb2684d29148412381a1e62622",
+      "previousDecision": "include",
+      "decision": "exclude",
+      "previousEffectiveDate": "2025-07-02",
+      "effectiveDate": null,
+      "sourceIds": [
+        "https://www.thetimes.co.uk/article/jk-rowling-interview-2025-philanthropy-wk6hhcfc0"
+      ],
+      "reason": "The seed is an inferred cumulative Volant total since 2000, not a 2025 transfer. Annual completed amounts and their overlap with other giving remain unresolved."
+    },
+    {
+      "fingerprint": "ccc4b617b7afd62950286574b2ca1af46debbda77aa30ca8fbb4ac76116be214",
+      "previousDecision": "include",
+      "decision": "include",
+      "previousEffectiveDate": "2024-07-01",
+      "effectiveDate": "2024-01-16",
+      "sourceIds": [
+        "https://apnews.com/article/a9315aa44d18007abbfebb814fc84437",
+        "review-hastings-2024-month"
+      ],
+      "reason": "AP/Chronicle identifies January 2024 as the completed gift month. The exact day is not established; use the earlier middle day of January."
+    },
+    {
+      "fingerprint": "84f0d8938872e83b18be1b771131ccf5cdbbf3bf6fd82f44ed6b93b8fba8e603",
+      "previousDecision": "include",
+      "decision": "include",
+      "previousEffectiveDate": "2020-12-01",
+      "effectiveDate": "2021-07-02",
+      "sourceIds": [
+        "https://en.wikipedia.org/wiki/2021_Genesis_Prize#Aftermath",
+        "review-spielberg-2021-prize"
+      ],
+      "reason": "The primary March 2021 Genesis Prize announcement supports a 2021 prize allocation, not the fiscal period of a separate foundation contribution. Exact settlement timing is unverified; use the provisional 2021 midpoint. The seed June date is retained as seed text, not established timing."
+    },
+    {
+      "fingerprint": "2449c781a89fa0a31d90b983b75905815c88ccb36767029142935ba5f34b4ac6",
+      "previousDecision": "include",
+      "decision": "exclude",
+      "previousEffectiveDate": "2006-07-02",
+      "effectiveDate": null,
+      "sourceIds": [
+        "https://www.nti.org/news/nti-commits-50-million-iaea-nuclear-fuel-bank/",
+        "review-buffett-nti-2010-pledge"
+      ],
+      "reason": "The 2006 fuel-bank commitment was conditional; NTI still described Buffett’s payment as forthcoming in December 2010. The completed personal-transfer date and recipient remain unresolved."
+    }
+  ]
+}

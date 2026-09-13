@@ -1,0 +1,1163 @@
+{
+  "snapshotDate": "2025-12-31",
+  "records": [
+    {
+      "donorId": "aliko-dangote",
+      "profileId": "aliko-dangote",
+      "status": "matched",
+      "identityType": "individual",
+      "observation": {
+        "date": "2025-03-07",
+        "amountUSD": 23900000000,
+        "sourceId": "forbes-billionaires-2025",
+        "sourceName": "Aliko Dangote"
+      },
+      "estimateAtSnapshot": 23900000000,
+      "estimateMethod": "Latest eligible 2025 observation carried forward unchanged to the snapshot.",
+      "reason": null
+    },
+    {
+      "donorId": "amancio-ortega",
+      "profileId": "amancio-ortega",
+      "status": "matched",
+      "identityType": "individual",
+      "observation": {
+        "date": "2025-03-07",
+        "amountUSD": 124000000000,
+        "sourceId": "forbes-billionaires-2025",
+        "sourceName": "Amancio Ortega"
+      },
+      "estimateAtSnapshot": 124000000000,
+      "estimateMethod": "Latest eligible 2025 observation carried forward unchanged to the snapshot.",
+      "reason": null
+    },
+    {
+      "donorId": "andrew-forrest",
+      "profileId": "andrew-forrest",
+      "status": "unusable",
+      "identityType": "shared-pool",
+      "observation": {
+        "date": "2025-03-07",
+        "amountUSD": 14400000000,
+        "sourceId": "forbes-2025-family-identities",
+        "sourceName": "Andrew Forrest & family"
+      },
+      "estimateAtSnapshot": null,
+      "estimateMethod": null,
+      "reason": "Official Forbes 2025 entry is Andrew Forrest & family. No supported individual allocation of this family fortune is available; the third-party CSV omitted the family suffix.",
+      "sharedPoolId": "andrew-forrest-family-2025",
+      "allocationShare": null
+    },
+    {
+      "donorId": "anne-wojcicki",
+      "profileId": "anne-wojcicki",
+      "status": "unusable",
+      "identityType": "individual",
+      "observation": null,
+      "estimateAtSnapshot": null,
+      "estimateMethod": null,
+      "reason": "No eligible full-wealth 2025 observation; 23andMe bankruptcy is a material intervening change."
+    },
+    {
+      "donorId": "azim-premji",
+      "profileId": "azim-premji",
+      "status": "matched",
+      "identityType": "individual",
+      "observation": {
+        "date": "2025-03-07",
+        "amountUSD": 12000000000,
+        "sourceId": "forbes-billionaires-2025",
+        "sourceName": "Azim Premji"
+      },
+      "estimateAtSnapshot": 12000000000,
+      "estimateMethod": "Latest eligible 2025 observation carried forward unchanged to the snapshot.",
+      "reason": null
+    },
+    {
+      "donorId": "barbara-picower",
+      "profileId": "barbara-picower",
+      "status": "unmatched",
+      "identityType": "individual",
+      "observation": null,
+      "estimateAtSnapshot": null,
+      "estimateMethod": null,
+      "reason": "No dated, individually attributable wealth observation on or before the snapshot was found."
+    },
+    {
+      "donorId": "ben-hoskin",
+      "profileId": "ben-hoskin",
+      "status": "unmatched",
+      "identityType": "individual",
+      "observation": null,
+      "estimateAtSnapshot": null,
+      "estimateMethod": null,
+      "reason": "No dated, individually attributable wealth observation on or before the snapshot was found."
+    },
+    {
+      "donorId": "bernard-arnault",
+      "profileId": "bernard-arnault",
+      "status": "unusable",
+      "identityType": "shared-pool",
+      "observation": {
+        "date": "2025-03-07",
+        "amountUSD": 178000000000,
+        "sourceId": "forbes-2025-family-identities",
+        "sourceName": "Bernard Arnault & family"
+      },
+      "estimateAtSnapshot": null,
+      "estimateMethod": null,
+      "reason": "Official Forbes 2025 entry is Bernard Arnault & family. No supported individual allocation of this family fortune is available; the third-party CSV omitted the family suffix.",
+      "sharedPoolId": "bernard-arnault-family-2025",
+      "allocationShare": null
+    },
+    {
+      "donorId": "bill-ackman",
+      "profileId": "bill-ackman",
+      "status": "matched",
+      "identityType": "individual",
+      "observation": {
+        "date": "2025-03-07",
+        "amountUSD": 9200000000,
+        "sourceId": "forbes-billionaires-2025",
+        "sourceName": "William Ackman"
+      },
+      "estimateAtSnapshot": 9200000000,
+      "estimateMethod": "Latest eligible 2025 observation carried forward unchanged to the snapshot.",
+      "reason": null
+    },
+    {
+      "donorId": "bill-gates",
+      "profileId": "bill-gates",
+      "status": "matched",
+      "identityType": "individual",
+      "observation": {
+        "date": "2025-03-07",
+        "amountUSD": 108000000000,
+        "sourceId": "forbes-billionaires-2025",
+        "sourceName": "Bill Gates"
+      },
+      "estimateAtSnapshot": 108000000000,
+      "estimateMethod": "Latest eligible 2025 observation carried forward unchanged to the snapshot.",
+      "reason": null
+    },
+    {
+      "donorId": "billi-marcus",
+      "profileId": "billi-marcus",
+      "status": "unusable",
+      "identityType": "household",
+      "observation": {
+        "date": "2025-01-28",
+        "amountUSD": 10300000000,
+        "sourceId": "forbes-philanthropy-2025",
+        "sourceName": "Billi Marcus"
+      },
+      "estimateAtSnapshot": null,
+      "estimateMethod": null,
+      "reason": "The observation covers Billi Marcus & family; being the sole active profile does not establish an individual ownership allocation."
+    },
+    {
+      "donorId": "blake-borgeson",
+      "profileId": "blake-borgeson",
+      "status": "unmatched",
+      "identityType": "individual",
+      "observation": null,
+      "estimateAtSnapshot": null,
+      "estimateMethod": null,
+      "reason": "No dated, individually attributable wealth observation on or before the snapshot was found."
+    },
+    {
+      "donorId": "cari-tuna",
+      "profileId": "cari-tuna",
+      "status": "unusable",
+      "identityType": "shared-pool",
+      "sharedPoolId": "moskovitz-tuna-2025",
+      "allocationShare": null,
+      "observation": {
+        "date": "2025-03-07",
+        "amountUSD": 17000000000,
+        "sourceId": "forbes-billionaires-2025",
+        "sourceName": "Dustin Moskovitz"
+      },
+      "estimateAtSnapshot": null,
+      "estimateMethod": null,
+      "reason": "The only dated observation is a shared household pool; historical donation credits are not ownership evidence."
+    },
+    {
+      "donorId": "carlos-slim",
+      "profileId": "carlos-slim",
+      "status": "unusable",
+      "identityType": "shared-pool",
+      "observation": {
+        "date": "2025-03-07",
+        "amountUSD": 82500000000,
+        "sourceId": "forbes-2025-family-identities",
+        "sourceName": "Carlos Slim Helu & family"
+      },
+      "estimateAtSnapshot": null,
+      "estimateMethod": null,
+      "reason": "Official Forbes 2025 entry is Carlos Slim Helu & family. No supported individual allocation of this family fortune is available; the third-party CSV omitted the family suffix.",
+      "sharedPoolId": "carlos-slim-family-2025",
+      "allocationShare": null
+    },
+    {
+      "donorId": "charles-koch",
+      "profileId": "charles-koch",
+      "status": "unusable",
+      "identityType": "shared-pool",
+      "observation": {
+        "date": "2025-03-07",
+        "amountUSD": 67500000000,
+        "sourceId": "forbes-2025-family-identities",
+        "sourceName": "Charles Koch & family"
+      },
+      "estimateAtSnapshot": null,
+      "estimateMethod": null,
+      "reason": "Official Forbes 2025 entry is Charles Koch & family. No supported individual allocation of this family fortune is available; the third-party CSV omitted the family suffix.",
+      "sharedPoolId": "charles-koch-family-2025",
+      "allocationShare": null
+    },
+    {
+      "donorId": "chris-hohn",
+      "profileId": "chris-hohn",
+      "status": "matched",
+      "identityType": "individual",
+      "observation": {
+        "date": "2025-03-07",
+        "amountUSD": 9200000000,
+        "sourceId": "forbes-billionaires-2025",
+        "sourceName": "Christopher Hohn"
+      },
+      "estimateAtSnapshot": 9200000000,
+      "estimateMethod": "Latest eligible 2025 observation carried forward unchanged to the snapshot.",
+      "reason": null
+    },
+    {
+      "donorId": "connie-ballmer",
+      "profileId": "connie-ballmer",
+      "status": "unusable",
+      "identityType": "shared-pool",
+      "sharedPoolId": "ballmer-household-2025",
+      "allocationShare": null,
+      "observation": {
+        "date": "2025-03-07",
+        "amountUSD": 118000000000,
+        "sourceId": "forbes-billionaires-2025",
+        "sourceName": "Connie Ballmer"
+      },
+      "estimateAtSnapshot": null,
+      "estimateMethod": null,
+      "reason": "The only dated observation is a shared household pool; no individual ownership allocation is supported."
+    },
+    {
+      "donorId": "david-geffen",
+      "profileId": "david-geffen",
+      "status": "matched",
+      "identityType": "individual",
+      "observation": {
+        "date": "2025-03-07",
+        "amountUSD": 8700000000,
+        "sourceId": "forbes-billionaires-2025",
+        "sourceName": "David Geffen"
+      },
+      "estimateAtSnapshot": 8700000000,
+      "estimateMethod": "Latest eligible 2025 observation carried forward unchanged to the snapshot.",
+      "reason": null
+    },
+    {
+      "donorId": "david-sainsbury",
+      "profileId": "david-sainsbury",
+      "status": "matched",
+      "identityType": "individual",
+      "observation": {
+        "date": "2025-05-16",
+        "amountUSD": 533976600,
+        "sourceId": "sunday-times-rich-list-2025",
+        "sourceName": "David Sainsbury",
+        "originalAmount": 402000000,
+        "originalCurrency": "GBP",
+        "conversionRate": 1.3283,
+        "conversionSourceId": "federal-reserve-h10-2025-05-16"
+      },
+      "estimateAtSnapshot": 533976600,
+      "estimateMethod": "Latest eligible 2025 observation carried forward unchanged to the snapshot.",
+      "reason": "GBP 402M converted at the Federal Reserve 1.3283 GBP/USD observation."
+    },
+    {
+      "donorId": "dietmar-hopp",
+      "profileId": "dietmar-hopp",
+      "status": "unusable",
+      "identityType": "shared-pool",
+      "observation": {
+        "date": "2025-03-07",
+        "amountUSD": 5200000000,
+        "sourceId": "forbes-billionaires-2025",
+        "sourceName": "Dietmar Hopp"
+      },
+      "estimateAtSnapshot": null,
+      "estimateMethod": null,
+      "reason": "Identity unresolved: Forbes currently labels its profile Dietmar Hopp & family (https://www.forbes.com/profile/dietmar-hopp/, checked 2026-09-12), while the 2025 transcription omits family suffixes. The current label is not a dated 2025 allocation; the saved 2025 amount cannot be confidently attributed to the individual.",
+      "sharedPoolId": "hopp-family-2025",
+      "allocationShare": null
+    },
+    {
+      "donorId": "donald-bren",
+      "profileId": "donald-bren",
+      "status": "matched",
+      "identityType": "individual",
+      "observation": {
+        "date": "2025-03-07",
+        "amountUSD": 18900000000,
+        "sourceId": "forbes-billionaires-2025",
+        "sourceName": "Donald Bren"
+      },
+      "estimateAtSnapshot": 18900000000,
+      "estimateMethod": "Latest eligible 2025 observation carried forward unchanged to the snapshot.",
+      "reason": null
+    },
+    {
+      "donorId": "dustin-moskovitz",
+      "profileId": "dustin-moskovitz",
+      "status": "unusable",
+      "identityType": "shared-pool",
+      "sharedPoolId": "moskovitz-tuna-2025",
+      "allocationShare": null,
+      "observation": {
+        "date": "2025-03-07",
+        "amountUSD": 17000000000,
+        "sourceId": "forbes-billionaires-2025",
+        "sourceName": "Dustin Moskovitz"
+      },
+      "estimateAtSnapshot": null,
+      "estimateMethod": null,
+      "reason": "Forbes reports a founder-named value that may include spouse wealth; no individual ownership allocation is supported."
+    },
+    {
+      "donorId": "edythe-broad",
+      "profileId": "edythe-broad",
+      "status": "unusable",
+      "identityType": "shared-pool",
+      "observation": {
+        "date": "2025-01-28",
+        "amountUSD": 7000000000,
+        "sourceId": "forbes-philanthropy-2025",
+        "sourceName": "Edythe Broad & family"
+      },
+      "estimateAtSnapshot": null,
+      "estimateMethod": null,
+      "reason": "The dated Forbes philanthropy list identifies Edythe Broad & family at $7B; no individual allocation is established.",
+      "sharedPoolId": "broad-family-2025",
+      "allocationShare": null
+    },
+    {
+      "donorId": "elon-musk",
+      "profileId": "elon-musk",
+      "status": "matched",
+      "identityType": "individual",
+      "observation": {
+        "date": "2025-03-07",
+        "amountUSD": 342000000000,
+        "sourceId": "forbes-billionaires-2025",
+        "sourceName": "Elon Musk"
+      },
+      "estimateAtSnapshot": 342000000000,
+      "estimateMethod": "Latest eligible 2025 observation carried forward unchanged to the snapshot.",
+      "reason": null
+    },
+    {
+      "donorId": "eric-schmidt",
+      "profileId": "eric-schmidt",
+      "status": "matched",
+      "identityType": "individual",
+      "observation": {
+        "date": "2025-03-07",
+        "amountUSD": 24000000000,
+        "sourceId": "forbes-billionaires-2025",
+        "sourceName": "Eric Schmidt"
+      },
+      "estimateAtSnapshot": 24000000000,
+      "estimateMethod": "Latest eligible 2025 observation carried forward unchanged to the snapshot.",
+      "reason": null
+    },
+    {
+      "donorId": "george-kaiser",
+      "profileId": "george-kaiser",
+      "status": "matched",
+      "identityType": "individual",
+      "observation": {
+        "date": "2025-03-07",
+        "amountUSD": 15400000000,
+        "sourceId": "forbes-billionaires-2025",
+        "sourceName": "George Kaiser"
+      },
+      "estimateAtSnapshot": 15400000000,
+      "estimateMethod": "Latest eligible 2025 observation carried forward unchanged to the snapshot.",
+      "reason": null
+    },
+    {
+      "donorId": "george-lucas",
+      "profileId": "george-lucas",
+      "status": "matched",
+      "identityType": "individual",
+      "observation": {
+        "date": "2025-03-07",
+        "amountUSD": 5100000000,
+        "sourceId": "forbes-billionaires-2025",
+        "sourceName": "George Lucas"
+      },
+      "estimateAtSnapshot": 5100000000,
+      "estimateMethod": "Latest eligible 2025 observation carried forward unchanged to the snapshot.",
+      "reason": null
+    },
+    {
+      "donorId": "george-soros",
+      "profileId": "george-soros",
+      "status": "matched",
+      "identityType": "individual",
+      "observation": {
+        "date": "2025-03-07",
+        "amountUSD": 7200000000,
+        "sourceId": "forbes-billionaires-2025",
+        "sourceName": "George Soros"
+      },
+      "estimateAtSnapshot": 7200000000,
+      "estimateMethod": "Latest eligible 2025 observation carried forward unchanged to the snapshot.",
+      "reason": null
+    },
+    {
+      "donorId": "hansjorg-wyss",
+      "profileId": "hansjorg-wyss",
+      "status": "matched",
+      "identityType": "individual",
+      "observation": {
+        "date": "2025-03-07",
+        "amountUSD": 4800000000,
+        "sourceId": "forbes-billionaires-2025",
+        "sourceName": "Hansjoerg Wyss"
+      },
+      "estimateAtSnapshot": 4800000000,
+      "estimateMethod": "Latest eligible 2025 observation carried forward unchanged to the snapshot.",
+      "reason": null
+    },
+    {
+      "donorId": "haseeb-qureshi",
+      "profileId": "haseeb-qureshi",
+      "status": "unmatched",
+      "identityType": "individual",
+      "observation": null,
+      "estimateAtSnapshot": null,
+      "estimateMethod": null,
+      "reason": "No dated, individually attributable wealth observation on or before the snapshot was found."
+    },
+    {
+      "donorId": "hasso-plattner",
+      "profileId": "hasso-plattner",
+      "status": "unusable",
+      "identityType": "shared-pool",
+      "observation": {
+        "date": "2025-03-07",
+        "amountUSD": 15200000000,
+        "sourceId": "forbes-2025-family-identities",
+        "sourceName": "Hasso Plattner & family"
+      },
+      "estimateAtSnapshot": null,
+      "estimateMethod": null,
+      "reason": "Official Forbes 2025 entry is Hasso Plattner & family. No supported individual allocation of this family fortune is available; the third-party CSV omitted the family suffix.",
+      "sharedPoolId": "hasso-plattner-family-2025",
+      "allocationShare": null
+    },
+    {
+      "donorId": "jaan-tallinn",
+      "profileId": "jaan-tallinn",
+      "status": "matched",
+      "identityType": "individual",
+      "observation": {
+        "date": "2025-09-10",
+        "amountUSD": 754381600,
+        "sourceId": "aripaev-rich-list-2025",
+        "sourceName": "Jaan Tallinn",
+        "originalAmount": 644000000,
+        "originalCurrency": "EUR",
+        "conversionRate": 1.1714,
+        "conversionSourceId": "federal-reserve-h10-2025-09-10"
+      },
+      "estimateAtSnapshot": 754381600,
+      "estimateMethod": "Latest eligible 2025 observation carried forward unchanged to the snapshot.",
+      "reason": "EUR 644M converted at the Federal Reserve 1.1714 EUR/USD observation."
+    },
+    {
+      "donorId": "jack-dorsey",
+      "profileId": "jack-dorsey",
+      "status": "matched",
+      "identityType": "individual",
+      "observation": {
+        "date": "2025-03-07",
+        "amountUSD": 3900000000,
+        "sourceId": "forbes-billionaires-2025",
+        "sourceName": "Jack Dorsey"
+      },
+      "estimateAtSnapshot": 3900000000,
+      "estimateMethod": "Latest eligible 2025 observation carried forward unchanged to the snapshot.",
+      "reason": null
+    },
+    {
+      "donorId": "jan-koum",
+      "profileId": "jan-koum",
+      "status": "matched",
+      "identityType": "individual",
+      "observation": {
+        "date": "2025-03-07",
+        "amountUSD": 16500000000,
+        "sourceId": "forbes-billionaires-2025",
+        "sourceName": "Jan Koum"
+      },
+      "estimateAtSnapshot": 16500000000,
+      "estimateMethod": "Latest eligible 2025 observation carried forward unchanged to the snapshot.",
+      "reason": null
+    },
+    {
+      "donorId": "jed-mccaleb",
+      "profileId": "jed-mccaleb",
+      "status": "matched",
+      "identityType": "individual",
+      "observation": {
+        "date": "2025-03-07",
+        "amountUSD": 2900000000,
+        "sourceId": "forbes-billionaires-2025",
+        "sourceName": "Jed McCaleb"
+      },
+      "estimateAtSnapshot": 2900000000,
+      "estimateMethod": "Latest eligible 2025 observation carried forward unchanged to the snapshot.",
+      "reason": null
+    },
+    {
+      "donorId": "jeff-bezos",
+      "profileId": "jeff-bezos",
+      "status": "matched",
+      "identityType": "individual",
+      "observation": {
+        "date": "2025-03-07",
+        "amountUSD": 215000000000,
+        "sourceId": "forbes-billionaires-2025",
+        "sourceName": "Jeff Bezos"
+      },
+      "estimateAtSnapshot": 215000000000,
+      "estimateMethod": "Latest eligible 2025 observation carried forward unchanged to the snapshot.",
+      "reason": null
+    },
+    {
+      "donorId": "jensen-huang",
+      "profileId": "jensen-huang",
+      "status": "matched",
+      "identityType": "individual",
+      "observation": {
+        "date": "2025-03-07",
+        "amountUSD": 98700000000,
+        "sourceId": "forbes-billionaires-2025",
+        "sourceName": "Jensen Huang"
+      },
+      "estimateAtSnapshot": 98700000000,
+      "estimateMethod": "Latest eligible 2025 observation carried forward unchanged to the snapshot.",
+      "reason": null
+    },
+    {
+      "donorId": "jeremy-grantham",
+      "profileId": "jeremy-grantham",
+      "status": "unmatched",
+      "identityType": "individual",
+      "observation": null,
+      "estimateAtSnapshot": null,
+      "estimateMethod": null,
+      "reason": "No dated, individually attributable wealth observation on or before the snapshot was found."
+    },
+    {
+      "donorId": "jk-rowling",
+      "profileId": "jk-rowling",
+      "status": "matched",
+      "identityType": "individual",
+      "observation": {
+        "date": "2025-05-30",
+        "amountUSD": 1200000000,
+        "sourceId": "forbes-rowling-2025",
+        "sourceName": "J.K. Rowling"
+      },
+      "estimateAtSnapshot": 1200000000,
+      "estimateMethod": "Latest eligible 2025 observation carried forward unchanged to the snapshot.",
+      "reason": "Dated individual Forbes estimate."
+    },
+    {
+      "donorId": "john-arnold",
+      "profileId": "john-arnold",
+      "status": "unusable",
+      "identityType": "shared-pool",
+      "sharedPoolId": "arnold-household-2025",
+      "allocationShare": null,
+      "observation": {
+        "date": "2025-03-07",
+        "amountUSD": 2900000000,
+        "sourceId": "forbes-billionaires-2025",
+        "sourceName": "John Arnold"
+      },
+      "estimateAtSnapshot": null,
+      "estimateMethod": null,
+      "reason": "Forbes reports a founder-named value that may include spouse wealth; no individual ownership allocation is supported."
+    },
+    {
+      "donorId": "john-doerr",
+      "profileId": "john-doerr",
+      "status": "matched",
+      "identityType": "individual",
+      "observation": {
+        "date": "2025-03-07",
+        "amountUSD": 13800000000,
+        "sourceId": "forbes-billionaires-2025",
+        "sourceName": "John Doerr"
+      },
+      "estimateAtSnapshot": 13800000000,
+      "estimateMethod": "Latest eligible 2025 observation carried forward unchanged to the snapshot.",
+      "reason": null
+    },
+    {
+      "donorId": "john-paulson",
+      "profileId": "john-paulson",
+      "status": "matched",
+      "identityType": "individual",
+      "observation": {
+        "date": "2025-03-07",
+        "amountUSD": 3800000000,
+        "sourceId": "forbes-billionaires-2025",
+        "sourceName": "John Paulson"
+      },
+      "estimateAtSnapshot": 3800000000,
+      "estimateMethod": "Latest eligible 2025 observation carried forward unchanged to the snapshot.",
+      "reason": null
+    },
+    {
+      "donorId": "ken-griffin",
+      "profileId": "ken-griffin",
+      "status": "matched",
+      "identityType": "individual",
+      "observation": {
+        "date": "2025-03-07",
+        "amountUSD": 42300000000,
+        "sourceId": "forbes-billionaires-2025",
+        "sourceName": "Ken Griffin"
+      },
+      "estimateAtSnapshot": 42300000000,
+      "estimateMethod": "Latest eligible 2025 observation carried forward unchanged to the snapshot.",
+      "reason": null
+    },
+    {
+      "donorId": "larry-ellison",
+      "profileId": "larry-ellison",
+      "status": "matched",
+      "identityType": "individual",
+      "observation": {
+        "date": "2025-03-07",
+        "amountUSD": 192000000000,
+        "sourceId": "forbes-billionaires-2025",
+        "sourceName": "Larry Ellison"
+      },
+      "estimateAtSnapshot": 192000000000,
+      "estimateMethod": "Latest eligible 2025 observation carried forward unchanged to the snapshot.",
+      "reason": null
+    },
+    {
+      "donorId": "larry-page",
+      "profileId": "larry-page",
+      "status": "matched",
+      "identityType": "individual",
+      "observation": {
+        "date": "2025-03-07",
+        "amountUSD": 144000000000,
+        "sourceId": "forbes-billionaires-2025",
+        "sourceName": "Larry Page"
+      },
+      "estimateAtSnapshot": 144000000000,
+      "estimateMethod": "Latest eligible 2025 observation carried forward unchanged to the snapshot.",
+      "reason": null
+    },
+    {
+      "donorId": "laura-arnold",
+      "profileId": "laura-arnold",
+      "status": "unusable",
+      "identityType": "shared-pool",
+      "sharedPoolId": "arnold-household-2025",
+      "allocationShare": null,
+      "observation": {
+        "date": "2025-03-07",
+        "amountUSD": 2900000000,
+        "sourceId": "forbes-billionaires-2025",
+        "sourceName": "Laura Arnold"
+      },
+      "estimateAtSnapshot": null,
+      "estimateMethod": null,
+      "reason": "The only dated observation is a shared household pool; no individual ownership allocation is supported."
+    },
+    {
+      "donorId": "laurene-powell-jobs",
+      "profileId": "laurene-powell-jobs",
+      "status": "matched",
+      "identityType": "individual",
+      "observation": {
+        "date": "2025-03-07",
+        "amountUSD": 15600000000,
+        "sourceId": "forbes-billionaires-2025",
+        "sourceName": "Laurene Powell Jobs"
+      },
+      "estimateAtSnapshot": 15600000000,
+      "estimateMethod": "Latest eligible 2025 observation carried forward unchanged to the snapshot.",
+      "reason": null
+    },
+    {
+      "donorId": "li-ka-shing",
+      "profileId": "li-ka-shing",
+      "status": "matched",
+      "identityType": "individual",
+      "observation": {
+        "date": "2025-03-07",
+        "amountUSD": 38900000000,
+        "sourceId": "forbes-billionaires-2025",
+        "sourceName": "Li Ka-shing"
+      },
+      "estimateAtSnapshot": 38900000000,
+      "estimateMethod": "Latest eligible 2025 observation carried forward unchanged to the snapshot.",
+      "reason": null
+    },
+    {
+      "donorId": "lisbet-rausing",
+      "profileId": "lisbet-rausing",
+      "status": "unmatched",
+      "identityType": "individual",
+      "observation": null,
+      "estimateAtSnapshot": null,
+      "estimateMethod": null,
+      "reason": "No dated, individually attributable wealth observation on or before the snapshot was found."
+    },
+    {
+      "donorId": "lynn-schusterman",
+      "profileId": "lynn-schusterman",
+      "status": "matched",
+      "identityType": "individual",
+      "observation": {
+        "date": "2025-03-07",
+        "amountUSD": 4500000000,
+        "sourceId": "forbes-billionaires-2025",
+        "sourceName": "Lynn Schusterman"
+      },
+      "estimateAtSnapshot": 4500000000,
+      "estimateMethod": "Latest eligible 2025 observation carried forward unchanged to the snapshot.",
+      "reason": null
+    },
+    {
+      "donorId": "mackenzie-scott",
+      "profileId": "mackenzie-scott",
+      "status": "matched",
+      "identityType": "individual",
+      "observation": {
+        "date": "2025-03-07",
+        "amountUSD": 28200000000,
+        "sourceId": "forbes-billionaires-2025",
+        "sourceName": "MacKenzie Scott"
+      },
+      "estimateAtSnapshot": 28200000000,
+      "estimateMethod": "Latest eligible 2025 observation carried forward unchanged to the snapshot.",
+      "reason": null
+    },
+    {
+      "donorId": "marc-benioff",
+      "profileId": "marc-benioff",
+      "status": "matched",
+      "identityType": "individual",
+      "observation": {
+        "date": "2025-03-07",
+        "amountUSD": 9800000000,
+        "sourceId": "forbes-billionaires-2025",
+        "sourceName": "Marc Benioff"
+      },
+      "estimateAtSnapshot": 9800000000,
+      "estimateMethod": "Latest eligible 2025 observation carried forward unchanged to the snapshot.",
+      "reason": null
+    },
+    {
+      "donorId": "marilyn-simons",
+      "profileId": "marilyn-simons",
+      "status": "unusable",
+      "identityType": "shared-pool",
+      "observation": {
+        "date": "2025-03-07",
+        "amountUSD": 31000000000,
+        "sourceId": "forbes-2025-family-identities",
+        "sourceName": "Marilyn Simons & family"
+      },
+      "estimateAtSnapshot": null,
+      "estimateMethod": null,
+      "reason": "Official Forbes 2025 entry is Marilyn Simons & family. No supported individual allocation of this family fortune is available; the third-party CSV omitted the family suffix.",
+      "sharedPoolId": "marilyn-simons-family-2025",
+      "allocationShare": null
+    },
+    {
+      "donorId": "mark-zuckerberg",
+      "profileId": "mark-zuckerberg",
+      "status": "matched",
+      "identityType": "individual",
+      "observation": {
+        "date": "2025-03-07",
+        "amountUSD": 216000000000,
+        "sourceId": "forbes-billionaires-2025",
+        "sourceName": "Mark Zuckerberg"
+      },
+      "estimateAtSnapshot": 216000000000,
+      "estimateMethod": "Latest eligible 2025 observation carried forward unchanged to the snapshot.",
+      "reason": null
+    },
+    {
+      "donorId": "melinda-gates",
+      "profileId": "melinda-gates",
+      "status": "matched",
+      "identityType": "individual",
+      "observation": {
+        "date": "2025-03-07",
+        "amountUSD": 30400000000,
+        "sourceId": "forbes-billionaires-2025",
+        "sourceName": "Melinda French Gates"
+      },
+      "estimateAtSnapshot": 30400000000,
+      "estimateMethod": "Latest eligible 2025 observation carried forward unchanged to the snapshot.",
+      "reason": null
+    },
+    {
+      "donorId": "michael-bloomberg",
+      "profileId": "michael-bloomberg",
+      "status": "matched",
+      "identityType": "individual",
+      "observation": {
+        "date": "2025-03-07",
+        "amountUSD": 105000000000,
+        "sourceId": "forbes-billionaires-2025",
+        "sourceName": "Michael Bloomberg"
+      },
+      "estimateAtSnapshot": 105000000000,
+      "estimateMethod": "Latest eligible 2025 observation carried forward unchanged to the snapshot.",
+      "reason": null
+    },
+    {
+      "donorId": "michael-dell",
+      "profileId": "michael-dell",
+      "status": "matched",
+      "identityType": "individual",
+      "observation": {
+        "date": "2025-03-07",
+        "amountUSD": 97700000000,
+        "sourceId": "forbes-billionaires-2025",
+        "sourceName": "Michael Dell"
+      },
+      "estimateAtSnapshot": 97700000000,
+      "estimateMethod": "Latest eligible 2025 observation carried forward unchanged to the snapshot.",
+      "reason": null
+    },
+    {
+      "donorId": "michael-milken",
+      "profileId": "michael-milken",
+      "status": "matched",
+      "identityType": "individual",
+      "observation": {
+        "date": "2025-03-07",
+        "amountUSD": 7000000000,
+        "sourceId": "forbes-billionaires-2025",
+        "sourceName": "Michael Milken"
+      },
+      "estimateAtSnapshot": 7000000000,
+      "estimateMethod": "Latest eligible 2025 observation carried forward unchanged to the snapshot.",
+      "reason": null
+    },
+    {
+      "donorId": "misha-gurevich",
+      "profileId": "misha-gurevich",
+      "status": "unmatched",
+      "identityType": "individual",
+      "observation": null,
+      "estimateAtSnapshot": null,
+      "estimateMethod": null,
+      "reason": "No dated, individually attributable wealth observation on or before the snapshot was found."
+    },
+    {
+      "donorId": "oliver-habryka",
+      "profileId": "oliver-habryka",
+      "status": "unmatched",
+      "identityType": "individual",
+      "observation": null,
+      "estimateAtSnapshot": null,
+      "estimateMethod": null,
+      "reason": "No dated, individually attributable wealth observation on or before the snapshot was found."
+    },
+    {
+      "donorId": "oprah-winfrey",
+      "profileId": "oprah-winfrey",
+      "status": "matched",
+      "identityType": "individual",
+      "observation": {
+        "date": "2025-03-07",
+        "amountUSD": 3000000000,
+        "sourceId": "forbes-billionaires-2025",
+        "sourceName": "Oprah Winfrey"
+      },
+      "estimateAtSnapshot": 3000000000,
+      "estimateMethod": "Latest eligible 2025 observation carried forward unchanged to the snapshot.",
+      "reason": null
+    },
+    {
+      "donorId": "peter-thiel",
+      "profileId": "peter-thiel",
+      "status": "matched",
+      "identityType": "individual",
+      "observation": {
+        "date": "2025-03-07",
+        "amountUSD": 16300000000,
+        "sourceId": "forbes-billionaires-2025",
+        "sourceName": "Peter Thiel"
+      },
+      "estimateAtSnapshot": 16300000000,
+      "estimateMethod": "Latest eligible 2025 observation carried forward unchanged to the snapshot.",
+      "reason": null
+    },
+    {
+      "donorId": "phil-knight",
+      "profileId": "phil-knight",
+      "status": "unusable",
+      "identityType": "shared-pool",
+      "observation": {
+        "date": "2025-03-07",
+        "amountUSD": 35400000000,
+        "sourceId": "forbes-2025-family-identities",
+        "sourceName": "Phil Knight & family"
+      },
+      "estimateAtSnapshot": null,
+      "estimateMethod": null,
+      "reason": "Official Forbes 2025 entry is Phil Knight & family. No supported individual allocation of this family fortune is available; the third-party CSV omitted the family suffix.",
+      "sharedPoolId": "phil-knight-family-2025",
+      "allocationShare": null
+    },
+    {
+      "donorId": "pierre-omidyar",
+      "profileId": "pierre-omidyar",
+      "status": "matched",
+      "identityType": "individual",
+      "observation": {
+        "date": "2025-03-07",
+        "amountUSD": 10200000000,
+        "sourceId": "forbes-billionaires-2025",
+        "sourceName": "Pierre Omidyar"
+      },
+      "estimateAtSnapshot": 10200000000,
+      "estimateMethod": "Latest eligible 2025 observation carried forward unchanged to the snapshot.",
+      "reason": null
+    },
+    {
+      "donorId": "pony-ma",
+      "profileId": "pony-ma",
+      "status": "matched",
+      "identityType": "individual",
+      "observation": {
+        "date": "2025-03-07",
+        "amountUSD": 56200000000,
+        "sourceId": "forbes-billionaires-2025",
+        "sourceName": "Ma Huateng"
+      },
+      "estimateAtSnapshot": 56200000000,
+      "estimateMethod": "Latest eligible 2025 observation carried forward unchanged to the snapshot.",
+      "reason": null
+    },
+    {
+      "donorId": "ray-dalio",
+      "profileId": "ray-dalio",
+      "status": "matched",
+      "identityType": "individual",
+      "observation": {
+        "date": "2025-03-07",
+        "amountUSD": 14000000000,
+        "sourceId": "forbes-billionaires-2025",
+        "sourceName": "Ray Dalio"
+      },
+      "estimateAtSnapshot": 14000000000,
+      "estimateMethod": "Latest eligible 2025 observation carried forward unchanged to the snapshot.",
+      "reason": null
+    },
+    {
+      "donorId": "reed-hastings",
+      "profileId": "reed-hastings",
+      "status": "matched",
+      "identityType": "individual",
+      "observation": {
+        "date": "2025-03-07",
+        "amountUSD": 5200000000,
+        "sourceId": "forbes-billionaires-2025",
+        "sourceName": "Reed Hastings"
+      },
+      "estimateAtSnapshot": 5200000000,
+      "estimateMethod": "Latest eligible 2025 observation carried forward unchanged to the snapshot.",
+      "reason": null
+    },
+    {
+      "donorId": "reid-hoffman",
+      "profileId": "reid-hoffman",
+      "status": "matched",
+      "identityType": "individual",
+      "observation": {
+        "date": "2025-03-07",
+        "amountUSD": 2400000000,
+        "sourceId": "forbes-billionaires-2025",
+        "sourceName": "Reid Hoffman"
+      },
+      "estimateAtSnapshot": 2400000000,
+      "estimateMethod": "Latest eligible 2025 observation carried forward unchanged to the snapshot.",
+      "reason": null
+    },
+    {
+      "donorId": "sean-parker",
+      "profileId": "sean-parker",
+      "status": "matched",
+      "identityType": "individual",
+      "observation": {
+        "date": "2025-03-07",
+        "amountUSD": 3000000000,
+        "sourceId": "forbes-billionaires-2025",
+        "sourceName": "Sean Parker"
+      },
+      "estimateAtSnapshot": 3000000000,
+      "estimateMethod": "Latest eligible 2025 observation carried forward unchanged to the snapshot.",
+      "reason": null
+    },
+    {
+      "donorId": "sergey-brin",
+      "profileId": "sergey-brin",
+      "status": "matched",
+      "identityType": "individual",
+      "observation": {
+        "date": "2025-03-07",
+        "amountUSD": 138000000000,
+        "sourceId": "forbes-billionaires-2025",
+        "sourceName": "Sergey Brin"
+      },
+      "estimateAtSnapshot": 138000000000,
+      "estimateMethod": "Latest eligible 2025 observation carried forward unchanged to the snapshot.",
+      "reason": null
+    },
+    {
+      "donorId": "shiv-nadar",
+      "profileId": "shiv-nadar",
+      "status": "matched",
+      "identityType": "individual",
+      "observation": {
+        "date": "2025-03-07",
+        "amountUSD": 34500000000,
+        "sourceId": "forbes-billionaires-2025",
+        "sourceName": "Shiv Nadar"
+      },
+      "estimateAtSnapshot": 34500000000,
+      "estimateMethod": "Latest eligible 2025 observation carried forward unchanged to the snapshot.",
+      "reason": null
+    },
+    {
+      "donorId": "stanley-druckenmiller",
+      "profileId": "stanley-druckenmiller",
+      "status": "matched",
+      "identityType": "individual",
+      "observation": {
+        "date": "2025-03-07",
+        "amountUSD": 6900000000,
+        "sourceId": "forbes-billionaires-2025",
+        "sourceName": "Stanley Druckenmiller"
+      },
+      "estimateAtSnapshot": 6900000000,
+      "estimateMethod": "Latest eligible 2025 observation carried forward unchanged to the snapshot.",
+      "reason": null
+    },
+    {
+      "donorId": "stephen-schwarzman",
+      "profileId": "stephen-schwarzman",
+      "status": "matched",
+      "identityType": "individual",
+      "observation": {
+        "date": "2025-03-07",
+        "amountUSD": 44400000000,
+        "sourceId": "forbes-billionaires-2025",
+        "sourceName": "Stephen Schwarzman"
+      },
+      "estimateAtSnapshot": 44400000000,
+      "estimateMethod": "Latest eligible 2025 observation carried forward unchanged to the snapshot.",
+      "reason": null
+    },
+    {
+      "donorId": "steve-ballmer",
+      "profileId": "steve-ballmer",
+      "status": "unusable",
+      "identityType": "shared-pool",
+      "sharedPoolId": "ballmer-household-2025",
+      "allocationShare": null,
+      "observation": {
+        "date": "2025-03-07",
+        "amountUSD": 118000000000,
+        "sourceId": "forbes-billionaires-2025",
+        "sourceName": "Steve Ballmer"
+      },
+      "estimateAtSnapshot": null,
+      "estimateMethod": null,
+      "reason": "Forbes reports a founder-named value that may include spouse wealth; no individual ownership allocation is supported."
+    },
+    {
+      "donorId": "steven-spielberg",
+      "profileId": "steven-spielberg",
+      "status": "matched",
+      "identityType": "individual",
+      "observation": {
+        "date": "2025-03-07",
+        "amountUSD": 5300000000,
+        "sourceId": "forbes-billionaires-2025",
+        "sourceName": "Steven Spielberg"
+      },
+      "estimateAtSnapshot": 5300000000,
+      "estimateMethod": "Latest eligible 2025 observation carried forward unchanged to the snapshot.",
+      "reason": null
+    },
+    {
+      "donorId": "t-denny-sanford",
+      "profileId": "t-denny-sanford",
+      "status": "matched",
+      "identityType": "individual",
+      "observation": {
+        "date": "2025-03-07",
+        "amountUSD": 2100000000,
+        "sourceId": "forbes-billionaires-2025",
+        "sourceName": "T. Denny Sanford"
+      },
+      "estimateAtSnapshot": 2100000000,
+      "estimateMethod": "Latest eligible 2025 observation carried forward unchanged to the snapshot.",
+      "reason": null
+    },
+    {
+      "donorId": "vitalik-buterin",
+      "profileId": "vitalik-buterin",
+      "status": "unusable",
+      "identityType": "individual",
+      "observation": null,
+      "estimateAtSnapshot": null,
+      "estimateMethod": null,
+      "reason": "The August 2025 on-chain estimate is cryptocurrency-driven and materially changed before the snapshot."
+    },
+    {
+      "donorId": "warren-buffett",
+      "profileId": "warren-buffett",
+      "status": "matched",
+      "identityType": "individual",
+      "observation": {
+        "date": "2025-03-07",
+        "amountUSD": 154000000000,
+        "sourceId": "forbes-billionaires-2025",
+        "sourceName": "Warren Buffett"
+      },
+      "estimateAtSnapshot": 154000000000,
+      "estimateMethod": "Latest eligible 2025 observation carried forward unchanged to the snapshot.",
+      "reason": null
+    }
+  ]
+}

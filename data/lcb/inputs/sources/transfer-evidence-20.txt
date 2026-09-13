@@ -1,0 +1,497 @@
+PDF PAGE 1
+BILL & MELINDA GATES FOUNDATION TRUST 
+Financial Statements 
+December 31, 2023 and 2022 
+(With Independent Auditors’ Report Thereon) 
+ 
+
+
+PDF PAGE 2
+  
+ KPMG LLP 
+Suite 2800 
+401 Union Street 
+Seattle, WA 98101 
+ 
+ 
+ 
+ 
+ 
+ KPMG LLP, a Delaware limited liability partnership and a member firm of 
+the KPMG global organization of independent member firms affiliated with 
+KPMG International Limited, a private English company limited by guarantee. 
+ 
+ 
+Independent Auditors’ Report 
+The Trustees 
+Bill & Melinda Gates Foundation Trust: 
+Opinion 
+We have audited the financial statements of Bill & Melinda Gates Foundation Trust (the Trust), which comprise 
+the statements of financial position as of December 31, 2023 and 2022, and the related statements of activities 
+and cash flows for the years then ended, and the related notes to the financial statements.  
+In our opinion, the accompanying financial statements present fairly, in all material respects, the financial 
+position of the Trust as of December 31, 2023 and 2022, and the changes in its net assets and its cash flows 
+for the years then ended in accordance with U.S. generally accepted accounting principles. 
+Basis for Opinion 
+We conducted our audits in accordance with auditing standards generally accepted in the United States of 
+America (GAAS). Our responsibilities under those standards are further described in the Auditors’ 
+Responsibilities for the Audit of the Financial Statements section of our report. We are required to be 
+independent of the Trust and to meet our other ethical responsibilities, in accordance with the relevant ethical 
+requirements relating to our audits. We believe that the audit evidence we have obtained is sufficient and 
+appropriate to provide a basis for our audit opinion. 
+Responsibilities of Management for the Financial Statements 
+Management is responsible for the preparation and fair presentation of the financial statements in accordance 
+with U.S. generally accepted accounting principles, and for the design, implementation, and maintenance of 
+internal control relevant to the preparation and fair presentation of financial statements that are free from 
+material misstatement, whether due to fraud or error. 
+In preparing the financial statements, management is required to evaluate whether there are conditions or 
+events, considered in the aggregate, that raise substantial doubt about the Trust’s ability to continue as a going 
+concern for one year after the date that the financial statements are available to be issued. 
+Auditors’ Responsibilities for the Audit of the Financial Statements 
+Our objectives are to obtain reasonable assurance about whether the financial statements as a whole are free 
+from material misstatement, whether due to fraud or error, and to issue an auditors’ report that includes our 
+opinion. Reasonable assurance is a high level of assurance but is not absolute assurance and therefore is not 
+a guarantee that an audit conducted in accordance with GAAS will always detect a material misstatement when 
+it exists. The risk of not detecting a material misstatement resulting from fraud is higher than for one resulting 
+from error, as fraud may involve collusion, forgery, intentional omissions, misrepresentations, or the override of 
+internal control. Misstatements are considered material if there is a substantial likelihood that, in dividually or in 
+the aggregate, they would influence the judgment made by a reasonable user based on the financial 
+statements. 
+In performing an audit in accordance with GAAS, we: 
+● Exercise professional judgment and maintain professional skepticism throughout the audit.  
+
+PDF PAGE 3
+ 
+ 
+ 2 
+ 
+● Identify and assess the risks of material misstatement of the financial statements, whether due to fraud 
+or error, and design and perform audit procedures responsive to those risks. Such procedures include 
+examining, on a test basis, evidence regarding the amounts and disclosures in the financial 
+statements. 
+● Obtain an understanding of internal control relevant to the audit in order to design audit procedures that 
+are appropriate in the circumstances, but not for the purpose of expressing an opinion on the 
+effectiveness of the Trust’s internal control. Accordingly, no such opinion is expressed. 
+● Evaluate the appropriateness of accounting policies used and the reasonableness of significant 
+accounting estimates made by management, as well as evaluate the overall presentation of the 
+financial statements. 
+● Conclude whether, in our judgment, there are conditions or events, considered in the aggregate, that 
+raise substantial doubt about the Trust’s ability to continue as a going concern for a reasonable period 
+of time. 
+We are required to communicate with those charged with governance regarding, among other matters, the 
+planned scope and timing of the audit, significant audit findings, and certain internal control related matters that 
+we identified during the audit. 
+  
+ 
+ 
+  
+Seattle, Washington 
+May 22, 2024 
+     
+ 
+
+
+PDF PAGE 4
+BILL & MELINDA GATES FOUNDATION TRUST
+Statements of Financial Position
+December 31, 2023 and 2022
+(In thousands)
+Assets 2023 2022
+Cash $ 295,243  413,936  
+Receivable for investment sales and other 833,554  733,367  
+Receivable for interest and dividends 89,747  116,906  
+Federal current excise tax receivable (note 5) 4,225  15,649  
+Contribution receivable (note 2) 63,325  51,541  
+Investments (notes 3 and 4) 75,143,118  67,190,037  
+Total assets $ 76,429,212  68,521,436  
+Liabilities and Net Assets
+Liabilities:
+Accounts payable and other accrued liabilities $ 4,251  9,061  
+Payable for investment purchases and other (note 4) 945,188  1,061,321  
+Federal deferred excise tax payable (note 5) 253,927  119,844  
+Total liabilities 1,203,366  1,190,226  
+Net assets without donor restrictions 75,225,846  67,331,210  
+Total liabilities and net assets $ 76,429,212  68,521,436  
+See accompanying notes to financial statements.
+3
+
+PDF PAGE 5
+BILL & MELINDA GATES FOUNDATION TRUST
+Statements of Activities
+Years ended December 31, 2023 and 2022
+(In thousands)
+2023 2022
+Change in net assets:
+Revenues and net gains:
+Contributions (note 2):
+Cash and other financial assets $ 3,895,672  23,148,230  
+Contributed services 785,825  685,689  
+Investment income (losses), net (note 2c) 11,199,848  (2,928,561) 
+Total revenues and net gains 15,881,345  20,905,358  
+Expenses:
+Grants to Bill & Melinda Gates Foundation (note 1) 7,751,200  6,806,925  
+Federal excise and other taxes, net (note 5) 235,509  25,287  
+Total expenses 7,986,709  6,832,212  
+Change in net assets 7,894,636  14,073,146  
+Net assets without donor restrictions, beginning of year 67,331,210  53,258,064  
+Net assets without donor restrictions, end of year $ 75,225,846  67,331,210  
+See accompanying notes to financial statements.
+4
+
+PDF PAGE 6
+BILL & MELINDA GATES FOUNDATION TRUST
+Statements of Cash Flows
+Years ended December 31, 2023 and 2022
+(In thousands)
+2023 2022
+Cash flows from operating activities:
+Change in net assets $ 7,894,636  14,073,146  
+Adjustments to reconcile change in net assets to net cash
+used in operating activities:
+Stock and noncash contributions (3,802,347) (22,596,690) 
+Net realized and unrealized (gains) losses on investments (10,532,278) 3,121,863  
+Net accretion and amortization (363,877) (78,897) 
+Changes in operating assets and liabilities:
+Interest and dividends receivable 27,159  (48,940) 
+Contribution receivable (11,784) (51,541) 
+Federal current excise tax receivable 11,424  (15,649) 
+Accounts payable and other accrued liabilities (4,810) (549) 
+Federal deferred excise tax payable 134,083  (109,064) 
+Net cash used in operating activities (6,647,794) (5,706,321) 
+Cash flows from investing activities:
+Purchases of investments (152,940,968) (227,796,690) 
+Proceeds from sales and maturities of investments 159,470,069  233,533,655  
+Net cash provided by investing activities 6,529,101  5,736,965  
+Net change in cash (118,693) 30,644  
+Cash, beginning of year 413,936  383,292  
+Cash, end of year $ 295,243  413,936  
+Supplemental disclosure of cash flow information:
+Cash paid during the year for excise taxes $ 90,000  150,000  
+See accompanying notes to financial statements.
+5
+
+PDF PAGE 7
+BILL & MELINDA GATES FOUNDATION TRUST 
+Notes to Financial Statements 
+December 31, 2023 and 2022 
+(Dollars in thousands) 
+ 6 (Continued) 
+(1) Organization 
+Bill & Melinda Gates Foundation Trust (the Trust) is a tax-exempt private foundation that holds the donated 
+investment assets from Bill Gates, Melinda French Gates, and Warren Buffett. The Trust operates its main 
+office in Seattle, Washington. Bill Gates and Melinda French Gates are its Trustees. The primary role of the 
+Trust is to manage the investment assets and transfer the proceeds to Bill & Melinda Gates Foundation 
+(the Foundation) as necessary to achieve the Foundation’s charitable goals. On May 13, 2024, Melinda 
+French Gates announced her intention to resign as a Trustee of the Trust. 
+The Foundation is a related party of the Trust. Neither entity controls the other; however, they share the 
+same Trustees. The Foundation has the legal right to demand any amount, up to the full net assets of the 
+Trust. In 2023 and 2022, the Trust made grants to the Foundation totaling $7,751,200 and $6,806,925, 
+respectively. All assets of the Trust are considered available to meet cash needs for these general 
+expenditures within one year of the statements of financial position. However, the Trust does not intend to 
+liquidate investments other than as required for planned general expenditures during the year.  
+(2) Summary of Significant Accounting Policies 
+(a) Basis of Financial Presentation 
+The accompanying financial statements have been prepared on the accrual basis of accounting.  
+The Trust recognizes unconditional promises to give as revenue in the period received. Contributions 
+with associated conditions are recorded as revenue when the conditions are met. Contributions, net 
+assets, and changes therein are classified and reported based on the existence or absence of 
+donor-imposed restrictions. For the years ended December 31, 2023 and 2022, all activities and net 
+assets of the Trust were classified as without donor restrictions. 
+(b) Cash 
+Cash consists of U.S. and foreign currencies. 
+(c) Investments 
+Investments are stated at fair value with unrealized gains and losses on investments resulting from fair 
+value fluctuations recorded in the statements of activities in the period that such fluctuations occur red. 
+Highly liquid interest-earning investments and time deposits with an original maturity of less than three 
+months are classified as cash equivalents within investments, and not considered cash and cash 
+equivalents for purposes of the statements of cash flows. Investment sales and purchases are 
+recorded on a trade-date basis. Dividend income is recorded on the ex-dividend date and interest 
+income is recorded on an accrual basis. Amortization and accretion of premiums and discounts are 
+recorded using the effective-interest method. Investment income (losses), net on the statements of 
+activities is comprised of net realized and unrealized gains and losses on investments, interest and 
+dividend income, and other net investment expenses. 
+(d) Fair Value of Financial Instruments 
+In determining the fair value of investments, the Trust utilizes valuation techniques that maximize the 
+use of observable inputs and minimize the use of unobservable inputs to the extent possible. The Trust 
+
+PDF PAGE 8
+BILL & MELINDA GATES FOUNDATION TRUST 
+Notes to Financial Statements 
+December 31, 2023 and 2022 
+(Dollars in thousands) 
+ 7 (Continued) 
+determines fair value based on assumptions that market participants would use in pricing an asset or 
+liability in the principal or most advantageous market. When considering market participant  
+assumptions in fair value measurements, the following fair value hierarchy distinguishes between 
+observable and unobservable inputs, which are characterized in one of the following levels:  
+Level 1 Inputs: Unadjusted quoted or published prices in active markets for identical assets or 
+liabilities accessible to the Trust at the measurement date 
+Level 2 Inputs: Valuations based on observable inputs (other than Level 1 prices) such as quoted or 
+published prices for similar assets at the measurement date; quoted prices in markets 
+that are not active; or other inputs that are observable, either directly or indirectly  
+Level 3 Inputs: Valuations based on inputs that are unobservable and significant to the overall fair 
+value measurement and involve management judgment 
+The Trust utilizes a practical expedient to estimate the fair value of investments in investment 
+companies for which the investment does not have a readily determinable fair value. The practical 
+expedient used by the Trust to value private investments is the Net Asset Value (NAV) per share, or its 
+equivalent. In some instances, the NAV may not equal the fair value that would be calculated under fair 
+value accounting standards. 
+(e) Contributed Services 
+Contributed services are recognized if the services received either create or enhance long- lived assets 
+or require specialized skills, are provided by individuals possessing those skills, and would typically 
+need to be purchased if not provided by donation. The value of contributed services utilized by the 
+Trust and recorded in the accompanying statements of activities, consisting primarily of investment 
+management services donated by Bill Gates, totaled $785,825 and $685,689 in 2023 and 2022, 
+respectively. Investment management services are valued at estimated fair value based upon current 
+rates for similar services. Contributed investment management services are reflected as contributions 
+revenue and investment management services expense, which is netted against investment income.  
+(f) Contributions Received 
+The Trust accepts, but does not solicit, unrestricted contributions from related and unrelated parties. 
+Warren Buffett contributed Berkshire Hathaway “B” shares valued at $3,542,106 and $3,081,224 in 
+2023 and 2022, respectively. The Trustees contributed cash and stock valued at $353,566 in 2023, 
+which includes $63,325 of cash that was received in January 2024 and recorded as a contribution 
+receivable as of December 31, 2023. The Trustees contributed cash, commodities and stock valued at 
+$20,067,006 in 2022, which includes $51,541 of cash that was received in January 2023 and recorded 
+as a contribution receivable as of December 31, 2022. Bill Gates also contributed third-party 
+investment management services of $71,802 and $72,185 in 2023 and 2022, respectively. 
+(g) Tax-Exempt Status 
+The Trust is exempt from federal income taxes under Section 501(c)(3) and is classified as a private 
+foundation under Section 509(a) of the Internal Revenue Code (IRS). The Trust is subject to federal 
+
+PDF PAGE 9
+BILL & MELINDA GATES FOUNDATION TRUST 
+Notes to Financial Statements 
+December 31, 2023 and 2022 
+(Dollars in thousands) 
+ 8 (Continued) 
+excise taxes as well as federal and state unrelated business income tax. In addition, some investments 
+in foreign countries are subject to foreign income tax. 
+(h) Use of Estimates 
+The preparation of financial statements in conformity with U.S. generally accepted accounting 
+principles requires management to make estimates and assumptions that affect the reported amounts 
+of assets and liabilities and disclosure of contingent assets and liabilities at the date of the financial 
+statements and the reported amounts of revenues and expenses during the reporting period. Actual 
+results could differ from those estimates. 
+(i) Reclassifications 
+Certain reclassifications have been made to the note disclosures of investment-related assets in 2022 
+to conform to the 2023 presentation. 
+(3) Investments 
+The Trust’s investments, including placement in the fair value hierarchy of assets and liabilities that are 
+measured at fair value on a recurring basis, are presented in the following tables:  
+Gross Ne t
+December 31, 2023 Level 1 Level 2 Level 3 fair value Netting* fair value
+Cash equivalents $ —  478,190  —  478,190  —  478,190  
+Equities:
+Berkshire Hathaw ay "B" shares 7,103,365  —  —  7,103,365  —  7,103,365  
+Consumer goods 4,880,136  56  327,271  5,207,463  —  5,207,463  
+Energy and utilities 219,408  —  —  219,408  —  219,408  
+Financials 1,557,766  —  —  1,557,766  —  1,557,766  
+Healthcare 598,867  —  —  598,867  —  598,867  
+Industrials 19,976,138  —  115,067  20,091,205  —  20,091,205  
+Information technology 16,183,696  —  7,000  16,190,696  —  16,190,696  
+Materials 3,789,910  —  —  3,789,910  —  3,789,910  
+Real estate 339,806  —  351,449  691,255  —  691,255  
+Communication services 833,724  20  —  833,744  —  833,744  
+Debt:
+U.S. government securities 7,376,460  553,126  —  7,929,586  —  7,929,586  
+U.S. municipals —  22,804  —  22,804  —  22,804  
+Foreign government securities —  1,691,129  —  1,691,129  —  1,691,129  
+Corporate debt securities —  1,346,394  —  1,346,394  —  1,346,394  
+Asset-backed securities —  1,178,553  —  1,178,553  —  1,178,553  
+Commingled 1,272,331  102,897  76  1,375,304  —  1,375,304  
+Commodities —  3,176,801  —  3,176,801  —  3,176,801  
+Derivative contracts 23,570  100,343  —  123,913  (23,929) 99,984  
+Total investments
+measured at
+fair value 64,155,177  8,650,313  800,863  73,606,353  (23,929) 73,582,424  
+Private investments measured at
+net asset value —  —  —  1,560,694  —  1,560,694  
+Total investment
+assets $ 64,155,177  8,650,313  800,863  75,167,047  (23,929) 75,143,118  
+Derivative liabilities $ 3,062  43,930  —  46,992  (29,723) 17,269  
+* Represents the netting allow ed under legally enforceable master netting agreements, including cash collateral (note 4).
+ 
+
+PDF PAGE 10
+BILL & MELINDA GATES FOUNDATION TRUST 
+Notes to Financial Statements 
+December 31, 2023 and 2022 
+(Dollars in thousands) 
+ 9 (Continued) 
+Unfunded commitments related to private investments as of December 31, 2023 were $1,400,781. 
+Gross Ne t
+December 31, 2022 Level 1 Level 2 Level 3 fair value Netting* fair value
+Cash equivalents $ —  438,037  —  438,037  —  438,037  
+Equities:
+Berkshire Hathaw ay "B" shares 7,626,693  —  —  7,626,693  —  7,626,693  
+Consumer goods 3,765,263  391  320,919  4,086,573  —  4,086,573  
+Energy and utilities 219,128  —  —  219,128  —  219,128  
+Financials 1,346,717  —  —  1,346,717  —  1,346,717  
+Healthcare 604,779  —  —  604,779  —  604,779  
+Industrials 18,053,470  —  99,161  18,152,631  —  18,152,631  
+Information technology 10,773,951  —  5,000  10,778,951  —  10,778,951  
+Materials 3,092,927  1  —  3,092,928  —  3,092,928  
+Real estate 349,726  —  330,815  680,541  —  680,541  
+Communication services 589,654  —  —  589,654  —  589,654  
+Other 2,870  —  —  2,870  —  2,870  
+Debt:
+U.S. government securities 3,661,937  285,108  —  3,947,045  —  3,947,045  
+U.S. municipals —  22,873  —  22,873  —  22,873  
+Foreign government securities —  7,777,942  —  7,777,942  —  7,777,942  
+Corporate debt securities —  1,383,550  —  1,383,550  —  1,383,550  
+Asset-backed securities —  1,023,731  —  1,023,731  —  1,023,731  
+Commingled 1,150,179  86,798  334  1,237,311  —  1,237,311  
+Commodities —  2,743,541  —  2,743,541  —  2,743,541  
+Derivative contracts 33,999  108,431  —  142,430  (35,777) 106,653  
+Total investments
+measured at
+fair value 51,271,293  13,870,403  756,229  65,897,925  (35,777) 65,862,148  
+Private investments measured at
+net asset value —  —  —  1,327,889  —  1,327,889  
+Total investment
+assets $ 51,271,293  13,870,403  756,229  67,225,814  (35,777) 67,190,037  
+Derivative liabilities $ 6,093  529,115  —  535,208  (48,643) 486,565  
+* Represents the netting allow ed under legally enforceable master netting agreements, including cash collateral (note 4).
+ 
+Cash equivalents as of December 31, 2023 include amounts invested in overnight securities purchased 
+under agreements to resell (reverse repurchase agreements). These transactions are treated as 
+collateralized financing transactions and are recorded at their contracted resale amounts. It is the T rust’s 
+policy to obtain possession of securities purchased under agreements to resell. The Trust manages the 
+credit risk associated with these transactions by monitoring the market value of the collateral obtained, 
+including accrued interest, and by requesting additional collateral when deemed appropriate. As of 
+December 31, 2023, the contract value of reverse repurchase agreements was $100,000 and the fair value 
+of collateral received by the Trust under reverse repurchase agreements was $101,764. As of 
+December 31, 2022, the contract value of reverse repurchase agreements was $122,200 and the fair value 
+of collateral received by the Trust under reverse repurchase agreements was $123,796.  
+
+PDF PAGE 11
+BILL & MELINDA GATES FOUNDATION TRUST 
+Notes to Financial Statements 
+December 31, 2023 and 2022 
+(Dollars in thousands) 
+ 10 (Continued) 
+Private investments measured using NAV as a practical expedient are not classified in the fair value 
+hierarchy. Given the longer-term nature of private investments, many of those holdings could not be 
+liquidated immediately in the unlikely event that such a need were to arise for the Trust. The majority of the 
+private investments held as of December 31, 2023 and 2022 require general partner or managing member 
+approval for an early redemption or transfer of ownership and a 10-90 day timeframe to liquidate the 
+investment. The decision to invest in private investments includes consideration of the liquidation limitations 
+as well as expected long-term funding requirements of the Foundation. 
+For the years ended December 31, 2023 and 2022, changes in Level 3 holdings consisted primarily of 
+acquisitions of units and valuation adjustments in privately held companies in the consumer goods, real 
+estate, industrials, and information technology industries. 
+(4) Derivative Financial Instruments 
+In the normal course of business, the Trust uses various financial instruments, including derivative financial 
+instruments, in an effort to manage exposure on long-term investments. 
+In order to manage price and interest rate risk associated with investing activities, the Trust primarily uses a 
+combination of forward contracts and futures. Under these instruments, the Trust agrees to the future 
+delivery of a currency or security, on an agreed-upon date, and at an agreed-upon price. These contracts 
+are entered into with the intent of minimizing the Trust’s economic exposure to adverse fluctuations in 
+financial or currency markets and to reduce interest rate risk. 
+The Trust also enters into derivative instruments for speculative and other purposes, including income 
+enhancement and as an alternative to ownership of the underlying asset. Specifically, swaps, written 
+options and forward contracts are used for enhancing returns on other investments and as an alternative to 
+ownership. 
+The Trust nets certain derivative asset positions and derivative liability positions under legally enforceable 
+master netting agreements. The Trust’s net derivative asset positions are included within investments on 
+the accompanying statements of financial position. The Trust’s net derivative liability positions are included 
+in the payable for investment purchases and other in the accompanying statements of financial position. 
+Realized gains and losses as well as changes in fair value for all derivative instruments are included as a 
+component of investment income (losses). 
+
+PDF PAGE 12
+BILL & MELINDA GATES FOUNDATION TRUST 
+Notes to Financial Statements 
+December 31, 2023 and 2022 
+(Dollars in thousands) 
+ 11 (Continued) 
+The fair values of forward contracts, futures, options and swaps as of December 31, 2023 and 2022 are as 
+follows: 
+December 31, 2023
+Derivative Derivative
+a sse ts liabilities
+Forward contracts $ 70,907  (35,686) 
+Futures 21,787  (585) 
+Options 1,783  (2,477) 
+Swaps 29,436  (8,244) 
+Total 123,913  (46,992) 
+Netting offset* (23,929) 29,723  
+Fair value presented in statement of financial
+position 99,984  (17,269) 
+Noncash collateral (39,686) 13,804  
+Net amount $ 60,298  (3,465) 
+ 
+December 31, 2022
+Derivative Derivative
+a sse ts liabilities
+Forward contracts $ 43,009  (499,204) 
+Futures 32,521  (2,801) 
+Options 1,478  (3,292) 
+Swaps 65,422  (29,911) 
+Total 142,430  (535,208) 
+Netting offset* (35,777) 48,643  
+Fair value presented in statement of financial
+position 106,653  (486,565) 
+Noncash collateral (11,008) 434,715  
+Net amount $ 95,645  (51,850) 
+ 
+* Represents the netting allowed under legally enforceable master netting agreements, including cash 
+collateral of $1,460 and $407 netted against derivative assets at December 31, 2023 and 2022, and 
+$7,254 and $13,273 netted against derivative liabilities at December 31, 2023 and 2022, respectively. 
+
+PDF PAGE 13
+BILL & MELINDA GATES FOUNDATION TRUST 
+Notes to Financial Statements 
+December 31, 2023 and 2022 
+(Dollars in thousands) 
+ 12 (Continued) 
+Outstanding notional purchases and sales were as follows: 
+December 31, 2023 December 31, 2022
+Purchases Sales Purchases Sales
+Forward contracts $ 2,344,587  787,306  2,370,818  6,799,954  
+Futures 1,487,652  2,885,193  3,249,333  6,393,908  
+Options 11,234  24,484  19,202  23,689  
+Swaps 552,090  856,923  587,499  1,124,071  
+ 
+The Trust’s derivative instruments involve varying degrees of risk of loss in excess of the amount 
+recognized in the statements of financial position, arising either from potential changes in market prices or 
+the possible inability of counterparties to meet the terms of their contracts. The Trust ’s derivative positions 
+as of December 31, 2023 and 2022 are with more than 10 counterparties. The Trust monitors the financial 
+condition of the firms used for these contracts in order to minimize the risk of loss. Management believes 
+the Trust’s use of derivatives does not result in credit or market risk that would materially affect the Trust ’s 
+financial statements. 
+(5) Federal Excise Taxes 
+The Trust is subject to federal excise taxes imposed on private foundations. Excise tax is imposed on net 
+investment income, as defined under federal law, which includes interest, dividends, and net realized gains 
+on the sale of investments. The Trust provided for excise taxes at the 1.39% excise tax rate for the years 
+ended December 31, 2023 and 2022. The current portion of excise tax expense was $101,424 and 
+$128,950 and current tax receivable was $4,225 and $15,649 for the years ended December 31, 2023 and 
+2022, respectively. 
+The Trust made provisions for deferred excise taxes, which were recorded at the 1.39% excise tax rate in 
+2023 and 2022. Deferred excise tax payable was $253,927 and $119,844 and tax expense (benefit) was 
+$134,083 and $(103,663) for the years ended December 31, 2023 and 2022, respectively, resulting from 
+net unrealized gains (losses) on investments. 
+(6) Commitments and Contingencies 
+In the ordinary course of business, the Trust is subject to certain legal actions. In the opinion of 
+management, such matters will not have a material effect on the financial position of the Trust . 
+
+PDF PAGE 14
+BILL & MELINDA GATES FOUNDATION TRUST 
+Notes to Financial Statements 
+December 31, 2023 and 2022 
+(Dollars in thousands) 
+ 13 
+(7) Conditional Pledge Receivable 
+The Trust recognizes conditional promises to give as revenue when the conditions are met. The Trust has 
+received annual contributions from Warren Buffett based on a lifetime gift pledge he made in 2006. The 
+original pledge was up to 10 million Berkshire Hathaway “B” shares (500 million split-adjusted), of which 
+301 million have been received through December 31, 2023. As this gift is conditional and applies only 
+during his lifetime, its receipt cannot be assured in advance of each year’s installment of the gift. He 
+regularly makes this gift at mid-year. Therefore, a receivable for future contributions has not been reflected 
+in these financial statements. Future contribution income will be recognized as the conditions of the gift are 
+met during Mr. Buffett’s lifetime. After his death, Mr. Buffett’s executors will direct the disposition of his 
+assets. 
+(8) Subsequent Events 
+The Trust evaluated subsequent events from December 31, 2023 through May 22, 2024, the date on which 
+the financial statements were available to be issued, and determined that no additional disclosures are 
+required. 
