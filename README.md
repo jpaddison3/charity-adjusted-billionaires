@@ -26,16 +26,24 @@ Join [the discord](https://discord.gg/6GNre8U2ta) to learn more about these and 
 
 ## Local development
 
-1. Clone this repository
-2. Install dependencies:
+1. Clone this repository.
+2. Select the Node version in `.nvmrc` (for example, run `nvm install` and `nvm use`).
+3. Install the npm version pinned in `package.json`, verify the toolchain, and install the locked dependencies:
+
+   ```sh
+   npm install --global npm@11.16.0 --ignore-scripts
+   node --version
+   npm --version
+   npm ci
    ```
-   npm install
-   ```
-3. Generate data
+
+   The version checks should report Node 24.x and npm 11.16.0.
+
+4. Generate data
    ```
    npm run generate-data
    ```
-4. Start development server (recommended):
+5. Start development server (recommended):
 
    ```
    vercel dev
@@ -46,7 +54,7 @@ Join [the discord](https://discord.gg/6GNre8U2ta) to learn more about these and 
    - the Vite frontend
    - Vercel serverless routes under `/api/*` (used by shared assumptions and health checks)
 
-5. Optional frontend-only dev server:
+6. Optional frontend-only dev server:
 
    ```
    npm run dev
@@ -54,11 +62,11 @@ Join [the discord](https://discord.gg/6GNre8U2ta) to learn more about these and 
 
    Use this only when you do not need `/api/*` routes.
 
-6. Build for production:
+7. Build for production:
    ```
    npm run build
    ```
-7. Preview production build:
+8. Preview production build:
    ```
    npm run preview
    ```
@@ -126,6 +134,7 @@ Each worktree can be linked to a different Vercel project, and `vercel pull` ove
    - (recommended) `production`
 
 3. In each branch/worktree:
+
    - run `vercel link` and confirm which project it points to
    - run `vercel pull --environment=development`
    - run `vercel dev`
@@ -154,4 +163,29 @@ Each worktree can be linked to a different Vercel project, and `vercel pull` ove
 
 ## Other
 
-When running `npm audit` or `npm audit fix`, add `--omit=dev` to analyze only the dependencies in the deployed app/runtime. (Note: `npm audit fix --omit=dev` prunes devDependencies from node_modules — run a plain `npm install` afterwards to restore them.)
+### Dependency updates and install scripts
+
+The committed npm policy waits seven days before selecting a newly published package version and rejects dependency
+install scripts unless `package.json#allowScripts` explicitly approves that package and version. `fsevents` install scripts
+are explicitly denied because its packaged macOS binary and watcher fallbacks work without them. These safeguards cover
+installation only; they do not sandbox dependency code when the application or development tools run. npm's explicit
+command-line and environment overrides also remain available.
+
+Before installing a dependency update, review the manifest and lockfile diffs, publication dates, package provenance and
+source, and changes to any install code or helpers it invokes (including binary-download fallbacks). Keep approvals
+version-specific so each new script-bearing version requires another review. The install-policy fixtures record npm's
+lockfile behavior: the seven-day age check filters new resolutions and updates, while both `npm install` and `npm ci`
+continue to honor an already-locked recent version.
+
+For an urgent security fix that is less than seven days old, make a one-command exception and review the entire lockfile
+diff before committing it:
+
+```sh
+npm install <package>@<fixed-version> --min-release-age=0
+```
+
+Keep the committed seven-day default unchanged and document why the exception was necessary in the change review.
+
+When running `npm audit` or `npm audit fix`, add `--omit=dev` to analyze only the dependencies in the deployed app/runtime.
+`npm audit fix --omit=dev` prunes devDependencies from `node_modules`; repeat the pinned toolchain checks above and run
+`npm ci` afterwards to restore the reproducible development environment.

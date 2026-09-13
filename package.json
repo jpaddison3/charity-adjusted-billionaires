@@ -5,7 +5,15 @@
   "private": true,
   "type": "module",
   "engines": {
-    "node": ">=22"
+    "node": "24.x",
+    "npm": "11.16.0"
+  },
+  "packageManager": "npm@11.16.0",
+  "allowScripts": {
+    "esbuild@0.25.2": true,
+    "esbuild@0.27.0": true,
+    "esbuild@0.27.3": true,
+    "fsevents": false
   },
   "scripts": {
     "predev": "npm run generate-data",
