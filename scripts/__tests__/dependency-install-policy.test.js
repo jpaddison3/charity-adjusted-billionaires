@@ -71,8 +71,8 @@ const createPackageTarball = async (name, version, installScript, extraFiles = {
     ...(installScript ? { scripts: { install: installScript } } : {}),
   });
   await writeFile(join(packageDirectory, 'index.js'), `export default '${version}';\n`);
-  for (const [name, contents] of Object.entries(extraFiles)) {
-    await writeFile(join(packageDirectory, name), contents);
+  for (const [fileName, contents] of Object.entries(extraFiles)) {
+    await writeFile(join(packageDirectory, fileName), contents);
   }
 
   const tarball = join(directory, `${name}-${version}.tgz`);
@@ -149,7 +149,10 @@ beforeAll(async () => {
     readFile(join(repositoryRoot, '.npmrc'), 'utf8'),
     readFile(join(repositoryRoot, 'package.json'), 'utf8').then(JSON.parse),
   ]);
-  expect(npmVersion.trim()).toBe(packageJson.engines.npm);
+  expect(
+    npmVersion.trim(),
+    `Install the required npm ${packageJson.engines.npm} with sh scripts/bootstrap-npm.sh, then rerun the tests.`
+  ).toBe(packageJson.engines.npm);
   expect(packageJson.packageManager).toBe(`npm@${packageJson.engines.npm}`);
   projectPolicy = { npmrc, packageJson };
 });
