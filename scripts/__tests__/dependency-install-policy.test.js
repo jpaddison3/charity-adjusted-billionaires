@@ -273,6 +273,13 @@ describe('dependency install-script policy', () => {
             { mode: 0o755 }
           );
           // Rebuild can see binding.gyp on disk, so its strict preflight requires explicit approval.
+          await expect(
+            runNpm(project, ['rebuild', 'fixture-native-build', '--ignore-scripts=false'], { marker, registry })
+          ).rejects.toMatchObject({
+            code: 1,
+            stderr: expect.stringContaining('ESTRICTALLOWSCRIPTS'),
+          });
+          await expect(readFile(marker)).rejects.toMatchObject({ code: 'ENOENT' });
           const manifestPath = join(project, 'package.json');
           const manifest = JSON.parse(await readFile(manifestPath, 'utf8'));
           manifest.allowScripts['fixture-native-build@1.0.0'] = true;
@@ -283,7 +290,7 @@ describe('dependency install-script policy', () => {
       },
       null
     );
-  });
+  }, 60_000);
 });
 
 describe('minimum release age policy', () => {

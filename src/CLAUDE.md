@@ -39,4 +39,4 @@ Fail hard and loudly on unexpected states (project rule). The deliberate excepti
 
 - `src/data/generatedData.js` is gitignored and everything imports it; `npm run dev`/`npm test*`/`npm run build` regenerate it automatically through explicit command chains. Direct `npx vitest` runs do NOT — run `npm run generate-data` first on a fresh clone or after `content/` edits. Automatic pre/post lifecycle hooks are disabled by `.npmrc` (`ignore-scripts=true`); keep generation in the command bodies and use `npm run setup` to install dependencies and initialize Husky.
 - Vitest configuration lives under the `test` key in `vite.config.js` (there is no separate `vitest.config.js`), and there is intentionally no test-only path alias — import paths must work identically for tests and builds.
-- CI (`.github/workflows/ci.yml`): generate → lint → coverage-gated tests (50% floors) → build.
+- CI (`.github/workflows/ci.yml`): lint → skills sync check → coverage-gated tests (50% floors) → build; tests and build each generate their data.
