@@ -1,0 +1,24 @@
+name: Set up Node and dependencies
+description: Install the repository's pinned Node and npm versions, then restore dependencies
+
+runs:
+  using: composite
+  steps:
+    - uses: actions/setup-node@v4
+      with:
+        node-version-file: .nvmrc
+        cache: npm
+
+    - name: Install pinned npm
+      shell: bash
+      run: sh scripts/bootstrap-npm.sh
+
+    - name: Show toolchain versions
+      shell: bash
+      run: |
+        node --version
+        npm --version
+
+    - name: Install dependencies
+      shell: bash
+      run: npm run setup

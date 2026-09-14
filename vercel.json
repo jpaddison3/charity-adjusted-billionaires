@@ -45,5 +45,6 @@
       ]
     }
   ],
+  "installCommand": "sh scripts/bootstrap-npm.sh && npm run setup",
   "buildCommand": "npm run build"
 }

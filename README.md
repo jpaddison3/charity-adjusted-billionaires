@@ -28,16 +28,26 @@ Join [the discord](https://discord.gg/6GNre8U2ta) to learn more about these and 
 
 ## Local development
 
-1. Clone this repository
-2. Install dependencies:
+1. Clone this repository.
+2. Select the Node version in `.nvmrc` (for example, run `nvm install` and `nvm use`).
+3. Install the npm version pinned in `package.json`, verify the toolchain, and install the locked dependencies:
+
+   ```sh
+   sh scripts/bootstrap-npm.sh
+   node --version
+   npm --version
+   npm run setup
    ```
-   npm install
-   ```
-3. Generate data
+
+   The version checks should report Node 24.x and npm 11.16.0.
+   `setup` runs `npm ci` with dependency scripts disabled, then explicitly initializes Husky with `npm run prepare`.
+   CI and Vercel use the same setup command; Vercel also bootstraps the pinned npm before installation.
+
+4. Generate data
    ```
    npm run generate-data
    ```
-4. Start development server (recommended):
+5. Start development server (recommended):
 
    ```
    vercel dev
@@ -48,7 +58,7 @@ Join [the discord](https://discord.gg/6GNre8U2ta) to learn more about these and 
    - the Vite frontend
    - Vercel serverless routes under `/api/*` (used by shared assumptions and health checks)
 
-5. Optional frontend-only dev server:
+6. Optional frontend-only dev server:
 
    ```
    npm run dev
@@ -56,11 +66,11 @@ Join [the discord](https://discord.gg/6GNre8U2ta) to learn more about these and 
 
    Use this only when you do not need `/api/*` routes.
 
-6. Build for production:
+7. Build for production:
    ```
    npm run build
    ```
-7. Preview production build:
+8. Preview production build:
    ```
    npm run preview
    ```
@@ -157,4 +167,38 @@ Each worktree can be linked to a different Vercel project, and `vercel pull` ove
 
 ## Other
 
-When running `npm audit` or `npm audit fix`, add `--omit=dev` to analyze only the dependencies in the deployed app/runtime. (Note: `npm audit fix --omit=dev` prunes devDependencies from node_modules — run a plain `npm install` afterwards to restore them.)
+### Dependency updates and install scripts
+
+The committed npm policy waits seven days before selecting a newly published package version and disables dependency
+install scripts with `ignore-scripts=true`. Fresh setup uses `npm run setup` to install the lockfile and explicitly initialize
+Husky. Data generation is part of the `dev`, `test`, `test:run`, `test:coverage`, `test:watch`, and `build` commands themselves,
+so it still runs with automatic lifecycle hooks disabled. The locked esbuild and fsevents packages work with their packaged
+binaries and watcher fallbacks; normal setup does not need their install hooks.
+
+`strict-allow-scripts` and the version-specific `allowScripts` entries remain an extra check for an intentional rebuild with
+scripts enabled. They are not the default execution barrier: npm 11.16.0 can discover a tarball's `binding.gyp` only after its
+strict preflight and run an implicit native build even when registry metadata declares no scripts. The install-policy
+fixtures cover this case under both `npm install` and `npm ci`. Do not re-enable scripts for a general install. If a reviewed
+package needs a rebuild, target its reviewed exact version, for example `npm rebuild esbuild@0.25.2 --ignore-scripts=false`.
+
+These safeguards cover installation only; they do not sandbox dependency code when the application or development tools
+run. npm's explicit command-line and environment overrides remain available.
+
+Before installing a dependency update, review the manifest and lockfile diffs, publication dates, package provenance and
+source, and changes to any install code or helpers it invokes (including binary-download fallbacks). Keep approvals
+version-specific so each new script-bearing version requires another review. The install-policy fixtures record npm's
+lockfile behavior: the seven-day age check filters new resolutions and updates, while both `npm install` and `npm ci`
+continue to honor an already-locked recent version.
+
+For an urgent security fix that is less than seven days old, make a one-command exception and review the entire lockfile
+diff before committing it:
+
+```sh
+npm install <package>@<fixed-version> --min-release-age=0
+```
+
+Keep the committed seven-day default unchanged and document why the exception was necessary in the change review.
+
+When running `npm audit` or `npm audit fix`, add `--omit=dev` to analyze only the dependencies in the deployed app/runtime.
+`npm audit fix --omit=dev` prunes devDependencies from `node_modules`; repeat the pinned toolchain checks above and run
+`npm run setup` afterwards to restore the reproducible development environment and hooks.

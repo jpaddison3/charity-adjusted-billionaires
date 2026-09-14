@@ -5,11 +5,18 @@
   "private": true,
   "type": "module",
   "engines": {
-    "node": ">=22"
+    "node": "24.x",
+    "npm": "11.16.0"
+  },
+  "packageManager": "npm@11.16.0",
+  "allowScripts": {
+    "esbuild@0.25.2": true,
+    "esbuild@0.27.0": true,
+    "esbuild@0.27.3": true,
+    "fsevents": false
   },
   "scripts": {
-    "predev": "npm run generate-data",
-    "dev": "vite",
+    "dev": "npm run generate-data && vite",
     "build": "npm run generate-data && vite build",
     "preview": "vite preview",
     "generate-data": "node scripts/generate-data-from-markdown.js",
@@ -19,17 +26,14 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "prepare": "husky",
-    "pretest": "npm run generate-data",
-    "test": "vitest",
-    "pretest:run": "npm run generate-data",
-    "test:run": "vitest run",
-    "pretest:coverage": "npm run generate-data",
-    "test:coverage": "vitest run --coverage",
-    "pretest:watch": "npm run generate-data",
-    "test:watch": "vitest --watch",
+    "test": "npm run generate-data && vitest",
+    "test:run": "npm run generate-data && vitest run",
+    "test:coverage": "npm run generate-data && vitest run --coverage",
+    "test:watch": "npm run generate-data && vitest --watch",
     "test:e2e": "playwright test --project=chromium",
     "test:e2e:headed": "playwright test --headed --project=chromium",
-    "test:e2e:release": "playwright install firefox webkit && playwright test"
+    "test:e2e:release": "playwright install firefox webkit && playwright test",
+    "setup": "npm ci && npm run prepare"
   },
   "lint-staged": {
     "**/*.{js,jsx}": [
