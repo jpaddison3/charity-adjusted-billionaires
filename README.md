@@ -190,12 +190,17 @@ version-specific so each new script-bearing version requires another review. The
 lockfile behavior: the seven-day age check filters new resolutions and updates, while both `npm install` and `npm ci`
 continue to honor an already-locked recent version.
 
-For an urgent security fix that is less than seven days old, make a one-command exception and review the entire lockfile
-diff before committing it:
+For an urgent security fix to a direct dependency that is less than seven days old, make a one-command exception and
+review the entire manifest and lockfile diff before committing it:
 
 ```sh
 npm install <package>@<fixed-version> --min-release-age=0
 ```
+
+For a transitive dependency, use `npm update <package> --min-release-age=0` when its parent's version range allows the fix.
+If that range excludes the fixed version, update the parent or add a reviewed `overrides` entry and regenerate the lockfile
+with the same one-command age exception. Adding the transitive package as a direct dependency can leave the vulnerable
+nested copy installed. Verify that every affected copy in the lockfile has been fixed before committing.
 
 Keep the committed seven-day default unchanged and document why the exception was necessary in the change review.
 

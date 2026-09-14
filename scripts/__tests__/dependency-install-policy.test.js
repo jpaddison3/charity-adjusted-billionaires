@@ -262,6 +262,23 @@ describe('dependency install-script policy', () => {
           await runNpm(project, [command], { marker, registry });
           await readFile(join(project, 'node_modules/fixture-native-build/binding.gyp'));
           await expect(readFile(marker)).rejects.toMatchObject({ code: 'ENOENT' });
+
+          // Stub the compiler boundary: prove npm invokes the implicit build without requiring
+          // Python, a native toolchain, or network access to download Node headers.
+          const binaries = join(project, 'node_modules/.bin');
+          await mkdir(binaries, { recursive: true });
+          await writeFile(
+            join(binaries, 'node-gyp'),
+            "#!/usr/bin/env node\nrequire('node:fs').writeFileSync(process.env.INSTALL_MARKER, 'ran');\n",
+            { mode: 0o755 }
+          );
+          // Rebuild can see binding.gyp on disk, so its strict preflight requires explicit approval.
+          const manifestPath = join(project, 'package.json');
+          const manifest = JSON.parse(await readFile(manifestPath, 'utf8'));
+          manifest.allowScripts['fixture-native-build@1.0.0'] = true;
+          await writeJson(manifestPath, manifest);
+          await runNpm(project, ['rebuild', 'fixture-native-build', '--ignore-scripts=false'], { marker, registry });
+          expect(await readFile(marker, 'utf8')).toBe('ran');
         }
       },
       null
