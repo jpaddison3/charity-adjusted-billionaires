@@ -6,6 +6,8 @@ The goal is to make the list popular enough to increase the status awarded to th
 
 See [this description of the project](https://forum.effectivealtruism.org/posts/LCJa4AAi7YBcyro2H/proposal-impact-list-like-the-forbes-list-except-for-impact) for details.
 
+The offline [charity-adjusted wealth methodology](docs/lcb-methodology.md) documents the December 31, 2025 snapshot, source inputs, transfer reconciliation, coverage, and reproducible export commands.
+
 ## How you can help
 
 We’re actively seeking volunteers to help with the project.

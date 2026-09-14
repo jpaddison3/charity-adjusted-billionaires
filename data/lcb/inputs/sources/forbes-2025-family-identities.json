@@ -1,0 +1,42 @@
+{
+  "url": "https://www.forbes.com/sites/chasewithorn/2025/04/01/forbes-worlds-billionaires-list-2025-the-top-200/",
+  "observationDate": "2025-03-07",
+  "retrievalDate": "2026-09-12",
+  "records": [
+    {
+      "donorId": "bernard-arnault",
+      "sourceName": "Bernard Arnault & family",
+      "amountUSD": 178000000000
+    },
+    {
+      "donorId": "carlos-slim",
+      "sourceName": "Carlos Slim Helu & family",
+      "amountUSD": 82500000000
+    },
+    {
+      "donorId": "charles-koch",
+      "sourceName": "Charles Koch & family",
+      "amountUSD": 67500000000
+    },
+    {
+      "donorId": "phil-knight",
+      "sourceName": "Phil Knight & family",
+      "amountUSD": 35400000000
+    },
+    {
+      "donorId": "marilyn-simons",
+      "sourceName": "Marilyn Simons & family",
+      "amountUSD": 31000000000
+    },
+    {
+      "donorId": "hasso-plattner",
+      "sourceName": "Hasso Plattner & family",
+      "amountUSD": 15200000000
+    },
+    {
+      "donorId": "andrew-forrest",
+      "sourceName": "Andrew Forrest & family",
+      "amountUSD": 14400000000
+    }
+  ]
+}

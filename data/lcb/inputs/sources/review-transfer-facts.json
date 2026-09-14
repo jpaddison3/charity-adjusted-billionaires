@@ -1,0 +1,30 @@
+{
+  "retrievedDate": "2026-09-12",
+  "format": "Coordinator-authored factual extracts, not complete source documents.",
+  "records": [
+    {
+      "id": "review-schmidt-2019-commitment",
+      "url": "https://ericschmidt.com/eric-and-wendy-schmidt-announce-new-1-billion-philanthropic-commitment-to-identify-develop-and-support-global-talent-working-in-service-of-others/",
+      "publishedDate": "2019-11-13",
+      "fact": "The Schmidts announced a new $1 billion commitment across talent programs and initiatives. The statement describes future support and a mix of charitable and commercial tools; it does not establish one completed $1 billion personal charitable transfer."
+    },
+    {
+      "id": "review-hastings-2024-month",
+      "url": "https://apnews.com/article/a9315aa44d18007abbfebb814fc84437",
+      "publishedDate": "2024-12-17",
+      "fact": "The AP/Chronicle report places the approximately $1.1 billion gift of two million Netflix shares to the Hastings Fund at Silicon Valley Community Foundation in January 2024. It does not establish the exact transfer day."
+    },
+    {
+      "id": "review-spielberg-2021-prize",
+      "url": "https://www.genesisprize.org/press-center/2021-03-25-steven-spielberg-donates-his-1m-genesis-prize-to-us-non-profits-fighting-for-racial-and-economic-justice",
+      "publishedDate": "2021-03-25",
+      "fact": "The Genesis Prize Foundation announced ten grant recipients supported by Spielberg’s $1 million 2021 prize and a separate matching contribution. This is a 2021 prize allocation, not a fiscal-year foundation inflow. The announcement does not establish an exact settlement date."
+    },
+    {
+      "id": "review-buffett-nti-2010-pledge",
+      "url": "https://www.nti.org/news/breakthrough-warren-buffett-nti/",
+      "publishedDate": "2010-12-02",
+      "fact": "NTI reported fulfillment of conditions attached to the $50 million commitment made in 2006. Buffett’s statement described writing the check as a future action. The 2006 announcement cannot establish a completed transfer in that year."
+    }
+  ]
+}
