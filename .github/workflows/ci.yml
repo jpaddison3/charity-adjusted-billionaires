@@ -14,7 +14,8 @@ jobs:
         with:
           node-version: 22
           cache: npm
-      - run: npm ci
+      - run: sh scripts/bootstrap-npm.sh
+      - run: npm run setup
       # Both runtimes compare against the same committed bytes; the main job checks Node 24.
       - name: Check exported data on Node 22
         run: npm run check-lcb-data
