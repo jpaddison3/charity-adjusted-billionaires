@@ -71,8 +71,8 @@ const createPackageTarball = async (name, version, installScript, extraFiles = {
     ...(installScript ? { scripts: { install: installScript } } : {}),
   });
   await writeFile(join(packageDirectory, 'index.js'), `export default '${version}';\n`);
-  for (const [name, contents] of Object.entries(extraFiles)) {
-    await writeFile(join(packageDirectory, name), contents);
+  for (const [fileName, contents] of Object.entries(extraFiles)) {
+    await writeFile(join(packageDirectory, fileName), contents);
   }
 
   const tarball = join(directory, `${name}-${version}.tgz`);
@@ -149,7 +149,10 @@ beforeAll(async () => {
     readFile(join(repositoryRoot, '.npmrc'), 'utf8'),
     readFile(join(repositoryRoot, 'package.json'), 'utf8').then(JSON.parse),
   ]);
-  expect(npmVersion.trim()).toBe(packageJson.engines.npm);
+  expect(
+    npmVersion.trim(),
+    `Install the required npm ${packageJson.engines.npm} with sh scripts/bootstrap-npm.sh, then rerun the tests.`
+  ).toBe(packageJson.engines.npm);
   expect(packageJson.packageManager).toBe(`npm@${packageJson.engines.npm}`);
   projectPolicy = { npmrc, packageJson };
 });
@@ -259,11 +262,35 @@ describe('dependency install-script policy', () => {
           await runNpm(project, [command], { marker, registry });
           await readFile(join(project, 'node_modules/fixture-native-build/binding.gyp'));
           await expect(readFile(marker)).rejects.toMatchObject({ code: 'ENOENT' });
+
+          // Stub the compiler boundary: prove npm invokes the implicit build without requiring
+          // Python, a native toolchain, or network access to download Node headers.
+          const binaries = join(project, 'node_modules/.bin');
+          await mkdir(binaries, { recursive: true });
+          await writeFile(
+            join(binaries, 'node-gyp'),
+            "#!/usr/bin/env node\nrequire('node:fs').writeFileSync(process.env.INSTALL_MARKER, 'ran');\n",
+            { mode: 0o755 }
+          );
+          // Rebuild can see binding.gyp on disk, so its strict preflight requires explicit approval.
+          await expect(
+            runNpm(project, ['rebuild', 'fixture-native-build', '--ignore-scripts=false'], { marker, registry })
+          ).rejects.toMatchObject({
+            code: 1,
+            stderr: expect.stringContaining('ESTRICTALLOWSCRIPTS'),
+          });
+          await expect(readFile(marker)).rejects.toMatchObject({ code: 'ENOENT' });
+          const manifestPath = join(project, 'package.json');
+          const manifest = JSON.parse(await readFile(manifestPath, 'utf8'));
+          manifest.allowScripts['fixture-native-build@1.0.0'] = true;
+          await writeJson(manifestPath, manifest);
+          await runNpm(project, ['rebuild', 'fixture-native-build', '--ignore-scripts=false'], { marker, registry });
+          expect(await readFile(marker, 'utf8')).toBe('ran');
         }
       },
       null
     );
-  });
+  }, 60_000);
 });
 
 describe('minimum release age policy', () => {

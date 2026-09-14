@@ -39,9 +39,9 @@ Join [the discord](https://discord.gg/6GNre8U2ta) to learn more about these and 
    npm run setup
    ```
 
-   The version checks should report Node 24.x and npm 11.16.0.
+   The version checks should match the Node and npm requirements in `package.json`.
    `setup` runs `npm ci` with dependency scripts disabled, then explicitly initializes Husky with `npm run prepare`.
-   CI and Vercel use the same setup command; Vercel also bootstraps the pinned npm before installation.
+   CI and Vercel both bootstrap the pinned npm before running the same setup command.
 
 4. Generate data
    ```
@@ -172,8 +172,10 @@ Each worktree can be linked to a different Vercel project, and `vercel pull` ove
 The committed npm policy waits seven days before selecting a newly published package version and disables dependency
 install scripts with `ignore-scripts=true`. Fresh setup uses `npm run setup` to install the lockfile and explicitly initialize
 Husky. Data generation is part of the `dev`, `test`, `test:run`, `test:coverage`, `test:watch`, and `build` commands themselves,
-so it still runs with automatic lifecycle hooks disabled. The locked esbuild and fsevents packages work with their packaged
-binaries and watcher fallbacks; normal setup does not need their install hooks.
+so it still runs with automatic lifecycle hooks disabled. The locked esbuild packages work with their packaged binaries
+without running install hooks. The locked fsevents packages ship their native binaries, but the lockfile marks them as
+having install scripts; the explicit deny entry supports strict, scripts-enabled installs of these locked versions too.
+Watcher fallbacks remain available.
 
 `strict-allow-scripts` and the version-specific `allowScripts` entries remain an extra check for an intentional rebuild with
 scripts enabled. They are not the default execution barrier: npm 11.16.0 can discover a tarball's `binding.gyp` only after its
@@ -190,12 +192,19 @@ version-specific so each new script-bearing version requires another review. The
 lockfile behavior: the seven-day age check filters new resolutions and updates, while both `npm install` and `npm ci`
 continue to honor an already-locked recent version.
 
-For an urgent security fix that is less than seven days old, make a one-command exception and review the entire lockfile
-diff before committing it:
+For an urgent security fix to a direct dependency that is less than seven days old, make a one-command exception and
+review the entire manifest and lockfile diff before committing it:
 
 ```sh
 npm install <package>@<fixed-version> --min-release-age=0
 ```
+
+For a transitive dependency, add a reviewed, exact-version `overrides` entry for the fixed version and regenerate the
+lockfile with `npm install --package-lock-only --min-release-age=0`. If the fix falls outside the parent's supported range,
+update the parent or verify compatibility before overriding it. Adding the transitive package as a direct dependency can
+leave the vulnerable nested copy installed. Verify that every affected copy in the lockfile resolves to the exact reviewed
+version, and review any other lockfile changes before committing. An unpinned `npm update` with the age gate disabled can
+select a newer, unreviewed release instead of the intended fix.
 
 Keep the committed seven-day default unchanged and document why the exception was necessary in the change review.
 

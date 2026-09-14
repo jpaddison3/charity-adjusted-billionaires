@@ -10,11 +10,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      # Install with the repository's supported runtime, then exercise only the
+      # deterministic export under Node 22 for compatibility coverage.
+      - uses: ./.github/actions/setup-dependencies
+
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: npm
-      - run: npm ci
       # Both runtimes compare against the same committed bytes; the main job checks Node 24.
       - name: Check exported data on Node 22
         run: npm run check-lcb-data
@@ -25,9 +28,6 @@ jobs:
       - uses: actions/checkout@v4
 
       - uses: ./.github/actions/setup-dependencies
-
-      - name: Generate data from markdown
-        run: npm run generate-data
 
       - name: Check charity-adjusted wealth data
         run: npm run check-lcb-data
