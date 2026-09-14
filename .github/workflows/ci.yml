@@ -10,12 +10,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      # Install with the repository's supported runtime, then exercise only the
+      # deterministic export under Node 22 for compatibility coverage.
+      - uses: ./.github/actions/setup-dependencies
+
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: npm
-      - run: sh scripts/bootstrap-npm.sh
-      - run: npm run setup
       # Both runtimes compare against the same committed bytes; the main job checks Node 24.
       - name: Check exported data on Node 22
         run: npm run check-lcb-data
